@@ -60,7 +60,13 @@ def build(destination: Path) -> dict:
         target = destination/path
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(data)
-    index = (BASE/'index.html').read_text()\n    zoom_before = '<button id="zoomIn" aria-label="Zoom in">＋</button><button id="zoomOut" aria-label="Zoom out">−</button>'\n    zoom_after = '<button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">-</button>'\n    if index.count(zoom_before) != 1:\n        raise ValueError('Expected exactly one pristine zoom-control label context')\n    index = index.replace(zoom_before, zoom_after)\n    (destination/'index.html').write_text(index)
+    index = (BASE/'index.html').read_text()
+    zoom_before = '<button id="zoomIn" aria-label="Zoom in">＋</button><button id="zoomOut" aria-label="Zoom out">−</button>'
+    zoom_after = '<button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">-</button>'
+    if index.count(zoom_before) != 1:
+        raise ValueError('Expected exactly one pristine zoom-control label context')
+    index = index.replace(zoom_before, zoom_after)
+    (destination/'index.html').write_text(index)
     (destination/'app.js').write_text(app)
     (destination/'REFINE_JS.txt').write_text(refine)
     (destination/'CLIP_JS.txt').write_text(clip)
