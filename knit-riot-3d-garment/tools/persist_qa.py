@@ -13,7 +13,7 @@ assert result['execution_status']=='completed' and not result['errors'] and not 
 assert result['extended']['passed'] and result['extended']['rendered_combinations']==420
 out=root/'validation/latest'
 out.mkdir(parents=True,exist_ok=True)
-for name in ['results.json','evidence-manifest.json','desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-original.png','glb-reloaded-front.png','glb-reloaded-detail.png','footwear-slip-ons.png','footwear-barefoot.png']:
+for name in ['results.json','evidence-manifest.json','desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-original.png','glb-reloaded-front.png','glb-reloaded-detail.png','footwear-slip-ons.png','footwear-slip-ons-side.png','footwear-barefoot.png','footwear-barefoot-side.png']:
     shutil.copyfile(source/name,out/name)
 
 def atlas(records,name,columns,width,height):
