@@ -89,9 +89,10 @@
     "Enabled the existing hourly autonomous implementation task with the actual working source/test/deployment path and full remaining scope"
   ],
   "next_actions": [
-    "Deploy exact validated candidate to existing staging and verify actual delivered app/QA/source archive",
-    "Continue lifelike face/hair/hands/footwear and garment edge/clipping improvements after delivered candidate verification",
-    "Continue measurement-driven body geometry and garment grading/ease without claiming physical fit validation"
+    "Continue residual armhole/binding repair until actual rendered inspection shows that defect cleared",
+    "Then continue hands, footwear, face/hair/skin realism and pose-specific garment attachment/clipping",
+    "Continue measurement-driven body geometry and garment grading/ease without claiming physical fit validation",
+    "Deploy validated candidates to existing Render staging whenever required lease/checkpoint writes are available; deployment blocking must not stop independent source/CI work"
   ],
   "appearance_evidence_limits": "Inspected delivered front/detail and prior pose/GLB renders confirm the specific garment repair, not overall realism. The woman still falls below the lifelike-reference requirement. Pairwise coverage is not exhaustive appearance coverage. Emulated hardware is not real device testing.",
   "release_status": "HOLD",
@@ -105,5 +106,11 @@
     "next_scheduled_start_utc": "2026-10-01T02:32:42Z",
     "cadence": "hourly",
     "instruction": "Continue real implementation and actual-render repair without routine questions. Notify only meaningful new validated milestones, genuine external blockers or completion. Disable only on completion, cancellation or a genuine owner-action/tool-access blocker."
+  },
+  "autonomous_invariants": {
+    "STOP_CONDITION": "Continue autonomously while ANY independently executable project work remains.",
+    "KNOWN_DEFECT_RULE": "Identifying a correctable defect immediately creates an implementation task; reporting it does not complete it.",
+    "BLOCKER_RULE": "A blocked operation does not stop independent work elsewhere. Escalate only after all useful independent work is exhausted and owner action/external dependency is genuinely required.",
+    "AFTER_CORRECTION": "Automatically test/render, inspect the actual result, repair again if needed, then advance to the next unresolved requirement without waiting for Proceed."
   }
 }
