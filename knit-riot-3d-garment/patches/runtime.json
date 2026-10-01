@@ -15,9 +15,9 @@
     "after": "figure.userData.KnitRiot={status:'Development fixture; not a customer scan; physical garment fit not validated',attribution:[{asset:'Anatomy, rig, weights and shape targets',author:'MakeHuman Community / NAVER Anny distribution',license:'CC0 data',source:'https://github.com/naver/anny'},{asset:'Light female skin with natural makeup',author:'MargaretToigo',license:'CC0',source:'https://static.makehumancommunity.org/assets/assetpacks/skins01.html'},{asset:'Ashley May hair, adapted through MakeClothes mapping',author:'Elvaerwyn',license:'CC-BY',source:'https://static.makehumancommunity.org/assets/assetpacks/hair02.html'}]};let blob=await new GLTFExporter().parseAsync(figure,{binary:true,onlyVisible:true});"
   },
   {
-    "name": "soften licensed Ashley May hair cutout edges",
+    "name": "balance Ashley May hair cutout edges against visible card fill",
     "before": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,color:hm.color,alphaTest:.35,side:T.DoubleSide,roughness:.63,metalness:0,anisotropy:.65,anisotropyRotation:Math.PI/2,specularIntensity:.55,envMapIntensity:.85});",
-    "after": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,color:hm.color,alphaTest:.12,alphaToCoverage:true,side:T.DoubleSide,roughness:.56,metalness:0,anisotropy:.75,anisotropyRotation:Math.PI/2,specularIntensity:.48,envMapIntensity:.85});"
+    "after": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,color:hm.color,alphaTest:.22,alphaToCoverage:true,side:T.DoubleSide,roughness:.56,metalness:0,anisotropy:.75,anisotropyRotation:Math.PI/2,specularIntensity:.48,envMapIntensity:.85});"
   },
   {
     "name": "improve layered eye material response",
