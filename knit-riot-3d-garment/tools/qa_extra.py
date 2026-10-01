@@ -71,7 +71,16 @@ def run_additional(browser, root: Path, checks: dict):
     png=page.evaluate('KR.renderer.domElement.toDataURL("image/png")')
     (root/'glb-reloaded-detail.png').write_bytes(base64.b64decode(png.split(',',1)[1]))
     page.evaluate('KR.scene.remove(window.__reloadFigure);KR.figure.visible=true;KR.reset()')
-    page.evaluate('KR.reset();KR.view("front");KR.change("shoes","slip-ons");KR.renderer.render(KR.scene,KR.camera)')\n    slip=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])\n    (root/'footwear-slip-ons.png').write_bytes(slip)\n    page.evaluate('KR.change("shoes","barefoot");KR.renderer.render(KR.scene,KR.camera)')\n    bare=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])\n    (root/'footwear-barefoot.png').write_bytes(bare)\n    checks['footwear_visual_effect']={'different_render':slip!=bare,'slip_sha256':hashlib.sha256(slip).hexdigest(),'barefoot_sha256':hashlib.sha256(bare).hexdigest(),'coverage':'direct actual-render comparison of both footwear values'}\n    if slip==bare:checks['errors'].append('Footwear control did not produce a rendered visual effect')\n    page.evaluate('KR.change("shoes","slip-ons")')\n    factors={'skin':['#ffffff','#d6ac8d','#a97959'],'hair':['#836c57','#ffffff','#493025','#201a16','#ac7946','#854629'],'hairStyle':['wavy','straight','curly'],'length':[.75,1,1.35],'shoes':['slip-ons','barefoot'],'pose':['neutral','fashion','hip','walk','three-quarter'],'view':['front','side','back','free']}
+    page.evaluate('KR.reset();KR.view("front");KR.change("shoes","slip-ons");KR.renderer.render(KR.scene,KR.camera)')
+    slip=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])
+    (root/'footwear-slip-ons.png').write_bytes(slip)
+    page.evaluate('KR.change("shoes","barefoot");KR.renderer.render(KR.scene,KR.camera)')
+    bare=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])
+    (root/'footwear-barefoot.png').write_bytes(bare)
+    checks['footwear_visual_effect']={'different_render':slip!=bare,'slip_sha256':hashlib.sha256(slip).hexdigest(),'barefoot_sha256':hashlib.sha256(bare).hexdigest(),'coverage':'direct actual-render comparison of both footwear values'}
+    if slip==bare:checks['errors'].append('Footwear control did not produce a rendered visual effect')
+    page.evaluate('KR.change("shoes","slip-ons")')
+    factors={'skin':['#ffffff','#d6ac8d','#a97959'],'hair':['#836c57','#ffffff','#493025','#201a16','#ac7946','#854629'],'hairStyle':['wavy','straight','curly'],'length':[.75,1,1.35],'shoes':['slip-ons','barefoot'],'pose':['neutral','fashion','hip','walk','three-quarter'],'view':['front','side','back','free']}
     cases,pairs=pairwise_cases(factors)
     folder=root/'appearance-pairwise';folder.mkdir(exist_ok=True)
     page.evaluate('KR.renderer.setPixelRatio(1);KR.renderer.setSize(240,360,false);KR.renderer.shadowMap.enabled=false;KR.camera.aspect=2/3;KR.camera.updateProjectionMatrix();window.__suppressDraw=true')
