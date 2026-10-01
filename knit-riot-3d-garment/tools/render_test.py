@@ -31,16 +31,27 @@ server=http.server.ThreadingHTTPServer(('127.0.0.1',8719),Handler)
 threading.Thread(target=server.serve_forever,daemon=True).start()
 
 def safe_screenshot(page,path):
+    page.evaluate('KR.renderer.render(KR.scene,KR.camera)')
     try:
-        page.evaluate('KR.renderer.render(KR.scene,KR.camera)')
         page.screenshot(path=path,timeout=30000,animations='disabled')
-    except Exception as error:
-        checks['capture_errors'].append({'path':str(pathlib.Path(path).name),'error':str(error)})
+        return
+    except Exception as first_error:
+        # Render's build host has occasionally stalled while Playwright waits on a
+        # full-page screenshot even though WebGL remains responsive. Retry once
+        # after a short settle; a successful retry is recorded, not hidden.
+        page.wait_for_timeout(750)
         try:
-            image=page.evaluate('KR.renderer.domElement.toDataURL("image/png")')
-            pathlib.Path(path).with_suffix('.canvas.png').write_bytes(base64.b64decode(image.split(',',1)[1]))
-        except Exception as fallback_error:
-            checks['errors'].append(str(fallback_error))
+            page.evaluate('KR.renderer.render(KR.scene,KR.camera)')
+            page.screenshot(path=path,timeout=30000,animations='disabled')
+            checks.setdefault('capture_retries',[]).append({'path':str(pathlib.Path(path).name),'first_error':str(first_error),'recovered':True})
+            return
+        except Exception as retry_error:
+            checks['capture_errors'].append({'path':str(pathlib.Path(path).name),'first_error':str(first_error),'retry_error':str(retry_error)})
+            try:
+                image=page.evaluate('KR.renderer.domElement.toDataURL("image/png")')
+                pathlib.Path(path).with_suffix('.canvas.png').write_bytes(base64.b64decode(image.split(',',1)[1]))
+            except Exception as fallback_error:
+                checks['errors'].append(str(fallback_error))
 
 def store_sweep(summary):
     target=q/'sweep';target.mkdir(exist_ok=True)
