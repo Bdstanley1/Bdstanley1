@@ -33,5 +33,10 @@
     "name": "smooth and deepen vest armhole to remove residual posed clipping",
     "before": "const fields=[(x,y,z)=>y-H*.553,(x,y,z)=>H*.847-y,(x,y,z)=>{let h=y/H;return (h<.724?.218:.218-(h-.724)*.54)-Math.abs(x)},(x,y,z)=>{const h=y/H,ax=Math.abs(x);return H*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y}];let vg=clipSubset(refineTextileSurface(m),fields,.013);",
     "after": "const fields=[(x,y,z)=>y-H*.553,(x,y,z)=>H*.847-y,(x,y,z)=>{let h=y/H,t=Math.max(0,Math.min(1,(h-.64)/.207));const side=h<.64?.218:.218-.080*Math.pow(t,.72);return side-Math.abs(x)},(x,y,z)=>{const h=y/H,ax=Math.abs(x);return H*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y}];let vg=clipSubset(refineTextileSurface(m),fields,.013);"
+  },
+  {
+    "name": "scale garment binding width to local edge length",
+    "before": "let width=.012;A.addScaledVector(n,.0015);B.addScaledVector(n,.0015);let D=A.clone().addScaledVector(inward,width),E=B.clone().addScaledVector(inward,width);",
+    "after": "let width=Math.min(.009,Math.max(.0035,A.distanceTo(B)*.45));A.addScaledVector(n,.0010);B.addScaledVector(n,.0010);let D=A.clone().addScaledVector(inward,width),E=B.clone().addScaledVector(inward,width);"
   }
 ]
