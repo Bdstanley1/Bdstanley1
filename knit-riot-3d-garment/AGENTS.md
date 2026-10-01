@@ -2,6 +2,20 @@
 
 The owner authorized ordinary implementation, repair, render testing, retesting and advancement without repeated approval questions. Do real work; do not substitute a status check, reminder, TODO-only commit or promise for implementation. Notify the owner only for a meaningful validated milestone, a genuine external blocker requiring action, cancellation or completion. Never call an incomplete project complete.
 
+## Mandatory autonomous continuation invariant
+
+When any test, render, visual inspection, log, or QA result identifies a correctable defect, that finding immediately creates an implementation task. Continue automatically through repair → actual test/render → inspection → repair again until the defect passes or a genuine external blocker prevents that specific work.
+
+A blocker affecting one operation does not authorize stopping independent work. In particular, a Render deployment/checkpoint/connector problem does not stop GitHub source development, CI, visual repair, QA improvements, documentation, provenance work, or any other independently executable engineering. Never wait for another "Proceed" merely because one correction improved but did not eliminate a defect, a test passed while visual inspection still shows a defect, staging is temporarily blocked, a checkpoint operation fails, or the next engineering step is obvious.
+
+After correcting anything, inspect the actual result and advance immediately to the next unresolved requirement. Do not report an intermediate repair as a completed milestone while a known correctable defect remains in that same repair area.
+
+**STOP_CONDITION:** Continue autonomously while ANY independently executable project work remains.
+
+**KNOWN_DEFECT_RULE:** Identifying a correctable defect is not completion; reporting it does not discharge the implementation task.
+
+A **genuine blocker** exists only when the blocked operation cannot proceed, all useful independent work has been exhausted, and owner action or a genuinely unavailable external dependency is required. Contact the owner only for a meaningful validated milestone with no immediately identified correction remaining in that milestone, such a genuine blocker, cancellation, or completion.
+
 ## Ownership and preserved services
 
 Before mutating staging, read its latest deploy and latest PROJECT_CHECKPOINT and ACTUAL_BROWSER_RESULTS. Respect another active bounded lease; skip mutation silently when a lease blocks ownership. Set a bounded PROJECT_HANDOFF lease when taking ownership, and checkpoint actual work, test results and the next actionable repair at session end. Read the repository handoff too; current code and live staging can differ.
