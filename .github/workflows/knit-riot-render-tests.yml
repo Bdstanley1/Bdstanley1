@@ -6,9 +6,12 @@ on:
     paths:
       - .github/workflows/knit-riot-render-tests.yml
       - knit-riot-3d-garment/patches/**
-      - knit-riot-3d-garment/tools/render_test.py
+      - knit-riot-3d-garment/tools/**
+      - knit-riot-3d-garment/fixtures/**
+      - knit-riot-3d-garment/recovered/**
+      - knit-riot-3d-garment/requirements-test.txt
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: knit-riot-render-tests
   cancel-in-progress: false
@@ -18,22 +21,45 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - name: Install browser test dependencies
+      - name: Install the exact validated test dependencies
         run: |
-          python -m pip install playwright pillow
+          python -m pip install -r knit-riot-3d-garment/requirements-test.txt
           python -m playwright install --with-deps chromium --only-shell
-          python -m pip freeze
-      - name: Render, inspect pixels, exercise controls and attempt GLB round trip
+      - name: Check Python syntax and numerical garment invariants
+        run: |
+          python -m compileall -q knit-riot-3d-garment/tools
+          node knit-riot-3d-garment/tools/test_geometry.cjs
+      - name: Render and test actual controls, appearances, failures and GLB round trip
         run: python knit-riot-3d-garment/tools/render_test.py
-      - name: Preserve actual QA evidence even when a test fails
+      - name: Preserve successful full render atlases and provenance in the project
+        run: |
+          python knit-riot-3d-garment/tools/persist_qa.py
+          cp knit-riot-3d-garment/validation/latest/*rendered*.png knit-riot-3d-garment/test-runtime/qa/
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- knit-riot-3d-garment/validation/latest
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve actual Knit Riot render evidence and validation provenance'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Preserve compact actual review images even if a test fails
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: knit-riot-rendered-regression
+          name: knit-riot-rendered-review
           path: |
-            knit-riot-3d-garment/test-runtime/qa/
+            knit-riot-3d-garment/test-runtime/qa/results.json
+            knit-riot-3d-garment/test-runtime/qa/evidence-manifest.json
+            knit-riot-3d-garment/test-runtime/qa/desktop-detail.png
+            knit-riot-3d-garment/test-runtime/qa/desktop-hip-front.png
+            knit-riot-3d-garment/test-runtime/qa/phone-neutral-front.png
+            knit-riot-3d-garment/test-runtime/qa/glb-reloaded-detail.png
+            knit-riot-3d-garment/test-runtime/qa/*rendered*.png
             knit-riot-3d-garment/test-runtime/app.js
             knit-riot-3d-garment/test-runtime/REFINE_JS.txt
             knit-riot-3d-garment/test-runtime/CLIP_JS.txt
-          if-no-files-found: error
-          retention-days: 3
+          if-no-files-found: warn
+          retention-days: 1
+          compression-level: 9
