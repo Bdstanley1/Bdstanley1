@@ -30,6 +30,11 @@ def assemble_app() -> tuple[str, str, str]:
         if app.count(before) != 1:
             raise ValueError('Expected exactly one pristine repair context')
         app = app.replace(before, after)
+    footwear_before="boots=skinned('White slip-on shoes',clipSubset(m,[(x,y)=>H*.067-y],.006),new T.MeshStandardMaterial({color:'#eae7df',roughness:.72,side:T.DoubleSide}));"
+    footwear=(ROOT/'patches/footwear.js').read_text().strip()
+    if app.count(footwear_before) != 1:
+        raise ValueError('Expected exactly one pristine footwear context')
+    app=app.replace(footwear_before,footwear)
     extra = ROOT/'patches/runtime.json'
     if extra.exists():
         for patch in json.loads(extra.read_text()):
@@ -92,6 +97,7 @@ def build(destination: Path) -> dict:
         (destination/path.name).write_bytes(path.read_bytes())
     (destination/'source-REFINE_JS.txt').write_text(refine)
     (destination/'source-CLIP_JS.txt').write_text(clip)
+    (destination/'source-FOOTWEAR_JS.txt').write_bytes((ROOT/'patches/footwear.js').read_bytes())
     (destination/'source-build_runtime.py.txt').write_bytes(Path(__file__).read_bytes())
     (destination/'.knit-riot-generated').write_text('Build output only; never store customer data here.\n')
     return report
