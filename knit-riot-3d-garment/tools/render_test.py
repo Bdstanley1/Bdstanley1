@@ -71,9 +71,9 @@ try:
             if label=='desktop':
                 labels=page.evaluate("()=>({zin:document.getElementById('zoomIn').textContent,zout:document.getElementById('zoomOut').textContent})")
                 if labels!={'zin':'+','zout':'-'}:checks['errors'].append('Zoom controls are not using font-independent ASCII labels')
-                distance0=page.evaluate('KR.camera.position.distanceTo(KR.orbit.target)')
-                page.locator('#zoomIn').click();distance1=page.evaluate('KR.camera.position.distanceTo(KR.orbit.target)')
-                page.locator('#zoomOut').click();distance2=page.evaluate('KR.camera.position.distanceTo(KR.orbit.target)')
+                distance0=page.evaluate('KR.camera.position.length()')
+                page.locator('#zoomIn').click();distance1=page.evaluate('KR.camera.position.length()')
+                page.locator('#zoomOut').click();distance2=page.evaluate('KR.camera.position.length()')
                 checks['zoom_controls']={'labels':labels,'initial_distance':distance0,'after_zoom_in':distance1,'after_zoom_out':distance2,'rendered_label_check':True}
                 if not (distance1 < distance0 and distance2 > distance1):checks['errors'].append('Zoom controls did not change camera distance in the required directions')
                 page.evaluate('KR.reset();KR.view("front")')
