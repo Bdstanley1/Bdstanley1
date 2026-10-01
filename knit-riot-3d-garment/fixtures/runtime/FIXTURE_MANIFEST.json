@@ -1,0 +1,91 @@
+{
+  "snapshot_sha256": "141fe99b2fa7dfddd46469da2b00a50d7767be31741ad32dd9c3156c47f9b0bb",
+  "kind": "synthetic adult female fixture, not customer data",
+  "files": [
+    {
+      "path": "ATTRIBUTION.txt",
+      "bytes": 766,
+      "sha256": "d2e8235e1bd26ff68ab7dac2a9bd4a3a62b07b94cf5819018a4359271e0c93fb"
+    },
+    {
+      "path": "BufferGeometryUtils.js",
+      "bytes": 31906,
+      "sha256": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb"
+    },
+    {
+      "path": "GLTFExporter.js",
+      "bytes": 77705,
+      "sha256": "25f46cc39855fa8bd9fc65e993cb9aaed5ba533a77eddedeae5774fece998793"
+    },
+    {
+      "path": "GLTFLoader.js",
+      "bytes": 108515,
+      "sha256": "3d8d4b6b2c7e9b0690fe4b464d4fbb0faca5eda0b1d86391405b9634c1a11355"
+    },
+    {
+      "path": "OrbitControls.js",
+      "bytes": 30973,
+      "sha256": "7aa4372a5ec60b49988edde81014c7361740a57962d032003ca33301c1f4edd5"
+    },
+    {
+      "path": "RGBELoader.js",
+      "bytes": 11377,
+      "sha256": "f0e87d0008d9484d31358b32befd1bf80e4301f77573cc9a7cf7d871cc3f64b4"
+    },
+    {
+      "path": "THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "TextureUtils.js",
+      "bytes": 2367,
+      "sha256": "1b84a7fde8745dd614f62b6ca8108b592144278c07891a0cbe8cdf8e15796efa"
+    },
+    {
+      "path": "asset-manifest.json",
+      "bytes": 10601,
+      "sha256": "2e3ca80291b82b7514f452335a8f4f1bbf852cac40312cf3fe3fc776a4be6daf"
+    },
+    {
+      "path": "assets/body.json",
+      "bytes": 2761454,
+      "sha256": "2e46bb126a4cb9778845e02003e1aca50c5b91708815b51f0365db07a9344770"
+    },
+    {
+      "path": "assets/hair.json",
+      "bytes": 1102282,
+      "sha256": "7655a1e3358008025ff8ad68c41e9da18025cab3249bc05e05bd6f5dee6dacb5"
+    },
+    {
+      "path": "assets/hair.png",
+      "bytes": 1292092,
+      "sha256": "1809abbf07bf60014977d2bc180563ed31385b1828ccf5e48029b3695a49c5d8"
+    },
+    {
+      "path": "assets/leye.json",
+      "bytes": 101,
+      "sha256": "fe3b7f1b116b09672098e5e1e240629933418afb122243a0e4e03cd8528aaf35"
+    },
+    {
+      "path": "assets/reye.json",
+      "bytes": 102,
+      "sha256": "c5fea226906252a8d1439f3aea8e328f4fa05249690595327c8f372f531f0bc0"
+    },
+    {
+      "path": "assets/skin.png",
+      "bytes": 4469882,
+      "sha256": "283ceace83aac00031cdaef21bae52388fd675e90df45d2e74597d76766e1522"
+    },
+    {
+      "path": "assets/studio_small_08_1k.hdr",
+      "bytes": 1508872,
+      "sha256": "f6a989f89432eb4eee3191364a9c1ceed195c4ec3544173a3c04fd96cb91d0ba"
+    },
+    {
+      "path": "three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    }
+  ]
+}
