@@ -24,7 +24,7 @@ if os.environ.get('GITHUB_ACTIONS') == 'true' and os.environ.get('GITHUB_SHA'):
         raise SystemExit(0)
 out=root/'validation/latest'
 out.mkdir(parents=True,exist_ok=True)
-for name in ['results.json','evidence-manifest.json','desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-original.png','glb-reloaded-front.png','glb-reloaded-detail.png','footwear-slip-ons.png','footwear-barefoot.png']:
+for name in ['results.json','evidence-manifest.json','desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-original.png','glb-reloaded-front.png','glb-reloaded-detail.png','footwear-slip-ons.png','footwear-slip-ons-side.png','footwear-barefoot.png','footwear-barefoot-side.png']:
     shutil.copyfile(source/name,out/name)
 
 def atlas(records,name,columns,width,height):
