@@ -1,0 +1,12 @@
+{
+  "owner": "interactive autonomous continuation September 30",
+  "acquired_at_utc": "2026-09-30T23:54:00Z",
+  "lease_until_utc": "2026-10-01T01:24:00Z",
+  "intent": "Continue visual repair and unblock deterministic QA; preserve deployments; validate actual renders",
+  "release_status": "HOLD pending visual and full functional gates",
+  "safety": "No purchases, paid plan changes, production-store writes, or customer-photo transmission",
+  "source_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
+  "app_sha256": "f70251a7a078a6e532ea80e3ab97374fa839bda9a79c3ff781dcc7ddf79f7901",
+  "build_status": "built",
+  "qa_mode": "Deterministic still frames; regular app retains continuous interaction"
+}

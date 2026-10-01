@@ -1,0 +1,52 @@
+import os,json,hashlib,subprocess
+from pathlib import Path
+subprocess.run(['git','checkout','d6fc027ced5c17b6b0775dee944096ade7a9ef80'],check=True)
+s=os.environ['BUILD_BASE']
+for old,new in json.loads(os.environ.get('BUILD_PATCHES','[]')):
+ if old not in s:raise RuntimeError('Patch context missing: '+old[:100])
+ s=s.replace(old,new)
+exec(compile(s,'build_assets.py','exec'))
+p=Path('public');a=p/'app.js';source=a.read_text()+'\n'+os.environ.get('EXTRA_JS','')
+for old,new in [("function animate(){requestAnimationFrame(animate);orbit.update();draw();}animate();","function animate(){requestAnimationFrame(animate);orbit.update();if(!window.__qaPause)draw();}animate();"),("function draw(){renderer.render(scene,camera)}","function draw(){if(!window.__suppressDraw)renderer.render(scene,camera)}")]:
+ if old not in source:raise RuntimeError('Deterministic QA rendering context missing')
+ source=source.replace(old,new)
+a.write_text(source)
+after=os.environ.get('AFTER_BUILD','')
+if os.environ.get('BEFORE_QA'):
+ anchor="manifest=json.loads((p/'asset-manifest.json').read_text())"
+ if after.count(anchor)!=1:raise RuntimeError('Expected one pre-QA insertion point')
+ after=after.replace(anchor,"exec(compile(os.environ['BEFORE_QA'],'before_qa.py','exec'))\n"+anchor)
+extra=os.environ.get('EXTRA_BROWSER_QA','')
+if extra:
+ helper="def set_range(el,value):\n meta=el.evaluate('(e)=>({min:+e.min,step:+e.step||1,max:+e.max})');el.focus()\n if abs(float(value)-meta['max'])<1e-8:el.press('End')\n else:\n  el.press('Home');steps=round((float(value)-meta['min'])/meta['step'])\n  if steps<0 or steps>500:raise ValueError('Invalid keyboard range target')\n  for _ in range(steps):el.press('ArrowRight')\n if abs(float(el.input_value())-float(value))>1e-7:raise AssertionError('Keyboard range value mismatch')\n"
+ extra=helper+extra
+ extra=extra.replace("el.fill(value);el.dispatch_event('input')","set_range(el,value)")
+ extra=extra.replace("page.goto('http://127.0.0.1:8719/',","page.add_init_script('window.__qaPause=true');print('QA_PROGRESS extended page loading',flush=True);page.goto('http://127.0.0.1:8719/',")
+ extra=extra.replace("page.locator('[data-tab=\"'+tab+'\"]').click();choices=","print('QA_PROGRESS button group '+key,flush=True);page.locator('[data-tab=\"'+tab+'\"]').click();choices=")
+ extra=extra.replace("SNAPSHOT=","print('QA_PROGRESS extended page ready',flush=True)\npage.evaluate('KR.renderer.setPixelRatio(.55)')\nSNAPSHOT=")
+ extra=extra.replace("KR.renderer.setPixelRatio(1);KR.renderer.setSize(160,240,false);","window.__suppressDraw=true;const oldShadows=KR.renderer.shadowMap.enabled;KR.renderer.shadowMap.enabled=false;KR.renderer.setPixelRatio(1);KR.renderer.setSize(160,240,false);")
+ extra=extra.replace("KR.reset();return result;}","window.__suppressDraw=false;KR.renderer.shadowMap.enabled=oldShadows;KR.reset();return result;}")
+ extra=extra.replace("summary=page.evaluate(","print('QA_PROGRESS starting 420 deterministic low-resolution non-shadow renders',flush=True)\nsummary=page.evaluate(")
+ extra=extra.replace("extended['rendered_combinations']=summary['count']","print('QA_PROGRESS render sweep done',summary['count'],flush=True);extended['rendered_combinations']=summary['count']")
+ extra=extra.replace("page.locator('[data-tab=\"qa\"]').click()","print('QA_PROGRESS GLB export',flush=True);page.locator('[data-tab=\"qa\"]').click()")
+ extra=extra.replace("page.screenshot(path=","page.evaluate('()=>{if(window.KR&&KR.ready)KR.renderer.render(KR.scene,KR.camera)}');page.screenshot(path=")
+ extra=extra.replace("420 low-resolution size/color/pose/view renders;","420 low-resolution non-shadow size/color/pose/view renders; deterministic still captures; ranges via keyboard; UI canvas DPR .55;")
+ anchor='  browser.close()'
+ if after.count(anchor)!=1:raise RuntimeError('Expected one extended QA insertion point')
+ after=after.replace(anchor,"  exec(compile(os.environ['EFFECTIVE_BROWSER_QA'],'extended_browser_qa.py','exec'))\n"+anchor)
+ os.environ['EFFECTIVE_BROWSER_QA']=extra
+ after=after.replace("page.goto('http://127.0.0.1:8719/',","page.add_init_script('window.__qaPause=true');print('QA_PROGRESS basic page loading '+label,flush=True);page.goto('http://127.0.0.1:8719/',")
+ after=after.replace("page.screenshot(path=","page.evaluate('()=>{if(window.KR&&KR.ready)KR.renderer.render(KR.scene,KR.camera)}');page.screenshot(path=")
+ after=after.replace("for sh in (['collapsed','half','full'] if label=='phone' else ['collapsed']):","print('QA_PROGRESS basic page ready '+label,flush=True)\n   for sh in (['collapsed','half','full'] if label=='phone' else ['collapsed']):")
+ print('QA_PROGRESS running deterministic browser suite',flush=True)
+if after:exec(compile(after,'after_build.py','exec'))
+state=json.loads(os.environ.get('PROJECT_HANDOFF','{}'));state['source_commit']=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip();state['app_sha256']=hashlib.sha256((p/'app.js').read_bytes()).hexdigest();state['build_status']='built';state['qa_mode']='Deterministic still frames; regular app retains continuous interaction';print('PROJECT_CHECKPOINT '+json.dumps(state),flush=True)
+(p/'PROJECT_STATUS.json').write_text(json.dumps({k:v for k,v in state.items() if k not in ['workspace_id','service_id']},indent=2))
+keys=['BUILD_BASE','BUILD_PY','BUILD_PATCHES','APP_JS','APP_HTML','APP_PATCHES','CLIP_JS','EXTRA_JS','AFTER_BUILD','BEFORE_QA','FINAL_PATCHES','REFINE_JS','UI_GRAPHICS_PATCHES','STUDIO_JS','EXTRA_BROWSER_QA','EFFECTIVE_BROWSER_QA']
+for key in keys:(p/('source-'+key+'.txt')).write_text(os.environ.get(key,''))
+for key in json.loads(os.environ.get('SOURCE_QUERY','[]')):
+ if key in keys+['PROJECT_HANDOFF']:print('SOURCE_CONTEXT '+key+' '+json.dumps(os.environ.get(key,'')),flush=True)
+import zipfile
+with zipfile.ZipFile(p/'development-snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:
+ for f in p.rglob('*'):
+  if f.is_file() and f.name!='development-snapshot.zip':z.write(f,f.relative_to(p))

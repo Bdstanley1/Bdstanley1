@@ -1,0 +1,286 @@
+{
+  "snapshot_url": "https://knit-riot-studio-development.onrender.com/development-snapshot.zip",
+  "snapshot_sha256": "141fe99b2fa7dfddd46469da2b00a50d7767be31741ad32dd9c3156c47f9b0bb",
+  "files": [
+    {
+      "path": "three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "path": "OrbitControls.js",
+      "bytes": 30973,
+      "sha256": "7aa4372a5ec60b49988edde81014c7361740a57962d032003ca33301c1f4edd5"
+    },
+    {
+      "path": "GLTFExporter.js",
+      "bytes": 77705,
+      "sha256": "25f46cc39855fa8bd9fc65e993cb9aaed5ba533a77eddedeae5774fece998793"
+    },
+    {
+      "path": "BufferGeometryUtils.js",
+      "bytes": 31906,
+      "sha256": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb"
+    },
+    {
+      "path": "THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "asset-manifest.json",
+      "bytes": 10601,
+      "sha256": "2e3ca80291b82b7514f452335a8f4f1bbf852cac40312cf3fe3fc776a4be6daf"
+    },
+    {
+      "path": "ATTRIBUTION.txt",
+      "bytes": 766,
+      "sha256": "d2e8235e1bd26ff68ab7dac2a9bd4a3a62b07b94cf5819018a4359271e0c93fb"
+    },
+    {
+      "path": "index.html",
+      "bytes": 7004,
+      "sha256": "16f71baf8a8b826c90fad8670dfdafecdf168d119e16f7605b3fbb5937f54cd0"
+    },
+    {
+      "path": "app.js",
+      "bytes": 32626,
+      "sha256": "f70251a7a078a6e532ea80e3ab97374fa839bda9a79c3ff781dcc7ddf79f7901"
+    },
+    {
+      "path": "TextureUtils.js",
+      "bytes": 2367,
+      "sha256": "1b84a7fde8745dd614f62b6ca8108b592144278c07891a0cbe8cdf8e15796efa"
+    },
+    {
+      "path": "RGBELoader.js",
+      "bytes": 11377,
+      "sha256": "f0e87d0008d9484d31358b32befd1bf80e4301f77573cc9a7cf7d871cc3f64b4"
+    },
+    {
+      "path": "GLTFLoader.js",
+      "bytes": 108515,
+      "sha256": "3d8d4b6b2c7e9b0690fe4b464d4fbb0faca5eda0b1d86391405b9634c1a11355"
+    },
+    {
+      "path": "source-BUILD_PY.txt",
+      "bytes": 5968,
+      "sha256": "b9b96aeddeafb10c1f0051887ede0c518a153611f187dc053831788fe2d26ddb"
+    },
+    {
+      "path": "source-BUILD_BASE.txt",
+      "bytes": 10713,
+      "sha256": "f1c15d4f8b64efadee3f409b7ee2380c42ea9d5d06c27232f5962c4134920fa6"
+    },
+    {
+      "path": "source-BUILD_PATCHES.txt",
+      "bytes": 563,
+      "sha256": "5935807efc60f6e302d30048d23733dafc7e71a965f06786db98a0edea7b2d1c"
+    },
+    {
+      "path": "source-APP_HTML.txt",
+      "bytes": 6381,
+      "sha256": "b40dc57fc2e5ec7c4e19efe0806fc0c8cf169e12244cc19aefa2dcc8c319fb59"
+    },
+    {
+      "path": "source-APP_JS.txt",
+      "bytes": 19767,
+      "sha256": "0dc91cf37d06de6f9a85765dd8e17cb26ac35e1b17ca826d2114f9e4abc4c757"
+    },
+    {
+      "path": "source-APP_PATCHES.txt",
+      "bytes": 2217,
+      "sha256": "ef0c78d2331d34dcaa1500c86f4ae98a7b34eaa1b9bde6d021891e32ce7424da"
+    },
+    {
+      "path": "source-CLIP_JS.txt",
+      "bytes": 2495,
+      "sha256": "71e08f680c44cb354903b72ed56868c885f342d8e91add0f871efbc5c1ce67b8"
+    },
+    {
+      "path": "source-AFTER_BUILD.txt",
+      "bytes": 5364,
+      "sha256": "097f8b1d65dcd8261aeb7e451f495ce064ad29c49a0a6abfe0095b4c68d2cc4c"
+    },
+    {
+      "path": "PROJECT_STATUS.json",
+      "bytes": 703,
+      "sha256": "14c25968babbbbd343541420d1ca97a732a1006496d703954dee638390abea37"
+    },
+    {
+      "path": "source-EXTRA_JS.txt",
+      "bytes": 3157,
+      "sha256": "6ba6c3ed7265b3730ba335ad8882b942402346469ad415a0b3bcde85ba1e775f"
+    },
+    {
+      "path": "source-BEFORE_QA.txt",
+      "bytes": 1888,
+      "sha256": "f6c60549b620d1f85d61255de24df84ea0ca027b54c7183da16670863e3e28a5"
+    },
+    {
+      "path": "source-FINAL_PATCHES.txt",
+      "bytes": 1189,
+      "sha256": "3f5373a93846678fa26c1851d1e5a6a795386fd65c0751eff73c60153ab247cf"
+    },
+    {
+      "path": "source-REFINE_JS.txt",
+      "bytes": 2227,
+      "sha256": "535e19608c7d76129fcbb47efceb4dd0dfbc0eed2313aa4fa2419d06b38a5aff"
+    },
+    {
+      "path": "source-UI_GRAPHICS_PATCHES.txt",
+      "bytes": 1835,
+      "sha256": "1bfe9f55fdcb1e6d0a89cdc3caf80825b48ec091dc47fcdfd472a8224f3e5bb0"
+    },
+    {
+      "path": "source-STUDIO_JS.txt",
+      "bytes": 3344,
+      "sha256": "fff01de644ef9c46f56a27cd0e4a420d5802555bb292ef49108615c27474c2eb"
+    },
+    {
+      "path": "source-EXTRA_BROWSER_QA.txt",
+      "bytes": 9872,
+      "sha256": "e124bef4b37aa81c2445e48a53129a5340fccaaab9ea8500ea5b63e7635906d2"
+    },
+    {
+      "path": "source-EFFECTIVE_BROWSER_QA.txt",
+      "bytes": 11177,
+      "sha256": "a6322fccdb93289f010ff2edc69a3c32543718e4e921d1d26ea0e5434e8d87ba"
+    },
+    {
+      "path": "assets/body.json",
+      "bytes": 2761454,
+      "sha256": "2e46bb126a4cb9778845e02003e1aca50c5b91708815b51f0365db07a9344770"
+    },
+    {
+      "path": "assets/leye.json",
+      "bytes": 101,
+      "sha256": "fe3b7f1b116b09672098e5e1e240629933418afb122243a0e4e03cd8528aaf35"
+    },
+    {
+      "path": "assets/reye.json",
+      "bytes": 102,
+      "sha256": "c5fea226906252a8d1439f3aea8e328f4fa05249690595327c8f372f531f0bc0"
+    },
+    {
+      "path": "assets/skin.png",
+      "bytes": 4469882,
+      "sha256": "283ceace83aac00031cdaef21bae52388fd675e90df45d2e74597d76766e1522"
+    },
+    {
+      "path": "assets/hair.png",
+      "bytes": 1292092,
+      "sha256": "1809abbf07bf60014977d2bc180563ed31385b1828ccf5e48029b3695a49c5d8"
+    },
+    {
+      "path": "assets/hair.json",
+      "bytes": 1102282,
+      "sha256": "7655a1e3358008025ff8ad68c41e9da18025cab3249bc05e05bd6f5dee6dacb5"
+    },
+    {
+      "path": "assets/studio_small_08_1k.hdr",
+      "bytes": 1508872,
+      "sha256": "f6a989f89432eb4eee3191364a9c1ceed195c4ec3544173a3c04fd96cb91d0ba"
+    },
+    {
+      "path": "qa/phone-collapsed.png",
+      "bytes": 85642,
+      "sha256": "fe369015ce933ae0a02c09d779544d626da84f271c7c1f196639990c0c264371"
+    },
+    {
+      "path": "qa/phone-half.png",
+      "bytes": 61223,
+      "sha256": "3ace1868aa585e45c304b09463f3de50c22425b31660eef456f4870d21d7c172"
+    },
+    {
+      "path": "qa/phone-full.png",
+      "bytes": 54744,
+      "sha256": "d2e93cf10a12691004dacd1ca69565aad8966d639682d4821d4f4b0121052d58"
+    },
+    {
+      "path": "qa/phone-front.png",
+      "bytes": 85642,
+      "sha256": "fe369015ce933ae0a02c09d779544d626da84f271c7c1f196639990c0c264371"
+    },
+    {
+      "path": "qa/phone-side.png",
+      "bytes": 60860,
+      "sha256": "f2d88ffcd867a9136616a4ac09a71bbaddca0620c767cfe8dcbf79922f4b8027"
+    },
+    {
+      "path": "qa/phone-back.png",
+      "bytes": 70789,
+      "sha256": "b7a970e87890018df096c2fa95e997d3e2488cc096a70940a8619ded17a4745f"
+    },
+    {
+      "path": "qa/phone-detail.png",
+      "bytes": 146063,
+      "sha256": "b59cd6bc8d79a5f5aafb202f05718ca04fc92520499dfc76dbec872cd19a3318"
+    },
+    {
+      "path": "qa/desktop-collapsed.png",
+      "bytes": 160668,
+      "sha256": "89d26b69661a70203272a198e90a708c229449c96e029b755afafd5f8f3dd78a"
+    },
+    {
+      "path": "qa/desktop-front.png",
+      "bytes": 160668,
+      "sha256": "89d26b69661a70203272a198e90a708c229449c96e029b755afafd5f8f3dd78a"
+    },
+    {
+      "path": "qa/desktop-side.png",
+      "bytes": 126863,
+      "sha256": "fe0c31a10efda4eb76ddc6f5be47e8de551d1501439c0d39c1954aa5e09d00f1"
+    },
+    {
+      "path": "qa/desktop-back.png",
+      "bytes": 142545,
+      "sha256": "eb7ebeed57b3d60696be091e408b107a69b15b42ffee068482a9e524ec7ed223"
+    },
+    {
+      "path": "qa/desktop-detail.png",
+      "bytes": 341202,
+      "sha256": "74c29b84f1bcc3bec13559b3047a80546f6f6576e5301eef7fb1d9549b6355e7"
+    },
+    {
+      "path": "qa/pose-neutral.png",
+      "bytes": 137224,
+      "sha256": "5dfd857701047804a7aba43a9c3bd9491389e192f6e35ff4a67f7e48b9716066"
+    },
+    {
+      "path": "qa/pose-fashion.png",
+      "bytes": 138521,
+      "sha256": "a98be166f439a013805b3926710fd908a50d2b764f8336c9e3582b549ce5898c"
+    },
+    {
+      "path": "qa/pose-hip.png",
+      "bytes": 140972,
+      "sha256": "dc57b93c89e4bd2a75d04a444ad5a4dfef006a006c4f8d81c43df8db60763ab7"
+    },
+    {
+      "path": "qa/pose-walk.png",
+      "bytes": 137242,
+      "sha256": "f83758f9015238ecb49d138703a132a8ef7361651881c5dc9f85fd23c9c68501"
+    },
+    {
+      "path": "qa/pose-three-quarter.png",
+      "bytes": 134203,
+      "sha256": "d9d4c0e3bcce4b1f260b95c3823737d96fefb08be4aae6f6ffa57adf56c4f649"
+    },
+    {
+      "path": "qa/results.json",
+      "bytes": 14742,
+      "sha256": "0897fdea14bd34c9de09c17eef06adceabe87d8a0960a7cb3bd71336c72d59bc"
+    },
+    {
+      "path": "qa/index.html",
+      "bytes": 21150,
+      "sha256": "c3384b03a2400fac578852b423c1cf3735157c5ed7f99302388472a5cb2fd8f9"
+    }
+  ],
+  "skipped": [
+    "build_assets.py",
+    "build-report.html",
+    "app-source.html"
+  ]
+}

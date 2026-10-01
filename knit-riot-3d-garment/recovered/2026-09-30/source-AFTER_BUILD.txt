@@ -1,0 +1,60 @@
+import os,re,json,html,sys,subprocess,shutil,time,threading,http.server,base64,io,hashlib,zipfile
+from pathlib import Path
+p=Path('public');q=p/'qa';q.mkdir(exist_ok=True)
+(p/'TextureUtils.js').write_bytes(get('https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/utils/TextureUtils.js'))
+e=p/'GLTFExporter.js';e.write_text(e.read_text().replace('./../utils/TextureUtils.js','./TextureUtils.js'))
+h=p/'index.html';txt=h.read_text();txt=txt.replace('<script type="module" src="./app.js"></script>','<script type="module">import("./app.js").catch(e=>{window.__errors.push(String(e));document.getElementById("loading").hidden=true;let n=document.getElementById("error");n.hidden=false;n.textContent="Initialization failed: "+e.message})</script>');h.write_text(txt)
+for filename,patches in json.loads(os.environ.get('APP_PATCHES','{}')).items():
+ dest=p/filename;source=dest.read_text()
+ for old,new in patches:
+  if old not in source:raise RuntimeError('App patch missing: '+old[:100])
+  source=source.replace(old,new)
+ dest.write_text(source)
+a=p/'app.js';a.write_text(a.read_text()+'\n'+os.environ.get('CLIP_JS',''))
+manifest=json.loads((p/'asset-manifest.json').read_text());bd=json.loads((p/'assets/body.json').read_text())
+diag={'asset_status':manifest['status'],'source_commit':manifest['source_commit'],'vertices':manifest['vertices'],'triangles':manifest['body_triangles'],'bones':manifest['bone_count'],'hand_bones':[n for n in bd['rig']['names'] if 'finger' in n or 'hand' in n],'hair_header':manifest.get('hair_header')}
+print('ACTUAL_ASSET_DIAGNOSTICS '+json.dumps(diag),flush=True)
+(p/'build-report.html').write_text('<h1>Actual asset diagnostics</h1><pre>'+html.escape(json.dumps(diag,indent=2))+'</pre>');(p/'app-source.html').write_text('<pre>'+html.escape(a.read_text())+'</pre>')
+checks={'visual_gate':'NOT_REVIEWED','device_hardware_tested':False,'errors':[],'cases':[]}
+try:
+ subprocess.run([sys.executable,'-m','pip','install','playwright'],check=True,timeout=120)
+ subprocess.run([sys.executable,'-m','playwright','install','chromium','--only-shell'],check=True,timeout=240)
+ from playwright.sync_api import sync_playwright
+ class QuietHandler(http.server.SimpleHTTPRequestHandler):
+  def __init__(self,*a,**kw):super().__init__(*a,directory='public',**kw)
+  def log_message(self,*a):pass
+ srv=http.server.ThreadingHTTPServer(('127.0.0.1',8719),QuietHandler);threading.Thread(target=srv.serve_forever,daemon=True).start()
+ with sync_playwright() as pw:
+  browser=pw.chromium.launch(headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist'])
+  for label,viewport in [('phone',{'width':390,'height':844}),('desktop',{'width':1280,'height':900})]:
+   page=browser.new_page(viewport=viewport,device_scale_factor=1);page.on('pageerror',lambda e:checks['errors'].append(str(e)));page.goto('http://127.0.0.1:8719/',wait_until='networkidle',timeout=40000)
+   try:page.wait_for_function('window.KR && KR.ready',timeout=20000)
+   except Exception:
+    checks['errors'].append('Model not ready: '+page.locator('body').inner_text());page.screenshot(path=str(q/(label+'-failed.png')));continue
+   for sh in (['collapsed','half','full'] if label=='phone' else ['collapsed']):
+    page.evaluate('(s)=>KR.setSheet(s)',sh);page.wait_for_timeout(120);check=page.evaluate('KR.runQA()');check['label']=label;checks['cases'].append(check);page.screenshot(path=str(q/(label+'-'+sh+'.png')))
+   page.evaluate("KR.setSheet('collapsed')")
+   for view in ['front','side','back']:
+    page.evaluate('(v)=>KR.view(v)',view);page.wait_for_timeout(200);page.screenshot(path=str(q/(label+'-'+view+'.png')))
+   page.evaluate("KR.view('front')");page.locator('#detail').click();page.wait_for_timeout(200);page.screenshot(path=str(q/(label+'-detail.png')));page.close()
+  browser.close()
+ srv.shutdown();checks['status']='browser_executed'
+except Exception as ex:
+ checks['status']='browser_infrastructure_blocked';checks['errors'].append(str(ex));print('QA_BLOCKED '+str(ex),flush=True)
+(q/'results.json').write_text(json.dumps(checks,indent=2));print('ACTUAL_BROWSER_RESULTS '+json.dumps(checks),flush=True)
+body='<h1>Actual browser-render QA</h1><p>Software-rendered Chromium; not physical-device validation. Visual approval remains separate.</p><pre>'+html.escape(json.dumps(checks,indent=2))+'</pre>'
+for image in sorted(q.glob('*.png')):body+='<h2>'+image.name+'</h2><img style="max-width:100%" src="'+image.name+'">'
+(q/'index.html').write_text(body)
+for filename in ['desktop-detail.png','phone-front.png']:
+ path=q/filename
+ if path.exists():
+  im=Image.open(path).convert('RGB')
+  if filename.startswith('desktop'):im=im.crop((470,95,1130,800))
+  else:im=im.crop((70,90,325,740))
+  im.thumbnail((256,420));buf=io.BytesIO();im.save(buf,format='WEBP',quality=38,method=6)
+  print('RENDER_THUMB '+filename+' SHA256 '+hashlib.sha256(buf.getvalue()).hexdigest()+' '+base64.b64encode(buf.getvalue()).decode(),flush=True)
+for key in ['BUILD_PY','BUILD_BASE','BUILD_PATCHES','APP_HTML','APP_JS','APP_PATCHES','CLIP_JS','AFTER_BUILD']:
+ (p/('source-'+key+'.txt')).write_text(os.environ.get(key,''))
+with zipfile.ZipFile(p/'development-snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:
+ for f in p.rglob('*'):
+  if f.is_file() and f.name!='development-snapshot.zip':z.write(f,f.relative_to(p))

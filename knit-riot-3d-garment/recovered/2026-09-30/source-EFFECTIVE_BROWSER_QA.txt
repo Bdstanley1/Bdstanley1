@@ -1,0 +1,68 @@
+def set_range(el,value):
+ meta=el.evaluate('(e)=>({min:+e.min,step:+e.step||1,max:+e.max})');el.focus()
+ if abs(float(value)-meta['max'])<1e-8:el.press('End')
+ else:
+  el.press('Home');steps=round((float(value)-meta['min'])/meta['step'])
+  if steps<0 or steps>500:raise ValueError('Invalid keyboard range target')
+  for _ in range(steps):el.press('ArrowRight')
+ if abs(float(el.input_value())-float(value))>1e-7:raise AssertionError('Keyboard range value mismatch')
+import hashlib,json,math,struct,time
+from pathlib import Path
+extended={'control_values':[],'gestures':[],'layouts':[],'rendered_combinations':0,'failures':[],'scope':'Chromium emulation. Individual UI values, sequential interactions and 420 low-resolution non-shadow size/color/pose/view renders; deterministic still captures; ranges via keyboard; UI canvas DPR .55; not exhaustive appearance combinations or visual approval.','comparison_only_controls':['size','bust','waist','hips'],'physical_devices':False};checks['extended']=extended
+page=browser.new_page(viewport={'width':1280,'height':900},device_scale_factor=1,accept_downloads=True);page.on('pageerror',lambda e:extended['failures'].append({'kind':'javascript','message':str(e)}));page.add_init_script('window.__qaPause=true');print('QA_PROGRESS extended page loading',flush=True);page.goto('http://127.0.0.1:8719/',wait_until='networkidle',timeout=60000);page.wait_for_function('window.KR && KR.ready',timeout=25000);page.set_default_timeout(6000)
+print('QA_PROGRESS extended page ready',flush=True)
+page.evaluate('KR.renderer.setPixelRatio(.55)')
+SNAPSHOT="async()=>{KR.renderer.render(KR.scene,KR.camera);let text=KR.renderer.domElement.toDataURL('image/png');let digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text));return [...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('')}"
+GEOMETRY="async()=>{const out={};for(const o of KR.figure.children){if(!o.isMesh)continue;const a=o.geometry.attributes.position.array;const h=await crypto.subtle.digest('SHA-256',a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength));out[o.name]=[...new Uint8Array(h)].map(b=>b.toString(16).padStart(2,'0')).join('')+':'+o.visible;}return out;}"
+baseline=page.evaluate(GEOMETRY)
+for tab,key in [('look','skin'),('look','hair'),('look','hairStyle'),('look','shoes'),('garment','color'),('garment','size'),('pose','pose')]:
+ print('QA_PROGRESS button group '+key,flush=True);page.locator('[data-tab="'+tab+'"]').click();choices=page.locator('[data-key="'+key+'"]').count()
+ for i in range(choices):
+  el=page.locator('[data-key="'+key+'"]').nth(i);value=el.get_attribute('data-value');previous=page.evaluate('(k)=>String(KR.state[k])',key);before=page.evaluate(SNAPSHOT);el.click();page.wait_for_timeout(80);after=page.evaluate(SNAPSHOT);selected=el.get_attribute('aria-pressed')=='true';actual=page.evaluate('(k)=>String(KR.state[k])',key)
+  row={'key':key,'value':value,'state_matches':actual==value,'selected':selected,'canvas_changed':before!=after,'already_selected':previous==value,'comparison_only':key=='size'}
+  if not selected or actual!=value:extended['failures'].append({'kind':'control-state','case':row})
+  if key!='size' and previous!=value and before==after:extended['failures'].append({'kind':'no-visible-effect','case':row})
+  extended['control_values'].append(row)
+  if key=='pose':page.evaluate('()=>{if(window.KR&&KR.ready)KR.renderer.render(KR.scene,KR.camera)}');page.screenshot(path=str(q/('pose-'+value+'.png')))
+page.locator('[data-tab="look"]').click()
+for key,values in [('length',['.75','1.35','1']),('height',['145','195','168'])]:
+ for value in values:
+  el=page.locator('#input-'+key);set_range(el,value);page.wait_for_timeout(60);actual=page.evaluate('(k)=>KR.state[k]',key);extended['control_values'].append({'key':key,'value':float(value),'state_matches':abs(actual-float(value))<1e-8})
+  if abs(actual-float(value))>1e-8:extended['failures'].append({'kind':'range-state','key':key})
+page.locator('[data-tab="fit"]').click()
+for key,values in [('bust',['70','130','92']),('waist',['50','120','72']),('hips',['75','140','98'])]:
+ for value in values:
+  el=page.locator('#input-'+key);set_range(el,value);actual=page.evaluate('(k)=>KR.state[k]',key);row={'key':key,'value':float(value),'state_matches':actual==float(value),'comparison_only':True};extended['control_values'].append(row)
+  if not row['state_matches']:extended['failures'].append({'kind':'fit-input','case':row})
+page.locator('#reset').click();box=page.locator('#canvas').bounding_box();x=box['x']+box['width']*.5;y=box['y']+box['height']*.5;old=page.evaluate('KR.camera.position.toArray()');page.mouse.move(x,y);page.mouse.down();page.mouse.move(x+100,y+15,steps=8);page.mouse.up();page.wait_for_timeout(150);new=page.evaluate('KR.camera.position.toArray()');extended['gestures'].append({'name':'mouse drag','changed':old!=new});old=page.evaluate('KR.camera.position.toArray()');page.mouse.wheel(0,-150);page.wait_for_timeout(200);new=page.evaluate('KR.camera.position.toArray()');extended['gestures'].append({'name':'wheel zoom','changed':old!=new})
+for row in extended['gestures']:
+ if not row['changed']:extended['failures'].append({'kind':'gesture','case':row})
+try:
+ page.set_viewport_size({'width':390,'height':844});page.wait_for_timeout(120);page.evaluate('KR.reset()');cd=page.context.new_cdp_session(page);cd.send('Emulation.setTouchEmulationEnabled',{'enabled':True,'maxTouchPoints':2});box=page.locator('#canvas').bounding_box();cx=box['x']+box['width']/2;cy=box['y']+box['height']/2;old=page.evaluate('KR.camera.position.toArray()')
+ def touch(distance):return [{'x':cx-distance,'y':cy,'id':0,'radiusX':2,'radiusY':2,'force':1},{'x':cx+distance,'y':cy,'id':1,'radiusX':2,'radiusY':2,'force':1}]
+ cd.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':touch(25)})
+ for dist in [30,35,40,45,50]:cd.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':touch(dist)});page.wait_for_timeout(30)
+ cd.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]});page.wait_for_timeout(150);new=page.evaluate('KR.camera.position.toArray()');row={'name':'two-finger pinch via CDP','changed':old!=new};extended['gestures'].append(row)
+ if not row['changed']:extended['failures'].append({'kind':'pinch','case':row})
+ cd.detach()
+except Exception as e:extended['failures'].append({'kind':'pinch-test','message':str(e)})
+page.set_viewport_size({'width':1280,'height':900});page.wait_for_timeout(100);page.locator('#reset').click();page.wait_for_timeout(80);restored=page.evaluate(GEOMETRY);extended['reset_geometry_restored']=restored==baseline
+if baseline!=restored:extended['failures'].append({'kind':'reset-geometry','names':[n for n in baseline if baseline[n]!=restored.get(n)]})
+for label,w,h in [('iphone_portrait',390,844),('iphone_landscape',844,390),('small_phone_landscape',667,375),('android_portrait',412,915),('android_landscape',915,412),('mac_size',1280,800),('pc_size',1536,864)]:
+ page.set_viewport_size({'width':w,'height':h});page.wait_for_timeout(120)
+ for mode in (['collapsed','half','full'] if h>w else ['collapsed']):
+  page.evaluate('(s)=>KR.setSheet(s)',mode);page.wait_for_timeout(80);result=page.evaluate("()=>{const a=document.getElementById('stage').getBoundingClientRect(),p=document.getElementById('panel').getBoundingClientRect();let overlap=Math.max(0,Math.min(a.right,p.right)-Math.max(a.left,p.left))*Math.max(0,Math.min(a.bottom,p.bottom)-Math.max(a.top,p.top));return {overlap,canvas:[a.width,a.height],panelBottom:p.bottom,viewport:[innerWidth,innerHeight],overflow:document.documentElement.scrollWidth>innerWidth+1};}");result.update(label=label,mode=mode);extended['layouts'].append(result)
+  if result['overlap']>.1 or min(result['canvas'])<1 or result['panelBottom']>h+1 or result['overflow']:extended['failures'].append({'kind':'layout','case':result})
+ page.evaluate('()=>{if(window.KR&&KR.ready)KR.renderer.render(KR.scene,KR.camera)}');page.screenshot(path=str(q/('layout-'+label+'.png')))
+page.set_viewport_size({'width':1280,'height':900});page.evaluate("KR.setSheet('collapsed');KR.reset()");page.wait_for_timeout(100)
+print('QA_PROGRESS starting 420 deterministic low-resolution non-shadow renders',flush=True)
+summary=page.evaluate("async()=>{const colors=['#777a7b','#28374d','#b7a58e'],sizes=['XS','S','S/M','M','M/L','L','XL'],poses=['neutral','fashion','hip','walk','three-quarter'],views=['front','side','back','free'];const result={count:0,errors:[],resolution:[160,240]};window.__suppressDraw=true;const oldShadows=KR.renderer.shadowMap.enabled;KR.renderer.shadowMap.enabled=false;KR.renderer.setPixelRatio(1);KR.renderer.setSize(160,240,false);KR.camera.aspect=2/3;KR.camera.updateProjectionMatrix();for(const s of sizes)for(const c of colors)for(const p of poses)for(const v of views){KR.change('size',s);KR.change('color',c);KR.change('pose',p);KR.view(v);KR.renderer.render(KR.scene,KR.camera);const gl=KR.renderer.getContext(),err=gl.getError();if(err)result.errors.push({s,c,p,v,webgl:err});let finite=true;KR.figure.traverse(o=>{if(o.matrixWorld.elements.some(x=>!Number.isFinite(x)))finite=false});if(!finite)result.errors.push({s,c,p,v,nonfinite:true});result.count++;}window.__suppressDraw=false;KR.renderer.shadowMap.enabled=oldShadows;KR.reset();return result;}");print('QA_PROGRESS render sweep done',summary['count'],flush=True);extended['rendered_combinations']=summary['count'];extended['render_sweep']=summary
+if summary['errors']:extended['failures'].extend(summary['errors'])
+page.set_viewport_size({'width':1281,'height':900});page.wait_for_timeout(80);page.set_viewport_size({'width':1280,'height':900});page.wait_for_timeout(80)
+try:
+ print('QA_PROGRESS GLB export',flush=True);page.locator('[data-tab="qa"]').click()
+ with page.expect_download(timeout=90000) as d:page.locator('#export').click()
+ out=q/'female-dressed-test.glb';d.value.save_as(str(out));raw=out.read_bytes();magic,version,length=struct.unpack_from('<4sII',raw);assert magic==b'glTF' and version==2 and length==len(raw);clen,ctype=struct.unpack_from('<II',raw,12);assert ctype==0x4e4f534a;model=json.loads(raw[20:20+clen]);assert len(model.get('skins',[]))>0;extended['export']={'passed':True,'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'skins':len(model['skins']),'meshes':len(model.get('meshes',[]))};result=page.evaluate("async()=>{const {GLTFLoader}=await import('./GLTFLoader.js');const g=await new GLTFLoader().loadAsync('./qa/female-dressed-test.glb');let meshes=0,skinned=0,valid=true;g.scene.updateMatrixWorld(true);g.scene.traverse(o=>{if(o.isMesh){meshes++;if(o.isSkinnedMesh)skinned++;if([...o.geometry.attributes.position.array].some(x=>!Number.isFinite(x)))valid=false;}});return {meshes,skinned,finite:valid};}");extended['reimport']=result
+ if not result['finite'] or not result['skinned']:extended['failures'].append({'kind':'reimport','result':result})
+except Exception as e:extended['export']={'passed':False,'error':str(e)};extended['failures'].append({'kind':'export','message':str(e)})
+page.close();extended['passed']=not extended['failures'];print('ACTUAL_EXTENDED_QA '+json.dumps(extended),flush=True)

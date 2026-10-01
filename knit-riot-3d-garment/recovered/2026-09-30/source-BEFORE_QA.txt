@@ -1,0 +1,22 @@
+import json,os,hashlib
+from pathlib import Path
+p=Path('public');f=p/'app.js';s=f.read_text()
+for old,new in json.loads(os.environ.get('FINAL_PATCHES','[]')):
+ if old not in s:raise RuntimeError('Visual refinement context missing: '+old[:100])
+ s=s.replace(old,new)
+s+='\n'+os.environ.get('REFINE_JS','');f.write_text(s)
+for name,changes in json.loads(os.environ.get('UI_GRAPHICS_PATCHES','{}')).items():
+ dest=p/name;text=dest.read_text()
+ for old,new in changes:
+  if old not in text:raise RuntimeError('UI/graphics patch missing: '+old[:100])
+  text=text.replace(old,new)
+ dest.write_text(text)
+f.write_text(f.read_text()+'\n'+os.environ.get('STUDIO_JS',''))
+for filename in ['RGBELoader.js','GLTFLoader.js']:
+ text=get('https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/loaders/'+filename).decode().replace('../utils/BufferGeometryUtils.js','./BufferGeometryUtils.js')
+ (p/filename).write_text(text)
+u='https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_08_1k.hdr';d=get(u)
+if hashlib.md5(d).hexdigest()!='de3ba64222895aca876b1d1c2e0cf81a':raise RuntimeError('Studio HDR checksum mismatch')
+(p/'assets/studio_small_08_1k.hdr').write_bytes(d)
+m=json.loads((p/'asset-manifest.json').read_text());m['sources'].append({'name':'Studio Small 08','author':'Sergej Majboroda / Poly Haven','license':'CC0','page':'https://polyhaven.com/a/studio_small_08','download':u,'sha256':hashlib.sha256(d).hexdigest()});m['files']['studio_small_08_1k.hdr']={'bytes':len(d),'sha256':hashlib.sha256(d).hexdigest()};(p/'asset-manifest.json').write_text(json.dumps(m,separators=(',',':')))
+a=p/'ATTRIBUTION.txt';a.write_text(a.read_text()+'\nStudio environment: Studio Small 08, Sergej Majboroda / Poly Haven, CC0. https://polyhaven.com/a/studio_small_08\nRendering material parameters and iris/rib patterns are artistic implementation settings, not measured human or fabric optics.\n')
