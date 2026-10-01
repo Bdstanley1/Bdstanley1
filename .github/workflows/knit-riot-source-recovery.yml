@@ -77,14 +77,16 @@ jobs:
                   destination.write_bytes(data)
           print('Recovered and verified',len(report['files']),'files; original profile README untouched')
           PY
-      - name: Commit source baseline only, without textures or customer data
+      - name: Persist verified synthetic fixture and dependency licenses
+        run: python knit-riot-3d-garment/tools/persist_fixture.py
+      - name: Commit immutable source and allow-listed fixture
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- knit-riot-3d-garment/recovered/2026-09-30
+          git add -- knit-riot-3d-garment/recovered/2026-09-30 knit-riot-3d-garment/fixtures/runtime
           if ! git diff --cached --quiet; then
-            git commit -m 'Archive verified existing Knit Riot implementation and provenance'
+            git commit -m 'Persist verified Knit Riot synthetic runtime fixture and provenance'
             git push origin HEAD:main
           fi
       - name: Archive licensed test fixture and actual render evidence
