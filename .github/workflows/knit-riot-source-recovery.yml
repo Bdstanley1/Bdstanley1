@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths: [.github/workflows/knit-riot-source-recovery.yml]
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: knit-riot-source-recovery
   cancel-in-progress: false
@@ -14,34 +14,38 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
-      - name: Recover existing public staging source without changing deployment
+      - uses: actions/checkout@v4
+      - name: Recover checksum-pinned staging baseline
         shell: bash
         run: |
           python - <<'PY'
-          import hashlib, io, json, pathlib, time, urllib.request, zipfile
+          import hashlib, io, json, pathlib, re, shutil, time, urllib.request, zipfile
           root = pathlib.Path('recovery')
           root.mkdir()
           url = 'https://knit-riot-studio-development.onrender.com/development-snapshot.zip'
+          expected = '141fe99b2fa7dfddd46469da2b00a50d7767be31741ad32dd9c3156c47f9b0bb'
           raw = None
           for attempt in range(3):
               try:
-                  request = urllib.request.Request(url, headers={'User-Agent': 'KnitRiot-source-recovery/1.0'})
-                  with urllib.request.urlopen(request, timeout=90) as response:
+                  with urllib.request.urlopen(url, timeout=90) as response:
                       raw = response.read(96 * 1024 * 1024 + 1)
-                  if len(raw) > 96 * 1024 * 1024:
-                      raise ValueError('Snapshot exceeds recovery size limit')
-                  if not zipfile.is_zipfile(io.BytesIO(raw)):
-                      raise ValueError('Staging did not return a ZIP archive')
+                  assert len(raw) <= 96 * 1024 * 1024
+                  assert hashlib.sha256(raw).hexdigest() == expected, 'Staging snapshot changed: review before import'
                   break
               except Exception:
                   if attempt == 2:
                       raise
                   time.sleep(10)
           keys = ['BUILD_BASE','BUILD_PY','BUILD_PATCHES','APP_JS','APP_HTML','APP_PATCHES','CLIP_JS','EXTRA_JS','AFTER_BUILD','BEFORE_QA','FINAL_PATCHES','REFINE_JS','UI_GRAPHICS_PATCHES','STUDIO_JS','EXTRA_BROWSER_QA','EFFECTIVE_BROWSER_QA']
-          allowed = {'source-' + key + '.txt' for key in keys}
-          allowed.update(['app.js','index.html','asset-manifest.json','ATTRIBUTION.txt','PROJECT_STATUS.json','qa/results.json','qa/index.html'])
-          report = {'snapshot_url':url, 'snapshot_sha256':hashlib.sha256(raw).hexdigest(), 'files':[], 'skipped':[]}
+          code = {'source-' + key + '.txt' for key in keys}
+          code.update(['app.js','index.html','asset-manifest.json','ATTRIBUTION.txt','PROJECT_STATUS.json'])
+          libs = {'three.module.js','OrbitControls.js','GLTFExporter.js','BufferGeometryUtils.js','THREE-LICENSE.txt','TextureUtils.js','RGBELoader.js','GLTFLoader.js'}
+          assets = {'assets/'+name for name in ['body.json','leye.json','reye.json','skin.png','hair.png','hair.json','studio_small_08_1k.hdr']}
+          allowed = code | libs | assets | {'qa/results.json','qa/index.html'}
+          report = {'snapshot_url':url,'snapshot_sha256':expected,'files':[],'skipped':[]}
           with zipfile.ZipFile(io.BytesIO(raw)) as archive:
+              assert sum(x.file_size for x in archive.infolist()) < 128 * 1024 * 1024
+              manifest = json.loads(archive.read('asset-manifest.json'))
               for item in archive.infolist():
                   path = pathlib.PurePosixPath(item.filename)
                   if path.is_absolute() or '..' in path.parts or item.file_size > 32 * 1024 * 1024:
@@ -51,19 +55,42 @@ jobs:
                       report['skipped'].append(name)
                       continue
                   data = archive.read(item)
+                  digest = hashlib.sha256(data).hexdigest()
+                  if name in assets:
+                      assert digest == manifest['files'][path.name]['sha256'], 'Asset checksum mismatch'
+                  if name in code:
+                      text = data.decode('utf-8')
+                      assert not re.search(r'github_pat_[A-Za-z0-9_]+|gh[pousr]_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{25,}|BEGIN [A-Z ]*PRIVATE KEY', text), 'Potential credential in source'
                   target = root / path
                   target.parent.mkdir(parents=True, exist_ok=True)
                   target.write_bytes(data)
-                  report['files'].append({'path':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+                  report['files'].append({'path':name,'bytes':len(data),'sha256':digest})
           (root/'RECOVERY_MANIFEST.json').write_text(json.dumps(report, indent=2))
-          assert (root/'app.js').exists(), 'Missing implemented application source'
-          assert (root/'source-BUILD_BASE.txt').exists(), 'Missing build source'
-          print(json.dumps(report, indent=2))
+          baseline = pathlib.Path('knit-riot-3d-garment/recovered/2026-09-30')
+          baseline.mkdir(parents=True, exist_ok=True)
+          for name in sorted(code | {'RECOVERY_MANIFEST.json'}):
+              destination = baseline / name
+              data = (root/name).read_bytes()
+              if destination.exists():
+                  assert destination.read_bytes() == data, 'Refusing to overwrite baseline'
+              else:
+                  destination.write_bytes(data)
+          print('Recovered and verified',len(report['files']),'files; original profile README untouched')
           PY
-      - name: Archive source and existing synthetic render evidence
+      - name: Commit source baseline only, without textures or customer data
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- knit-riot-3d-garment/recovered/2026-09-30
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive verified existing Knit Riot implementation and provenance'
+            git push origin HEAD:main
+          fi
+      - name: Archive licensed test fixture and actual render evidence
         uses: actions/upload-artifact@v4
         with:
-          name: knit-riot-staging-source-recovery
+          name: knit-riot-staging-runtime-recovery
           path: recovery/
           if-no-files-found: error
           retention-days: 3
