@@ -1,0 +1,17 @@
+[
+  {
+    "name": "camera preset API validates and synchronizes visible controls",
+    "before": "view(v){state.view=v;reframe()}",
+    "after": "view(v){if(!['front','side','back','free'].includes(v))throw Error('Unknown camera preset');state.view=v;reframe();updateUI();draw()}"
+  },
+  {
+    "name": "export UI reports failure and restores the button",
+    "before": "$('export').onclick=exportGLB;",
+    "after": "$('export').onclick=async()=>{const b=$('export');b.disabled=true;$('qaResult').setAttribute('aria-live','polite');try{await exportGLB();$('qaResult').textContent='Dressed development model exported. Physical fit is not validated.'}catch(e){$('qaResult').textContent='Export could not finish: '+e.message}finally{b.disabled=false}};"
+  },
+  {
+    "name": "export asset provenance and explicit validation limits",
+    "before": "let blob=await new GLTFExporter().parseAsync(figure,{binary:true,onlyVisible:true});",
+    "after": "figure.userData.KnitRiot={status:'Development fixture; not a customer scan; physical garment fit not validated',attribution:[{asset:'Anatomy, rig, weights and shape targets',author:'MakeHuman Community / NAVER Anny distribution',license:'CC0 data',source:'https://github.com/naver/anny'},{asset:'Light female skin with natural makeup',author:'MargaretToigo',license:'CC0',source:'https://static.makehumancommunity.org/assets/assetpacks/skins01.html'},{asset:'Ashley May hair, adapted through MakeClothes mapping',author:'Elvaerwyn',license:'CC-BY',source:'https://static.makehumancommunity.org/assets/assetpacks/hair02.html'}]};let blob=await new GLTFExporter().parseAsync(figure,{binary:true,onlyVisible:true});"
+  }
+]
