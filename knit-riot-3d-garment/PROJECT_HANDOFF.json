@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "owner": "interactive autonomous continuation September 30",
+  "acquired_at_utc": "2026-10-01T01:24:21Z",
+  "lease_until_utc": "2026-10-01T02:24:21Z",
+  "project_repository": "Bdstanley1/Bdstanley1",
+  "project_path": "knit-riot-3d-garment",
+  "candidate_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
+  "candidate_app_sha256": "2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218",
+  "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
+  "render": {
+    "workspace_id": "tea-dastcbd9fdbs73f0nrpg",
+    "service_id": "srv-daudsoegekts73e2u1d0",
+    "url": "https://knit-riot-studio-development.onrender.com",
+    "candidate_deploy_id": "dep-daurcmg473hc73cb9ljg",
+    "candidate_status": "build_in_progress",
+    "previous_live_deploy_id": "dep-dauq3hs9v7es73ahg1c0",
+    "preserved_v09b_service": "srv-datindfavr4c73dn25g0",
+    "v09b_release_approved": false
+  },
+  "build_pipeline": {
+    "bootstrap": "deployment/render_bootstrap.py stored verbatim in Render BUILD_PY",
+    "entrypoint": "tools/render_build.py",
+    "common_builder": "tools/build_runtime.py",
+    "test_runner": "tools/render_test.py",
+    "fixture": "fixtures/runtime with mandatory checksum verification",
+    "legacy_environment_sources": "retained for rollback and provenance; not the active assembly pipeline",
+    "deployment_guard": "pinned project commit, expected assembled app SHA, successful actual-render regression before publishing"
+  },
+  "ci": {
+    "run_id": "36799792982",
+    "conclusion": "success",
+    "tested_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
+    "app_sha256": "2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218",
+    "errors": [],
+    "capture_errors": [],
+    "selection_grid_rendered": 420,
+    "appearance_pairwise_cases": 31,
+    "appearance_value_pairs_covered": 284,
+    "layout_states": 11,
+    "emulated_viewports": 7,
+    "glb_compared_deformed_vertices": 58961,
+    "glb_maximum_world_deviation_metres": 0.0000016971415172588268,
+    "actual_glb_reload_views_archived": true,
+    "load_failure_and_export_failure_recovery": "passed",
+    "playwright": "1.63.0",
+    "pillow": "12.3.0",
+    "chromium": "153.0.8010.12",
+    "physical_hardware_tested": false,
+    "evidence": "validation/latest/PROVENANCE.json, results.json, lossless full render atlases and native review images"
+  },
+  "implemented_this_session": [
+    "Recovered and checksum-verified actual existing application, build sources and licensed runtime fixture; committed a durable source baseline",
+    "Repaired vest shoulder coverage and removed anatomical chest spikes through source-welded garment-only smoothing and a continuous front envelope",
+    "Unblocked and completed actual 420-render sweep, then added 31 pairwise appearance renders covering all 284 value pairs",
+    "Verified real GLB export, reload, deformed geometry and actual re-rendered views; embedded attribution and explicit non-validation metadata",
+    "Added visible exporter failure recovery and reliable camera-control synchronization",
+    "Created a shared offline builder, pinned test dependencies, durable pixel evidence and guarded staging publication pipeline",
+    "Updated the existing staging service with the pinned repository bootstrap; deployment currently in progress"
+  ],
+  "next_actions": [
+    "Read candidate Render deploy and actual build logs; repair any genuine build/test error without weakening assertions",
+    "After live deployment, verify delivered app hash, current QA report, actual screenshots and source archive; update this handoff and checkpoint",
+    "Continue lifelike face/eye/hair and hand/footwear improvements plus garment edges/clipping/attachment across all poses",
+    "Finish measurement-matched body geometry, garment-size grading/ease, provenance-backed cloth/material tests, safe customer profiles/imports, catalog reuse and authorized Shopify handoff"
+  ],
+  "release_status": "HOLD",
+  "visual_realism_approved": false,
+  "physical_garment_fit_validated": false,
+  "size_bust_waist_hips_geometry": "not yet implemented; comparison inputs only",
+  "safety": "No purchases, new paid tiers/assets, new services, production-store writes or customer-photo publication/transmission. Root profile README remains unchanged. Preserve all approved scope.",
+  "autonomy": "Continue real build/test/inspect/repair work without routine questions. Notify only meaningful validated milestones, actual external blockers or completion. Existing continuation task should be re-enabled once staging pipeline verification finishes."
+}
