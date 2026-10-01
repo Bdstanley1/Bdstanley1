@@ -1,0 +1,64 @@
+{
+  "delivery_verified": true,
+  "verified_at_utc": "2026-10-01T01:35:30.778323+00:00",
+  "workflow_run_id": "36801813251",
+  "url": "https://knit-riot-studio-development.onrender.com/",
+  "project_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
+  "app_sha256": "2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218",
+  "build_report": {
+    "project_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
+    "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
+    "baseline_app_sha256": "f70251a7a078a6e532ea80e3ab97374fa839bda9a79c3ff781dcc7ddf79f7901",
+    "app_sha256": "2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218",
+    "verified_fixture_files": 17,
+    "fixture_manifest_sha256": "075be2731e72f99534e10c229bffb6aa4376c80ab71bd561851f2a6ef66bb71b",
+    "release_status": "HOLD",
+    "visual_gate": "NOT_APPROVED",
+    "physical_fit": "NOT_VALIDATED"
+  },
+  "qa_execution": "completed",
+  "rendered_selection_cases": 420,
+  "appearance_pairwise_cases": 31,
+  "appearance_value_pairs": 284,
+  "glb_geometry_roundtrip": {
+    "meshes": 18,
+    "checkedSkinnedVertices": 58961,
+    "maxWorldDeviationMetres": 1.6971415172588268e-06,
+    "missing": [],
+    "bad": [],
+    "passed": true,
+    "appearance": "Actual front/side/back/detail reload renders archived; visual approval remains separate."
+  },
+  "verified_delivered_assets": [
+    "body.json",
+    "leye.json",
+    "reye.json",
+    "skin.png",
+    "hair.png",
+    "hair.json",
+    "studio_small_08_1k.hdr"
+  ],
+  "source_archive_sha256": "ec8dfad72e31a13bed69a6057ca58d6972032ba144cb59bb0213104062f8ae0e",
+  "source_archive_bytes": 31518484,
+  "actual_render_images": [
+    {
+      "path": "qa/desktop-detail.png",
+      "bytes": 339238,
+      "sha256": "e1a6f588fe54dcb3396fa14d943e3a889687d8363f0068db8dc9a2a291698ca9"
+    },
+    {
+      "path": "qa/phone-neutral-front.png",
+      "bytes": 85448,
+      "sha256": "f948b3bfabe7142befc66053f896e470842d2376f9948504eb7cb31accf010ec"
+    },
+    {
+      "path": "qa/glb-reloaded-detail.png",
+      "bytes": 366114,
+      "sha256": "228a8f178694dceb71e7636fee3b5343aff76b79965f82beb5a1f3084d416215"
+    }
+  ],
+  "release_status": "HOLD",
+  "visual_realism_approved": false,
+  "physical_fit_validated": false,
+  "physical_hardware_tested": false
+}
