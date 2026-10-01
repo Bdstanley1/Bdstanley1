@@ -28,5 +28,10 @@
     "name": "refine sclera and iris proportions",
     "before": "placeSphere('Eye white '+i,e.center,e.radius*.84,'#d8d1bf',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.31,'#49311e',where,[1,1,.2]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.13,'#161313',where,[1,1,.2]);",
     "after": "placeSphere('Eye white '+i,e.center,e.radius*.84,'#ece7dd',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.29,'#49311e',where,[1,1,.18]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.12,'#161313',where,[1,1,.18]);"
+  },
+  {
+    "name": "taper vest armhole to remove posed underarm flap",
+    "before": "const fields=[(x,y,z)=>y-H*.553,(x,y,z)=>H*.847-y,(x,y,z)=>{let h=y/H;return (h<.724?.218:.218-(h-.724)*.54)-Math.abs(x)},(x,y,z)=>{const h=y/H,ax=Math.abs(x);return H*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y}];let vg=clipSubset(refineTextileSurface(m),fields,.013);",
+    "after": "const fields=[(x,y,z)=>y-H*.553,(x,y,z)=>H*.847-y,(x,y,z)=>{let h=y/H;const side=h<.65?.218:h<.724?.218-(h-.65)/.074*.033:.185-(h-.724)*.25;return side-Math.abs(x)},(x,y,z)=>{const h=y/H,ax=Math.abs(x);return H*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y}];let vg=clipSubset(refineTextileSurface(m),fields,.013);"
   }
 ]
