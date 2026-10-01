@@ -1,7 +1,7 @@
 {
-  "tested_commit": "54e882c35e5e0e1c16ebfd5e66ec22aa8948b6e1",
-  "workflow_run_id": "36847671411",
-  "app_sha256": "4bade1b66b8dc773cf5131c11502f00872aaa7083f64e48e57476f3a82d9f1bd",
+  "tested_commit": "3f7e0ddc394569c3aca2d44d494af8a6d23b5bca",
+  "workflow_run_id": "36848306190",
+  "app_sha256": "42d43240f3ea4460bf39fdac976614c02d49e1b50b19483602d22feea22f63e3",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -9,13 +9,13 @@
   "files": [
     {
       "path": "all-420-rendered-cases.png",
-      "sha256": "82da6d1259da1095ac8a48eacd00bee1f2f829024252ff8984fb9473d21825bb",
-      "bytes": 2827148
+      "sha256": "8050951c833a3a5472ef8512cd7955d2e0988b4cb7ddaee948f6ba01d57acd46",
+      "bytes": 2836936
     },
     {
       "path": "appearance-pairwise-rendered.png",
-      "sha256": "0598cd93f3cac19d7601dfda444c1bbec4053a1b64c23f1706201caabd2a1337",
-      "bytes": 600956
+      "sha256": "271c1ed52f022c93a3bbc9c6e5c0d5f9cb426b797d080750e3c7942edf1fdb69",
+      "bytes": 599191
     },
     {
       "path": "desktop-detail.png",
@@ -24,33 +24,43 @@
     },
     {
       "path": "desktop-hip-front.png",
-      "sha256": "b04e37e12610d7cbb99805b356abebfd5dd71ff620ef23cbdd26ae0e4285ba77",
-      "bytes": 168046
+      "sha256": "95ebb8236c44958bbbdbbdde2a083c1c738793dc0646e8942efa75958ffe1e31",
+      "bytes": 167711
     },
     {
       "path": "desktop-neutral-back.png",
-      "sha256": "16f509e9325ee389303436c75fef65c33defdfd1df885f9fa9a10c75f9078f89",
-      "bytes": 149528
+      "sha256": "69b90a06833a6691a589e0fc9b249ec81b43aa2b89a98f69a4dd8f0a3654a99d",
+      "bytes": 148987
     },
     {
       "path": "desktop-neutral-front.png",
-      "sha256": "02aab9bbc82426552df29c10655912f18d5133a52e989b4036b20b028379180c",
-      "bytes": 165331
+      "sha256": "ec9276d7875737207dd9e82cbe8472faf72d31f94fb08a1d1e00453fb6627387",
+      "bytes": 164992
     },
     {
       "path": "desktop-neutral-side.png",
-      "sha256": "9f0d4f51f8429b2abd645d5870fa557db213e522b274cbe9f4023c2dc408d4f1",
-      "bytes": 134394
+      "sha256": "b69c273161c2094b1f41edccb24b8d5c697efa290b5ebfbfe2b76d88007d29f5",
+      "bytes": 132923
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "0b90801892ffb240da9f6b58d47c0075581bcd4b90c60bf09cf1a2e1434013bf",
-      "bytes": 71151
+      "sha256": "e9df93c0b79a6ae13e024bc44b85a42458811184cd13b6fbfac5d532d14478df",
+      "bytes": 71150
+    },
+    {
+      "path": "footwear-barefoot.png",
+      "sha256": "ba345a67d4b7dad23643352a0d80f9c6894d1dd6c6855190ca578c944ae1d45b",
+      "bytes": 143448
+    },
+    {
+      "path": "footwear-slip-ons.png",
+      "sha256": "6b86e4189778dd7c9900cf3bad45d91f674aa128e8d1a09d8b1bae3e170a89f9",
+      "bytes": 142008
     },
     {
       "path": "glb-original.png",
-      "sha256": "8af3c80189363e7a72b3e9b53fcb4f173374d3452a2ae89e36be47fb8b18d921",
-      "bytes": 142799
+      "sha256": "6b86e4189778dd7c9900cf3bad45d91f674aa128e8d1a09d8b1bae3e170a89f9",
+      "bytes": 142008
     },
     {
       "path": "glb-reloaded-detail.png",
@@ -59,18 +69,18 @@
     },
     {
       "path": "glb-reloaded-front.png",
-      "sha256": "685c1a1fe52fc7a6cf1a3792d6d0f68b07231ef35c66c5184ef8eaae73c73b64",
-      "bytes": 139584
+      "sha256": "4d59b5364bed42eb1861cac388d1a72d627e5c0f3d7423defd6645c2afde9f16",
+      "bytes": 138932
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "2edd7601491d7dbbdbf043a2dae78ccd1b1c5a525fb9723a6b02de060ee167f1",
-      "bytes": 87525
+      "sha256": "41d17a503863afba14827025379019093dd6735def60e8a9536250e8e67a8d20",
+      "bytes": 87331
     },
     {
       "path": "results.json",
-      "sha256": "c29262f9f26e51398a5bb283bb386c73e0e5fa390b3ef67c807d307838112b84",
-      "bytes": 206827
+      "sha256": "fa56a2e7b0afabb6c87d2f85f1fce9c7fcabba02e259631e9671a8708423c4b6",
+      "bytes": 206890
     }
   ]
 }
