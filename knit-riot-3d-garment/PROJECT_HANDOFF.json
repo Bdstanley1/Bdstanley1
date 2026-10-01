@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "owner": "interactive autonomous continuation October 1",
-  "acquired_at_utc": "2026-10-01T05:12:00Z",
-  "lease_until_utc": "2026-10-01T06:12:00Z",
-  "session_result": "ACTIVE: deploying CI-validated zoom/hair/eye candidate to existing staging and verifying delivered bytes/renders",
+  "acquired_at_utc": "2026-10-01T07:58:00Z",
+  "lease_until_utc": "2026-10-01T08:58:00Z",
+  "session_result": "ACTIVE: autonomous invariants persisted; residual armhole source/coverage repairs passed actual CI; continuing visual realism work and staging publication when guard passes",
   "project_repository": "Bdstanley1/Bdstanley1",
   "project_path": "knit-riot-3d-garment",
-  "validated_code_commit": "a51318a74116e0ea39793db1cdc8d88ee69f0e43",
-  "app_sha256": "98208623b0eb20fe359b2371a37da8b81da33409357dec61d053ab892432a876",
+  "validated_code_commit": "cb1cdb649a57d96adcf63e87aa03b18cf2780542",
+  "app_sha256": "086f3db049759c6ffe4e99200a4987d9e87b76391dc8abe4185fd11166195cc1",
   "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
   "render": {
     "workspace_id": "tea-dastcbd9fdbs73f0nrpg",
@@ -57,10 +57,10 @@
     "env_update_triggers_deploy": true
   },
   "ci": {
-    "run_id": "36816427385",
+    "run_id": "36832113930",
     "conclusion": "success",
-    "tested_commit": "a51318a74116e0ea39793db1cdc8d88ee69f0e43",
-    "app_sha256": "98208623b0eb20fe359b2371a37da8b81da33409357dec61d053ab892432a876",
+    "tested_commit": "cb1cdb649a57d96adcf63e87aa03b18cf2780542",
+    "app_sha256": "086f3db049759c6ffe4e99200a4987d9e87b76391dc8abe4185fd11166195cc1",
     "errors": [],
     "capture_errors": [],
     "selection_grid_rendered": 420,
@@ -89,10 +89,9 @@
     "Enabled the existing hourly autonomous implementation task with the actual working source/test/deployment path and full remaining scope"
   ],
   "next_actions": [
-    "Continue residual armhole/binding repair until actual rendered inspection shows that defect cleared",
-    "Then continue hands, footwear, face/hair/skin realism and pose-specific garment attachment/clipping",
-    "Continue measurement-driven body geometry and garment grading/ease without claiming physical fit validation",
-    "Deploy validated candidates to existing Render staging whenever required lease/checkpoint writes are available; deployment blocking must not stop independent source/CI work"
+    "Deploy exact cb1cdb candidate to existing staging and verify delivered bytes/renders",
+    "Continue face/hair/hands/footwear realism and garment edge review using actual rendered evidence",
+    "Continue measurement-driven body geometry and garment grading/ease without claiming physical fit validation"
   ],
   "appearance_evidence_limits": "Inspected delivered front/detail and prior pose/GLB renders confirm the specific garment repair, not overall realism. The woman still falls below the lifelike-reference requirement. Pairwise coverage is not exhaustive appearance coverage. Emulated hardware is not real device testing.",
   "release_status": "HOLD",
