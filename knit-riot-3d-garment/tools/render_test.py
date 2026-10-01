@@ -68,6 +68,15 @@ try:
             page.on('pageerror',lambda error:checks['errors'].append(str(error)))
             page.goto('http://127.0.0.1:8719/',wait_until='networkidle',timeout=60000)
             page.wait_for_function('window.KR && KR.ready',timeout=40000)
+            if label=='desktop':
+                labels=page.evaluate("()=>({zin:document.getElementById('zoomIn').textContent,zout:document.getElementById('zoomOut').textContent})")
+                if labels!={'zin':'+','zout':'-'}:checks['errors'].append('Zoom controls are not using font-independent ASCII labels')
+                distance0=page.evaluate('KR.camera.position.distanceTo(KR.orbit.target)')
+                page.locator('#zoomIn').click();distance1=page.evaluate('KR.camera.position.distanceTo(KR.orbit.target)')
+                page.locator('#zoomOut').click();distance2=page.evaluate('KR.camera.position.distanceTo(KR.orbit.target)')
+                checks['zoom_controls']={'labels':labels,'initial_distance':distance0,'after_zoom_in':distance1,'after_zoom_out':distance2,'rendered_label_check':True}
+                if not (distance1 < distance0 and distance2 > distance1):checks['errors'].append('Zoom controls did not change camera distance in the required directions')
+                page.evaluate('KR.reset();KR.view("front")')
             for pose in ['neutral','fashion','hip','walk','three-quarter']:
                 for view in ['front','side','back']:
                     page.evaluate('([p,v])=>{KR.change("pose",p);KR.view(v)}',[pose,view])
