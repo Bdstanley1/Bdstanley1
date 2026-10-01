@@ -14,6 +14,11 @@ After correcting anything, inspect the actual result and advance immediately to 
 
 **KNOWN_DEFECT_RULE:** Identifying a correctable defect is not completion; reporting it does not discharge the implementation task.
 
+### End-of-run invariant
+Before ending any interactive or scheduled execution, determine whether another independent implementation action can be performed with the tools currently available. If yes, perform it. Repeat this check after every action. An active interactive chat with working implementation tools takes precedence over waiting for the next scheduled automation. Do not voluntarily leave usable execution time idle while actionable project work remains.
+
+The hourly automation is a recovery/watchdog mechanism, not a reason to stop an active execution. Durable GitHub checkpoints must make every new execution resumable without owner prompting.
+
 A **genuine blocker** exists only when the blocked operation cannot proceed, all useful independent work has been exhausted, and owner action or a genuinely unavailable external dependency is required. Contact the owner only for a meaningful validated milestone with no immediately identified correction remaining in that milestone, such a genuine blocker, cancellation, or completion.
 
 ## Ownership and preserved services
