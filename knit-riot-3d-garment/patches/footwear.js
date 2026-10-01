@@ -57,7 +57,7 @@
 
     const upperShape=outline(w*.955,l*.945);
     const opening=new T.Path();
-    opening.absellipse(0,l*.17,w*.72,l*.245,0,Math.PI*2,false,0);
+    opening.absellipse(0,l*.055,w*.68,l*.19,0,Math.PI*2,false,0);
     upperShape.holes.push(opening);
     const upperH=H*.046,upperBase=bottom+soleH*.64;
     const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0013,bevelSize:H*.0015});
