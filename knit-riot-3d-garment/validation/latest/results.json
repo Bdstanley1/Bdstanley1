@@ -498,7 +498,7 @@
   ],
   "app_sha256": "2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218",
   "build_report": {
-    "project_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
+    "project_commit": "0e35cba90a7492d47b5ae2105b1173f2d5921441",
     "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
     "baseline_app_sha256": "f70251a7a078a6e532ea80e3ab97374fa839bda9a79c3ff781dcc7ddf79f7901",
     "app_sha256": "2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218",
@@ -513,6 +513,16 @@
     "Pillow": "12.3.0"
   },
   "browser_version": "153.0.8010.12",
+  "zoom_controls": {
+    "labels": {
+      "zin": "+",
+      "zout": "-"
+    },
+    "initial_distance": 3.8246029465297853,
+    "after_zoom_in": 3.2855957178229946,
+    "after_zoom_out": 3.7740842027178876,
+    "rendered_label_check": true
+  },
   "extended": {
     "control_values": [
       {
@@ -6526,7 +6536,7 @@
     "export": {
       "passed": true,
       "bytes": 11747768,
-      "sha256": "4b35a26814cc6d233ab8f3d629bddd0608d44fb9680c58d4a8f9a37d582c401b",
+      "sha256": "f483b33b83834436b6249b6a03e66340d6f56c1abd44da187f501eb59cd4fa24",
       "skins": 18,
       "meshes": 18
     },

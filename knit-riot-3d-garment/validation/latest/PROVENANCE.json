@@ -1,6 +1,6 @@
 {
-  "tested_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
-  "workflow_run_id": "36799792982",
+  "tested_commit": "0e35cba90a7492d47b5ae2105b1173f2d5921441",
+  "workflow_run_id": "36814520697",
   "app_sha256": "2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218",
   "release_status": "HOLD",
   "visual_approval": false,
@@ -19,32 +19,32 @@
     },
     {
       "path": "desktop-detail.png",
-      "sha256": "e1215cd9f62db93f20094eb30cc3890ca2d61324089d664b6c7f063da4c9d463",
-      "bytes": 344167
+      "sha256": "59547469aa65e798625988386adfe43aa6193d0ece50c60952bac4556b6db534",
+      "bytes": 344210
     },
     {
       "path": "desktop-hip-front.png",
-      "sha256": "f8315bf1dbe0df340195060a24e179d6fa6b0182e415405208e8c207016392c6",
-      "bytes": 168234
+      "sha256": "c786dde94b4af78fcbeef8f28ec12ef1399948e56cae4825cd9de1b3038e5af5",
+      "bytes": 168264
     },
     {
       "path": "desktop-neutral-back.png",
-      "sha256": "fe45910d8738bd8a57894a9ad5d567548a4a7cd2d94845dee2179df8a37ed6e0",
-      "bytes": 147982
+      "sha256": "06019391c23702e785d157a9fba55aad305ae920c62d0beb132cf5eabd2ac29b",
+      "bytes": 148142
     },
     {
       "path": "desktop-neutral-front.png",
-      "sha256": "1c68f31cd3c4d6b1212b12d7b2647683fcd028910cb4787ff1c3d1df8ea99178",
-      "bytes": 165392
+      "sha256": "11820e379d215ebcadcc1af91ce93c38d4ebcbbf57d83dc5e25d43a72cfca092",
+      "bytes": 165423
     },
     {
       "path": "desktop-neutral-side.png",
-      "sha256": "5547fa51cc94862da3b3bd791b1acd286f4a223ae2aa6903b4bd40d3cb8f108b",
-      "bytes": 133028
+      "sha256": "fa45a1f7a26c0d39d9a05ac3a663dfcfead9cfa871117ef49e3d89c175ea692e",
+      "bytes": 133150
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "9cd102b3d5817eaee0eda41f864b69c533d977fd63f3890071dad541fcb8f3c1",
+      "sha256": "c1948f06b5d005f6d4e230442bcac958ef63d4c6ccfa3559c13aa0f885997314",
       "bytes": 70855
     },
     {
@@ -64,13 +64,13 @@
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "8b78360a640c790621418533cdeed7dbfda752aaec00a4997318ccb9b8dc60b1",
-      "bytes": 87315
+      "sha256": "c53effd9860f2208e899c9659117df0fd46d099c5f5247c10ff33c38af59275e",
+      "bytes": 87329
     },
     {
       "path": "results.json",
-      "sha256": "5e9d83b868b71dc85fe0ff55f0a329571a4aba7cd412e9cc67ce332fbacc2e05",
-      "bytes": 206540
+      "sha256": "f8cca7a7c56d11f8d4be8547ebdaf40c1012e7e3c1c539dd379d0cee2e7d2d63",
+      "bytes": 206785
     }
   ]
 }
