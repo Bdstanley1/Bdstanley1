@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "owner": "interactive autonomous continuation October 1",
-  "acquired_at_utc": "2026-10-01T03:29:00Z",
-  "lease_until_utc": "2026-10-01T04:29:00Z",
-  "session_result": "ACTIVE: owner granted ongoing GitHub configuration permission; implementing zoom glyph repair and continuing visual QA",
+  "acquired_at_utc": "2026-10-01T05:12:00Z",
+  "lease_until_utc": "2026-10-01T06:12:00Z",
+  "session_result": "ACTIVE: deploying CI-validated zoom/hair/eye candidate to existing staging and verifying delivered bytes/renders",
   "project_repository": "Bdstanley1/Bdstanley1",
   "project_path": "knit-riot-3d-garment",
-  "validated_code_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
-  "app_sha256": "2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218",
+  "validated_code_commit": "a51318a74116e0ea39793db1cdc8d88ee69f0e43",
+  "app_sha256": "98208623b0eb20fe359b2371a37da8b81da33409357dec61d053ab892432a876",
   "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
   "render": {
     "workspace_id": "tea-dastcbd9fdbs73f0nrpg",
@@ -57,10 +57,10 @@
     "env_update_triggers_deploy": true
   },
   "ci": {
-    "run_id": "36799792982",
+    "run_id": "36816427385",
     "conclusion": "success",
-    "tested_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
-    "app_sha256": "2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218",
+    "tested_commit": "a51318a74116e0ea39793db1cdc8d88ee69f0e43",
+    "app_sha256": "98208623b0eb20fe359b2371a37da8b81da33409357dec61d053ab892432a876",
     "errors": [],
     "capture_errors": [],
     "selection_grid_rendered": 420,
@@ -89,10 +89,9 @@
     "Enabled the existing hourly autonomous implementation task with the actual working source/test/deployment path and full remaining scope"
   ],
   "next_actions": [
-    "Replace font-dependent zoom glyph labels with ASCII + and - while preserving zoom behavior; assert rendered labels and camera-distance change",
-    "Continue lifelike face/eye/hair and hand/footwear improvements plus garment edges/clipping/attachment across all poses",
-    "Verify and integrate licensed Ashley May hair normal map if source/checksum/license pass",
-    "Continue measurement-driven geometry and garment grading/ease pipeline without claiming physical fit validation"
+    "Deploy exact validated candidate to existing staging and verify actual delivered app/QA/source archive",
+    "Continue lifelike face/hair/hands/footwear and garment edge/clipping improvements after delivered candidate verification",
+    "Continue measurement-driven body geometry and garment grading/ease without claiming physical fit validation"
   ],
   "appearance_evidence_limits": "Inspected delivered front/detail and prior pose/GLB renders confirm the specific garment repair, not overall realism. The woman still falls below the lifelike-reference requirement. Pairwise coverage is not exhaustive appearance coverage. Emulated hardware is not real device testing.",
   "release_status": "HOLD",
