@@ -14,8 +14,8 @@
   const upper=new T.Color('#f2efe9'),sole=new T.Color('#cbc8c1');
   const material=new T.MeshPhysicalMaterial({vertexColors:true,roughness:.56,metalness:0,clearcoat:.08,clearcoatRoughness:.42});
   for(const [side,b] of bounds.entries()){
-    const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2,rx=(b.x1-b.x0)*.61,rz=(b.z1-b.z0)*.57;
-    const bottom=Math.max(0,b.y0+H*.001),ry=H*.029,cy=bottom+ry;
+    const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2,rx=(b.x1-b.x0)*.54,rz=(b.z1-b.z0)*.54;
+    const bottom=b.y0-H*.004,ry=H*.020,cy=bottom+ry;
     const g=new T.SphereGeometry(1,36,22),p=g.attributes.position;
     for(let i=0;i<p.count;i++){
       const ux=p.getX(i),uy=p.getY(i),uz=p.getZ(i);
