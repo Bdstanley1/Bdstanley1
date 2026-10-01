@@ -1,7 +1,7 @@
 {
-  "tested_commit": "fb6db3bce62cbd26073e7b9b609891f190c319bb",
-  "workflow_run_id": "36923837281",
-  "app_sha256": "9f6b74c2e9884ca6763d001bd11d20036ab84a25eb09902c509d50d78e6d68cb",
+  "tested_commit": "e1f85a31809c553cc5c3e8aaa67d29d1930a0ff8",
+  "workflow_run_id": "36933292907",
+  "app_sha256": "5911d8c26b2bea033a40d57e54123e09a60b726092e6486f177cf25b09e71584",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -9,13 +9,13 @@
   "files": [
     {
       "path": "all-420-rendered-cases.png",
-      "sha256": "a74c547cbd1b017d1329c1cd63fe83ff195b0b23477397aa774091361133cec1",
-      "bytes": 2828329
+      "sha256": "b9cc52d41b7c46bb47d99079cab88e47f27b9027299a42cbc682f9ec3e721273",
+      "bytes": 2837647
     },
     {
       "path": "appearance-pairwise-rendered.png",
-      "sha256": "be66dff688ffbabc18953539caec144a367f1a1fcb62e0c1fe45383b25cfb498",
-      "bytes": 596691
+      "sha256": "688841ca409db09543f2f357483de7ecaf29f6ca47d83f76ea819d155f6fc951",
+      "bytes": 598167
     },
     {
       "path": "desktop-detail.png",
@@ -24,28 +24,33 @@
     },
     {
       "path": "desktop-hip-front.png",
-      "sha256": "c7dbb6d26ca61943ac2cab978fb31b3bd79f871b2c793f227c09e7cc177b8b75",
-      "bytes": 167563
+      "sha256": "423c7b20f5996ab931154fc320cee9086f8fabc9e65768227d9f21e13e028148",
+      "bytes": 167845
     },
     {
       "path": "desktop-neutral-back.png",
-      "sha256": "d04c8ff6e19a148ba5c9e6d0f17897f07bc8cc0734b0915dc02d06476c70ad11",
-      "bytes": 148700
+      "sha256": "eacf8a60c89c2ee6671de39b369962ceca69e532bdfa9d992ee79f6f807a8900",
+      "bytes": 149144
     },
     {
       "path": "desktop-neutral-front.png",
-      "sha256": "c79a62f5094478532b5e56796e1a16f563f4fd3953dd8afe907b90cb1db37440",
-      "bytes": 164902
+      "sha256": "694a66b173c57891e029b449ece9f0e59c926f2d2e978f67e18eb653ddffb6e8",
+      "bytes": 165178
     },
     {
       "path": "desktop-neutral-side.png",
-      "sha256": "4b99b4dfea9f560c5f1529b5286f9856f97c3f5b5c02786e1bbde4007edd3a76",
-      "bytes": 132791
+      "sha256": "23fd91795cbbbfed0739421e4744328e0f7b6fa08ab4cadf846009bcd8dba2ff",
+      "bytes": 133667
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "7756ed35fb0bf417dd6374330dd2d36d5bacbf1117676679834e1f0370d6f498",
-      "bytes": 71150
+      "sha256": "3ffb2c2ac63b6eed4a5d1a18aca3d60e8d2dcd65439508cc79de1cc1e542ff4b",
+      "bytes": 71457
+    },
+    {
+      "path": "footwear-barefoot-side.png",
+      "sha256": "991be9d7ac06fbe71fd8c9b83ee1c8f345c647524afc368d0d8aca1366ccb023",
+      "bytes": 102728
     },
     {
       "path": "footwear-barefoot.png",
@@ -53,14 +58,19 @@
       "bytes": 143376
     },
     {
+      "path": "footwear-slip-ons-side.png",
+      "sha256": "eab0d4a1f63436738123e95854f5fe398cfa84518e5204cc0225b6be40edfd49",
+      "bytes": 100507
+    },
+    {
       "path": "footwear-slip-ons.png",
-      "sha256": "37a8dac336475e426387a42d58154485ec5cffb350c88f06b6026881b155418a",
-      "bytes": 141976
+      "sha256": "8b13167bf3671e842c3d71e95f1f466c4b45c943a63d3cfaeabac419e7a36556",
+      "bytes": 142359
     },
     {
       "path": "glb-original.png",
-      "sha256": "37a8dac336475e426387a42d58154485ec5cffb350c88f06b6026881b155418a",
-      "bytes": 141976
+      "sha256": "8b13167bf3671e842c3d71e95f1f466c4b45c943a63d3cfaeabac419e7a36556",
+      "bytes": 142359
     },
     {
       "path": "glb-reloaded-detail.png",
@@ -69,18 +79,18 @@
     },
     {
       "path": "glb-reloaded-front.png",
-      "sha256": "66fa56fd2d8f51aa6c4cb9d8b6848eb01b670b8221ef636bed5cc22d7a29aa2d",
-      "bytes": 138813
+      "sha256": "1b6b2a8332feb68e9c5982da02012c1b5f3d3252b550879a4f4e03fd9fc3099d",
+      "bytes": 139177
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "41c286383509fd746fbbefaee93fb6517a53f31c8f9e766e6dca081f6908d2db",
-      "bytes": 87206
+      "sha256": "710fd9c369f836dd79be7833a0ac33a581117d6816f21b47947aa6c1dd61a5fd",
+      "bytes": 87428
     },
     {
       "path": "results.json",
-      "sha256": "e9b1957e7e60f73b319ad47c9f816e432ba2dd60da233a1d800438feb8b3dbb2",
-      "bytes": 206981
+      "sha256": "fed791be61eaf723618fa1b9a41aef76a691e0e17f505abb88150c2ae84ca641",
+      "bytes": 207151
     }
   ]
 }
