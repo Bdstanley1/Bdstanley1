@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "owner": "interactive autonomous continuation September 30",
-  "acquired_at_utc": "2026-10-01T01:24:21Z",
-  "lease_until_utc": "2026-10-01T02:24:21Z",
-  "session_result": "Real implementation and staging migration completed; project remains under active development, not release-approved",
+  "owner": "interactive autonomous continuation October 1",
+  "acquired_at_utc": "2026-10-01T03:29:00Z",
+  "lease_until_utc": "2026-10-01T04:29:00Z",
+  "session_result": "ACTIVE: owner granted ongoing GitHub configuration permission; implementing zoom glyph repair and continuing visual QA",
   "project_repository": "Bdstanley1/Bdstanley1",
   "project_path": "knit-riot-3d-garment",
   "validated_code_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
@@ -27,10 +27,22 @@
     "successful_attempt": 2,
     "first_attempt": "Waiting deadline was reached before Render switched to the candidate; retried unchanged after live status",
     "verified_app_commit_and_bytes": true,
-    "verified_served_assets": ["body.json","leye.json","reye.json","skin.png","hair.png","hair.json","studio_small_08_1k.hdr"],
+    "verified_served_assets": [
+      "body.json",
+      "leye.json",
+      "reye.json",
+      "skin.png",
+      "hair.png",
+      "hair.json",
+      "studio_small_08_1k.hdr"
+    ],
     "source_archive_sha256": "ec8dfad72e31a13bed69a6057ca58d6972032ba144cb59bb0213104062f8ae0e",
     "source_archive_bytes": 31518484,
-    "verified_actual_render_images": ["qa/desktop-detail.png","qa/phone-neutral-front.png","qa/glb-reloaded-detail.png"],
+    "verified_actual_render_images": [
+      "qa/desktop-detail.png",
+      "qa/phone-neutral-front.png",
+      "qa/glb-reloaded-detail.png"
+    ],
     "durable_evidence_target": "validation/staging/ (maintained by staging-verification workflow)",
     "direct_source_archive": "https://knit-riot-studio-development.onrender.com/development-snapshot.zip"
   },
@@ -77,10 +89,10 @@
     "Enabled the existing hourly autonomous implementation task with the actual working source/test/deployment path and full remaining scope"
   ],
   "next_actions": [
-    "Fix the zoom glyph fallback seen in the actual Render desktop capture; CI fonts and Render fonts differ. Preserve real zoom functionality and retest actual rendered controls",
+    "Replace font-dependent zoom glyph labels with ASCII + and - while preserving zoom behavior; assert rendered labels and camera-distance change",
     "Continue lifelike face/eye/hair and hand/footwear improvements plus garment edges/clipping/attachment across all poses",
-    "Investigate the licensed Ashley May normalmapTexture 80snormals.png already identified by the source asset manifest; it is not currently in the runtime. Verify, implement and compare actual renders before claiming a fix",
-    "Finish measurement-matched body geometry, garment-size grading/ease, provenance-backed cloth/material tests, safe customer profiles/imports, catalog reuse and specifically authorized Shopify handoff"
+    "Verify and integrate licensed Ashley May hair normal map if source/checksum/license pass",
+    "Continue measurement-driven geometry and garment grading/ease pipeline without claiming physical fit validation"
   ],
   "appearance_evidence_limits": "Inspected delivered front/detail and prior pose/GLB renders confirm the specific garment repair, not overall realism. The woman still falls below the lifelike-reference requirement. Pairwise coverage is not exhaustive appearance coverage. Emulated hardware is not real device testing.",
   "release_status": "HOLD",
