@@ -1,0 +1,11 @@
+/test-runtime/
+/public/
+/build/
+/node_modules/
+**/__pycache__/
+*.pyc
+.env
+.env.*
+/customer-photos/
+/customer-profiles/
+/imports/
