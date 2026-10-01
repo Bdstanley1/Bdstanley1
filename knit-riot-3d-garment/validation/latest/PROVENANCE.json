@@ -1,7 +1,7 @@
 {
-  "tested_commit": "cb1cdb649a57d96adcf63e87aa03b18cf2780542",
-  "workflow_run_id": "36832113930",
-  "app_sha256": "086f3db049759c6ffe4e99200a4987d9e87b76391dc8abe4185fd11166195cc1",
+  "tested_commit": "80c7aa5c6e01b90f24bdca8b03737d18fc15389e",
+  "workflow_run_id": "36844385754",
+  "app_sha256": "aa332e0a062dba04a94cb35039b9f405adb53202a4c6ded219a017d4fd291bb7",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -9,13 +9,13 @@
   "files": [
     {
       "path": "all-420-rendered-cases.png",
-      "sha256": "7f6f22c9a9e94b2b71f4cdb8de3a953f38c58a869dad9d4053e12c0af278d0ac",
-      "bytes": 2808929
+      "sha256": "333335d95c5ba92321ceab457d778fb34561b4d6f086e727a4ba2b9ba30ebc40",
+      "bytes": 2825587
     },
     {
       "path": "appearance-pairwise-rendered.png",
-      "sha256": "bc0d3f0daff8c738b4077decc690a107d4a9f84c5bf963b2535452e894b61caf",
-      "bytes": 594756
+      "sha256": "6a2dbf4887a4f0971badb48846aef8f14d926e15796bc8c74451c5af628ef76e",
+      "bytes": 598703
     },
     {
       "path": "desktop-detail.png",
@@ -24,33 +24,33 @@
     },
     {
       "path": "desktop-hip-front.png",
-      "sha256": "c871d21b2b6aad77971964a2f1755d5be6c6827bdd054a665d0ea3a9985fcab2",
-      "bytes": 167823
+      "sha256": "493c5c3fc610139d9c8f2e3fe4d0843ad645e04f0374b9a2107bc0bbdb433c1b",
+      "bytes": 168231
     },
     {
       "path": "desktop-neutral-back.png",
-      "sha256": "56b28867ecd68b14f8db8754fbc1b85c6660034ab5f090b8cecd8be9f82eb070",
-      "bytes": 147807
+      "sha256": "f64723f29d730f1405ba7b45c02d8b081b36f43ece7900b90a2039eece27fce3",
+      "bytes": 148767
     },
     {
       "path": "desktop-neutral-front.png",
-      "sha256": "57ff4f52c4b6c7f3fca19c3c413d07a94dee018f87e42a77fe8045d3851457ae",
-      "bytes": 165113
+      "sha256": "3d07e4afb69dc40d479f199673f4db4bb37be2ccf04a074a7b67c1e1b436c8d6",
+      "bytes": 165511
     },
     {
       "path": "desktop-neutral-side.png",
-      "sha256": "e003a70c602a0cc51ba02bceeea81fd4532fc893a4bd03a959900f50da932fc0",
-      "bytes": 133392
+      "sha256": "5048048cdc2a7e97f67e6656f471b9a3bcae4b919c9ddd5ddacaeef0d0f15825",
+      "bytes": 134690
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "26f776bb934be39373abbc811ca343edb84625d34b0f89ac7db60525b7fed8a3",
+      "sha256": "6270ee5a214fdeaaa325624ec19cc55f4cebce0f1cebb490024e6efb9665a453",
       "bytes": 70855
     },
     {
       "path": "glb-original.png",
-      "sha256": "d1028795237f20b7942fe6fba70047e2fd98df8c949707cc465ca6a6da38d6af",
-      "bytes": 142084
+      "sha256": "821aca75c3fd17e1c71db356777db107330ddb5c003e2b52249f2e0cab4e4d51",
+      "bytes": 142610
     },
     {
       "path": "glb-reloaded-detail.png",
@@ -59,18 +59,18 @@
     },
     {
       "path": "glb-reloaded-front.png",
-      "sha256": "8aa8ad7b3a6c620f76a89214596e528fcdc46f25bb683a8b21f878b61859629b",
-      "bytes": 139022
+      "sha256": "a1e36849e07fb9e3b74522a9eab465eb10ad2e05e57381c336f58eb70af3a951",
+      "bytes": 139516
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "fc70e15a01f2026477a176632e6624701cdaa634b10513b2baeeb2594ab2611a",
-      "bytes": 87245
+      "sha256": "3368d0e9101b219277f6dcb00176ab54e712d4b15fdf882b4198bd61b725df64",
+      "bytes": 87614
     },
     {
       "path": "results.json",
-      "sha256": "c06e553730aa75160a8eeb60e9f45bf10f446b1325bbf02ef9108bddbb41153a",
-      "bytes": 206582
+      "sha256": "86387e4a9559816b850943d2a2a95c7b37577a17640676b48ee7051f592404f9",
+      "bytes": 206505
     }
   ]
 }
