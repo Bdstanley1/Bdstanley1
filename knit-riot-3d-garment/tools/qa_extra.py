@@ -74,12 +74,18 @@ def run_additional(browser, root: Path, checks: dict):
     page.evaluate('KR.reset();KR.view("front");KR.change("shoes","slip-ons");KR.renderer.render(KR.scene,KR.camera)')
     slip=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])
     (root/'footwear-slip-ons.png').write_bytes(slip)
-    page.evaluate('KR.change("shoes","barefoot");KR.renderer.render(KR.scene,KR.camera)')
+    page.evaluate('KR.view("side");KR.renderer.render(KR.scene,KR.camera)')
+    slip_side=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])
+    (root/'footwear-slip-ons-side.png').write_bytes(slip_side)
+    page.evaluate('KR.view("front");KR.change("shoes","barefoot");KR.renderer.render(KR.scene,KR.camera)')
     bare=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])
     (root/'footwear-barefoot.png').write_bytes(bare)
-    checks['footwear_visual_effect']={'different_render':slip!=bare,'slip_sha256':hashlib.sha256(slip).hexdigest(),'barefoot_sha256':hashlib.sha256(bare).hexdigest(),'coverage':'direct actual-render comparison of both footwear values'}
-    if slip==bare:checks['errors'].append('Footwear control did not produce a rendered visual effect')
-    page.evaluate('KR.change("shoes","slip-ons")')
+    page.evaluate('KR.view("side");KR.renderer.render(KR.scene,KR.camera)')
+    bare_side=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])
+    (root/'footwear-barefoot-side.png').write_bytes(bare_side)
+    checks['footwear_visual_effect']={'different_render':slip!=bare and slip_side!=bare_side,'slip_sha256':hashlib.sha256(slip).hexdigest(),'barefoot_sha256':hashlib.sha256(bare).hexdigest(),'slip_side_sha256':hashlib.sha256(slip_side).hexdigest(),'barefoot_side_sha256':hashlib.sha256(bare_side).hexdigest(),'coverage':'direct actual-render comparison of both footwear values in front and side views'}
+    if slip==bare or slip_side==bare_side:checks['errors'].append('Footwear control did not produce a rendered visual effect in both front and side views')
+    page.evaluate('KR.change("shoes","slip-ons");KR.view("front")')
     factors={'skin':['#ffffff','#d6ac8d','#a97959'],'hair':['#836c57','#ffffff','#493025','#201a16','#ac7946','#854629'],'hairStyle':['wavy','straight','curly'],'length':[.75,1,1.35],'shoes':['slip-ons','barefoot'],'pose':['neutral','fashion','hip','walk','three-quarter'],'view':['front','side','back','free']}
     cases,pairs=pairwise_cases(factors)
     folder=root/'appearance-pairwise';folder.mkdir(exist_ok=True)

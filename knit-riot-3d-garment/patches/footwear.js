@@ -47,20 +47,20 @@
   for(const [side,b] of bounds.entries()){
     const anatomyW=(b.x1-b.x0)/2,anatomyL=b.z1-b.z0;
     const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2;
-    const w=anatomyW+H*.0065,l=anatomyL+H*.0100;
-    const bottom=b.y0-H*.0020,soleH=H*.0080;
+    const w=anatomyW+H*.0038,l=anatomyL+H*.0065;
+    const bottom=b.y0-H*.0015,soleH=H*.0062;
 
-    const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.0010,bevelSize:H*.0016});
+    const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.0008,bevelSize:H*.0012});
     sole.rotateX(-Math.PI/2);sole.translate(cx,bottom,cz);sole.computeVertexNormals();
     attachToFoot(sole,side,cx,cz);
     addShoe('White slip-on '+(side?'right':'left')+' sole',sole,soleMat);
 
-    const upperShape=outline(w*.965,l*.955);
+    const upperShape=outline(w*.955,l*.945);
     const opening=new T.Path();
-    opening.absellipse(0,l*.19,w*.70,l*.22,0,Math.PI*2,false,0);
+    opening.absellipse(0,l*.17,w*.72,l*.245,0,Math.PI*2,false,0);
     upperShape.holes.push(opening);
-    const upperH=H*.050,upperBase=bottom+soleH*.58;
-    const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0018,bevelSize:H*.0020});
+    const upperH=H*.046,upperBase=bottom+soleH*.64;
+    const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0013,bevelSize:H*.0015});
     upper.rotateX(-Math.PI/2);upper.translate(cx,upperBase,cz);
     const p=upper.attributes.position;
     for(let i=0;i<p.count;i++){
@@ -69,9 +69,9 @@
       const fy=Math.max(0,Math.min(1,(y-upperBase)/upperH));
       const vamp=Math.exp(-Math.pow((t-.66)/.22,2));
       const heel=Math.max(0,1-t/.32);
-      const top=H*(.029+.013*vamp+.010*heel);
-      x=cx+(x-cx)*(1-.045*fy);
-      y=upperBase+fy*top+H*.003*Math.pow(Math.max(0,(t-.78)/.22),2)*fy;
+      const top=H*(.0205+.0100*vamp+.0065*heel);
+      x=cx+(x-cx)*(1-.055*fy);
+      y=upperBase+fy*top+H*.002*Math.pow(Math.max(0,(t-.78)/.22),2)*fy;
       p.setXYZ(i,x,y,z);
     }
     p.needsUpdate=true;upper.computeVertexNormals();
