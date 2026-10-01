@@ -13,12 +13,12 @@
 
   const outline=(w,l)=>{
     const s=new T.Shape();
-    s.moveTo(0,-l*.55);
-    s.bezierCurveTo(-w*.72,-l*.54,-w*1.01,-l*.34,-w*1.02,-l*.10);
-    s.bezierCurveTo(-w*.99,l*.17,-w*.73,l*.45,-w*.58,l*.50);
-    s.quadraticCurveTo(0,l*.54,w*.58,l*.50);
-    s.bezierCurveTo(w*.73,l*.45,w*.99,l*.17,w*1.02,-l*.10);
-    s.bezierCurveTo(w*1.01,-l*.34,w*.72,-l*.54,0,-l*.55);
+    s.moveTo(0,-l*.52);
+    s.bezierCurveTo(-w*.72,-l*.51,-w*.99,-l*.33,-w*1.00,-l*.10);
+    s.bezierCurveTo(-w*.97,l*.16,-w*.71,l*.43,-w*.57,l*.49);
+    s.quadraticCurveTo(0,l*.51,w*.57,l*.49);
+    s.bezierCurveTo(w*.71,l*.43,w*.97,l*.16,w*1.00,-l*.10);
+    s.bezierCurveTo(w*.99,-l*.33,w*.72,-l*.51,0,-l*.52);
     return s;
   };
   const attachToFoot=(g,side,cx,cz)=>{
@@ -47,31 +47,31 @@
   for(const [side,b] of bounds.entries()){
     const anatomyW=(b.x1-b.x0)/2,anatomyL=b.z1-b.z0;
     const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2;
-    const w=anatomyW+H*.0065,l=anatomyL+H*.0100;
-    const bottom=b.y0-H*.0020,soleH=H*.0080;
+    const w=anatomyW+H*.0025,l=anatomyL+H*.0030;
+    const bottom=b.y0-H*.0010,soleH=H*.0065;
 
-    const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.0010,bevelSize:H*.0016});
+    const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.0007,bevelSize:H*.0010});
     sole.rotateX(-Math.PI/2);sole.translate(cx,bottom,cz);sole.computeVertexNormals();
     attachToFoot(sole,side,cx,cz);
     addShoe('White slip-on '+(side?'right':'left')+' sole',sole,soleMat);
 
-    const upperShape=outline(w*.965,l*.955);
+    const upperShape=outline(w*.975,l*.975);
     const opening=new T.Path();
-    opening.absellipse(0,l*.19,w*.70,l*.22,0,Math.PI*2,false,0);
+    opening.absellipse(0,l*.12,w*.62,l*.16,0,Math.PI*2,false,0);
     upperShape.holes.push(opening);
-    const upperH=H*.050,upperBase=bottom+soleH*.58;
-    const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0018,bevelSize:H*.0020});
+    const upperH=H*.036,upperBase=bottom+soleH*.66;
+    const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0010,bevelSize:H*.0012});
     upper.rotateX(-Math.PI/2);upper.translate(cx,upperBase,cz);
     const p=upper.attributes.position;
     for(let i=0;i<p.count;i++){
       let x=p.getX(i),y=p.getY(i),z=p.getZ(i);
       const t=Math.max(0,Math.min(1,(z-(cz-l*.52))/l));
       const fy=Math.max(0,Math.min(1,(y-upperBase)/upperH));
-      const vamp=Math.exp(-Math.pow((t-.66)/.22,2));
-      const heel=Math.max(0,1-t/.32);
-      const top=H*(.029+.013*vamp+.010*heel);
-      x=cx+(x-cx)*(1-.045*fy);
-      y=upperBase+fy*top+H*.003*Math.pow(Math.max(0,(t-.78)/.22),2)*fy;
+      const vamp=Math.exp(-Math.pow((t-.67)/.24,2));
+      const heel=Math.max(0,1-t/.28);
+      const top=H*(.018+.008*vamp+.006*heel);
+      x=cx+(x-cx)*(1-.025*fy);
+      y=upperBase+fy*top+H*.0015*Math.pow(Math.max(0,(t-.80)/.20),2)*fy;
       p.setXYZ(i,x,y,z);
     }
     p.needsUpdate=true;upper.computeVertexNormals();
