@@ -47,7 +47,7 @@
   for(const [side,b] of bounds.entries()){
     const anatomyW=(b.x1-b.x0)/2,anatomyL=b.z1-b.z0;
     const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2;
-    const w=anatomyW+H*.0038,l=anatomyL+H*.0065;
+    const w=anatomyW+H*.0038,l=anatomyL+H*.018;
     const bottom=b.y0-H*.0015,soleH=H*.0062;
 
     const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.0008,bevelSize:H*.0012});
