@@ -39,7 +39,7 @@ def run_additional(browser, root: Path, checks: dict):
       const loaded=await new GLTFLoader().loadAsync('./qa/female-dressed-test.glb');
       const original=new Map();
       KR.figure.updateMatrixWorld(true);loaded.scene.updateMatrixWorld(true);
-      KR.figure.traverse(o=>{if(o.isMesh&&o.visible){if(o.skeleton)o.skeleton.update();original.set(T.PropertyBinding.sanitizeNodeName(o.name),o);}});
+      let expectedMeshes=0;KR.figure.traverse(o=>{if(o.isMesh&&o.visible){expectedMeshes++;if(o.skeleton)o.skeleton.update();original.set(T.PropertyBinding.sanitizeNodeName(o.name),o);}});
       let checked=0,maxDeviation=0,meshes=0,missing=[],bad=[];
       const a=new T.Vector3(),b=new T.Vector3();
       loaded.scene.traverse(o=>{
@@ -55,9 +55,9 @@ def run_additional(browser, root: Path, checks: dict):
       });
       KR.figure.visible=false;KR.scene.add(loaded.scene);window.__reloadFigure=loaded.scene;
       KR.renderer.render(KR.scene,KR.camera);
-      return {meshes,checkedSkinnedVertices:checked,maxWorldDeviationMetres:maxDeviation,missing,bad};
+      return {meshes,expectedMeshes,checkedSkinnedVertices:checked,maxWorldDeviationMetres:maxDeviation,missing,bad};
     }""")
-    comparison['passed']=comparison['meshes']==18 and comparison['checkedSkinnedVertices']>10000 and comparison['maxWorldDeviationMetres']<1e-4 and not comparison['missing'] and not comparison['bad']
+    comparison['passed']=comparison['meshes']==comparison['expectedMeshes'] and comparison['expectedMeshes']>=18 and comparison['checkedSkinnedVertices']>10000 and comparison['maxWorldDeviationMetres']<1e-4 and not comparison['missing'] and not comparison['bad']
     comparison['appearance']='Actual front/side/back/detail reload renders archived; visual approval remains separate.'
     checks['glb_geometry_roundtrip']=comparison
     if not comparison['passed']:
@@ -71,7 +71,7 @@ def run_additional(browser, root: Path, checks: dict):
     png=page.evaluate('KR.renderer.domElement.toDataURL("image/png")')
     (root/'glb-reloaded-detail.png').write_bytes(base64.b64decode(png.split(',',1)[1]))
     page.evaluate('KR.scene.remove(window.__reloadFigure);KR.figure.visible=true;KR.reset()')
-    factors={'skin':['#ffffff','#d6ac8d','#a97959'],'hair':['#836c57','#ffffff','#493025','#201a16','#ac7946','#854629'],'hairStyle':['wavy','straight','curly'],'length':[.75,1,1.35],'shoes':['slip-ons','barefoot'],'pose':['neutral','fashion','hip','walk','three-quarter'],'view':['front','side','back','free']}
+    page.evaluate('KR.reset();KR.view("front");KR.change("shoes","slip-ons");KR.renderer.render(KR.scene,KR.camera)')\n    slip=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])\n    (root/'footwear-slip-ons.png').write_bytes(slip)\n    page.evaluate('KR.change("shoes","barefoot");KR.renderer.render(KR.scene,KR.camera)')\n    bare=base64.b64decode(page.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])\n    (root/'footwear-barefoot.png').write_bytes(bare)\n    checks['footwear_visual_effect']={'different_render':slip!=bare,'slip_sha256':hashlib.sha256(slip).hexdigest(),'barefoot_sha256':hashlib.sha256(bare).hexdigest(),'coverage':'direct actual-render comparison of both footwear values'}\n    if slip==bare:checks['errors'].append('Footwear control did not produce a rendered visual effect')\n    page.evaluate('KR.change("shoes","slip-ons")')\n    factors={'skin':['#ffffff','#d6ac8d','#a97959'],'hair':['#836c57','#ffffff','#493025','#201a16','#ac7946','#854629'],'hairStyle':['wavy','straight','curly'],'length':[.75,1,1.35],'shoes':['slip-ons','barefoot'],'pose':['neutral','fashion','hip','walk','three-quarter'],'view':['front','side','back','free']}
     cases,pairs=pairwise_cases(factors)
     folder=root/'appearance-pairwise';folder.mkdir(exist_ok=True)
     page.evaluate('KR.renderer.setPixelRatio(1);KR.renderer.setSize(240,360,false);KR.renderer.shadowMap.enabled=false;KR.camera.aspect=2/3;KR.camera.updateProjectionMatrix();window.__suppressDraw=true')
