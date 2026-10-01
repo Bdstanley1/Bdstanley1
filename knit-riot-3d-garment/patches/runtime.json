@@ -18,5 +18,15 @@
     "name": "soften licensed Ashley May hair cutout edges",
     "before": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,color:hm.color,alphaTest:.35,side:T.DoubleSide,roughness:.63,metalness:0,anisotropy:.65,anisotropyRotation:Math.PI/2,specularIntensity:.55,envMapIntensity:.85});",
     "after": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,color:hm.color,alphaTest:.12,alphaToCoverage:true,side:T.DoubleSide,roughness:.56,metalness:0,anisotropy:.75,anisotropyRotation:Math.PI/2,specularIntensity:.48,envMapIntensity:.85});"
+  },
+  {
+    "name": "improve layered eye material response",
+    "before": "function placeSphere(name,pos,radius,color,where,scale=[1,1,1]){let g=new T.SphereGeometry(radius,20,14);g.scale(...scale);g.translate(...pos);return skinned(name,bindRigid(g,where),new T.MeshStandardMaterial({color,roughness:.45}));}",
+    "after": "function placeSphere(name,pos,radius,color,where,scale=[1,1,1]){let g=new T.SphereGeometry(radius,20,14);g.scale(...scale);g.translate(...pos);const sclera=name.startsWith('Eye white');return skinned(name,bindRigid(g,where),new T.MeshPhysicalMaterial({color,roughness:sclera?.30:.40,metalness:0,clearcoat:sclera?.34:.18,clearcoatRoughness:.12,specularIntensity:sclera?.52:.44}));}"
+  },
+  {
+    "name": "refine sclera and iris proportions",
+    "before": "placeSphere('Eye white '+i,e.center,e.radius*.84,'#d8d1bf',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.31,'#49311e',where,[1,1,.2]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.13,'#161313',where,[1,1,.2]);",
+    "after": "placeSphere('Eye white '+i,e.center,e.radius*.84,'#ece7dd',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.29,'#49311e',where,[1,1,.18]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.12,'#161313',where,[1,1,.18]);"
   }
 ]
