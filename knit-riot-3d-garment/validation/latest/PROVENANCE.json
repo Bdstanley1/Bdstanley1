@@ -1,7 +1,7 @@
 {
-  "tested_commit": "44abd765ae7560a36f85dba13b8a42625b672173",
-  "workflow_run_id": "36922421055",
-  "app_sha256": "715d2726b776a4701e5b40e4c098577ebc9263a925b7d4252fd39623e9dbba93",
+  "tested_commit": "ba39806f9ffd1b5f41b911d97607c92a3f26425a",
+  "workflow_run_id": "36923357117",
+  "app_sha256": "efcb69aa881bdc46461ec5adc93a68781e84097de68550011379d0b73c549edb",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -9,78 +9,78 @@
   "files": [
     {
       "path": "all-420-rendered-cases.png",
-      "sha256": "fd344634331e1eb23954733b835b5a9d8f8f247dc1443124915d257145097b31",
-      "bytes": 2833695
+      "sha256": "422f3758ebe7f7faff7ad9821a52f3c69ed009134e4d2a8c6145e576a52623bd",
+      "bytes": 2831427
     },
     {
       "path": "appearance-pairwise-rendered.png",
-      "sha256": "840890e8de8be947946af9589c4f92e385a55cd5c96cb75142b20e1111773a00",
-      "bytes": 598317
+      "sha256": "8809787ee9f030e28db9a537dde61458b927f550c8098750848f494d362b9b80",
+      "bytes": 597481
     },
     {
       "path": "desktop-detail.png",
-      "sha256": "c638e7f21da3bba4d93f28688efb168baf2dcc00ddd79bab6d2f302f488257c9",
-      "bytes": 341522
+      "sha256": "0f5357fa8d08ce9a9ebeac4e0a4503c79990919909b8e566c111e421e6d225d6",
+      "bytes": 341535
     },
     {
       "path": "desktop-hip-front.png",
-      "sha256": "9016ec2c7b057a95afb07434f93a737023ed488622ee5eb25f0104d50e6b7420",
-      "bytes": 167685
+      "sha256": "e42c433eb1fe2f7b7d0be3df4de2afbbd75c8378384f9ea7732f2ac1f6c7153d",
+      "bytes": 167613
     },
     {
       "path": "desktop-neutral-back.png",
-      "sha256": "512c5791755d9ca128067b47836b5622959359f5442775d0e8f4870f7eae498e",
-      "bytes": 148798
+      "sha256": "409f5d2e86bae26d657ccb75c299d2f530687e3f8f2beda6a97c1770252062f5",
+      "bytes": 148730
     },
     {
       "path": "desktop-neutral-front.png",
-      "sha256": "4b82d361d6702f11ab61fbffcb0da79396a3a6e04c98f0c30374c9d1796dac97",
-      "bytes": 164985
+      "sha256": "8d8a6df241bb3f6a23988ac900a1cf829a9f22f055fa4b5c43b3c5a779ca9bbb",
+      "bytes": 164905
     },
     {
       "path": "desktop-neutral-side.png",
-      "sha256": "f264afc9091f7ded46089a71a91407f017c73e0605e84d37788eb31b412e45b0",
-      "bytes": 132861
+      "sha256": "2cefe565ff80c78a86a46d92f685f8313273336c25c45c24594e5475670ae130",
+      "bytes": 132819
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "31af503713d744be46630f7ea68f92ee5d29815fa4b8ca52422e5b4f1c8167f6",
+      "sha256": "5e9e689968612107bbc5df99b9d699ff48fe2561cf62b42fc86e500b254674ec",
       "bytes": 71150
     },
     {
       "path": "footwear-barefoot.png",
-      "sha256": "1a35653ec234150c0fffa1095e831814a0d13cd9b3a9722b959b147ee36dcadb",
-      "bytes": 143298
+      "sha256": "86b22b1609e514988ba4744461ca87be5f4c18ce977ed5559299077e8a738205",
+      "bytes": 143370
     },
     {
       "path": "footwear-slip-ons.png",
-      "sha256": "1bce7ab2ca0e0db69a2271e02a69f65718a5b1ff142bf1416b72e34b23fefeb6",
-      "bytes": 141878
+      "sha256": "3eb97d5c50f22fb09347dc19be52424807c68969b79dc2568ec04dd9ee8ed7e4",
+      "bytes": 141971
     },
     {
       "path": "glb-original.png",
-      "sha256": "1bce7ab2ca0e0db69a2271e02a69f65718a5b1ff142bf1416b72e34b23fefeb6",
-      "bytes": 141878
+      "sha256": "3eb97d5c50f22fb09347dc19be52424807c68969b79dc2568ec04dd9ee8ed7e4",
+      "bytes": 141971
     },
     {
       "path": "glb-reloaded-detail.png",
-      "sha256": "517e208d10bb1d5f0186a9db6fc1d22125ec0a4da07cd752f05081784adba86c",
-      "bytes": 363588
+      "sha256": "2e6794da2c2e3480857550e35a5725e384d77058ebb6edb9ecf7f08366e215db",
+      "bytes": 363475
     },
     {
       "path": "glb-reloaded-front.png",
-      "sha256": "58b416f2c459bd5e99d000d71a58ef99f72a5127f299096a1f2c510e8de2610e",
-      "bytes": 138899
+      "sha256": "b467089cd70d8c085d782f4b46e23aa8a07946e87995d557bda042cdcf456542",
+      "bytes": 138815
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "35b2b36b7943dde25db2b3490947860fad682ea825604fc851604300702179f7",
-      "bytes": 87198
+      "sha256": "39e48257a036c8b51cb36b0fdb381e388d5153f9208305cc4df1558cd4e0c28b",
+      "bytes": 87205
     },
     {
       "path": "results.json",
-      "sha256": "9e78b0a501399d2ec8ab02b3b302cc3abc472bc89c76a834314c6f50503c72eb",
-      "bytes": 207009
+      "sha256": "ed14aa7fa116fcb9f8c3e0bc448e464323586489787a641fcba3821f3e2e98cc",
+      "bytes": 207100
     }
   ]
 }
