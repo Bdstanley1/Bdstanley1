@@ -22,6 +22,11 @@ app,_,_=assemble_app()
 if hashlib.sha256(app.encode()).hexdigest()!=expected:
     raise RuntimeError('App differs from the CI-validated candidate; publication blocked')
 subprocess.run([sys.executable,'-m','pip','install','-r',str(ROOT/'requirements-test.txt')],check=True,timeout=180)
+if not shutil.which('node'):
+    import playwright
+    driver=Path(playwright.__file__).parent/'driver'
+    if not (driver/'node').is_file():raise RuntimeError('No Node syntax-check runtime available')
+    os.environ['PATH']=str(driver)+os.pathsep+os.environ.get('PATH','')
 subprocess.run([sys.executable,'-m','playwright','install','chromium','--only-shell'],check=True,timeout=240)
 result=subprocess.run([sys.executable,str(ROOT/'tools/render_test.py')],cwd=ROOT,timeout=780)
 runtime=ROOT/'test-runtime'
