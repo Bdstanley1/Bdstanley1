@@ -27,7 +27,7 @@
   {
     "name": "refine sclera and iris proportions",
     "before": "placeSphere('Eye white '+i,e.center,e.radius*.84,'#d8d1bf',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.31,'#49311e',where,[1,1,.2]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.13,'#161313',where,[1,1,.2]);",
-    "after": "placeSphere('Eye white '+i,e.center,e.radius*.84,'#ece7dd',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.29,'#49311e',where,[1,1,.18]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.12,'#161313',where,[1,1,.18]);"
+    "after": "placeSphere('Eye white '+i,e.center,e.radius*.80,'#ece7dd',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.32,'#49311e',where,[1,1,.18]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.13,'#161313',where,[1,1,.18]);"
   },
   {
     "name": "smooth and deepen vest armhole to remove residual posed clipping",
