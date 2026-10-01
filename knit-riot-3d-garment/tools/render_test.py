@@ -2,7 +2,6 @@
 This suite reports completed coverage separately from appearance/physical-fit approval.
 """
 import base64
-import functools
 import hashlib
 import http.server
 import io
@@ -94,8 +93,17 @@ def store_sweep(summary):
         summary.setdefault('rendered_frames',[]).append(frame)
 
 try:
+    code=(BASE/'source-EFFECTIVE_BROWSER_QA.txt').read_text()
+    code=code.replace('page.set_default_timeout(6000)','page.set_default_timeout(30000)')
+    code=code.replace('page.screenshot(path=','safe_screenshot(page,path=')
+    code=code.replace('const result={count:0,errors:[],resolution:[160,240]}','const result={count:0,errors:[],frames:[],resolution:[160,240]}')
+    code=code.replace('result.count++;',"result.frames.push({size:s,color:c,pose:p,view:v,png:KR.renderer.domElement.toDataURL('image/png')});result.count++;")
+    code=code.replace("extended['render_sweep']=summary", "extended['render_sweep']=summary;store_sweep(summary)")
+    compiled=compile(code,'extended_browser_qa.py','exec')
+    (q/'effective-browser-qa.py').write_text(code)
     with sync_playwright() as pw:
         browser = pw.chromium.launch(headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist'])
+        checks['browser_version']=browser.version
         for label,width,height in [('desktop',1280,900),('phone',390,844)]:
             page=browser.new_page(viewport={'width':width,'height':height},device_scale_factor=1)
             page.add_init_script('window.__qaPause=true')
@@ -113,16 +121,9 @@ try:
             page.locator('#detail').click()
             safe_screenshot(page,str(q/f'{label}-detail.png'))
             page.close()
-        code=(BASE/'source-EFFECTIVE_BROWSER_QA.txt').read_text()
-        code=code.replace('page.set_default_timeout(6000)','page.set_default_timeout(30000)')
-        code=code.replace('page.screenshot(path=','safe_screenshot(page,path=')
-        code=code.replace('const result={count:0,errors:[],resolution:[160,240]}','const result={count:0,errors:[],frames:[],resolution:[160,240]}')
-        code=code.replace('result.count++;','result.frames.push({size:s,color:c,pose:p,view:v,png:KR.renderer.domElement.toDataURL("image/png")});result.count++;')
-        code=code.replace("extended['render_sweep']=summary", "extended['render_sweep']=summary;store_sweep(summary)")
-        code=code.replace("page.close();extended['passed']", "page.close();extended['passed']")
-        exec(compile(code,'extended_browser_qa.py','exec'),globals())
+        exec(compiled,globals())
         checks['coverage']={'discrete_controls':'all present values in each implemented button group','ranges':'minimum, maximum, default; state checks','cross_product':'7 size labels x 3 colors x 5 poses x 4 views, all 420 rendered frames archived','appearance_cross_product':'not exhaustive','hardware':'software-rendered Chromium only','missing_implementation':['measurement-matched bust/waist/hip geometry','garment size grading geometry','validated cloth mechanics','photo reconstruction','Shopify integration']}
-        from PIL import Image, ImageChops, ImageStat
+        from PIL import Image, ImageStat
         frames=checks['extended'].get('render_sweep',{}).get('rendered_frames',[])
         blank=[]
         for frame in frames:
@@ -136,7 +137,6 @@ try:
             checks['errors'].append('Uniform rendered frames detected')
         if len(frames)!=420:
             checks['errors'].append('420-frame sweep not completed')
-        # Verify the essential-asset error path without supplying customer data.
         page=browser.new_page(viewport={'width':390,'height':844})
         page.route('**/assets/body.json',lambda route:route.abort())
         page.goto('http://127.0.0.1:8719/',wait_until='networkidle',timeout=60000)
