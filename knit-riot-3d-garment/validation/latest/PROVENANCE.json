@@ -1,7 +1,7 @@
 {
-  "tested_commit": "a35a5cd6833a548ddfe17c0cc74c73d120b3ba42",
-  "workflow_run_id": "36934428178",
-  "app_sha256": "fa1f6951b585948c19a183418be7063dbc04fb74eef634f8058c3c82f7abb0ac",
+  "tested_commit": "c1f1f683c53456dc56bd22a6f1996fee0c8686ba",
+  "workflow_run_id": "36935176559",
+  "app_sha256": "cccdf8aa5dcb8d375c2626eb49f6f716de1d0b61def7917ef450a372658c9eda",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -9,88 +9,88 @@
   "files": [
     {
       "path": "all-420-rendered-cases.png",
-      "sha256": "8c2ac50f369755341f34c3a4058dc5ee2ed8007e1de3111f5dce312b9195a949",
-      "bytes": 2836410
+      "sha256": "2433c29b57d84ac2e3e6aac24fb38368a8b70348aaa112c7ae9c4b89a75d5922",
+      "bytes": 2833022
     },
     {
       "path": "appearance-pairwise-rendered.png",
-      "sha256": "d62cb94f0c005864d4ad3197cb389af35c92437bb8af291dc9250d3f710ad328",
-      "bytes": 598235
+      "sha256": "73f1dd40e72f93094972eb72b6d027836b0879bcdc388ab58b2f2a322beecc28",
+      "bytes": 598590
     },
     {
       "path": "desktop-detail.png",
-      "sha256": "d1a26d3a10e1f2f33c253b95012110854620958e32f736720e0fb1ed4d7fcc9d",
-      "bytes": 341542
+      "sha256": "3b7bbeee189c61e3f6a27cc356c6ebd5cbbea7f0fdb5ef8169d85e734dae00d7",
+      "bytes": 342451
     },
     {
       "path": "desktop-hip-front.png",
-      "sha256": "9278f66c14c2c594a72cee21bc2ad267a69b63b01fc54ca8179aeff7042acf8a",
-      "bytes": 168052
+      "sha256": "834a39777173132d471adffde5e6601b65ad1df0ad438ef3030c8c818ecb174a",
+      "bytes": 168588
     },
     {
       "path": "desktop-neutral-back.png",
-      "sha256": "134a2a000bbe9b89aca891117aad04f0fdc5a04e205af11547941f18e8b6b267",
-      "bytes": 149004
+      "sha256": "7c24f55b028032271958d95f299204a05d8f862632c01a37bc969e690f5e64e7",
+      "bytes": 149686
     },
     {
       "path": "desktop-neutral-front.png",
-      "sha256": "55fea34dfc0d73788644e15d19afcfc56ef003df288565110937975de0814269",
-      "bytes": 165384
+      "sha256": "071ff6ddea40f8a7382d912884a606ecd4f6bdc2103dbe4509b1e00049fdfc98",
+      "bytes": 165822
     },
     {
       "path": "desktop-neutral-side.png",
-      "sha256": "f7db3f98d8a0934a15bcc98a2d57c84436e5f14aa71f1fcc238d779b368ed7c9",
-      "bytes": 133665
+      "sha256": "bfadb801ddf8599b5a12aaac25e88dc13823542e91da1594befc3103c9733e58",
+      "bytes": 133753
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "668094ef5166069baf59c29088bd00cc048d0d03c4be1113415fc9a6ecfe6055",
+      "sha256": "1fa008a10b2a4dc0620a051131a9231760e4f8ce55a77a60e25a3355ccec5c44",
       "bytes": 71457
     },
     {
       "path": "footwear-barefoot-side.png",
-      "sha256": "991be9d7ac06fbe71fd8c9b83ee1c8f345c647524afc368d0d8aca1366ccb023",
-      "bytes": 102728
+      "sha256": "61fd0513ab14dbeb8023abca6ee5596341730bce673272264555555e5b29619b",
+      "bytes": 102824
     },
     {
       "path": "footwear-barefoot.png",
-      "sha256": "da007bfbfdf94400777dab077fa78d9643fcc3797c2a79ccb8d435ece002df9e",
-      "bytes": 143376
+      "sha256": "752f6bd2fa0dd70fc3971c79cf904becd63953b6b07126b10963cae86887ff56",
+      "bytes": 143841
     },
     {
       "path": "footwear-slip-ons-side.png",
-      "sha256": "893251ca8c0aac1dfb9bca801dcef5aadcd85bc0f8b772cc276102b7feaf42ef",
-      "bytes": 100447
+      "sha256": "9413cfd3507fbc3bfdc30e893b40d41c9d9e49225c1af80bd7c9c5e9e2a3d640",
+      "bytes": 100686
     },
     {
       "path": "footwear-slip-ons.png",
-      "sha256": "d562717d2096598f819e801d4b81a2d763395eaa95c47efbaf91745d559e9529",
-      "bytes": 142424
+      "sha256": "a7cbc33c3261f133b7a24889762dffb6c8be21c82058f8f49223c45fe7f89ad8",
+      "bytes": 142921
     },
     {
       "path": "glb-original.png",
-      "sha256": "d562717d2096598f819e801d4b81a2d763395eaa95c47efbaf91745d559e9529",
-      "bytes": 142424
+      "sha256": "a7cbc33c3261f133b7a24889762dffb6c8be21c82058f8f49223c45fe7f89ad8",
+      "bytes": 142921
     },
     {
       "path": "glb-reloaded-detail.png",
-      "sha256": "c07f24b04256d4cceccff18b0ea754e703c7b55e6b09278af9c5aa780cb85092",
-      "bytes": 363518
+      "sha256": "46b86a094654a967aeccec52b76a1e6e09f87d990b3526dfff4c277eb660a508",
+      "bytes": 365389
     },
     {
       "path": "glb-reloaded-front.png",
-      "sha256": "58a3097ec433547fd63e298c5a70df6666f2cd6530d078c3fdd42977f2840a69",
-      "bytes": 139238
+      "sha256": "bf99bd09d532005e6bed390a7b05261e71ef574f4d4c66bfc6a26afeec6b4b23",
+      "bytes": 139703
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "00f57e6dbfc2a30be4f6ee2ddc97be82a9f3f0ec747fe51d2eca85353820a461",
-      "bytes": 87487
+      "sha256": "47246a98a0d1ee5986195dfd00f6a48bcc5b96ed1a281b3713b8211b37e572fa",
+      "bytes": 87749
     },
     {
       "path": "results.json",
-      "sha256": "4a6d14d498165816a73938e7666fa4a6e94209638c5f5598a5b85753c2a214a5",
-      "bytes": 207067
+      "sha256": "45fc67fa46af02ca65d09a1a6e9f83f0fae4125379f46c157f43295d6dc23809",
+      "bytes": 207263
     }
   ]
 }
