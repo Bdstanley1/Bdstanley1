@@ -63,3 +63,18 @@ function refineTextileSurface(m) {
   }
   return out;
 }
+
+// Apply uniform artistic torso clearance in the horizontal radial plane.
+// This avoids turning local triangulation-normal variation into a scalloped garment cut edge.
+// It remains a visual envelope, not a cloth-pressure or physical-fit solver.
+function offsetTextileRadially(g, distance) {
+  const p = g.attributes.position;
+  for (let i = 0; i < p.count; i++) {
+    const x = p.getX(i), y = p.getY(i), z = p.getZ(i), r = Math.hypot(x, z) || 1;
+    p.setXYZ(i, x + distance*x/r, y, z + distance*z/r);
+  }
+  p.needsUpdate = true;
+  g.computeBoundingBox();
+  g.computeBoundingSphere();
+  return g;
+}
