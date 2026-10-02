@@ -52,7 +52,7 @@
     for(let i=0;i<N;i++){
       const a=i*2*Math.PI/N;
       inner.push(radiusAt(innerHull,cx,cz,a)+H*.0012);
-      outer.push(Math.max(radiusAt(outerHull,cx,cz,a)+H*.0032,inner[i]+H*.004));
+      outer.push(Math.max(radiusAt(outerHull,cx,cz,a)+H*(.0032+.003*Math.max(0,Math.sin(a))**4),inner[i]+H*.004));
     }
     const footSurface=(x,z)=>{
       let top=bottom;
@@ -80,6 +80,7 @@
       attach(g);const shoe=new T.SkinnedMesh(g,material);shoe.name='White slip-on '+(side?'right':'left')+' '+part;
       shoe.castShadow=true;shoe.receiveShadow=true;shoe.frustumCulled=false;boots.add(shoe);shoe.bind(skeleton,new T.Matrix4());meshRecords.push(shoe);
       shoe.userData.developmentGeometry='Synthetic anatomical contour; artistic clearance, not physical product validation';
+      shoe.userData.developmentContour={collarY,forefootInspectionStartZ:Math.max(...cut.map(p=>p[1]))+H*.006,fixtureHeight:H};
     };
     const outline=new T.Shape();
     for(let i=0;i<N;i++){
@@ -92,8 +93,8 @@
     const positions=[],uv=[],indices=[];
     for(let row=0;row<=ROWS;row++)for(let i=0;i<N;i++){
       const t=row/ROWS,a=i*2*Math.PI/N,front=(Math.sin(a)+1)/2;
+      const exponent=.22+.25*front;
       const r=outer[i]*(1-t)+inner[i]*t,x=cx+r*Math.cos(a),z=cz+r*Math.sin(a);
-      const exponent=.30+.34*front;
       let y=upperBase+(collarY-upperBase)*Math.pow(Math.sin(t*Math.PI/2),exponent);
       if(row>0&&row<ROWS)y=Math.max(y,footSurface(x,z)+H*.0020);
       positions.push(x,y,z);uv.push(i/N,t);
