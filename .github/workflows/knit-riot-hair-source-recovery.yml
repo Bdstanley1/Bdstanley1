@@ -1,0 +1,69 @@
+name: Knit Riot licensed hair source recovery
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/knit-riot-hair-source-recovery.yml
+permissions:
+  contents: read
+concurrency:
+  group: knit-riot-hair-source-recovery
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned image inspection dependency
+        run: python -m pip install -r knit-riot-3d-garment/requirements-test.txt
+      - name: Verify original archive and extract only the previously licensed asset
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, urllib.request, zipfile
+          from PIL import Image
+          expected='c681e5efd37df4007a52253a8d071aedbfe3b614f199d8dae4ae76d5bd7d95c9'
+          url='https://files2.makehumancommunity.org/asset_packs/hair02/hair02_ccby.zip'
+          archive=Path('hair-source.zip')
+          digest=hashlib.sha256();total=0
+          with urllib.request.urlopen(url,timeout=60) as response, archive.open('wb') as target:
+              while True:
+                  block=response.read(1024*1024)
+                  if not block:break
+                  total+=len(block)
+                  if total>100_000_000:raise RuntimeError('Source archive exceeded 100 MB bound')
+                  digest.update(block);target.write(block)
+          if digest.hexdigest()!=expected:raise RuntimeError('Original licensed source checksum mismatch')
+          prefix='hair/elvs_ashley_may_hair/'
+          members=['80snormals.png','80shairtex1.png','elvs_ashley_may_hair.thumb','elvs_ashley_mayhair1.obj','elvs_ashley_may_hair.mhclo','elvs_ashley_mayhair1.mhmat']
+          out=Path('verified-hair-source');out.mkdir()
+          with zipfile.ZipFile(archive) as source:
+              for name in members:
+                  item=source.getinfo(prefix+name)
+                  if item.file_size>20_000_000:raise RuntimeError('Selected member exceeds extraction bound')
+                  (out/name).write_bytes(source.read(item))
+          header=(out/'elvs_ashley_may_hair.mhclo').read_text()
+          material=(out/'elvs_ashley_mayhair1.mhmat').read_text()
+          assert '# author Elvaerwyn' in header and '# license CC_by' in header
+          assert 'normalmapTexture 80snormals.png' in material
+          with Image.open(out/'80snormals.png') as image:
+              image.verify()
+          with Image.open(out/'80snormals.png') as image:
+              normal_info={'mode':image.mode,'size':list(image.size),'extrema':image.getextrema()}
+              assert max(image.size)<=8192
+          (out/'ATTRIBUTION.txt').write_text('Ashley May hair geometry, diffuse and normal map: Elvaerwyn. Creator header identifies CC_by (CC-BY; version is not stated in that header). Original creator metadata and material are included unchanged. Source: https://static.makehumancommunity.org/assets/assetpacks/hair02.html . This recovery does not establish visual improvement or measured hair optics.\n')
+          files=[{'path':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(out.iterdir()) if p.is_file()]
+          metadata={'source_url':url,'source_page':'https://static.makehumancommunity.org/assets/assetpacks/hair02.html','source_archive_sha256':expected,'source_archive_bytes':total,'source_prefix':prefix,'author':'Elvaerwyn','license_header':'CC_by','normal_image':normal_info,'files':files,'runtime_integration':False,'visual_improvement_validated':False,'customer_data_used':False}
+          (out/'RECOVERY.json').write_text(json.dumps(metadata,indent=2)+'\n')
+          print(json.dumps(metadata))
+          PY
+      - name: Preserve verified source for actual image inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: ashley-may-verified-source
+          path: verified-hair-source/
+          retention-days: 1
+          if-no-files-found: error
+          compression-level: 6
