@@ -1,7 +1,7 @@
 {
-  "tested_commit": "8545136f4cd757553e1ab88d99c9071f6b1f0d20",
-  "workflow_run_id": "37070048333",
-  "app_sha256": "8aa4f198c71a1be4e49e697dc96970d7ebbf04efae269865be4b216c1db8b722",
+  "tested_commit": "b95725292453aca77a8c0cbcc3cfea04bde59b91",
+  "workflow_run_id": "37070778114",
+  "app_sha256": "4febc5a031efeb603b9a8fe0b292d8f335ca255aa768e8428e09c938a95dd8cf",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -44,7 +44,7 @@
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "3b408a46662766b824cfd4ba8c0278d67490b47b35cade2ee1a0a92c5ef85d77",
+      "sha256": "395ea81d477f7190a5399729d3cc820f47c61a958e0ff31dbf70368e77b96cf2",
       "bytes": 85988
     },
     {
@@ -509,7 +509,7 @@
     },
     {
       "path": "results.json",
-      "sha256": "3933c1aee26f6cd061eb5e58fa490e695ddf0d738d4147f9d84402d6fd66ebac",
+      "sha256": "b7c6f1a30bf7774934f54b762c3e2a3f06994133274aae464a665c54ff5ddfb0",
       "bytes": 247849
     }
   ]

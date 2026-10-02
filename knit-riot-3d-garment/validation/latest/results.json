@@ -496,12 +496,12 @@
       "requested_pose": "three-quarter"
     }
   ],
-  "app_sha256": "8aa4f198c71a1be4e49e697dc96970d7ebbf04efae269865be4b216c1db8b722",
+  "app_sha256": "4febc5a031efeb603b9a8fe0b292d8f335ca255aa768e8428e09c938a95dd8cf",
   "build_report": {
-    "project_commit": "8545136f4cd757553e1ab88d99c9071f6b1f0d20",
+    "project_commit": "b95725292453aca77a8c0cbcc3cfea04bde59b91",
     "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
     "baseline_app_sha256": "f70251a7a078a6e532ea80e3ab97374fa839bda9a79c3ff781dcc7ddf79f7901",
-    "app_sha256": "8aa4f198c71a1be4e49e697dc96970d7ebbf04efae269865be4b216c1db8b722",
+    "app_sha256": "4febc5a031efeb603b9a8fe0b292d8f335ca255aa768e8428e09c938a95dd8cf",
     "verified_fixture_files": 17,
     "fixture_manifest_sha256": "075be2731e72f99534e10c229bffb6aa4376c80ab71bd561851f2a6ef66bb71b",
     "release_status": "HOLD",
@@ -6536,7 +6536,7 @@
     "export": {
       "passed": true,
       "bytes": 11954800,
-      "sha256": "2b12d381700ff271e728a223c1a0c83306adb4b3aaa7d075cfa7e99413e2dbfc",
+      "sha256": "00b011c1dfe31d076309866a8a4a5f918a53b0c47da55571654545e7f2e0ed7c",
       "skins": 21,
       "meshes": 21
     },
