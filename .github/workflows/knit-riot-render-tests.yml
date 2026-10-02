@@ -2,7 +2,7 @@ name: Knit Riot rendered regression
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, knit-riot-autonomous-armhole-20261002]
     paths:
       - .github/workflows/knit-riot-render-tests.yml
       - knit-riot-3d-garment/patches/**
