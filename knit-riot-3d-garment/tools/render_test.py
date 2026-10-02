@@ -12,6 +12,7 @@ from playwright.sync_api import sync_playwright
 from build_runtime import ROOT, BASE, build, archive
 from qa_extra import run_additional
 from qa_footwear import run_footwear_closeups
+from qa_garment import run_garment_closeups
 
 RUNTIME=ROOT/'test-runtime'
 q=RUNTIME/'qa'
@@ -110,6 +111,15 @@ try:
         if blank:checks['errors'].append('Uniform rendered frames detected')
         if len(frames)!=420:checks['errors'].append('420-frame sweep not completed')
         run_additional(browser,q,checks)
+        garment_page=browser.new_page(viewport={'width':1100,'height':900},device_scale_factor=1)
+        garment_page.add_init_script('window.__qaPause=true')
+        garment_page.on('pageerror',lambda error:checks['errors'].append(str(error)))
+        garment_page.goto('http://127.0.0.1:8719/',wait_until='networkidle',timeout=60000)
+        garment_page.wait_for_function('window.KR && KR.ready',timeout=40000)
+        run_garment_closeups(garment_page,q,checks)
+        garment_page.close()
+        if checks.get('garment_closeups',{}).get('executed_renders')!=20:
+            checks['errors'].append('20-frame exhaustive pose/direction garment close-up coverage incomplete')
         footwear_page=browser.new_page(viewport={'width':1100,'height':900},device_scale_factor=1)
         footwear_page.add_init_script('window.__qaPause=true')
         footwear_page.on('pageerror',lambda error:checks['errors'].append(str(error)))
