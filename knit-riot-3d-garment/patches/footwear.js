@@ -48,19 +48,19 @@
     const anatomyW=(b.x1-b.x0)/2,anatomyL=b.z1-b.z0;
     const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2;
     const w=anatomyW+H*.0038,l=anatomyL+H*.018;
-    const bottom=b.y0-H*.0015,soleH=H*.0062;
+    const bottom=b.y0-H*.0013,soleH=H*.0046;
 
-    const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.0008,bevelSize:H*.0012});
+    const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.00065,bevelSize:H*.0010});
     sole.rotateX(-Math.PI/2);sole.translate(cx,bottom,cz);sole.computeVertexNormals();
     attachToFoot(sole,side,cx,cz);
     addShoe('White slip-on '+(side?'right':'left')+' sole',sole,soleMat);
 
     const upperShape=outline(w*.955,l*.945);
     const opening=new T.Path();
-    opening.absellipse(0,l*.25,w*.68,l*.16,0,Math.PI*2,false,0);
+    opening.absellipse(0,l*.27,w*.58,l*.115,0,Math.PI*2,false,0);
     upperShape.holes.push(opening);
-    const upperH=H*.046,upperBase=bottom+soleH*.64;
-    const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0013,bevelSize:H*.0015});
+    const upperH=H*.047,upperBase=bottom+soleH*.60;
+    const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0011,bevelSize:H*.0013});
     upper.rotateX(-Math.PI/2);upper.translate(cx,upperBase,cz);
     const p=upper.attributes.position;
     for(let i=0;i<p.count;i++){
@@ -69,7 +69,7 @@
       const fy=Math.max(0,Math.min(1,(y-upperBase)/upperH));
       const vamp=Math.exp(-Math.pow((t-.66)/.22,2));
       const heel=Math.max(0,1-t/.32);
-      const top=H*(.0205+.0100*vamp+.0065*heel);
+      const top=H*(.0195+.0120*vamp+.0060*heel);
       x=cx+(x-cx)*(1-.055*fy);
       y=upperBase+fy*top+H*.002*Math.pow(Math.max(0,(t-.78)/.22),2)*fy;
       p.setXYZ(i,x,y,z);

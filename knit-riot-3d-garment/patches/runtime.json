@@ -27,7 +27,7 @@
   {
     "name": "refine sclera and iris proportions",
     "before": "placeSphere('Eye white '+i,e.center,e.radius*.84,'#d8d1bf',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.31,'#49311e',where,[1,1,.2]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.13,'#161313',where,[1,1,.2]);",
-    "after": "placeSphere('Eye white '+i,e.center,e.radius*.84,'#ece7dd',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.29,'#49311e',where,[1,1,.18]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.12,'#161313',where,[1,1,.18]);"
+    "after": "placeSphere('Eye white '+i,e.center,e.radius*.80,'#ece7dd',where);let p=[...e.center];p[2]+=e.radius*.78;placeSphere('Iris '+i,p,e.radius*.32,'#49311e',where,[1,1,.18]);p[2]+=.001;placeSphere('Pupil '+i,p,e.radius*.13,'#161313',where,[1,1,.18]);"
   },
   {
     "name": "smooth and deepen vest armhole to remove residual posed clipping",
@@ -37,6 +37,6 @@
   {
     "name": "keep vest binding inside boundary triangles",
     "before": "let A=new T.Vector3().fromBufferAttribute(p,edge.a),B=new T.Vector3().fromBufferAttribute(p,edge.b),C=new T.Vector3().fromBufferAttribute(p,edge.c),n=new T.Vector3().fromBufferAttribute(normal,edge.a).add(new T.Vector3().fromBufferAttribute(normal,edge.b)).normalize(),along=B.clone().sub(A).normalize();let inward=C.clone().sub(A).addScaledVector(along,-C.clone().sub(A).dot(along)).normalize();let width=.012;A.addScaledVector(n,.0015);B.addScaledVector(n,.0015);let D=A.clone().addScaledVector(inward,width),E=B.clone().addScaledVector(inward,width);",
-    "after": "let A=new T.Vector3().fromBufferAttribute(p,edge.a),B=new T.Vector3().fromBufferAttribute(p,edge.b),C=new T.Vector3().fromBufferAttribute(p,edge.c),n=new T.Vector3().fromBufferAttribute(normal,edge.a).add(new T.Vector3().fromBufferAttribute(normal,edge.b)).normalize(),along=B.clone().sub(A).normalize();let inward=C.clone().sub(A).addScaledVector(along,-C.clone().sub(A).dot(along)),altitude=inward.length(),f=Math.min(.35,.007/Math.max(altitude,1e-6)),D=A.clone().lerp(C,f),E=B.clone().lerp(C,f);for(let v of [A,B,D,E])v.addScaledVector(n,.0015);"
+    "after": "let A=new T.Vector3().fromBufferAttribute(p,edge.a),B=new T.Vector3().fromBufferAttribute(p,edge.b),C=new T.Vector3().fromBufferAttribute(p,edge.c),n=new T.Vector3().fromBufferAttribute(normal,edge.a).add(new T.Vector3().fromBufferAttribute(normal,edge.b)).normalize(),along=B.clone().sub(A).normalize();let inward=C.clone().sub(A).addScaledVector(along,-C.clone().sub(A).dot(along)),altitude=inward.length(),width=Math.min(.007,Math.max(.0035,A.distanceTo(B)*.45)),f=Math.min(.35,width/Math.max(altitude,1e-6)),D=A.clone().lerp(C,f),E=B.clone().lerp(C,f);for(let v of [A,B,D,E])v.addScaledVector(n,.0010);"
   }
 ]
