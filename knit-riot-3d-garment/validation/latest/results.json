@@ -496,12 +496,12 @@
       "requested_pose": "three-quarter"
     }
   ],
-  "app_sha256": "8397e5025f93fb1c4591b4f11e7199b84af868141e689165cbbdeeb07f56a32a",
+  "app_sha256": "3de80c0cd63c47737bc47c4fb944e922f51f65339f10740467f8dcc43b1c038d",
   "build_report": {
-    "project_commit": "3d869332e10adc5880fd0a7bb581a93e0e7806f5",
+    "project_commit": "0747bdd438407cd49603a38f7a2ad3ac11a9ac23",
     "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
     "baseline_app_sha256": "f70251a7a078a6e532ea80e3ab97374fa839bda9a79c3ff781dcc7ddf79f7901",
-    "app_sha256": "8397e5025f93fb1c4591b4f11e7199b84af868141e689165cbbdeeb07f56a32a",
+    "app_sha256": "3de80c0cd63c47737bc47c4fb944e922f51f65339f10740467f8dcc43b1c038d",
     "verified_fixture_files": 17,
     "fixture_manifest_sha256": "075be2731e72f99534e10c229bffb6aa4376c80ab71bd561851f2a6ef66bb71b",
     "release_status": "HOLD",
@@ -7073,6 +7073,26 @@
     "shadows": false,
     "physical_hardware": false,
     "visual_approval": false
+  },
+  "mobile_interaction": {
+    "zoom_buttons_hidden": true,
+    "tap_preserved_preset": true,
+    "pinch_changed_camera": true,
+    "pinch_preserved_preset": true,
+    "drag_entered_free": true,
+    "drag_changed_orientation": true,
+    "collapsed_projection": {
+      "vertices": 67829,
+      "minX": -0.43686757382807007,
+      "maxX": 0.43686757382807007,
+      "minY": -0.8649958830732425,
+      "maxY": 1.0545798084235114,
+      "topFraction": -0.0272899042117557,
+      "bottomFraction": 0.9324979415366212,
+      "heightFraction": 0.9597878457483769
+    },
+    "physical_hardware": false,
+    "evidence": "software-rendered Chromium with CDP touch emulation; owner physical-iPhone screenshots remain separate evidence"
   },
   "load_failure": {
     "core_mesh_blocked": true,

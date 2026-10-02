@@ -1,7 +1,7 @@
 {
-  "tested_commit": "3d869332e10adc5880fd0a7bb581a93e0e7806f5",
-  "workflow_run_id": "36977808696",
-  "app_sha256": "8397e5025f93fb1c4591b4f11e7199b84af868141e689165cbbdeeb07f56a32a",
+  "tested_commit": "0747bdd438407cd49603a38f7a2ad3ac11a9ac23",
+  "workflow_run_id": "36978174459",
+  "app_sha256": "3de80c0cd63c47737bc47c4fb944e922f51f65339f10740467f8dcc43b1c038d",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -44,8 +44,8 @@
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "6b001164e577bf43f6532b79609c650d20c6b816e13392018cfda5462f611204",
-      "bytes": 71457
+      "sha256": "316a7dd5d991c68b119597039e40f90ce4a1575316e9c2e32a028c5883c26feb",
+      "bytes": 71613
     },
     {
       "path": "footwear-barefoot-side.png",
@@ -84,13 +84,13 @@
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "b9b7c26d07e758473af6260125daf68132e210a4638ebfb6cc7d8160a3bad5e1",
-      "bytes": 88148
+      "sha256": "734d06ca0c79920d04062f62d549333bc14130f20d3a1d0bed27256ed3772a7d",
+      "bytes": 93982
     },
     {
       "path": "results.json",
-      "sha256": "18010fd955923a58af8523f9324c066e04689b1d3df20e1e5baa95be57c926d5",
-      "bytes": 207221
+      "sha256": "d4a9beaa183add1445d46e01232cafee35253a7895c18e343a8e17b5263a37bb",
+      "bytes": 207951
     }
   ]
 }

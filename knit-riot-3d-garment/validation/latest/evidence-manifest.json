@@ -296,8 +296,8 @@
   },
   {
     "path": "layout-android_portrait.png",
-    "bytes": 66587,
-    "sha256": "9493c1fb243ef246feacbd9250353d1ad230bdc81ec23cfc8df84ebac543b9d4"
+    "bytes": 68004,
+    "sha256": "2dc77c0a110ef9d467d732485199ac1483396ffc3aa51a2f7986fe5af58fcc8b"
   },
   {
     "path": "layout-iphone_landscape.png",
@@ -306,8 +306,8 @@
   },
   {
     "path": "layout-iphone_portrait.png",
-    "bytes": 45328,
-    "sha256": "1d21a9059a712cc9aaac0749683f289e601df613bdb4dffd8f867f6521bf3ce8"
+    "bytes": 45030,
+    "sha256": "0fcfc25885325e39f90c3d2cbdab3f913157d336460c112fc3de90cfda3fcf45"
   },
   {
     "path": "layout-mac_size.png",
@@ -321,88 +321,93 @@
   },
   {
     "path": "layout-small_phone_landscape.png",
-    "bytes": 49808,
-    "sha256": "f04cb6e13f92efa58b95e838abb669866ab69539a22ad871265aabd12e6559a1"
+    "bytes": 49532,
+    "sha256": "fe2870a1bdf5ebb7fa48f230420f3d7a46352a7e4d13106ce268f13f711c41a9"
+  },
+  {
+    "path": "mobile-collapsed-rendered.png",
+    "bytes": 111645,
+    "sha256": "d717a46a79ac877bb7a97faa78eb942eea50c881141c656df9dc1c47896c80ae"
   },
   {
     "path": "phone-detail.png",
-    "bytes": 147324,
-    "sha256": "6d9ce503495b307c4b8f89c36a2888ad0297a2b556030d0854e2719baf25ddec"
+    "bytes": 147025,
+    "sha256": "4ac38a0fa07ae6510ed6f4586e8f0a615245e2dca6ced590c910d5dc1c1598cc"
   },
   {
     "path": "phone-fashion-back.png",
-    "bytes": 74725,
-    "sha256": "f2d8355c402b8721b34f61c7bd993ffa993ce2353cd7c8f5a2de753f8ae2250e"
+    "bytes": 81713,
+    "sha256": "bf5618a8a530c369a6d78416c06d445a07ccc3a682cffae1496a8ec343b27583"
   },
   {
     "path": "phone-fashion-front.png",
-    "bytes": 88207,
-    "sha256": "fc9e8e75bf573e682f4d54058cb30246ddc3502747a30aa20bcc1b0ae5d65dc7"
+    "bytes": 94230,
+    "sha256": "06a1bcea2934aa7672df07415cd30d253bcd151e56b581e7c60bc6e249c87512"
   },
   {
     "path": "phone-fashion-side.png",
-    "bytes": 65674,
-    "sha256": "bf2a00ca1f09a50edb5998632189c44385db50ae7d2f9826f4ab6d99775311e1"
+    "bytes": 69937,
+    "sha256": "8161671de7d4ff65d86e59e1fa1d24c619eda5b4800eef760bbcca0da7a986d3"
   },
   {
     "path": "phone-hip-back.png",
-    "bytes": 76040,
-    "sha256": "3a04a41b83438876e91cccdf914bc1e3f1b15bc4e4b9d6d5796ccf7ab29a555d"
+    "bytes": 82992,
+    "sha256": "6c50ba9c4365c89a37cd6abafbc049ab747dd8526c90255b717f986b40933ef5"
   },
   {
     "path": "phone-hip-front.png",
-    "bytes": 89668,
-    "sha256": "4bb290054d0d341532af3a82534d5147d65924403bf74d68542f950a88d305d2"
+    "bytes": 95728,
+    "sha256": "97acb9f962be1d90a9bd35dc2f4a1854313bfd85685e183f8281c4c084317ac7"
   },
   {
     "path": "phone-hip-side.png",
-    "bytes": 63905,
-    "sha256": "1f74d19fed1b48b2739d5bf3f2aefb9f84f823e38b70c18415cd2ca68032705b"
+    "bytes": 67888,
+    "sha256": "c52e2643bb8475f49201bcba0af5c1382ae26d9e0f026a09cfa413c45731dc3b"
   },
   {
     "path": "phone-neutral-back.png",
-    "bytes": 74500,
-    "sha256": "5e9c40ee10d25711239755bd71274a4d8d2a5372131490fcaeabe63bbcdb25f3"
+    "bytes": 81560,
+    "sha256": "bf5bc2175eabab1b443478552f583fc252dfe42af9e2b74ab9774f9bbedc9d17"
   },
   {
     "path": "phone-neutral-front.png",
-    "bytes": 88148,
-    "sha256": "b9b7c26d07e758473af6260125daf68132e210a4638ebfb6cc7d8160a3bad5e1"
+    "bytes": 93982,
+    "sha256": "734d06ca0c79920d04062f62d549333bc14130f20d3a1d0bed27256ed3772a7d"
   },
   {
     "path": "phone-neutral-side.png",
-    "bytes": 63997,
-    "sha256": "68ef0b6479e6ca944525dcd3ac50b097c3ad098b4ac46f6250a496f4ece208d9"
+    "bytes": 67897,
+    "sha256": "c25767084d862ef3be5f38d8de85f8d5dfd4e908efd6c8c2aaa02d81a1b9792c"
   },
   {
     "path": "phone-three-quarter-back.png",
-    "bytes": 71852,
-    "sha256": "02585fe4b96d33df5f8a1ce6314e5aafd5c7eef3ddf2d24a67cea9a612c9d9fe"
+    "bytes": 78181,
+    "sha256": "62d477a5e95fae64410f60e11db9609633bc8a4e438550141ec8442182641e9a"
   },
   {
     "path": "phone-three-quarter-front.png",
-    "bytes": 85956,
-    "sha256": "5dcc4bcb40b1e44b84d13bfed35b6d7afc45175c7e9e98b5edfda2f387eb7a91"
+    "bytes": 91904,
+    "sha256": "30a687f020b68ee7d58caa81212ba47df0b23d5e8f286025d88a287873d7cce3"
   },
   {
     "path": "phone-three-quarter-side.png",
-    "bytes": 71975,
-    "sha256": "50c22a060254f02eaa3b717460f08cfcd83de91adb16f70357ee5da91266ed66"
+    "bytes": 76863,
+    "sha256": "5c6625d7c0e5e6ec98a0b0c8319b9166ed6d79c2b773c3ea9716561e582becfa"
   },
   {
     "path": "phone-walk-back.png",
-    "bytes": 74629,
-    "sha256": "ff3d3675204a337007e7add1bf31911b5af359b361b59e92bec7c5ce005eb101"
+    "bytes": 81652,
+    "sha256": "911d55126e8506022c871474ad8dd4ff8ac25fb97f784811ac7d361ea48b68ae"
   },
   {
     "path": "phone-walk-front.png",
-    "bytes": 87934,
-    "sha256": "9be7ad861daf77b3b5289be9389a1df8b4c6b8c481fc9522bd1ead88eb5eeee7"
+    "bytes": 93710,
+    "sha256": "c756b8acc77d9dce623ed12599ef0a79ff3bcf88301aae05aa59e02becd76d2b"
   },
   {
     "path": "phone-walk-side.png",
-    "bytes": 70442,
-    "sha256": "a0f0cf24b6221e29dfa007ee4010989189d7879e06630b81c993d8a4fb06ab9d"
+    "bytes": 75138,
+    "sha256": "d149b857e310eb6e6578b77b9220472cc0951c7bdec57ae360cd1c6d5ecd08a7"
   },
   {
     "path": "pose-fashion.png",
@@ -431,8 +436,8 @@
   },
   {
     "path": "results.json",
-    "bytes": 207221,
-    "sha256": "18010fd955923a58af8523f9324c066e04689b1d3df20e1e5baa95be57c926d5"
+    "bytes": 207951,
+    "sha256": "d4a9beaa183add1445d46e01232cafee35253a7895c18e343a8e17b5263a37bb"
   },
   {
     "path": "sweep/000.png",
