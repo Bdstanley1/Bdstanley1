@@ -1,48 +1,40 @@
 {
   "schema_version": 1,
-  "owner": "scheduled autonomous implementation turn 3",
-  "acquired_at_utc": "2026-10-01T08:59:00Z",
-  "lease_until_utc": "2026-10-01T09:59:00Z",
-  "session_result": "ACTIVE: lease acquired after previous lease expiry; inspecting validated cb1cdb candidate and continuing independent visual realism repairs",
+  "owner": "interactive autonomous continuation 2026-10-02 09:32 UTC",
+  "acquired_at_utc": "2026-10-02T09:32:00Z",
+  "lease_until_utc": "2026-10-02T10:32:00Z",
+  "session_result": "ACTIVE: inspect actual current render evidence, repair anatomical shoe coverage and validate using actual Chromium; preserve HOLD",
   "project_repository": "Bdstanley1/Bdstanley1",
   "project_path": "knit-riot-3d-garment",
-  "validated_code_commit": "cb1cdb649a57d96adcf63e87aa03b18cf2780542",
-  "app_sha256": "086f3db049759c6ffe4e99200a4987d9e87b76391dc8abe4185fd11166195cc1",
+  "validated_code_commit": "0ab3e26c7385eeeaf5d48e163a974bb72c6b048f",
+  "app_sha256": "c4deb5e91f7499b3636251208485f9aeba06e0203d373c394031909898e9121f",
   "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
   "render": {
     "workspace_id": "tea-dastcbd9fdbs73f0nrpg",
     "service_id": "srv-daudsoegekts73e2u1d0",
     "url": "https://knit-riot-studio-development.onrender.com",
-    "live_deploy_id": "dep-daurcmg473hc73cb9ljg",
+    "live_deploy_id": "dep-dav14rt9fdbs73aq4ujg",
     "status": "live",
-    "live_at_utc": "2026-10-01T01:30:02.659572Z",
-    "previous_live_deploy_id": "dep-dauq3hs9v7es73ahg1c0",
+    "live_at_utc": "2026-10-01T08:04:34.377569Z",
+    "project_commit_from_build_logs": "cb1cdb649a57d96adcf63e87aa03b18cf2780542",
+    "app_sha256_from_build_logs": "086f3db049759c6ffe4e99200a4987d9e87b76391dc8abe4185fd11166195cc1",
+    "previous_live_deploy_id": "dep-daurcmg473hc73cb9ljg",
     "preserved_v09b_service": "srv-datindfavr4c73dn25g0",
     "v09b_release_approved": false,
-    "actual_build_qa": "completed; no test/capture errors; 420 selection renders, 31 appearance renders and actual GLB roundtrip passed"
+    "actual_build_qa": "Latest retrieved ACTUAL_BROWSER_RESULTS at 2026-10-01T08:03:52Z: completed; no test/capture errors; 420 selection renders, 31 appearance renders and actual GLB roundtrip passed"
   },
   "delivery": {
     "verified": true,
     "workflow_run_id": "36801168765",
     "successful_attempt": 2,
+    "verified_project_commit": "ab0a34b4b0d4d35359b2c681b3c38cb3a8785562",
+    "scope_note": "Historical verified delivery of ab0a34b only; does not verify current cb1cdb staging bytes or the newer 0ab3e26 CI candidate.",
     "first_attempt": "Waiting deadline was reached before Render switched to the candidate; retried unchanged after live status",
     "verified_app_commit_and_bytes": true,
-    "verified_served_assets": [
-      "body.json",
-      "leye.json",
-      "reye.json",
-      "skin.png",
-      "hair.png",
-      "hair.json",
-      "studio_small_08_1k.hdr"
-    ],
+    "verified_served_assets": ["body.json", "leye.json", "reye.json", "skin.png", "hair.png", "hair.json", "studio_small_08_1k.hdr"],
     "source_archive_sha256": "ec8dfad72e31a13bed69a6057ca58d6972032ba144cb59bb0213104062f8ae0e",
     "source_archive_bytes": 31518484,
-    "verified_actual_render_images": [
-      "qa/desktop-detail.png",
-      "qa/phone-neutral-front.png",
-      "qa/glb-reloaded-detail.png"
-    ],
+    "verified_actual_render_images": ["qa/desktop-detail.png", "qa/phone-neutral-front.png", "qa/glb-reloaded-detail.png"],
     "durable_evidence_target": "validation/staging/ (maintained by staging-verification workflow)",
     "direct_source_archive": "https://knit-riot-studio-development.onrender.com/development-snapshot.zip"
   },
@@ -57,6 +49,17 @@
     "env_update_triggers_deploy": true
   },
   "ci": {
+    "run_id": "36982591318",
+    "tested_commit": "0ab3e26c7385eeeaf5d48e163a974bb72c6b048f",
+    "app_sha256": "c4deb5e91f7499b3636251208485f9aeba06e0203d373c394031909898e9121f",
+    "artifact_id": 11215988476,
+    "artifact_sha256": "8a7df63beaabbd16284fa1697b89cccf5695c5c38f3b38f24555305c7341dbee",
+    "artifact_digest_verified_this_session": true,
+    "inspection_status": "Downloaded and safely extracted actual render evidence; current inspection in progress",
+    "physical_hardware_tested": false,
+    "evidence": "validation/latest/PROVENANCE.json, results.json, lossless full render atlases and native review images"
+  },
+  "historical_ci_baseline": {
     "run_id": "36832113930",
     "conclusion": "success",
     "tested_commit": "cb1cdb649a57d96adcf63e87aa03b18cf2780542",
@@ -68,48 +71,46 @@
     "appearance_value_pairs_covered": 284,
     "layout_states": 11,
     "emulated_viewports": 7,
-    "glb_compared_deformed_vertices": 58961,
+    "glb_compared_deformed_vertices": 58157,
     "glb_maximum_world_deviation_metres": 0.0000016971415172588268,
     "actual_glb_reload_views_archived": true,
     "load_failure_and_export_failure_recovery": "passed",
     "playwright": "1.63.0",
     "pillow": "12.3.0",
-    "chromium": "153.0.8010.12",
-    "physical_hardware_tested": false,
-    "evidence": "validation/latest/PROVENANCE.json, results.json, lossless full render atlases and native review images"
+    "chromium": "153.0.8010.12"
   },
-  "implemented_this_session": [
-    "Recovered and checksum-verified actual existing application, build sources and licensed runtime fixture; committed a durable source baseline",
-    "Repaired vest shoulder coverage and removed anatomical chest spikes through source-welded garment-only smoothing and a continuous front envelope",
-    "Unblocked and completed actual 420-render sweep, then added 31 pairwise appearance renders covering all 284 value pairs",
+  "implemented_this_session": [],
+  "historical_implementation": [
+    "Recovered and checksum-verified actual application, build sources and licensed runtime fixture; committed a durable source baseline",
+    "Repaired vest shoulder coverage and anatomical chest spikes through source-welded garment-only smoothing and continuous front envelope",
+    "Completed actual 420-render sweep and 31 pairwise appearance renders covering all 284 value pairs",
     "Verified real GLB export, reload, deformed geometry and actual re-rendered views; embedded attribution and explicit non-validation metadata",
-    "Added visible exporter failure recovery and reliable camera-control synchronization",
-    "Created a shared offline builder, pinned test dependencies, durable pixel evidence and guarded staging publication pipeline",
-    "Deployed the exact tested candidate to the existing Render service and independently verified delivered application, asset bytes, QA images and source archive",
-    "Enabled the existing hourly autonomous implementation task with the actual working source/test/deployment path and full remaining scope"
+    "Added visible exporter failure recovery and camera-control synchronization",
+    "Created common offline builder, pinned test dependencies, durable pixel evidence and guarded staging publication pipeline"
   ],
   "next_actions": [
-    "Deploy exact cb1cdb candidate to existing staging and verify delivered bytes/renders",
-    "Continue face/hair/hands/footwear realism and garment edge review using actual rendered evidence",
-    "Continue measurement-driven body geometry and garment grading/ease without claiming physical fit validation"
+    "Inspect actual current source/render evidence and repair anatomically misplaced footwear opening, heel counter and sole profile",
+    "Run actual rendered regression and inspect footwear/garment boundaries in each pose; repair remaining defects",
+    "Audit and repair evidence-persistence concurrency without weakening tests or replacing newer evidence",
+    "Continue face/hair/hands realism, then integrate and actual-render-test measurement-driven geometry and garment grading/ease without physical-fit claims"
   ],
-  "appearance_evidence_limits": "Inspected delivered front/detail and prior pose/GLB renders confirm the specific garment repair, not overall realism. The woman still falls below the lifelike-reference requirement. Pairwise coverage is not exhaustive appearance coverage. Emulated hardware is not real device testing.",
+  "appearance_evidence_limits": "Actual-render inspection is required. Overall realism remains unapproved. Pairwise coverage is not exhaustive appearance coverage. Chromium emulation is not physical hardware testing. Reference images are not measured ground truth.",
   "release_status": "HOLD",
   "visual_realism_approved": false,
   "physical_garment_fit_validated": false,
-  "size_bust_waist_hips_geometry": "not yet implemented; comparison inputs only",
-  "safety": "No purchases, new paid tiers/assets, new services, production-store writes or customer-photo publication/transmission. Root profile README remains unchanged (blob 94740cd20916824e2058a62c8b6790d3943df143). Preserve all approved scope.",
+  "size_bust_waist_hips_geometry": "Not implemented in verified source; prior locally prepared candidates require recovery and independent retesting",
+  "safety": "No purchases, paid tiers/assets, new services, production-store writes, credentials/customer data in public repo/logs/artifacts, or customer-photo publication/transmission. Preserve old v09b, root profile README and unrelated files. Preserve all scope.",
   "autonomy": {
     "task_id": "6abce881c74c8191b819dffcb2e54841",
-    "enabled": true,
-    "next_scheduled_start_utc": "2026-10-01T02:32:42Z",
+    "enabled": null,
+    "status_note": "Live task state must be checked; prior handoff schedule was stale",
     "cadence": "hourly",
-    "instruction": "Continue real implementation and actual-render repair without routine questions. Notify only meaningful new validated milestones, genuine external blockers or completion. Disable only on completion, cancellation or a genuine owner-action/tool-access blocker."
+    "instruction": "Continue real implementation and actual-render repair without routine questions. Notify only meaningful new validated milestones, genuine external blockers or completion. Disable on completion, cancellation or a genuine owner-action/tool-access blocker."
   },
   "autonomous_invariants": {
     "STOP_CONDITION": "Continue autonomously while ANY independently executable project work remains.",
-    "KNOWN_DEFECT_RULE": "Identifying a correctable defect immediately creates an implementation task; reporting it does not complete it.",
+    "KNOWN_DEFECT_RULE": "A correctable defect immediately creates an implementation task; reporting it does not complete it.",
     "BLOCKER_RULE": "A blocked operation does not stop independent work elsewhere. Escalate only after all useful independent work is exhausted and owner action/external dependency is genuinely required.",
-    "AFTER_CORRECTION": "Automatically test/render, inspect the actual result, repair again if needed, then advance to the next unresolved requirement without waiting for Proceed."
+    "AFTER_CORRECTION": "Automatically test/render, inspect actual result, repair again if needed, then advance without waiting for Proceed."
   }
 }
