@@ -1,7 +1,7 @@
 {
-  "tested_commit": "0d5d201f8618f3031207b3bd3ac51f92c3c455c0",
-  "workflow_run_id": "37015774829",
-  "app_sha256": "976adb3fbf002d967ecea0aa842c02f6083ff205ca78f2d7d7a09aaf34bf48f5",
+  "tested_commit": "08abd6c316ace3ac2090a7ef656da1616be64985",
+  "workflow_run_id": "37016455296",
+  "app_sha256": "8d4bf06dd2af051bc57b200988e054d1d77e103921572fbd27a20068115d497f",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -9,53 +9,53 @@
   "files": [
     {
       "path": "all-420-rendered-cases.png",
-      "sha256": "8f0763d99e5d8b06b4534229e8c49671055dbbd9d5a391dd170d6f3156aa5dd9",
-      "bytes": 2808022
+      "sha256": "22b69d2b02b9be09891ff97db5bafe911fbd4476654b9b0c88563172070ac026",
+      "bytes": 2824431
     },
     {
       "path": "appearance-pairwise-rendered.png",
-      "sha256": "5075ef9390cc597f35d2bcae1bd546fd1fd32d0b82a7452671f9022ee0726e40",
-      "bytes": 591598
+      "sha256": "1e75e0232cc01cad568e28803bf00b82d2ae7e130aae05e4ba1f00e6b6648407",
+      "bytes": 599398
     },
     {
       "path": "desktop-detail.png",
-      "sha256": "a31db4e90d7973b06857775a5c4442f0ebe2fa52c675ec7853bb8a79974641bf",
-      "bytes": 340730
+      "sha256": "95f9d42c278a5cc491b62800de9d5e673454c63577f0752a2ebcfeb8310aaec1",
+      "bytes": 350945
     },
     {
       "path": "desktop-hip-front.png",
-      "sha256": "37e593bc15b1a1256aa14dc012a45d9fe8d810472e53458d3ccdcee2da3f13c1",
-      "bytes": 167690
+      "sha256": "65bb435cfad15dba47a7a6a1aa2a3bba536010a6d0d37ec9ab49be021cb51233",
+      "bytes": 168838
     },
     {
       "path": "desktop-neutral-back.png",
-      "sha256": "a249ec89e0db3574bc6f915ede0a3f3e911e41b3deaba74b3e4d9f253f3c7fcc",
-      "bytes": 148432
+      "sha256": "ab0f7d07072cd80f2e6b9aa3042caf7772e7b2631ab96f52b2fd5fb28213bcf1",
+      "bytes": 150465
     },
     {
       "path": "desktop-neutral-front.png",
-      "sha256": "e24dc701d1634acf418e1a84dba8f4187d12f57a05f828f5ec866f5bec7a0234",
-      "bytes": 164893
+      "sha256": "67ef0d0b3c59322cbd4701b09d51d76d7f7f0c1f6cf6e4e3b2d65a0fed06cbfb",
+      "bytes": 165894
     },
     {
       "path": "desktop-neutral-side.png",
-      "sha256": "af284f646505eb82a568847a6bdf303f0acff604740a581928426746d80eb906",
-      "bytes": 133131
+      "sha256": "4dca2cd22af152c9297f7ff264cff232f6eb4871089cff85f239c2df98ebafec",
+      "bytes": 135528
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "8230df1557c8d453f64e07afe5a5365d7950d7fb98869e648d29d4c9dbdb74a1",
+      "sha256": "cc86ce3aa780382c6d6a2dff6a2b7711d940ab647b1536331e5c6c301f8cafd6",
       "bytes": 85988
     },
     {
       "path": "footwear-barefoot-side.png",
-      "sha256": "c9e8a4103bd615c5bfb967645b0793beeb291daa65fda9c99ab6cc4dd9c9fb34",
-      "bytes": 102322
+      "sha256": "43f92bf4426906aa988d9ccaa4714eb0143a5f6f4fe815272dc13ea319c63854",
+      "bytes": 105017
     },
     {
       "path": "footwear-barefoot.png",
-      "sha256": "b42dea8380eb4b409d78de510d658bccf26804d827037a08345b73ef11528c44",
-      "bytes": 144016
+      "sha256": "e22807c37696d6bca449a043a8eeb94070daf119ce3847243da45e95598d0171",
+      "bytes": 145055
     },
     {
       "path": "footwear-closeups/barefoot-fashion-above-front.png",
@@ -69,8 +69,8 @@
     },
     {
       "path": "footwear-closeups/barefoot-fashion-front.png",
-      "sha256": "ea169390a0a2197dc2d08f5d03e3fa405916f78ff27b0001f85d3cf5ca79f1b0",
-      "bytes": 58286
+      "sha256": "d9d6e9f23c8d245a91369c9aeece16546f4633be42e97685bdc9bce13bc2d52d",
+      "bytes": 58268
     },
     {
       "path": "footwear-closeups/barefoot-fashion-side.png",
@@ -89,8 +89,8 @@
     },
     {
       "path": "footwear-closeups/barefoot-hip-front.png",
-      "sha256": "723f74719286dc0b5e7eac0b8233e6ec01fedb9935939711796187fcea45cb60",
-      "bytes": 62076
+      "sha256": "1501e45085845f82fbd9634f2e56b17d3d04a941e78f8344eb53bf8d6e2104d8",
+      "bytes": 62077
     },
     {
       "path": "footwear-closeups/barefoot-hip-side.png",
@@ -109,8 +109,8 @@
     },
     {
       "path": "footwear-closeups/barefoot-neutral-front.png",
-      "sha256": "f06eeeb720dbe8f173a63455a7a75f065a6d9ad537f93142045c89beb897345a",
-      "bytes": 61676
+      "sha256": "1651029a4eb6ff9937b39e04e4cf57cdb7c0c0c3693011e90b7c7d6e86222b47",
+      "bytes": 61678
     },
     {
       "path": "footwear-closeups/barefoot-neutral-side.png",
@@ -129,8 +129,8 @@
     },
     {
       "path": "footwear-closeups/barefoot-three-quarter-front.png",
-      "sha256": "10fb8967543fbaf171932e5b2dadf98d3dd49b05368ccda57cbb8e5671aba4c9",
-      "bytes": 60331
+      "sha256": "9a19c1af255697f9764464c4e5e2d4f918c96d1062cc5a5b770a4bcefa10f158",
+      "bytes": 60310
     },
     {
       "path": "footwear-closeups/barefoot-three-quarter-side.png",
@@ -149,8 +149,8 @@
     },
     {
       "path": "footwear-closeups/barefoot-walk-front.png",
-      "sha256": "9493e7a431ac5c05d4e6c7cc90ab37d14d0d40e94a15c248e29962417e257606",
-      "bytes": 52655
+      "sha256": "8e1f5758c79650cf98ae5e87cb0d658962a8d028e88a4d158dda087083384c0b",
+      "bytes": 52640
     },
     {
       "path": "footwear-closeups/barefoot-walk-side.png",
@@ -169,8 +169,8 @@
     },
     {
       "path": "footwear-closeups/slip-ons-fashion-front.png",
-      "sha256": "9dee27a6dc32259c80e6ad033735642aa8265fea38291593f4d155a0880a9760",
-      "bytes": 52774
+      "sha256": "e071f7290d6499697849a94242fe0ae679a1e1b6526a25824a69c496cbbb8cfe",
+      "bytes": 52775
     },
     {
       "path": "footwear-closeups/slip-ons-fashion-side.png",
@@ -189,8 +189,8 @@
     },
     {
       "path": "footwear-closeups/slip-ons-hip-front.png",
-      "sha256": "e92eadeb98e2d9c552c301af1da12fa6ff5445c09f6d22ec7e5f1e4badf04140",
-      "bytes": 54914
+      "sha256": "9a2ce3422e8d1474d24b6af8e6e35261f0c3d4fb5eee99d6cdc4180623e6a2a3",
+      "bytes": 54947
     },
     {
       "path": "footwear-closeups/slip-ons-hip-side.png",
@@ -209,8 +209,8 @@
     },
     {
       "path": "footwear-closeups/slip-ons-neutral-front.png",
-      "sha256": "f918cb59819735a132208558f5dc29574225fadf5015b96e5479501b3b932504",
-      "bytes": 54513
+      "sha256": "53c533d0ff3cf58af0339aac475891b56635c46a09af33a43a94895c10f010d2",
+      "bytes": 54522
     },
     {
       "path": "footwear-closeups/slip-ons-neutral-side.png",
@@ -229,8 +229,8 @@
     },
     {
       "path": "footwear-closeups/slip-ons-three-quarter-front.png",
-      "sha256": "d00a672ea14ca7777d11c059dae72f1bc19b5ef6ed2cb1a5cdd80fd421b7e31f",
-      "bytes": 55263
+      "sha256": "5298bc398a74afea0342fd6ade1729858d7906b94c06b68055303ed2d6609f83",
+      "bytes": 55274
     },
     {
       "path": "footwear-closeups/slip-ons-three-quarter-side.png",
@@ -249,8 +249,8 @@
     },
     {
       "path": "footwear-closeups/slip-ons-walk-front.png",
-      "sha256": "26f668d694c226deead3faf5364c31cf23e2b5c16960ac09fb31d34667b0c1ec",
-      "bytes": 47976
+      "sha256": "124b3fccb82547045693d0925139d8cd79fc154f57ee4790e51f363d0fdc318c",
+      "bytes": 47974
     },
     {
       "path": "footwear-closeups/slip-ons-walk-side.png",
@@ -259,258 +259,258 @@
     },
     {
       "path": "footwear-closeups-manifest.json",
-      "sha256": "3f11cd8cc22d831959656ff905a3c7c7ddb5d55384cd679b394adfbc4bc89539",
+      "sha256": "54f3fcb3d4209ea9e3f96fa0408635973c4f86292185dd08e607bd4aee31bcba",
       "bytes": 23250
     },
     {
       "path": "footwear-closeups-rendered.png",
-      "sha256": "0cebd245215d050c935ecdf4cb85187d4e060cf600762f34a4b1179a2fd938b8",
-      "bytes": 1290774
+      "sha256": "346267413e6b04a0d3ef060902f6a5248b8222ddde4eac37e2f6b43c90b0b12c",
+      "bytes": 1290755
     },
     {
       "path": "footwear-occlusion/barefoot-fashion-above-front.png",
-      "sha256": "7979093123573507cac9c337463a5b10572dfd6ad0054b88d0e2b6d6cc701c78",
-      "bytes": 119172
+      "sha256": "347ed5963cbc5e32ff587e4d1cf00123b64a4e22ed6b6dc9f29eab350e4d19e8",
+      "bytes": 121516
     },
     {
       "path": "footwear-occlusion/barefoot-fashion-back.png",
-      "sha256": "7979093123573507cac9c337463a5b10572dfd6ad0054b88d0e2b6d6cc701c78",
-      "bytes": 119172
+      "sha256": "347ed5963cbc5e32ff587e4d1cf00123b64a4e22ed6b6dc9f29eab350e4d19e8",
+      "bytes": 121516
     },
     {
       "path": "footwear-occlusion/barefoot-fashion-front.png",
-      "sha256": "7979093123573507cac9c337463a5b10572dfd6ad0054b88d0e2b6d6cc701c78",
-      "bytes": 119172
+      "sha256": "347ed5963cbc5e32ff587e4d1cf00123b64a4e22ed6b6dc9f29eab350e4d19e8",
+      "bytes": 121516
     },
     {
       "path": "footwear-occlusion/barefoot-fashion-side.png",
-      "sha256": "7979093123573507cac9c337463a5b10572dfd6ad0054b88d0e2b6d6cc701c78",
-      "bytes": 119172
+      "sha256": "347ed5963cbc5e32ff587e4d1cf00123b64a4e22ed6b6dc9f29eab350e4d19e8",
+      "bytes": 121516
     },
     {
       "path": "footwear-occlusion/barefoot-hip-above-front.png",
-      "sha256": "5fddfb1e3bee5fcf28e268053fea845c6d78fc3e00724e0974c96b391da55a92",
-      "bytes": 117990
+      "sha256": "dbbdc667ed3720717cf1b632e0ed5789e42f8f51f64b591c67aea36c363d2fb7",
+      "bytes": 120483
     },
     {
       "path": "footwear-occlusion/barefoot-hip-back.png",
-      "sha256": "5fddfb1e3bee5fcf28e268053fea845c6d78fc3e00724e0974c96b391da55a92",
-      "bytes": 117990
+      "sha256": "dbbdc667ed3720717cf1b632e0ed5789e42f8f51f64b591c67aea36c363d2fb7",
+      "bytes": 120483
     },
     {
       "path": "footwear-occlusion/barefoot-hip-front.png",
-      "sha256": "5fddfb1e3bee5fcf28e268053fea845c6d78fc3e00724e0974c96b391da55a92",
-      "bytes": 117990
+      "sha256": "dbbdc667ed3720717cf1b632e0ed5789e42f8f51f64b591c67aea36c363d2fb7",
+      "bytes": 120483
     },
     {
       "path": "footwear-occlusion/barefoot-hip-side.png",
-      "sha256": "5fddfb1e3bee5fcf28e268053fea845c6d78fc3e00724e0974c96b391da55a92",
-      "bytes": 117990
+      "sha256": "dbbdc667ed3720717cf1b632e0ed5789e42f8f51f64b591c67aea36c363d2fb7",
+      "bytes": 120483
     },
     {
       "path": "footwear-occlusion/barefoot-neutral-above-front.png",
-      "sha256": "f772f8d3bd90546035a146e01d8d0c03de4c8b0bc0c32c0cbe02771fd7c47b6c",
-      "bytes": 117318
+      "sha256": "a33d799052098c7c9f33286d88a464b58a0f163fb799ebaeb2c86ea7dac2b5cd",
+      "bytes": 119686
     },
     {
       "path": "footwear-occlusion/barefoot-neutral-back.png",
-      "sha256": "f772f8d3bd90546035a146e01d8d0c03de4c8b0bc0c32c0cbe02771fd7c47b6c",
-      "bytes": 117318
+      "sha256": "a33d799052098c7c9f33286d88a464b58a0f163fb799ebaeb2c86ea7dac2b5cd",
+      "bytes": 119686
     },
     {
       "path": "footwear-occlusion/barefoot-neutral-front.png",
-      "sha256": "f772f8d3bd90546035a146e01d8d0c03de4c8b0bc0c32c0cbe02771fd7c47b6c",
-      "bytes": 117318
+      "sha256": "a33d799052098c7c9f33286d88a464b58a0f163fb799ebaeb2c86ea7dac2b5cd",
+      "bytes": 119686
     },
     {
       "path": "footwear-occlusion/barefoot-neutral-side.png",
-      "sha256": "f772f8d3bd90546035a146e01d8d0c03de4c8b0bc0c32c0cbe02771fd7c47b6c",
-      "bytes": 117318
+      "sha256": "a33d799052098c7c9f33286d88a464b58a0f163fb799ebaeb2c86ea7dac2b5cd",
+      "bytes": 119686
     },
     {
       "path": "footwear-occlusion/barefoot-three-quarter-above-front.png",
-      "sha256": "ca37bfc34268250272e5bf27535e3c228d39bb73150672310147e6f6562e260c",
-      "bytes": 118181
+      "sha256": "ae27081aed7b0b6e87b86cacb2e59df7b1e419d221fae1e41b00da89f997d57c",
+      "bytes": 120426
     },
     {
       "path": "footwear-occlusion/barefoot-three-quarter-back.png",
-      "sha256": "ca37bfc34268250272e5bf27535e3c228d39bb73150672310147e6f6562e260c",
-      "bytes": 118181
+      "sha256": "ae27081aed7b0b6e87b86cacb2e59df7b1e419d221fae1e41b00da89f997d57c",
+      "bytes": 120426
     },
     {
       "path": "footwear-occlusion/barefoot-three-quarter-front.png",
-      "sha256": "ca37bfc34268250272e5bf27535e3c228d39bb73150672310147e6f6562e260c",
-      "bytes": 118181
+      "sha256": "ae27081aed7b0b6e87b86cacb2e59df7b1e419d221fae1e41b00da89f997d57c",
+      "bytes": 120426
     },
     {
       "path": "footwear-occlusion/barefoot-three-quarter-side.png",
-      "sha256": "ca37bfc34268250272e5bf27535e3c228d39bb73150672310147e6f6562e260c",
-      "bytes": 118181
+      "sha256": "ae27081aed7b0b6e87b86cacb2e59df7b1e419d221fae1e41b00da89f997d57c",
+      "bytes": 120426
     },
     {
       "path": "footwear-occlusion/barefoot-walk-above-front.png",
-      "sha256": "cf1630c4be13b2b7c6002d82761b264f5be6b76c06091ea57ad22fe8d9157b6c",
-      "bytes": 117243
+      "sha256": "a14a311b02103a94d794a553c6a451723a5ac374f5b3dc3d8ed8487df8f866a5",
+      "bytes": 119675
     },
     {
       "path": "footwear-occlusion/barefoot-walk-back.png",
-      "sha256": "cf1630c4be13b2b7c6002d82761b264f5be6b76c06091ea57ad22fe8d9157b6c",
-      "bytes": 117243
+      "sha256": "a14a311b02103a94d794a553c6a451723a5ac374f5b3dc3d8ed8487df8f866a5",
+      "bytes": 119675
     },
     {
       "path": "footwear-occlusion/barefoot-walk-front.png",
-      "sha256": "cf1630c4be13b2b7c6002d82761b264f5be6b76c06091ea57ad22fe8d9157b6c",
-      "bytes": 117243
+      "sha256": "a14a311b02103a94d794a553c6a451723a5ac374f5b3dc3d8ed8487df8f866a5",
+      "bytes": 119675
     },
     {
       "path": "footwear-occlusion/barefoot-walk-side.png",
-      "sha256": "cf1630c4be13b2b7c6002d82761b264f5be6b76c06091ea57ad22fe8d9157b6c",
-      "bytes": 117243
+      "sha256": "a14a311b02103a94d794a553c6a451723a5ac374f5b3dc3d8ed8487df8f866a5",
+      "bytes": 119675
     },
     {
       "path": "footwear-occlusion/slip-ons-fashion-above-front.png",
-      "sha256": "01bb068e70b8e5db87493074d40ef8d7ba28682db119b682cdabb6131e22da41",
-      "bytes": 124610
+      "sha256": "80a3d95fd123fb39b234c3e181367b87d460593e580933ab964160d20f28614f",
+      "bytes": 126892
     },
     {
       "path": "footwear-occlusion/slip-ons-fashion-back.png",
-      "sha256": "01bb068e70b8e5db87493074d40ef8d7ba28682db119b682cdabb6131e22da41",
-      "bytes": 124610
+      "sha256": "80a3d95fd123fb39b234c3e181367b87d460593e580933ab964160d20f28614f",
+      "bytes": 126892
     },
     {
       "path": "footwear-occlusion/slip-ons-fashion-front.png",
-      "sha256": "01bb068e70b8e5db87493074d40ef8d7ba28682db119b682cdabb6131e22da41",
-      "bytes": 124610
+      "sha256": "80a3d95fd123fb39b234c3e181367b87d460593e580933ab964160d20f28614f",
+      "bytes": 126892
     },
     {
       "path": "footwear-occlusion/slip-ons-fashion-side.png",
-      "sha256": "01bb068e70b8e5db87493074d40ef8d7ba28682db119b682cdabb6131e22da41",
-      "bytes": 124610
+      "sha256": "80a3d95fd123fb39b234c3e181367b87d460593e580933ab964160d20f28614f",
+      "bytes": 126892
     },
     {
       "path": "footwear-occlusion/slip-ons-hip-above-front.png",
-      "sha256": "d427a9d1ffe3fcde596a7e961198692d272e4a46d379444ebc6cd751ec6279a0",
-      "bytes": 123112
+      "sha256": "3dd8be0440a000b87e63dd6d27a889d1eca17da293d86606a8b97a61d6f663eb",
+      "bytes": 125558
     },
     {
       "path": "footwear-occlusion/slip-ons-hip-back.png",
-      "sha256": "d427a9d1ffe3fcde596a7e961198692d272e4a46d379444ebc6cd751ec6279a0",
-      "bytes": 123112
+      "sha256": "3dd8be0440a000b87e63dd6d27a889d1eca17da293d86606a8b97a61d6f663eb",
+      "bytes": 125558
     },
     {
       "path": "footwear-occlusion/slip-ons-hip-front.png",
-      "sha256": "d427a9d1ffe3fcde596a7e961198692d272e4a46d379444ebc6cd751ec6279a0",
-      "bytes": 123112
+      "sha256": "3dd8be0440a000b87e63dd6d27a889d1eca17da293d86606a8b97a61d6f663eb",
+      "bytes": 125558
     },
     {
       "path": "footwear-occlusion/slip-ons-hip-side.png",
-      "sha256": "d427a9d1ffe3fcde596a7e961198692d272e4a46d379444ebc6cd751ec6279a0",
-      "bytes": 123112
+      "sha256": "3dd8be0440a000b87e63dd6d27a889d1eca17da293d86606a8b97a61d6f663eb",
+      "bytes": 125558
     },
     {
       "path": "footwear-occlusion/slip-ons-neutral-above-front.png",
-      "sha256": "113e13cbe4830b7319f1d831cd4c6ce5b0a0ccae4119092a0de746fe649d7154",
-      "bytes": 122471
+      "sha256": "3d2077b32f2a0e345455c0e3c2440456f56a119b6eec46f5d42928f71283c064",
+      "bytes": 124776
     },
     {
       "path": "footwear-occlusion/slip-ons-neutral-back.png",
-      "sha256": "113e13cbe4830b7319f1d831cd4c6ce5b0a0ccae4119092a0de746fe649d7154",
-      "bytes": 122471
+      "sha256": "3d2077b32f2a0e345455c0e3c2440456f56a119b6eec46f5d42928f71283c064",
+      "bytes": 124776
     },
     {
       "path": "footwear-occlusion/slip-ons-neutral-front.png",
-      "sha256": "113e13cbe4830b7319f1d831cd4c6ce5b0a0ccae4119092a0de746fe649d7154",
-      "bytes": 122471
+      "sha256": "3d2077b32f2a0e345455c0e3c2440456f56a119b6eec46f5d42928f71283c064",
+      "bytes": 124776
     },
     {
       "path": "footwear-occlusion/slip-ons-neutral-side.png",
-      "sha256": "113e13cbe4830b7319f1d831cd4c6ce5b0a0ccae4119092a0de746fe649d7154",
-      "bytes": 122471
+      "sha256": "3d2077b32f2a0e345455c0e3c2440456f56a119b6eec46f5d42928f71283c064",
+      "bytes": 124776
     },
     {
       "path": "footwear-occlusion/slip-ons-three-quarter-above-front.png",
-      "sha256": "987b8f41b0ff48639447a11ec4e85252a73a052507d1694b8da7aa3ee7b9098b",
-      "bytes": 125239
+      "sha256": "140cd3e6fc4df378d3f33bbab128cd9c8608fd25f7c4a05ed73f712f86e1cde3",
+      "bytes": 127532
     },
     {
       "path": "footwear-occlusion/slip-ons-three-quarter-back.png",
-      "sha256": "987b8f41b0ff48639447a11ec4e85252a73a052507d1694b8da7aa3ee7b9098b",
-      "bytes": 125239
+      "sha256": "140cd3e6fc4df378d3f33bbab128cd9c8608fd25f7c4a05ed73f712f86e1cde3",
+      "bytes": 127532
     },
     {
       "path": "footwear-occlusion/slip-ons-three-quarter-front.png",
-      "sha256": "987b8f41b0ff48639447a11ec4e85252a73a052507d1694b8da7aa3ee7b9098b",
-      "bytes": 125239
+      "sha256": "140cd3e6fc4df378d3f33bbab128cd9c8608fd25f7c4a05ed73f712f86e1cde3",
+      "bytes": 127532
     },
     {
       "path": "footwear-occlusion/slip-ons-three-quarter-side.png",
-      "sha256": "987b8f41b0ff48639447a11ec4e85252a73a052507d1694b8da7aa3ee7b9098b",
-      "bytes": 125239
+      "sha256": "140cd3e6fc4df378d3f33bbab128cd9c8608fd25f7c4a05ed73f712f86e1cde3",
+      "bytes": 127532
     },
     {
       "path": "footwear-occlusion/slip-ons-walk-above-front.png",
-      "sha256": "3d45c0619d017ea7b09449dc5604be37d48527d507dbed04b51030b9da86f317",
-      "bytes": 121762
+      "sha256": "8ca96b6fb97230f22a21d2062cc3ee6071e7f5a11da52c7288bccbfaa6bcdd66",
+      "bytes": 124101
     },
     {
       "path": "footwear-occlusion/slip-ons-walk-back.png",
-      "sha256": "3d45c0619d017ea7b09449dc5604be37d48527d507dbed04b51030b9da86f317",
-      "bytes": 121762
+      "sha256": "8ca96b6fb97230f22a21d2062cc3ee6071e7f5a11da52c7288bccbfaa6bcdd66",
+      "bytes": 124101
     },
     {
       "path": "footwear-occlusion/slip-ons-walk-front.png",
-      "sha256": "3d45c0619d017ea7b09449dc5604be37d48527d507dbed04b51030b9da86f317",
-      "bytes": 121762
+      "sha256": "8ca96b6fb97230f22a21d2062cc3ee6071e7f5a11da52c7288bccbfaa6bcdd66",
+      "bytes": 124101
     },
     {
       "path": "footwear-occlusion/slip-ons-walk-side.png",
-      "sha256": "3d45c0619d017ea7b09449dc5604be37d48527d507dbed04b51030b9da86f317",
-      "bytes": 121762
+      "sha256": "8ca96b6fb97230f22a21d2062cc3ee6071e7f5a11da52c7288bccbfaa6bcdd66",
+      "bytes": 124101
     },
     {
       "path": "footwear-occlusion-manifest.json",
-      "sha256": "40144c41c780ef2120c1dbd7686966d03eaee24a27777417d6bb982649f9a2ff",
+      "sha256": "80feb61556e3addd88d1c8d9f358d5e8996d473ac2d98b6383d0150bca886b72",
       "bytes": 10126
     },
     {
       "path": "footwear-occlusion-rendered.png",
-      "sha256": "04dcb2913ec9d79d1cb870fe95446edceb3e310cf5f072da99745ac7adf0d39e",
-      "bytes": 732831
+      "sha256": "a4f2e0f186938e0558d5d49a32182d8b67edbb012468af3655ea6dcd7f16f6c6",
+      "bytes": 758867
     },
     {
       "path": "footwear-slip-ons-side.png",
-      "sha256": "f773bc7b9f26c2163e89954793ce1b2e7f1e7544f359b7841a3285c19d1f4b6f",
-      "bytes": 100813
+      "sha256": "bcf7df4361ce58164398f318500bb5c69243bf720a27c6dc472ae5fedf78c0c8",
+      "bytes": 103506
     },
     {
       "path": "footwear-slip-ons.png",
-      "sha256": "a200738e9215a057237b1e9f270f0f6920ec00c3ca85da79e8e6086ad2f891f7",
-      "bytes": 141980
+      "sha256": "1b4320c5e6a47c7fe43923ac06393348ae848173237e29c5c980c88608aa3a83",
+      "bytes": 143009
     },
     {
       "path": "glb-original.png",
-      "sha256": "a200738e9215a057237b1e9f270f0f6920ec00c3ca85da79e8e6086ad2f891f7",
-      "bytes": 141980
+      "sha256": "1b4320c5e6a47c7fe43923ac06393348ae848173237e29c5c980c88608aa3a83",
+      "bytes": 143009
     },
     {
       "path": "glb-reloaded-detail.png",
-      "sha256": "f0bbb266581c253ff8dceab0371e89d6cd89d36b20853e69fad53b9cd8efa180",
-      "bytes": 364870
+      "sha256": "a5823eb44d881f62949bf04f88e06e0d686b3877764ce5a11a18a044eb064ebb",
+      "bytes": 365556
     },
     {
       "path": "glb-reloaded-front.png",
-      "sha256": "7217ec373977b3e73c087432f8b7575efbac2f40618c24c7b02c66b05d758395",
-      "bytes": 138710
+      "sha256": "1dd8036a8a960ae38c0f975a841b1f4bc5010016e4d3b1f69486e9f124f26008",
+      "bytes": 138974
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "7757679d2b090ad4485d5213c088a356b24192ce5e046f5de8134bb146b012ce",
-      "bytes": 92817
+      "sha256": "f474bd14b0172b6fdaaee2d23bec348917db0c628ae75de62b34e964c51e7cfa",
+      "bytes": 93811
     },
     {
       "path": "results.json",
-      "sha256": "7813465ad2a624454d0856aa8cea949550ed493d1db41f05498ee5dd56cc2ffd",
-      "bytes": 247842
+      "sha256": "b9064f18f4a32060031b66278c3b0e13e3dd5946e011500adf04e31629f63dc3",
+      "bytes": 247898
     }
   ]
 }
