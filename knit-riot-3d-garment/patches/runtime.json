@@ -17,7 +17,7 @@
   {
     "name": "balance Ashley May hair cutout edges against visible card fill",
     "before": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,color:hm.color,alphaTest:.35,side:T.DoubleSide,roughness:.63,metalness:0,anisotropy:.65,anisotropyRotation:Math.PI/2,specularIntensity:.55,envMapIntensity:.85});",
-    "after": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,color:hm.color,alphaTest:.10,side:T.DoubleSide,roughness:.68,metalness:0,anisotropy:.76,anisotropyRotation:Math.PI/2,specularIntensity:.26,envMapIntensity:.76});"
+    "after": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,color:hm.color,alphaTest:.10,alphaToCoverage:true,side:T.DoubleSide,roughness:.68,metalness:0,anisotropy:.76,anisotropyRotation:Math.PI/2,specularIntensity:.26,envMapIntensity:.76});"
   },
   {
     "name": "improve layered eye material response",
