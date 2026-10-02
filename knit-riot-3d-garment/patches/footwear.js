@@ -108,8 +108,8 @@
     for(let i=0;i<outerIndices.length;i+=3)indices.push(outerIndices[i]+count,outerIndices[i+2]+count,outerIndices[i+1]+count);
     for(const row of [0,ROWS])for(let i=0;i<N;i++){
       const j=(i+1)%N,a=row*N+i,b=row*N+j;
-      if(row===ROWS)indices.push(a,b,a+count,b,b+count,a+count);
-      else indices.push(a,a+count,b,b,a+count,b+count);
+      if(row===ROWS)indices.push(a,a+count,b,b,a+count,b+count);
+      else indices.push(a,b,a+count,b,b+count,a+count);
     }
     const upper=new T.BufferGeometry();upper.setAttribute('position',new T.Float32BufferAttribute(positions,3));upper.setAttribute('uv',new T.Float32BufferAttribute(uv,2));upper.setIndex(indices);upper.computeVertexNormals();
     add('upper',upper,upperMat);
