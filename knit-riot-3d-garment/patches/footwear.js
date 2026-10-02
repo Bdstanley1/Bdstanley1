@@ -47,19 +47,19 @@
   for(const [side,b] of bounds.entries()){
     const anatomyW=(b.x1-b.x0)/2,anatomyL=b.z1-b.z0;
     const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2;
-    const w=anatomyW+H*.0038,l=anatomyL+H*.018;
-    const bottom=b.y0-H*.0015,soleH=H*.0044;
+    const w=anatomyW+H*.0032,l=anatomyL+H*.014;
+    const bottom=b.y0-H*.0010,soleH=H*.0030;
 
-    const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.0005,bevelSize:H*.0008});
+    const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.00035,bevelSize:H*.00055});
     sole.rotateX(-Math.PI/2);sole.translate(cx,bottom,cz);sole.computeVertexNormals();
     attachToFoot(sole,side,cx,cz);
     addShoe('White slip-on '+(side?'right':'left')+' sole',sole,soleMat);
 
     const upperShape=outline(w*.955,l*.945);
     const opening=new T.Path();
-    opening.absellipse(0,l*.16,w*.33,l*.065,0,Math.PI*2,false,0);
+    const ankle=[];for(let i=0;i<m.positions.length;i+=3){const x=m.positions[i],y=m.positions[i+1],z=m.positions[i+2];if(((side===0&&x<0)||(side===1&&x>=0))&&y>H*.050&&y<H*.095&&z>b.z0+anatomyL*.08&&z<b.z0+anatomyL*.58)ankle.push([x,z]);}const ankleZ=ankle.length?ankle.reduce((a,v)=>a+v[1],0)/ankle.length:cz-l*.15;const openingZ=Math.max(-l*.28,Math.min(l*.02,ankleZ-cz));opening.absellipse(0,openingZ,w*.31,l*.072,0,Math.PI*2,false,0);
     upperShape.holes.push(opening);
-    const upperH=H*.050,upperBase=bottom+soleH*.62;
+    const upperH=H*.048,upperBase=bottom+soleH*.70;
     const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0013,bevelSize:H*.0015});
     upper.rotateX(-Math.PI/2);upper.translate(cx,upperBase,cz);
     const p=upper.attributes.position;
@@ -67,11 +67,11 @@
       let x=p.getX(i),y=p.getY(i),z=p.getZ(i);
       const t=Math.max(0,Math.min(1,(z-(cz-l*.52))/l));
       const fy=Math.max(0,Math.min(1,(y-upperBase)/upperH));
-      const vamp=Math.exp(-Math.pow((t-.66)/.21,2));
-      const heel=Math.max(0,1-t/.36);
-      const collar=Math.exp(-Math.pow((t-.20)/.18,2));
+      const vamp=Math.exp(-Math.pow((t-.64)/.23,2));
+      const heel=Math.max(0,1-t/.42);
+      const collar=Math.exp(-Math.pow((t-.24)/.20,2));
       const toeLift=Math.pow(Math.max(0,(t-.78)/.22),2);
-      const top=H*(.015+.032*vamp+.014*heel+.006*collar);
+      const top=H*(.013+.033*vamp+.024*heel+.008*collar);
       x=cx+(x-cx)*(1-.065*fy);
       y=upperBase+fy*top+H*.0015*toeLift*fy;
       p.setXYZ(i,x,y,z);
