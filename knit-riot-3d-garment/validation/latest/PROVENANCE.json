@@ -1,7 +1,7 @@
 {
-  "tested_commit": "1bfd2c92a591245fa7daa8c0709f7ad2d7701e12",
-  "workflow_run_id": "36976701885",
-  "app_sha256": "4d342d4bf9ad47141dce0b03504d55c6d2dfee1d5e045ad613e5dc8b73bbdae5",
+  "tested_commit": "46c73b7778804bdb1c9f138b0c669a93c6173247",
+  "workflow_run_id": "36977385078",
+  "app_sha256": "b7645dc9cd1755fd45a65dd3ce6fbda312c324555b18eaecdc360256926096de",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -9,13 +9,13 @@
   "files": [
     {
       "path": "all-420-rendered-cases.png",
-      "sha256": "1251bcc68f7d42fdd20bef446fb552496aaf46fb3d76239ec23fb69cc9606e6a",
-      "bytes": 2811818
+      "sha256": "c398d691cf488060115da47bc02438b16a17a863e40a03345a05da82ddc46d94",
+      "bytes": 2855095
     },
     {
       "path": "appearance-pairwise-rendered.png",
-      "sha256": "441af7cea55dde3228a9d117f12a809b728a00cfecdcd8c00df04fb8bed8b9a4",
-      "bytes": 595053
+      "sha256": "91d4287d8bd98cb0fe52a1a98d3bc2bbb67015838a21b0ebdf1543c8bc36c602",
+      "bytes": 602258
     },
     {
       "path": "desktop-detail.png",
@@ -24,28 +24,28 @@
     },
     {
       "path": "desktop-hip-front.png",
-      "sha256": "beee12784fda80500aeaf3fa1a1d1124cf0ec1f460e9f8eeef090c13f8fac68c",
-      "bytes": 167874
+      "sha256": "6a8a69b2e805167a31e71f0b6665ea32ba18bc6977ec49540f0ff4379e078fd0",
+      "bytes": 169381
     },
     {
       "path": "desktop-neutral-back.png",
-      "sha256": "9f79853f10bfb0e34b5b1f2e9d181cd08be8c981e5c861bed8ed074b2fa4b07e",
-      "bytes": 149036
+      "sha256": "b7efcd714ef70f09b17af0d1dc209dcc072d1e3482fca2317423e58d46665fac",
+      "bytes": 150665
     },
     {
       "path": "desktop-neutral-front.png",
-      "sha256": "083abc1784e522910e9787d78492130622e61b9d7157ba69303f1c103c9837bf",
-      "bytes": 165123
+      "sha256": "fbdf3339afddfaf099ca0b9e2fee6d2e3adb66106d63e68f10ecad8f7ec5dc34",
+      "bytes": 166612
     },
     {
       "path": "desktop-neutral-side.png",
-      "sha256": "c499cff12bcefc812cbdb753624a97adf3b6e7d541f222c5d3b6af6cb298bb65",
-      "bytes": 132303
+      "sha256": "3579cccf9af7fb7a36b9c52d13fa1916f1e448942dd16c0cf00212db7d6a6695",
+      "bytes": 134030
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "b3b6ba61bcba7ebd9a5b593dd82a9828090a95aa3d52269dd92e698f5d83d771",
-      "bytes": 71455
+      "sha256": "956a26708dfb4236473cf5c39cf8eba6198e3ffcf2600ae7ed2f2e90acd0bb59",
+      "bytes": 71457
     },
     {
       "path": "footwear-barefoot-side.png",
@@ -59,18 +59,18 @@
     },
     {
       "path": "footwear-slip-ons-side.png",
-      "sha256": "1ea475d6bcd85f6e014125ddd87ed1a76c307dece4f94c410833045590eddca3",
-      "bytes": 98431
+      "sha256": "2951f78cc4f6d1ab64d7e34ae574b0723827af97f1069c353d9e7fd7bae77e02",
+      "bytes": 100709
     },
     {
       "path": "footwear-slip-ons.png",
-      "sha256": "0a082c53d6f360a38e92675b39ec88ea0df8d789b4ce311b09342856e455b75d",
-      "bytes": 142084
+      "sha256": "4fd3b6576f1546ffd34b9e2cffdb5df1d9cc027418a0490b385275bf26aae8d2",
+      "bytes": 143916
     },
     {
       "path": "glb-original.png",
-      "sha256": "0a082c53d6f360a38e92675b39ec88ea0df8d789b4ce311b09342856e455b75d",
-      "bytes": 142084
+      "sha256": "4fd3b6576f1546ffd34b9e2cffdb5df1d9cc027418a0490b385275bf26aae8d2",
+      "bytes": 143916
     },
     {
       "path": "glb-reloaded-detail.png",
@@ -79,18 +79,18 @@
     },
     {
       "path": "glb-reloaded-front.png",
-      "sha256": "d6ad4ab518254d65cf4b7dec394f56d5ddc608f0d81ac53689e4cf533ded3c88",
-      "bytes": 138917
+      "sha256": "b6a85e3809eca46050657b98ca942056a3d1b849ff673466861f3647ffcbf2a5",
+      "bytes": 140703
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "c6b71c7d74616896a5f8cda73f8f983a32b55c036fde58775c5127b6160a5ea5",
-      "bytes": 87301
+      "sha256": "8f224cf65557c80fba83e884904ba624b87d21f80348786e850a7f5c418914ef",
+      "bytes": 88334
     },
     {
       "path": "results.json",
-      "sha256": "fdc9148e0985bd1d4468387ecd2c413d9d617950049103beb76b7580fefb8eb9",
-      "bytes": 207179
+      "sha256": "dc48ee391039db77fa92a7e1f6727f42820e4b9031d58f869454c964867c0fcf",
+      "bytes": 207319
     }
   ]
 }
