@@ -35,13 +35,13 @@ def assemble_app() -> tuple[str, str, str]:
     if app.count(footwear_before) != 1:
         raise ValueError('Expected exactly one pristine footwear context')
     app=app.replace(footwear_before,footwear)
-    extra = ROOT/'patches/runtime.json'
-    if extra.exists():
-        for patch in json.loads(extra.read_text()):
-            before, after = patch['before'], patch['after']
-            if app.count(before) != patch.get('count', 1):
-                raise ValueError('Runtime patch context mismatch: '+patch.get('name', before[:60]))
-            app = app.replace(before, after)
+    for extra in [ROOT/'patches/runtime.json', ROOT/'patches/interaction.json', ROOT/'patches/framing.json']:
+        if extra.exists():
+            for patch in json.loads(extra.read_text()):
+                before, after = patch['before'], patch['after']
+                if app.count(before) != patch.get('count', 1):
+                    raise ValueError('Runtime patch context mismatch: '+patch.get('name', before[:60]))
+                app = app.replace(before, after)
     return app, refine, clip
 
 
@@ -71,6 +71,11 @@ def build(destination: Path) -> dict:
     if index.count(zoom_before) != 1:
         raise ValueError('Expected exactly one pristine zoom-control label context')
     index = index.replace(zoom_before, zoom_after)
+    style_anchor = '</style><script type="importmap">'
+    mobile_css = '@media(max-width:800px){#zoomIn,#zoomOut{display:none}}'
+    if index.count(style_anchor) != 1:
+        raise ValueError('Expected exactly one style/importmap context')
+    index = index.replace(style_anchor, mobile_css+style_anchor)
     (destination/'index.html').write_text(index)
     (destination/'app.js').write_text(app)
     (destination/'REFINE_JS.txt').write_text(refine)
@@ -98,6 +103,10 @@ def build(destination: Path) -> dict:
     (destination/'source-REFINE_JS.txt').write_text(refine)
     (destination/'source-CLIP_JS.txt').write_text(clip)
     (destination/'source-FOOTWEAR_JS.txt').write_bytes((ROOT/'patches/footwear.js').read_bytes())
+    for patch_name in ['runtime.json','interaction.json','framing.json']:
+        patch_path=ROOT/'patches'/patch_name
+        if patch_path.exists():
+            (destination/('source-'+patch_name)).write_bytes(patch_path.read_bytes())
     (destination/'source-build_runtime.py.txt').write_bytes(Path(__file__).read_bytes())
     (destination/'.knit-riot-generated').write_text('Build output only; never store customer data here.\n')
     return report

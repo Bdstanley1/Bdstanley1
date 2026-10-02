@@ -1,0 +1,7 @@
+[
+  {
+    "name": "preserve camera presets until actual orbit rotation",
+    "before": "orbit.addEventListener('start',()=>{state.view='free';updateUI()});makeUI();new ResizeObserver(resize).observe($('stage'));",
+    "after": "let orbitGestureStart=null;orbit.addEventListener('start',()=>{orbitGestureStart=camera.quaternion.clone()});orbit.addEventListener('change',()=>{if(orbitGestureStart&&state.view!=='free'&&camera.quaternion.angleTo(orbitGestureStart)>.008){state.view='free';updateUI()}});orbit.addEventListener('end',()=>{orbitGestureStart=null});makeUI();new ResizeObserver(resize).observe($('stage'));"
+  }
+]

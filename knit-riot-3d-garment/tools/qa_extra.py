@@ -104,3 +104,50 @@ def run_additional(browser, root: Path, checks: dict):
         evidence.append({'case':case,'path':'appearance-pairwise/'+name,'sha256':hashlib.sha256(raw).hexdigest(),'webglError':result['webglError']})
     checks['appearance_pairwise']={'coverage':'all value pairs across the seven listed factors, not the full Cartesian product','factors':factors,'pair_count':pairs,'case_count':len(cases),'evidence':evidence,'render_resolution':[240,360],'shadows':False,'physical_hardware':False,'visual_approval':False}
     page.close()
+
+    mobile=browser.new_page(viewport={'width':390,'height':844},device_scale_factor=1)
+    mobile.add_init_script('window.__qaPause=true')
+    mobile.on('pageerror',lambda e:checks['errors'].append(str(e)))
+    mobile.goto('http://127.0.0.1:8719/',wait_until='networkidle',timeout=60000)
+    mobile.wait_for_function('window.KR && KR.ready',timeout=30000)
+    mobile.evaluate("KR.setSheet('collapsed');KR.reset();KR.view('front');KR.renderer.render(KR.scene,KR.camera)")
+    zoom_hidden=not mobile.locator('#zoomIn').is_visible() and not mobile.locator('#zoomOut').is_visible()
+    projected=mobile.evaluate("""async()=>{
+      const T=await import('three'),p=new T.Vector3();let minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity,n=0;
+      KR.figure.updateMatrixWorld(true);
+      KR.figure.traverse(o=>{if(!o.isMesh||!o.visible)return;if(o.skeleton)o.skeleton.update();const count=o.geometry.attributes.position?.count||0;for(let i=0;i<count;i++){o.getVertexPosition(i,p);o.localToWorld(p);p.project(KR.camera);if(!Number.isFinite(p.x)||!Number.isFinite(p.y))continue;minX=Math.min(minX,p.x);maxX=Math.max(maxX,p.x);minY=Math.min(minY,p.y);maxY=Math.max(maxY,p.y);n++;}});
+      return {vertices:n,minX,maxX,minY,maxY,topFraction:(1-maxY)/2,bottomFraction:(1-minY)/2,heightFraction:(maxY-minY)/2};
+    }""")
+    raw=base64.b64decode(mobile.evaluate('KR.renderer.domElement.toDataURL("image/png")').split(',',1)[1])
+    (root/'mobile-collapsed-rendered.png').write_bytes(raw)
+    cd=mobile.context.new_cdp_session(mobile)
+    cd.send('Emulation.setTouchEmulationEnabled',{'enabled':True,'maxTouchPoints':2})
+    box=mobile.locator('#canvas').bounding_box();cx=box['x']+box['width']/2;cy=box['y']+box['height']/2
+    one=lambda x,y:[{'x':x,'y':y,'id':0,'radiusX':2,'radiusY':2,'force':1}]
+    cd.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':one(cx,cy)})
+    cd.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]})
+    mobile.wait_for_timeout(120)
+    tap_view=mobile.evaluate('KR.state.view')
+    before_pinch=mobile.evaluate('()=>({p:KR.camera.position.toArray(),q:KR.camera.quaternion.toArray()})')
+    two=lambda d:[{'x':cx-d,'y':cy,'id':0,'radiusX':2,'radiusY':2,'force':1},{'x':cx+d,'y':cy,'id':1,'radiusX':2,'radiusY':2,'force':1}]
+    cd.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':two(24)})
+    for d in [30,36,42,48,54]:
+        cd.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':two(d)});mobile.wait_for_timeout(25)
+    cd.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]});mobile.wait_for_timeout(150)
+    after_pinch=mobile.evaluate('()=>({p:KR.camera.position.toArray(),q:KR.camera.quaternion.toArray(),view:KR.state.view})')
+    mobile.evaluate("KR.reset();KR.view('front')")
+    before_drag=mobile.evaluate('KR.camera.quaternion.toArray()')
+    cd.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':one(cx,cy)})
+    for dx in [15,30,45,60,75]:
+        cd.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':one(cx+dx,cy+8)});mobile.wait_for_timeout(25)
+    cd.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]});mobile.wait_for_timeout(150)
+    drag_view=mobile.evaluate('KR.state.view');after_drag=mobile.evaluate('KR.camera.quaternion.toArray()')
+    cd.detach()
+    mobile_state={'zoom_buttons_hidden':zoom_hidden,'tap_preserved_preset':tap_view=='front','pinch_changed_camera':before_pinch['p']!=after_pinch['p'],'pinch_preserved_preset':after_pinch['view']=='front','drag_entered_free':drag_view=='free','drag_changed_orientation':before_drag!=after_drag,'collapsed_projection':projected,'physical_hardware':False,'evidence':'software-rendered Chromium with CDP touch emulation; owner physical-iPhone screenshots remain separate evidence'}
+    checks['mobile_interaction']=mobile_state
+    if not zoom_hidden:checks['errors'].append('Mobile +/- zoom buttons remain visible')
+    if tap_view!='front':checks['errors'].append('Canvas tap changed a selected camera preset')
+    if before_pinch['p']==after_pinch['p'] or after_pinch['view']!='front':checks['errors'].append('Pinch zoom did not preserve camera preset')
+    if drag_view!='free' or before_drag==after_drag:checks['errors'].append('Touch drag did not enter free orbit')
+    if projected['vertices']<10000 or projected['topFraction']>.28 or projected['heightFraction']<.60 or projected['maxY']>1.08 or projected['minY']<-1.08:checks['errors'].append('Collapsed phone model framing is outside the tested visibility envelope')
+    mobile.close()
