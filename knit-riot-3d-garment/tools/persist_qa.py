@@ -13,27 +13,30 @@ result=json.loads((source/'results.json').read_text())
 assert result['execution_status']=='completed' and not result['errors'] and not result['capture_errors']
 assert result['extended']['passed'] and result['extended']['rendered_combinations']==420
 assert result['footwear_closeups']['executed_renders']==40
+assert result['footwear_occlusion']['executed_renders']==40
+assert result['footwear_occlusion']['closed_shoe_exposed_probe_pixels']==0
 validation=root/'validation'
 validation.mkdir(exist_ok=True)
 # Start empty; no previously published image may inherit a new candidate's provenance.
 with tempfile.TemporaryDirectory(prefix='.qa-evidence-',dir=validation) as temporary:
     out=Path(temporary)/'latest'
     out.mkdir()
-    names=['results.json','evidence-manifest.json','desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-original.png','glb-reloaded-front.png','glb-reloaded-detail.png','footwear-slip-ons.png','footwear-slip-ons-side.png','footwear-barefoot.png','footwear-barefoot-side.png','footwear-closeups-rendered.png','footwear-closeups-manifest.json']
+    names=['results.json','evidence-manifest.json','desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-original.png','glb-reloaded-front.png','glb-reloaded-detail.png','footwear-slip-ons.png','footwear-slip-ons-side.png','footwear-barefoot.png','footwear-barefoot-side.png','footwear-closeups-rendered.png','footwear-closeups-manifest.json','footwear-occlusion-rendered.png','footwear-occlusion-manifest.json']
     for name in names:
         shutil.copyfile(source/name,out/name)
-    records=result['footwear_closeups']['evidence']
-    assert len(records)==40 and len({r['path'] for r in records})==40
-    for record in records:
-        relative=Path(record['path'])
-        assert not relative.is_absolute() and '..' not in relative.parts
-        assert relative.parts[0]=='footwear-closeups' and relative.suffix=='.png'
-        src=source/relative
-        assert not src.is_symlink()
-        assert hashlib.sha256(src.read_bytes()).hexdigest()==record['sha256']
-        target=out/relative
-        target.parent.mkdir(exist_ok=True)
-        shutil.copyfile(src,target)
+    for key,folder in [('footwear_closeups','footwear-closeups'),('footwear_occlusion','footwear-occlusion')]:
+        records=result[key]['evidence']
+        assert len(records)==40 and len({r['path'] for r in records})==40
+        for record in records:
+            relative=Path(record['path'])
+            assert not relative.is_absolute() and '..' not in relative.parts
+            assert relative.parts[0]==folder and relative.suffix=='.png'
+            src=source/relative
+            assert not src.is_symlink()
+            assert hashlib.sha256(src.read_bytes()).hexdigest()==record['sha256']
+            target=out/relative
+            target.parent.mkdir(exist_ok=True)
+            shutil.copyfile(src,target)
 
     def atlas(records,name,columns,width,height):
         rows=(len(records)+columns-1)//columns
