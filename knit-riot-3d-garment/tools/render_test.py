@@ -11,6 +11,7 @@ import threading
 from playwright.sync_api import sync_playwright
 from build_runtime import ROOT, BASE, build, archive
 from qa_extra import run_additional
+from qa_footwear import run_footwear_closeups
 
 RUNTIME=ROOT/'test-runtime'
 q=RUNTIME/'qa'
@@ -109,6 +110,15 @@ try:
         if blank:checks['errors'].append('Uniform rendered frames detected')
         if len(frames)!=420:checks['errors'].append('420-frame sweep not completed')
         run_additional(browser,q,checks)
+        footwear_page=browser.new_page(viewport={'width':1100,'height':900},device_scale_factor=1)
+        footwear_page.add_init_script('window.__qaPause=true')
+        footwear_page.on('pageerror',lambda error:checks['errors'].append(str(error)))
+        footwear_page.goto('http://127.0.0.1:8719/',wait_until='networkidle',timeout=60000)
+        footwear_page.wait_for_function('window.KR && KR.ready',timeout=40000)
+        run_footwear_closeups(footwear_page,q,checks)
+        footwear_page.close()
+        if checks.get('footwear_closeups',{}).get('executed_renders')!=40:
+            checks['errors'].append('40-frame exhaustive footwear close-up coverage incomplete')
         for case in checks.get('appearance_pairwise',{}).get('evidence',[]):
             image=Image.open(q/case['path']).convert('RGB')
             if max(ImageStat.Stat(image).stddev)<1:checks['errors'].append('Uniform pairwise render '+case['path'])
