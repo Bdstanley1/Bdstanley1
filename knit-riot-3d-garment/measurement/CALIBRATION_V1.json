@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "source_commit": "fc3dc472770c6364ea8373c0ddf04edbaf850c3b",
+  "source_body_blob": "8c7a2a064f1eaa63ca5228c1fdd481506d4ede8c",
+  "source_height_m": 1.68,
+  "method": "Horizontal triangle-plane intersection on the committed anatomical body mesh; connected central torso loop selected by topology. Circumferences are mesh-geometric calibration values, not anthropometric ground truth.",
+  "anchors": {
+    "hips": {
+      "y_m": 0.85,
+      "y_over_height": 0.505952,
+      "baseline_circumference_cm": 99.53,
+      "ui_range_cm": [
+        75,
+        140
+      ],
+      "default_cm": 98
+    },
+    "waist": {
+      "y_m": 1.08,
+      "y_over_height": 0.642857,
+      "baseline_circumference_cm": 68.16,
+      "ui_range_cm": [
+        50,
+        120
+      ],
+      "default_cm": 72
+    },
+    "bust": {
+      "y_m": 1.235,
+      "y_over_height": 0.735119,
+      "baseline_circumference_cm": 88.929,
+      "ui_range_cm": [
+        70,
+        130
+      ],
+      "default_cm": 92
+    }
+  },
+  "intended_geometry_model": {
+    "height": "existing global scale h = entered_height_cm / 168",
+    "radial_anchor_scale": "s = target_circumference_cm / (baseline_circumference_cm * h)",
+    "interpolation": "piecewise smooth positive radial x/z scaling through hip, waist and bust anchors; preserve y before global height scale",
+    "validation_requirement": "After runtime implementation, measure deformed body geometry from actual generated vertices at every anchor and boundary combination; render and inspect before treating sliders as geometric controls."
+  },
+  "boundary_scale_factors": {
+    "145cm": {
+      "hips": {
+        "75": 0.873069,
+        "98": 1.14081,
+        "140": 1.629729
+      },
+      "waist": {
+        "50": 0.849927,
+        "72": 1.223895,
+        "120": 2.039825
+      },
+      "bust": {
+        "70": 0.912002,
+        "92": 1.198632,
+        "130": 1.693718
+      }
+    },
+    "168cm": {
+      "hips": {
+        "75": 0.753542,
+        "98": 0.984628,
+        "140": 1.406611
+      },
+      "waist": {
+        "50": 0.733568,
+        "72": 1.056338,
+        "120": 1.760563
+      },
+      "bust": {
+        "70": 0.787145,
+        "92": 1.034533,
+        "130": 1.46184
+      }
+    },
+    "195cm": {
+      "hips": {
+        "75": 0.649205,
+        "98": 0.848295,
+        "140": 1.21185
+      },
+      "waist": {
+        "50": 0.631997,
+        "72": 0.910076,
+        "120": 1.516793
+      },
+      "bust": {
+        "70": 0.678156,
+        "92": 0.89129,
+        "130": 1.259432
+      }
+    }
+  },
+  "limitations": [
+    "Anchor locations are engineering landmarks selected from this fixture's mesh geometry, not measured anatomical landmarks on a customer.",
+    "No pressure, comfort, garment-fit or body-reconstruction accuracy is implied.",
+    "Extreme UI combinations require rendered/self-intersection review before approval."
+  ]
+}
