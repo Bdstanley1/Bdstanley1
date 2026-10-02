@@ -51,5 +51,7 @@ assert(innerSlope<.002&&outerSlope<.002,'Shoulder cap transition slope is not vi
 const runtimePatches=fs.readFileSync(path.join(root,'patches/runtime.json'),'utf8');
 assert.equal((runtimePatches.match(/\.847-\.023\*s/g)||[]).length,2,'Vest clip and binding shoulder caps must stay synchronized');
 assert.equal((runtimePatches.match(/\(ax-\.045\)\/\.115/g)||[]).length,2,'Vest clip and binding shoulder transition ranges must stay synchronized');
+assert.equal((runtimePatches.match(/shoulderTaper=outer>\.075/g)||[]).length,1,'Armhole binding taper must begin before the shoulder junction');
+assert.equal((runtimePatches.match(/outerTop=Math\.max\(axa,axb\)>\.075/g)||[]).length,1,'Top binding suppression must include the shoulder junction');
 
 console.log('BOUNDARY_GEOMETRY_RESULTS '+JSON.stringify({upper_body_triangles_retained:upperTriangles,front_vertex_projections_checked:checked,minimum_front_vertex_z_projection_clearance_metres:minimum,radial_vest_vertices_checked:radialChecked,minimum_radial_vest_clearance_metres:radialMinimum,limitations:'Source-vertex radial clearance is not triangle collision testing, pose clearance or physical garment-fit validation',physical_fit_validated:false}));
