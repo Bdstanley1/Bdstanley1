@@ -498,7 +498,7 @@
   ],
   "app_sha256": "ff827a8fabbcf1b88d8adecc3cbb5766796a67ab3df6f9636884cf9ba511bd72",
   "build_report": {
-    "project_commit": "eaea7196fb9108f40be3e9ced8b6ee8edb082a5f",
+    "project_commit": "1312722ad53ff9efb1feb6fdb3e9a3f3e76d4815",
     "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
     "baseline_app_sha256": "f70251a7a078a6e532ea80e3ab97374fa839bda9a79c3ff781dcc7ddf79f7901",
     "app_sha256": "ff827a8fabbcf1b88d8adecc3cbb5766796a67ab3df6f9636884cf9ba511bd72",
@@ -6535,8 +6535,8 @@
     },
     "export": {
       "passed": true,
-      "bytes": 12001192,
-      "sha256": "dde3fbd4dd709da6514b1bb3e1eea0f3d369833b685e83f32a826215652d3604",
+      "bytes": 12001196,
+      "sha256": "45d8252cbb70a95b33e1c24d4578b446e6578fa53b1341859ac87c33639d5a63",
       "skins": 21,
       "meshes": 21
     },
