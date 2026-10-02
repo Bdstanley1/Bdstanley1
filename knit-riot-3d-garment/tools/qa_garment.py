@@ -35,7 +35,7 @@ def run_garment_closeups(page, root: Path, checks: dict) -> None:
       const vertices=overlays.map(o=>o?.geometry?.attributes?.position?.count||0);
       const nonfinite=[];
       overlays.forEach((o,oi)=>{if(!o)return;const p=o.geometry.attributes.position;
-        for(let i=0;i<p.count;i++)for(let k=0;k<3;k++)if(!Number.isFinite(p.getComponent(i,k)))nonfinite.push([oi,i,k]);});
+        for(let i=0;i<p.count;i++){const v=[p.getX(i),p.getY(i),p.getZ(i)];for(let k=0;k<3;k++)if(!Number.isFinite(v[k]))nonfinite.push([oi,i,k]);}});
       return {missing,vertices,nonfinite};
     }""" % json.dumps(REQUIRED_OVERLAYS))
     if setup['missing']:

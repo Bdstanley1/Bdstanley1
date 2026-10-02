@@ -52,4 +52,24 @@ const runtimePatches=fs.readFileSync(path.join(root,'patches/runtime.json'),'utf
 assert.equal((runtimePatches.match(/\.847-\.023\*s/g)||[]).length,2,'Vest clip and binding shoulder caps must stay synchronized');
 assert.equal((runtimePatches.match(/\(ax-\.045\)\/\.115/g)||[]).length,2,'Vest clip and binding shoulder transition ranges must stay synchronized');
 
+// The analytic overlay is intentionally assembled as a later exact-once patch.
+// Guard the runtime-scoping failure that actual Chromium caught when a local H
+// alias was referenced outside buildClothes().
+const runtime=JSON.parse(runtimePatches),interaction=JSON.parse(fs.readFileSync(path.join(root,'patches/interaction.json'),'utf8'));
+const overlay=runtime.find(p=>p.name==='overlay analytic front neckline and armhole bindings');
+assert(overlay,'Missing analytic front binding overlay');
+let overlaySource=overlay.after;
+for(const name of ['binding overlay uses fixture height for armhole samples','binding overlay uses fixture height for neckline samples']){
+ const patch=interaction.find(p=>p.name===name);assert(patch,'Missing fixture-height binding repair: '+name);
+ assert.equal(overlaySource.split(patch.before).length-1,1,'Binding repair context must match exactly once: '+name);
+ overlaySource=overlaySource.replace(patch.before,patch.after);
+}
+assert(!overlaySource.includes('y=H*h'),'Armhole overlay retained an out-of-scope H reference');
+assert(!overlaySource.includes('edgeY=H*'),'Neckline overlay retained an out-of-scope H reference');
+const armEdge=h=>.218-.080*Math.pow(Math.max(0,Math.min(1,(h-.64)/.207)),.72);
+let prior=Infinity;for(let j=0;j<=42;j++){const h=.642+j*(.190/42),edge=armEdge(h);assert(Number.isFinite(edge)&&edge>0);assert(edge<=prior+1e-12,'Analytic armhole edge must be monotone');prior=edge;}
+assert(.006<(.0014+.0055)&&(.0014+.0055)<.008,'Armhole overlay strip width must stay narrow and positive');
+let priorY=-Infinity;for(let j=0;j<=34;j++){const ax=.003+j*(.101/34),edgeY=data.height*(.742+Math.min(1,ax/.095)*.115);assert(edgeY>=priorY-1e-12,'Analytic neckline edge must be monotone');priorY=edgeY;}
+assert(.005<(.0012+.0045)&&(.0012+.0045)<.007,'Neckline overlay strip width must stay narrow and positive');
+
 console.log('BOUNDARY_GEOMETRY_RESULTS '+JSON.stringify({upper_body_triangles_retained:upperTriangles,front_vertex_projections_checked:checked,minimum_front_vertex_z_projection_clearance_metres:minimum,radial_vest_vertices_checked:radialChecked,minimum_radial_vest_clearance_metres:radialMinimum,limitations:'Source-vertex radial clearance is not triangle collision testing, pose clearance or physical garment-fit validation',physical_fit_validated:false}));
