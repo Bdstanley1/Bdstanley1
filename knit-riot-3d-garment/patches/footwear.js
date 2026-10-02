@@ -57,9 +57,9 @@
 
     const upperShape=outline(w*.955,l*.945);
     const opening=new T.Path();
-    opening.absellipse(0,-l*.13,w*.62,l*.24,0,Math.PI*2,false,0);
+    opening.absellipse(0,-l*.10,w*.52,l*.18,0,Math.PI*2,false,0);
     upperShape.holes.push(opening);
-    const upperH=H*.046,upperBase=bottom+soleH*.64;
+    const upperH=H*.050,upperBase=bottom+soleH*.62;
     const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0013,bevelSize:H*.0015});
     upper.rotateX(-Math.PI/2);upper.translate(cx,upperBase,cz);
     const p=upper.attributes.position;
@@ -67,11 +67,13 @@
       let x=p.getX(i),y=p.getY(i),z=p.getZ(i);
       const t=Math.max(0,Math.min(1,(z-(cz-l*.52))/l));
       const fy=Math.max(0,Math.min(1,(y-upperBase)/upperH));
-      const vamp=Math.exp(-Math.pow((t-.66)/.22,2));
-      const heel=Math.max(0,1-t/.32);
-      const top=H*(.013+.034*vamp+.004*heel);
-      x=cx+(x-cx)*(1-.055*fy);
-      y=upperBase+fy*top+H*.002*Math.pow(Math.max(0,(t-.78)/.22),2)*fy;
+      const vamp=Math.exp(-Math.pow((t-.66)/.21,2));
+      const heel=Math.max(0,1-t/.36);
+      const collar=Math.exp(-Math.pow((t-.20)/.18,2));
+      const toeLift=Math.pow(Math.max(0,(t-.78)/.22),2);
+      const top=H*(.015+.032*vamp+.014*heel+.006*collar);
+      x=cx+(x-cx)*(1-.065*fy);
+      y=upperBase+fy*top+H*.0015*toeLift*fy;
       p.setXYZ(i,x,y,z);
     }
     p.needsUpdate=true;upper.computeVertexNormals();
