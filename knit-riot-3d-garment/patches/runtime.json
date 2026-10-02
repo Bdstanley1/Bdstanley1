@@ -57,6 +57,6 @@
   {
     "name": "omit top shoulder seam from edge binding",
     "before": "const boundary=[...edges.values()].filter(edge=>edge.count===1),nodeInset=new Map();",
-    "after": "const boundary=[...edges.values()].filter(edge=>edge.count===1&&!(Math.abs(p.getY(edge.a)/data.height-.847)<.002&&Math.abs(p.getY(edge.b)/data.height-.847)<.002)),nodeInset=new Map();"
+    "after": "const boundary=[...edges.values()].filter(edge=>edge.count===1&&!(Math.abs(p.getY(edge.a)/data.height-.847)<.008&&Math.abs(p.getY(edge.b)/data.height-.847)<.008)),nodeInset=new Map();"
   }
 ]
