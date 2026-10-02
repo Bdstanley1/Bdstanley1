@@ -25,10 +25,12 @@ jobs:
         run: |
           python -m pip install -r knit-riot-3d-garment/requirements-test.txt
           python -m playwright install --with-deps chromium --only-shell
-      - name: Check Python syntax, numerical garment invariants and evidence races
+      - name: Check syntax, garment boundaries, shoe topology and evidence races
         run: |
           python -m compileall -q knit-riot-3d-garment/tools
           node knit-riot-3d-garment/tools/test_geometry.cjs
+          node knit-riot-3d-garment/tools/test_boundaries.cjs
+          node knit-riot-3d-garment/tools/test_footwear_geometry.mjs
           python knit-riot-3d-garment/tools/test_publish_evidence.py -v
       - name: Render and test actual controls, appearances, failures and GLB round trip
         run: python knit-riot-3d-garment/tools/render_test.py
@@ -62,6 +64,8 @@ jobs:
             knit-riot-3d-garment/test-runtime/qa/results.json
             knit-riot-3d-garment/test-runtime/qa/evidence-manifest.json
             knit-riot-3d-garment/test-runtime/qa/publication-result.json
+            knit-riot-3d-garment/test-runtime/qa/footwear-closeups-manifest.json
+            knit-riot-3d-garment/test-runtime/qa/footwear-closeups/*.png
             knit-riot-3d-garment/test-runtime/qa/*.png
             knit-riot-3d-garment/test-runtime/app.js
             knit-riot-3d-garment/test-runtime/REFINE_JS.txt
