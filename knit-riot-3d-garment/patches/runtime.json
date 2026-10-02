@@ -37,7 +37,7 @@
   {
     "name": "keep vest binding inside boundary triangles",
     "before": "let A=new T.Vector3().fromBufferAttribute(p,edge.a),B=new T.Vector3().fromBufferAttribute(p,edge.b),C=new T.Vector3().fromBufferAttribute(p,edge.c),n=new T.Vector3().fromBufferAttribute(normal,edge.a).add(new T.Vector3().fromBufferAttribute(normal,edge.b)).normalize(),along=B.clone().sub(A).normalize();let inward=C.clone().sub(A).addScaledVector(along,-C.clone().sub(A).dot(along)).normalize();let width=.012;A.addScaledVector(n,.0015);B.addScaledVector(n,.0015);let D=A.clone().addScaledVector(inward,width),E=B.clone().addScaledVector(inward,width);",
-    "after": "let A=new T.Vector3().fromBufferAttribute(p,edge.a),B=new T.Vector3().fromBufferAttribute(p,edge.b),C=new T.Vector3().fromBufferAttribute(p,edge.c),n=new T.Vector3().fromBufferAttribute(normal,edge.a).add(new T.Vector3().fromBufferAttribute(normal,edge.b)).normalize(),along=B.clone().sub(A).normalize();let inward=C.clone().sub(A).addScaledVector(along,-C.clone().sub(A).dot(along)),altitude=inward.length(),f=Math.min(.35,.007/Math.max(altitude,1e-6)),D=A.clone().lerp(C,f),E=B.clone().lerp(C,f);"
+    "after": "let A=new T.Vector3().fromBufferAttribute(p,edge.a),B=new T.Vector3().fromBufferAttribute(p,edge.b),C=new T.Vector3().fromBufferAttribute(p,edge.c),nA=new T.Vector3().fromBufferAttribute(normal,edge.a).normalize(),nB=new T.Vector3().fromBufferAttribute(normal,edge.b).normalize(),nC=new T.Vector3().fromBufferAttribute(normal,edge.c).normalize(),along=B.clone().sub(A).normalize();let inward=C.clone().sub(A).addScaledVector(along,-C.clone().sub(A).dot(along)),altitude=inward.length(),f=Math.min(.28,.005/Math.max(altitude,1e-6)),D=A.clone().lerp(C,f),E=B.clone().lerp(C,f),nD=nA.clone().lerp(nC,f).normalize(),nE=nB.clone().lerp(nC,f).normalize();"
   },
   {
     "name": "soften sclera contrast after iris texture setup",
@@ -47,6 +47,16 @@
   {
     "name": "depth-bias vest binding without silhouette inflation",
     "before": "const trim=geometry({positions,normals,uv:uvs,skinIndex:joints,skinWeight:weights,indices:index});skinned('Bound neckline, armholes and hem',trim,clothMat);",
-    "after": "const trim=geometry({positions,normals,uv:uvs,skinIndex:joints,skinWeight:weights,indices:index}),trimMat=clothMat.clone();trimMat.color=clothMat.color;trimMat.polygonOffset=true;trimMat.polygonOffsetFactor=-1;trimMat.polygonOffsetUnits=-1;trimMat.roughness=.82;skinned('Bound neckline, armholes and hem',trim,trimMat);"
+    "after": "const trim=geometry({positions,normals,uv:uvs,skinIndex:joints,skinWeight:weights,indices:index}),trimMat=clothMat.clone();trimMat.color=clothMat.color;trimMat.polygonOffset=true;trimMat.polygonOffsetFactor=-1;trimMat.polygonOffsetUnits=-1;trimMat.roughness=.88;skinned('Bound neckline, armholes and hem',trim,trimMat);"
+  },
+  {
+    "name": "surface-match vest binding normals and skinned inset",
+    "before": "function emit(v,n,id,u,vv){positions.push(...v.toArray());normals.push(...n.toArray());uvs.push(u,vv);for(let k=0;k<4;k++){joints.push(g.attributes.skinIndex.array[id*4+k]);weights.push(g.attributes.skinWeight.array[id*4+k]);}index.push(index.length);}for(let edge of edges.values()){",
+    "after": "function emit(v,n,id,u,vv,id2=id,t=0){positions.push(...v.toArray());normals.push(...n.toArray());uvs.push(u,vv);const ag=new Map();for(let k=0;k<4;k++){let j=g.attributes.skinIndex.array[id*4+k],w=g.attributes.skinWeight.array[id*4+k]*(1-t);ag.set(j,(ag.get(j)||0)+w);j=g.attributes.skinIndex.array[id2*4+k];w=g.attributes.skinWeight.array[id2*4+k]*t;ag.set(j,(ag.get(j)||0)+w);}let top=[...ag].filter(q=>q[1]>1e-8).sort((a,b)=>b[1]-a[1]).slice(0,4),sum=top.reduce((s,q)=>s+q[1],0)||1;while(top.length<4)top.push([0,0]);for(const q of top){joints.push(q[0]);weights.push(q[1]/sum);}index.push(index.length);}for(let edge of edges.values()){"
+  },
+  {
+    "name": "emit vest binding on underlying surface frame",
+    "before": "for(let [v,id,u,vv] of [[A,edge.a,0,0],[B,edge.b,1,0],[D,edge.a,0,1],[B,edge.b,1,0],[E,edge.b,1,1],[D,edge.a,0,1]])emit(v,n,id,u,vv);",
+    "after": "for(let [v,n,id,u,vv,id2,t] of [[A,nA,edge.a,0,0,edge.a,0],[B,nB,edge.b,1,0,edge.b,0],[D,nD,edge.a,0,1,edge.c,f],[B,nB,edge.b,1,0,edge.b,0],[E,nE,edge.b,1,1,edge.c,f],[D,nD,edge.a,0,1,edge.c,f]])emit(v,n,id,u,vv,id2,t);"
   }
 ]
