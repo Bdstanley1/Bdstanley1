@@ -10,10 +10,12 @@ import os
 from pathlib import Path, PurePosixPath
 import subprocess
 import zipfile
+from catalog_contract import load_and_validate_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / 'recovered/2026-09-30'
 FIXTURE = ROOT / 'fixtures/runtime'
+CATALOG = ROOT / 'research/contracts/development-catalog.json'
 
 
 def sha(data: bytes) -> str:
@@ -58,6 +60,7 @@ def build(destination: Path) -> dict:
         if len(data) != record['bytes'] or sha(data) != record['sha256']:
             raise ValueError('Fixture checksum mismatch: '+str(path))
         verified.append((path, data))
+    catalog = load_and_validate_catalog(CATALOG)
     app, refine, clip = assemble_app()
     subprocess.run(['node','--input-type=module','--check'],input=app,text=True,check=True)
     destination.mkdir(parents=True, exist_ok=True)
@@ -82,6 +85,8 @@ def build(destination: Path) -> dict:
     (destination/'CLIP_JS.txt').write_text(clip)
     (destination/'app-source.html').write_text('<pre>'+html.escape(app)+'</pre>')
     (destination/'robots.txt').write_text('User-agent: *\nDisallow: /\n')
+    (destination/'catalog').mkdir(exist_ok=True)
+    (destination/'catalog/development-catalog.json').write_text(json.dumps(catalog,indent=2)+'\n')
     project_commit = os.environ.get('KR_PROJECT_COMMIT')
     if not project_commit:
         project_commit = subprocess.run(['git','rev-parse','HEAD'],cwd=ROOT,text=True,capture_output=True).stdout.strip() or 'local-uncommitted'
@@ -92,6 +97,9 @@ def build(destination: Path) -> dict:
         'app_sha256':sha(app.encode()),
         'verified_fixture_files':len(verified),
         'fixture_manifest_sha256':sha((FIXTURE/'FIXTURE_MANIFEST.json').read_bytes()),
+        'catalog_contract_sha256':sha(CATALOG.read_bytes()),
+        'catalog_items':len(catalog['items']),
+        'catalog_release_status':catalog.get('release_status','HOLD'),
         'release_status':'HOLD',
         'visual_gate':'NOT_APPROVED',
         'physical_fit':'NOT_VALIDATED',

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "catalog_id": "knit-riot-development",
+  "release_status": "HOLD",
+  "items": [
+    {
+      "product_id": "development-vest-proxy",
+      "display_name": "Development V-neck vest proxy",
+      "source_class": "artistic_proxy",
+      "source_provenance": {
+        "description": "Artist-made synthetic development garment derived from the project test fixture, not a digitization of an approved production garment.",
+        "actual_garment_sku": null,
+        "pattern_or_cad_source": null,
+        "physical_sample_evidence": null
+      },
+      "variants": [
+        {"variant_id": "XS", "development_bust_cm": 73},
+        {"variant_id": "S", "development_bust_cm": 77},
+        {"variant_id": "S-M", "development_bust_cm": 81},
+        {"variant_id": "M", "development_bust_cm": 85},
+        {"variant_id": "M-L", "development_bust_cm": 89},
+        {"variant_id": "L", "development_bust_cm": 93},
+        {"variant_id": "XL", "development_bust_cm": 97}
+      ],
+      "grade": {
+        "status": "not_validated",
+        "geometry_source": null,
+        "note": "Variant dimensions are development comparison values only; the rendered mesh is not pattern-faithfully graded by size."
+      },
+      "material": {
+        "status": "not_validated",
+        "fiber_content": null,
+        "areal_density_g_m2": null,
+        "thickness_mm": null,
+        "stretch_tests": [],
+        "bending_tests": [],
+        "friction_tests": [],
+        "drape_tests": [],
+        "simulation_parameters": null,
+        "actual_garment_linkage": null
+      },
+      "actual_garment_validation": {
+        "status": "not_validated",
+        "physical_sample_id": null,
+        "measurement_protocol": null,
+        "fit_trials": [],
+        "material_match_verified": false
+      },
+      "capabilities": {
+        "visualization": true,
+        "measurement_matched_body": false,
+        "pattern_faithful_grading": false,
+        "validated_drape": false,
+        "pressure_or_strain": false,
+        "actual_garment_fit": false,
+        "size_recommendation": false
+      }
+    }
+  ]
+}
