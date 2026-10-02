@@ -47,7 +47,7 @@
   {
     "name": "depth-bias vest binding without silhouette inflation",
     "before": "const trim=geometry({positions,normals,uv:uvs,skinIndex:joints,skinWeight:weights,indices:index});skinned('Bound neckline, armholes and hem',trim,clothMat);",
-    "after": "const trim=geometry({positions,normals,uv:uvs,skinIndex:joints,skinWeight:weights,indices:index}),trimMat=clothMat.clone();trimMat.color=clothMat.color;trimMat.polygonOffset=true;trimMat.polygonOffsetFactor=-1;trimMat.polygonOffsetUnits=-1;trimMat.roughness=.82;skinned('Bound neckline, armholes and hem',trim,trimMat);"
+    "after": "const trim=geometry({positions,normals,uv:uvs,skinIndex:joints,skinWeight:weights,indices:index}),trimMat=clothMat.clone();trimMat.color=clothMat.color;trimMat.bumpMap=null;trimMat.bumpScale=0;trimMat.polygonOffset=true;trimMat.polygonOffsetFactor=-1;trimMat.polygonOffsetUnits=-1;trimMat.roughness=.96;skinned('Bound neckline, armholes and hem',trim,trimMat);"
   },
   {
     "name": "smooth vest binding joins and endpoint normals",
