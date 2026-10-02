@@ -1,6 +1,6 @@
 {
-  "tested_commit": "0ab3e26c7385eeeaf5d48e163a974bb72c6b048f",
-  "workflow_run_id": "36982591318",
+  "tested_commit": "1a0744d6d945849dae1e7e6cc2afcf85de870959",
+  "workflow_run_id": "36990581872",
   "app_sha256": "c4deb5e91f7499b3636251208485f9aeba06e0203d373c394031909898e9121f",
   "release_status": "HOLD",
   "visual_approval": false,
@@ -44,7 +44,7 @@
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "68fe7300de6febf9eb7afbb92d543a14daec9f8e466e48e1d84df25d3954bd6a",
+      "sha256": "fec52f2c9226849ddc35d6e799e6ec581a4752650096e4b3864b559ffbc037ef",
       "bytes": 71612
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "path": "results.json",
-      "sha256": "fbde650bbb57050c398de62b79c506b34a7e96c03cfd3335cffa64c66d2fd263",
+      "sha256": "bcaeae7dd5354835572b3aea2460b40055596008473860de37ac1d604b0325fa",
       "bytes": 207993
     }
   ]

@@ -242,7 +242,7 @@
   {
     "path": "female-dressed-test.glb",
     "bytes": 12256828,
-    "sha256": "cf51e6903cd91aac6a927ece5e6b23df23d1363f22c79e7fbfdfcf79e266886a"
+    "sha256": "708d5c850d8f34e2f805d9d0a7ae5ab9fb27af3ce87a540d6af06fef2df09f98"
   },
   {
     "path": "footwear-barefoot-side.png",
@@ -306,8 +306,8 @@
   },
   {
     "path": "layout-iphone_portrait.png",
-    "bytes": 45030,
-    "sha256": "0fcfc25885325e39f90c3d2cbdab3f913157d336460c112fc3de90cfda3fcf45"
+    "bytes": 60669,
+    "sha256": "7ce42e7050d40d5cb5ab5625370b5e1f910068d510d21e78ccd89d1df859b1f3"
   },
   {
     "path": "layout-mac_size.png",
@@ -437,7 +437,7 @@
   {
     "path": "results.json",
     "bytes": 207993,
-    "sha256": "fbde650bbb57050c398de62b79c506b34a7e96c03cfd3335cffa64c66d2fd263"
+    "sha256": "bcaeae7dd5354835572b3aea2460b40055596008473860de37ac1d604b0325fa"
   },
   {
     "path": "sweep/000.png",
