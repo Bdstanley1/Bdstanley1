@@ -51,5 +51,13 @@ assert(innerSlope<.002&&outerSlope<.002,'Shoulder cap transition slope is not vi
 const runtimePatches=fs.readFileSync(path.join(root,'patches/runtime.json'),'utf8');
 assert.equal((runtimePatches.match(/\.847-\.023\*s/g)||[]).length,2,'Vest clip and binding shoulder caps must stay synchronized');
 assert.equal((runtimePatches.match(/\(ax-\.045\)\/\.115/g)||[]).length,2,'Vest clip and binding shoulder transition ranges must stay synchronized');
+assert.equal((runtimePatches.match(/capTaperA/g)||[]).length,1,'Binding must taper continuously into the shoulder-cap endpoint');
+assert.equal((runtimePatches.match(/capTaperB/g)||[]).length,1,'Binding must taper continuously out of the shoulder-cap endpoint');
+for(const gap of [0,.002,.004,.008,.012,.016,.020]){
+ const taper=Math.max(0,Math.min(1,gap/.016));
+ assert(taper>=0&&taper<=1);
+ if(gap===0)assert.equal(taper,0);
+ if(gap>=.016)assert.equal(taper,1);
+}
 
 console.log('BOUNDARY_GEOMETRY_RESULTS '+JSON.stringify({upper_body_triangles_retained:upperTriangles,front_vertex_projections_checked:checked,minimum_front_vertex_z_projection_clearance_metres:minimum,radial_vest_vertices_checked:radialChecked,minimum_radial_vest_clearance_metres:radialMinimum,limitations:'Source-vertex radial clearance is not triangle collision testing, pose clearance or physical garment-fit validation',physical_fit_validated:false}));
