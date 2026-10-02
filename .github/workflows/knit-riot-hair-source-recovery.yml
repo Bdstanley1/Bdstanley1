@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install pinned image inspection dependency
         run: python -m pip install -r knit-riot-3d-garment/requirements-test.txt
-      - name: Verify original archive and extract only the previously licensed asset
+      - name: Verify original archive and retain source diagnostics before strict image validation
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -48,18 +48,25 @@ jobs:
           material=(out/'elvs_ashley_mayhair1.mhmat').read_text()
           assert '# author Elvaerwyn' in header and '# license CC_by' in header
           assert 'normalmapTexture 80snormals.png' in material
-          with Image.open(out/'80snormals.png') as image:
-              image.verify()
-          with Image.open(out/'80snormals.png') as image:
-              normal_info={'mode':image.mode,'size':list(image.size),'extrema':image.getextrema()}
-              assert max(image.size)<=8192
-          (out/'ATTRIBUTION.txt').write_text('Ashley May hair geometry, diffuse and normal map: Elvaerwyn. Creator header identifies CC_by (CC-BY; version is not stated in that header). Original creator metadata and material are included unchanged. Source: https://static.makehumancommunity.org/assets/assetpacks/hair02.html . This recovery does not establish visual improvement or measured hair optics.\n')
-          files=[{'path':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(out.iterdir()) if p.is_file()]
-          metadata={'source_url':url,'source_page':'https://static.makehumancommunity.org/assets/assetpacks/hair02.html','source_archive_sha256':expected,'source_archive_bytes':total,'source_prefix':prefix,'author':'Elvaerwyn','license_header':'CC_by','normal_image':normal_info,'files':files,'runtime_integration':False,'visual_improvement_validated':False,'customer_data_used':False}
-          (out/'RECOVERY.json').write_text(json.dumps(metadata,indent=2)+'\n')
-          print(json.dumps(metadata))
+          (out/'ATTRIBUTION.txt').write_text('Ashley May hair geometry, diffuse and normal-map source: Elvaerwyn. Creator header identifies CC_by (CC-BY; version is not stated in that header). Original creator metadata and material are included unchanged. Source: https://static.makehumancommunity.org/assets/assetpacks/hair02.html . Archive checksum agreement is not image validity, visual improvement or measured hair optics. Do not load invalid source bytes into runtime.\n')
+          files=[{'path':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'first_32_bytes_hex':p.read_bytes()[:32].hex()} for p in sorted(out.iterdir()) if p.is_file()]
+          metadata={'source_url':url,'source_page':'https://static.makehumancommunity.org/assets/assetpacks/hair02.html','source_archive_sha256':expected,'source_archive_bytes':total,'source_prefix':prefix,'author':'Elvaerwyn','license_header':'CC_by','files':files,'runtime_integration':False,'visual_improvement_validated':False,'customer_data_used':False,'normal_image_valid':False}
+          try:
+              with Image.open(out/'80snormals.png') as image:
+                  image.verify()
+              with Image.open(out/'80snormals.png') as image:
+                  assert max(image.size)<=8192
+                  metadata['normal_image']={'mode':image.mode,'size':list(image.size),'extrema':image.getextrema()}
+              metadata['normal_image_valid']=True
+          except Exception as error:
+              metadata['normal_validation_error']=type(error).__name__+': '+str(error)
+              raise
+          finally:
+              (out/'RECOVERY.json').write_text(json.dumps(metadata,indent=2)+'\n')
+              print(json.dumps(metadata))
           PY
-      - name: Preserve verified source for actual image inspection
+      - name: Preserve exact source and failure diagnostics for inspection
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ashley-may-verified-source
