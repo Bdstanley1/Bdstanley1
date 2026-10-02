@@ -1,0 +1,322 @@
+[
+  {
+    "path": "footwear-occlusion/slip-ons-neutral-front.png",
+    "sha256": "62743ac5158c61560ac3442f02f5e4013975a60fc9c9b04d4ffa848b9039b928",
+    "shoe": "slip-ons",
+    "pose": "neutral",
+    "view": "front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-neutral-side.png",
+    "sha256": "62743ac5158c61560ac3442f02f5e4013975a60fc9c9b04d4ffa848b9039b928",
+    "shoe": "slip-ons",
+    "pose": "neutral",
+    "view": "side",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-neutral-back.png",
+    "sha256": "62743ac5158c61560ac3442f02f5e4013975a60fc9c9b04d4ffa848b9039b928",
+    "shoe": "slip-ons",
+    "pose": "neutral",
+    "view": "back",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-neutral-above-front.png",
+    "sha256": "62743ac5158c61560ac3442f02f5e4013975a60fc9c9b04d4ffa848b9039b928",
+    "shoe": "slip-ons",
+    "pose": "neutral",
+    "view": "above-front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-fashion-front.png",
+    "sha256": "63fb0b7cbebba2bf9d8f2da08157ad2594c01ab55b6c467fe83f782cd03a9158",
+    "shoe": "slip-ons",
+    "pose": "fashion",
+    "view": "front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-fashion-side.png",
+    "sha256": "63fb0b7cbebba2bf9d8f2da08157ad2594c01ab55b6c467fe83f782cd03a9158",
+    "shoe": "slip-ons",
+    "pose": "fashion",
+    "view": "side",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-fashion-back.png",
+    "sha256": "63fb0b7cbebba2bf9d8f2da08157ad2594c01ab55b6c467fe83f782cd03a9158",
+    "shoe": "slip-ons",
+    "pose": "fashion",
+    "view": "back",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-fashion-above-front.png",
+    "sha256": "63fb0b7cbebba2bf9d8f2da08157ad2594c01ab55b6c467fe83f782cd03a9158",
+    "shoe": "slip-ons",
+    "pose": "fashion",
+    "view": "above-front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-hip-front.png",
+    "sha256": "2c18f52de13695c222d428b2e0a96d98b3314df52d12d7e42fdd1639645bf592",
+    "shoe": "slip-ons",
+    "pose": "hip",
+    "view": "front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-hip-side.png",
+    "sha256": "2c18f52de13695c222d428b2e0a96d98b3314df52d12d7e42fdd1639645bf592",
+    "shoe": "slip-ons",
+    "pose": "hip",
+    "view": "side",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-hip-back.png",
+    "sha256": "2c18f52de13695c222d428b2e0a96d98b3314df52d12d7e42fdd1639645bf592",
+    "shoe": "slip-ons",
+    "pose": "hip",
+    "view": "back",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-hip-above-front.png",
+    "sha256": "2c18f52de13695c222d428b2e0a96d98b3314df52d12d7e42fdd1639645bf592",
+    "shoe": "slip-ons",
+    "pose": "hip",
+    "view": "above-front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-walk-front.png",
+    "sha256": "fe8b1657eede5b3b4a547e864874fc1af3ec2b724e19056d344b943d1577022f",
+    "shoe": "slip-ons",
+    "pose": "walk",
+    "view": "front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-walk-side.png",
+    "sha256": "fe8b1657eede5b3b4a547e864874fc1af3ec2b724e19056d344b943d1577022f",
+    "shoe": "slip-ons",
+    "pose": "walk",
+    "view": "side",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-walk-back.png",
+    "sha256": "fe8b1657eede5b3b4a547e864874fc1af3ec2b724e19056d344b943d1577022f",
+    "shoe": "slip-ons",
+    "pose": "walk",
+    "view": "back",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-walk-above-front.png",
+    "sha256": "fe8b1657eede5b3b4a547e864874fc1af3ec2b724e19056d344b943d1577022f",
+    "shoe": "slip-ons",
+    "pose": "walk",
+    "view": "above-front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-three-quarter-front.png",
+    "sha256": "d1a3fab9c3444d598a069b1d52e1d3602fea3d053da46010d6fe68a2b3d89735",
+    "shoe": "slip-ons",
+    "pose": "three-quarter",
+    "view": "front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-three-quarter-side.png",
+    "sha256": "d1a3fab9c3444d598a069b1d52e1d3602fea3d053da46010d6fe68a2b3d89735",
+    "shoe": "slip-ons",
+    "pose": "three-quarter",
+    "view": "side",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-three-quarter-back.png",
+    "sha256": "d1a3fab9c3444d598a069b1d52e1d3602fea3d053da46010d6fe68a2b3d89735",
+    "shoe": "slip-ons",
+    "pose": "three-quarter",
+    "view": "back",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/slip-ons-three-quarter-above-front.png",
+    "sha256": "d1a3fab9c3444d598a069b1d52e1d3602fea3d053da46010d6fe68a2b3d89735",
+    "shoe": "slip-ons",
+    "pose": "three-quarter",
+    "view": "above-front",
+    "exposed_probe_pixels": 0
+  },
+  {
+    "path": "footwear-occlusion/barefoot-neutral-front.png",
+    "sha256": "c9350dce1a6dfa2441cf1e033f8e556ec75418e486a9bc99286c07861dd542d2",
+    "shoe": "barefoot",
+    "pose": "neutral",
+    "view": "front",
+    "exposed_probe_pixels": 1649
+  },
+  {
+    "path": "footwear-occlusion/barefoot-neutral-side.png",
+    "sha256": "c9350dce1a6dfa2441cf1e033f8e556ec75418e486a9bc99286c07861dd542d2",
+    "shoe": "barefoot",
+    "pose": "neutral",
+    "view": "side",
+    "exposed_probe_pixels": 1649
+  },
+  {
+    "path": "footwear-occlusion/barefoot-neutral-back.png",
+    "sha256": "c9350dce1a6dfa2441cf1e033f8e556ec75418e486a9bc99286c07861dd542d2",
+    "shoe": "barefoot",
+    "pose": "neutral",
+    "view": "back",
+    "exposed_probe_pixels": 1649
+  },
+  {
+    "path": "footwear-occlusion/barefoot-neutral-above-front.png",
+    "sha256": "c9350dce1a6dfa2441cf1e033f8e556ec75418e486a9bc99286c07861dd542d2",
+    "shoe": "barefoot",
+    "pose": "neutral",
+    "view": "above-front",
+    "exposed_probe_pixels": 1649
+  },
+  {
+    "path": "footwear-occlusion/barefoot-fashion-front.png",
+    "sha256": "5559ebe981875957f43943547a8bb7e7125b2350a2cb1c99010e5363a245fef1",
+    "shoe": "barefoot",
+    "pose": "fashion",
+    "view": "front",
+    "exposed_probe_pixels": 1652
+  },
+  {
+    "path": "footwear-occlusion/barefoot-fashion-side.png",
+    "sha256": "5559ebe981875957f43943547a8bb7e7125b2350a2cb1c99010e5363a245fef1",
+    "shoe": "barefoot",
+    "pose": "fashion",
+    "view": "side",
+    "exposed_probe_pixels": 1652
+  },
+  {
+    "path": "footwear-occlusion/barefoot-fashion-back.png",
+    "sha256": "5559ebe981875957f43943547a8bb7e7125b2350a2cb1c99010e5363a245fef1",
+    "shoe": "barefoot",
+    "pose": "fashion",
+    "view": "back",
+    "exposed_probe_pixels": 1652
+  },
+  {
+    "path": "footwear-occlusion/barefoot-fashion-above-front.png",
+    "sha256": "5559ebe981875957f43943547a8bb7e7125b2350a2cb1c99010e5363a245fef1",
+    "shoe": "barefoot",
+    "pose": "fashion",
+    "view": "above-front",
+    "exposed_probe_pixels": 1652
+  },
+  {
+    "path": "footwear-occlusion/barefoot-hip-front.png",
+    "sha256": "c256df7380b8cb3b27cb5b8068c84a31f8adb5d78613d401a4494d0d4de097c9",
+    "shoe": "barefoot",
+    "pose": "hip",
+    "view": "front",
+    "exposed_probe_pixels": 1649
+  },
+  {
+    "path": "footwear-occlusion/barefoot-hip-side.png",
+    "sha256": "c256df7380b8cb3b27cb5b8068c84a31f8adb5d78613d401a4494d0d4de097c9",
+    "shoe": "barefoot",
+    "pose": "hip",
+    "view": "side",
+    "exposed_probe_pixels": 1649
+  },
+  {
+    "path": "footwear-occlusion/barefoot-hip-back.png",
+    "sha256": "c256df7380b8cb3b27cb5b8068c84a31f8adb5d78613d401a4494d0d4de097c9",
+    "shoe": "barefoot",
+    "pose": "hip",
+    "view": "back",
+    "exposed_probe_pixels": 1649
+  },
+  {
+    "path": "footwear-occlusion/barefoot-hip-above-front.png",
+    "sha256": "c256df7380b8cb3b27cb5b8068c84a31f8adb5d78613d401a4494d0d4de097c9",
+    "shoe": "barefoot",
+    "pose": "hip",
+    "view": "above-front",
+    "exposed_probe_pixels": 1649
+  },
+  {
+    "path": "footwear-occlusion/barefoot-walk-front.png",
+    "sha256": "df58d004d19b08a26b8dcb6c1e4e6f8a31bb79b73f2217a76a3987453afa825b",
+    "shoe": "barefoot",
+    "pose": "walk",
+    "view": "front",
+    "exposed_probe_pixels": 1617
+  },
+  {
+    "path": "footwear-occlusion/barefoot-walk-side.png",
+    "sha256": "df58d004d19b08a26b8dcb6c1e4e6f8a31bb79b73f2217a76a3987453afa825b",
+    "shoe": "barefoot",
+    "pose": "walk",
+    "view": "side",
+    "exposed_probe_pixels": 1617
+  },
+  {
+    "path": "footwear-occlusion/barefoot-walk-back.png",
+    "sha256": "df58d004d19b08a26b8dcb6c1e4e6f8a31bb79b73f2217a76a3987453afa825b",
+    "shoe": "barefoot",
+    "pose": "walk",
+    "view": "back",
+    "exposed_probe_pixels": 1617
+  },
+  {
+    "path": "footwear-occlusion/barefoot-walk-above-front.png",
+    "sha256": "df58d004d19b08a26b8dcb6c1e4e6f8a31bb79b73f2217a76a3987453afa825b",
+    "shoe": "barefoot",
+    "pose": "walk",
+    "view": "above-front",
+    "exposed_probe_pixels": 1617
+  },
+  {
+    "path": "footwear-occlusion/barefoot-three-quarter-front.png",
+    "sha256": "30481e4fbf37f9d143b385b6f026764288febff4f1792d474090a55057790f06",
+    "shoe": "barefoot",
+    "pose": "three-quarter",
+    "view": "front",
+    "exposed_probe_pixels": 1695
+  },
+  {
+    "path": "footwear-occlusion/barefoot-three-quarter-side.png",
+    "sha256": "30481e4fbf37f9d143b385b6f026764288febff4f1792d474090a55057790f06",
+    "shoe": "barefoot",
+    "pose": "three-quarter",
+    "view": "side",
+    "exposed_probe_pixels": 1695
+  },
+  {
+    "path": "footwear-occlusion/barefoot-three-quarter-back.png",
+    "sha256": "30481e4fbf37f9d143b385b6f026764288febff4f1792d474090a55057790f06",
+    "shoe": "barefoot",
+    "pose": "three-quarter",
+    "view": "back",
+    "exposed_probe_pixels": 1695
+  },
+  {
+    "path": "footwear-occlusion/barefoot-three-quarter-above-front.png",
+    "sha256": "30481e4fbf37f9d143b385b6f026764288febff4f1792d474090a55057790f06",
+    "shoe": "barefoot",
+    "pose": "three-quarter",
+    "view": "above-front",
+    "exposed_probe_pixels": 1695
+  }
+]
