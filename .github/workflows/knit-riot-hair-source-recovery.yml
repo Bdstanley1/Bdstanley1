@@ -49,21 +49,49 @@ jobs:
           assert '# author Elvaerwyn' in header and '# license CC_by' in header
           assert 'normalmapTexture 80snormals.png' in material
           (out/'ATTRIBUTION.txt').write_text('Ashley May hair geometry, diffuse and normal-map source: Elvaerwyn. Creator header identifies CC_by (CC-BY; version is not stated in that header). Original creator metadata and material are included unchanged. Source: https://static.makehumancommunity.org/assets/assetpacks/hair02.html . Archive checksum agreement is not image validity, visual improvement or measured hair optics. Do not load invalid source bytes into runtime.\n')
-          files=[{'path':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'first_32_bytes_hex':p.read_bytes()[:32].hex()} for p in sorted(out.iterdir()) if p.is_file()]
-          metadata={'source_url':url,'source_page':'https://static.makehumancommunity.org/assets/assetpacks/hair02.html','source_archive_sha256':expected,'source_archive_bytes':total,'source_prefix':prefix,'author':'Elvaerwyn','license_header':'CC_by','files':files,'runtime_integration':False,'visual_improvement_validated':False,'customer_data_used':False,'normal_image_valid':False}
+          import struct, zlib
+          original=out/'80snormals.png'; repaired=out/'80snormals.repaired.png'
+          raw=original.read_bytes(); signature=b'\x89PNG\r\n\x1a\n'
+          if not raw.startswith(signature):raise RuntimeError('Normal map is not a PNG')
+          pos=8;clean=bytearray(signature);invalid=[];source_idat=[];saw_iend=False
+          while pos<len(raw):
+              if pos+12>len(raw):raise RuntimeError('Truncated PNG chunk header')
+              length=struct.unpack('>I',raw[pos:pos+4])[0]
+              if length>20_000_000:raise RuntimeError('PNG chunk exceeds 20 MB bound')
+              end=pos+12+length
+              if end>len(raw):raise RuntimeError('Truncated PNG chunk payload')
+              chunk_type=raw[pos+4:pos+8]; payload=raw[pos+8:pos+8+length]
+              stored=struct.unpack('>I',raw[pos+8+length:end])[0]; computed=zlib.crc32(chunk_type+payload)&0xffffffff
+              if chunk_type==b'IDAT':source_idat.append(payload)
+              if stored!=computed:
+                  invalid.append({'type':chunk_type.decode('ascii','replace'),'length':length,'stored_crc':stored,'computed_crc':computed})
+                  if chunk_type!=b'iCCP':raise RuntimeError('Unexpected corrupt PNG chunk '+chunk_type.decode('ascii','replace'))
+              else: clean.extend(raw[pos:end])
+              pos=end
+              if chunk_type==b'IEND':saw_iend=True;break
+          if not saw_iend or pos!=len(raw):raise RuntimeError('PNG did not terminate cleanly')
+          if len(invalid)!=1 or invalid[0]['type']!='iCCP':raise RuntimeError('Expected exactly one invalid ancillary iCCP chunk')
+          repaired.write_bytes(clean)
+          repaired_sha=hashlib.sha256(clean).hexdigest()
+          if repaired_sha!='3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0':raise RuntimeError('Deterministic repaired normal-map checksum mismatch')
+          repaired_raw=repaired.read_bytes();q=8;repaired_idat=[]
+          while q<len(repaired_raw):
+              length=struct.unpack('>I',repaired_raw[q:q+4])[0];chunk_type=repaired_raw[q+4:q+8];payload=repaired_raw[q+8:q+8+length]
+              if chunk_type==b'IDAT':repaired_idat.append(payload)
+              q+=12+length
+          if b''.join(source_idat)!=b''.join(repaired_idat):raise RuntimeError('Repair altered IDAT image data')
+          original_error=None
           try:
-              with Image.open(out/'80snormals.png') as image:
-                  image.verify()
-              with Image.open(out/'80snormals.png') as image:
-                  assert max(image.size)<=8192
-                  metadata['normal_image']={'mode':image.mode,'size':list(image.size),'extrema':image.getextrema()}
-              metadata['normal_image_valid']=True
-          except Exception as error:
-              metadata['normal_validation_error']=type(error).__name__+': '+str(error)
-              raise
-          finally:
-              (out/'RECOVERY.json').write_text(json.dumps(metadata,indent=2)+'\n')
-              print(json.dumps(metadata))
+              with Image.open(original) as image:image.verify()
+          except Exception as error:original_error=type(error).__name__+': '+str(error)
+          with Image.open(repaired) as image:image.verify()
+          with Image.open(repaired) as image:
+              if max(image.size)>8192:raise RuntimeError('Repaired normal map exceeds image-size bound')
+              normal_image={'mode':image.mode,'size':list(image.size),'extrema':image.getextrema()}
+          files=[{'path':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'first_32_bytes_hex':p.read_bytes()[:32].hex()} for p in sorted(out.iterdir()) if p.is_file()]
+          metadata={'source_url':url,'source_page':'https://static.makehumancommunity.org/assets/assetpacks/hair02.html','source_archive_sha256':expected,'source_archive_bytes':total,'source_prefix':prefix,'author':'Elvaerwyn','license_header':'CC_by','files':files,'runtime_integration':False,'visual_improvement_validated':False,'customer_data_used':False,'original_normal_image_valid':original_error is None,'original_normal_validation_error':original_error,'invalid_source_chunks':invalid,'repair':'remove only invalid ancillary iCCP chunk; preserve all other PNG chunk bytes including IDAT','repaired_normal_image_valid':True,'repaired_normal_sha256':repaired_sha,'repaired_normal_image':normal_image,'idat_preserved':True}
+          (out/'RECOVERY.json').write_text(json.dumps(metadata,indent=2)+'\n')
+          print(json.dumps(metadata))
           PY
       - name: Preserve exact source and failure diagnostics for inspection
         if: always()
