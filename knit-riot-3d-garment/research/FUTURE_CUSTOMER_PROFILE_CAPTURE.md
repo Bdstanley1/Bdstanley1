@@ -90,3 +90,13 @@ Before release of automatic measurement:
 - report uncertainty rather than hiding low-confidence estimates.
 
 No camera-derived measurement, fit recommendation, pressure/comfort prediction or identity-protection claim should be presented as validated until corresponding evidence exists.
+
+## Adaptive acquisition experiment
+
+Optimize for minimum customer effort subject to a validated reconstruction-accuracy target, not for the largest measurement count. Compare two guided stills, four guided views, eight distributed views, guided rotation video, and an adaptive protocol that starts with two views and requests additional views only when they materially reduce reconstruction uncertainty.
+
+Every reconstruction should retain the 3D surface, measurement definitions/values, acquisition method, calibration information, accepted/rejected view-quality metadata, algorithm version, and per-measurement uncertainty. Low-quality or poorly observable dimensions should trigger targeted recapture or guided manual measurement rather than silent precision.
+
+Validation must compare each protocol against a predefined independent reference-measurement procedure. Report measurement-specific signed bias, absolute error, repeatability, failure/recapture rate, capture time and relevant uncertainty intervals. Test sensitivity to body-size/shape range, clothing, hair occlusion, lighting/background, posture, camera/lens/distance and modest translation during rotation. Do not collapse unrelated measurement errors into a single marketing accuracy percentage.
+
+The adaptive decision rule is: begin with the lowest-effort validated capture; stop when all measurements required for the selected garment meet predefined quality/uncertainty gates; otherwise request the smallest additional view set needed for unresolved regions, or fall back to guided manual measurement.
