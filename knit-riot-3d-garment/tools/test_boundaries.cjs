@@ -30,3 +30,4 @@ for(let i=0;i<data.mesh.positions.length/3;i++){
 }
 assert(checked>100);
 console.log('BOUNDARY_GEOMETRY_RESULTS '+JSON.stringify({upper_body_triangles_retained:upperTriangles,front_vertex_projections_checked:checked,minimum_front_vertex_z_projection_clearance_metres:minimum,limitations:'Vertex projection is not triangle collision testing, pose clearance or physical garment-fit validation',physical_fit_validated:false}));
+require('./test_binding_geometry.cjs');
