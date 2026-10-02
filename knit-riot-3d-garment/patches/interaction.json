@@ -3,5 +3,15 @@
     "name": "preserve camera presets until actual orbit rotation",
     "before": "orbit.addEventListener('start',()=>{state.view='free';updateUI()});makeUI();new ResizeObserver(resize).observe($('stage'));",
     "after": "let orbitGestureStart=null;orbit.addEventListener('start',()=>{orbitGestureStart=camera.quaternion.clone()});orbit.addEventListener('change',()=>{if(orbitGestureStart&&state.view!=='free'&&camera.quaternion.angleTo(orbitGestureStart)>.008){state.view='free';updateUI()}});orbit.addEventListener('end',()=>{orbitGestureStart=null});makeUI();new ResizeObserver(resize).observe($('stage'));"
+  },
+  {
+    "name": "binding overlay uses fixture height for armhole samples",
+    "before": "const h=.642+j*(.190/42),y=H*h,u=Math.max(0,Math.min(1,(h-.64)/.207))",
+    "after": "const h=.642+j*(.190/42),y=data.height*h,u=Math.max(0,Math.min(1,(h-.64)/.207))"
+  },
+  {
+    "name": "binding overlay uses fixture height for neckline samples",
+    "before": "const ax=.003+j*(.101/34),edgeY=H*(.742+Math.min(1,ax/.095)*.115)",
+    "after": "const ax=.003+j*(.101/34),edgeY=data.height*(.742+Math.min(1,ax/.095)*.115)"
   }
 ]
