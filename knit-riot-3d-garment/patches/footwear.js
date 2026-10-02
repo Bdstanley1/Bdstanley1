@@ -69,7 +69,7 @@
       const fy=Math.max(0,Math.min(1,(y-upperBase)/upperH));
       const vamp=Math.exp(-Math.pow((t-.66)/.22,2));
       const heel=Math.max(0,1-t/.32);
-      const top=H*(.034+.020*vamp+.006*heel);
+      const top=H*(.013+.034*vamp+.004*heel);
       x=cx+(x-cx)*(1-.055*fy);
       y=upperBase+fy*top+H*.002*Math.pow(Math.max(0,(t-.78)/.22),2)*fy;
       p.setXYZ(i,x,y,z);
