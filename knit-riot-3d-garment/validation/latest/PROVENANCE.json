@@ -1,7 +1,7 @@
 {
-  "tested_commit": "95d8b911383a2b7f8c82c95782a49ebf34061b1e",
-  "workflow_run_id": "36979189586",
-  "app_sha256": "150dc769002b32860c2b6899bede8dd99f7a427503f1f91deb3c1430df558057",
+  "tested_commit": "218997fce759f3c2fb1e0412bdf4d5216c58bb05",
+  "workflow_run_id": "36979688459",
+  "app_sha256": "629326a354426e2e59dc2bdb77ef5e6db94c6b42a2ead580f1a4230c7be6eff7",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -9,13 +9,13 @@
   "files": [
     {
       "path": "all-420-rendered-cases.png",
-      "sha256": "a98c543008448d55b39d93557d5650e995d83394f94f39844cbc974feb787350",
-      "bytes": 2835093
+      "sha256": "0b1676d477e0884e3303074c70535096838ffab3bac4bec75d0a6eca39140c30",
+      "bytes": 2838811
     },
     {
       "path": "appearance-pairwise-rendered.png",
-      "sha256": "1e34785d8ef24a7d4bc93a23b0e3b4cf7c38b2c1173362994e1aed7bc9ae5911",
-      "bytes": 599100
+      "sha256": "ccd328de7829cadf3827b9f59169d7274e081cc1ddf520cc973ede0317c1277b",
+      "bytes": 599361
     },
     {
       "path": "desktop-detail.png",
@@ -24,28 +24,28 @@
     },
     {
       "path": "desktop-hip-front.png",
-      "sha256": "5c4dbefb3df22d65e3ec45bb9f82c2336da3c143c0ed177a656045ac6d492268",
-      "bytes": 168422
+      "sha256": "eb4d2aab93672fc214a19a818de12c17d287a4bad28ec188481860fa708634e4",
+      "bytes": 168859
     },
     {
       "path": "desktop-neutral-back.png",
-      "sha256": "561d00c7ddfa1641581977e4ecb06fe3249b90c333e613822ab26424eba88dca",
-      "bytes": 149646
+      "sha256": "4691795c29a349fadb9c1c6bef773dc57e5ec18d28a28ccb3bdd57d8e033f38e",
+      "bytes": 149619
     },
     {
       "path": "desktop-neutral-front.png",
-      "sha256": "39218d5f4f6503e11d5942c9a126f56d1984198bbcb8a1d9798ede26199ca477",
-      "bytes": 165672
+      "sha256": "23e7d9eb1284aba0323798f15bdcf8da33f22a8cbef633c41cbde97af37ccdc1",
+      "bytes": 166090
     },
     {
       "path": "desktop-neutral-side.png",
-      "sha256": "780b419ab7a1d532fbf39dbb07dd53699a996d27d30772f34a43ea51d4ab973c",
-      "bytes": 133733
+      "sha256": "d343185a32522abe59759c2f3ebb2f1d93f366a85237d1ea1943cecd0a69c5f0",
+      "bytes": 133661
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "984839875c0b583956bddb3b8b992e176a26ca540f3361cd4cc5674a38de18f8",
-      "bytes": 71613
+      "sha256": "23f80801d27111746a6b7c82403f9f6cc17329e677bf05f7b1218dcfc1d59fea",
+      "bytes": 71612
     },
     {
       "path": "footwear-barefoot-side.png",
@@ -59,18 +59,18 @@
     },
     {
       "path": "footwear-slip-ons-side.png",
-      "sha256": "0bed5c981e6cb9d84b86f56c20bd36a6b915f0378233867a63b46c34a8c26848",
-      "bytes": 100385
+      "sha256": "49296d7dac7782278ad7f17bf14e2828652225c167408029c760478cb26a99bc",
+      "bytes": 100131
     },
     {
       "path": "footwear-slip-ons.png",
-      "sha256": "ca6a0c9e13165b6c36910b7987872739dbd158a0976c27abe2809405697eb65d",
-      "bytes": 142822
+      "sha256": "2fa45fb9b479e2b10ad80a4a517abd18bc221ebe560e0df4d71a90e14489e08c",
+      "bytes": 143225
     },
     {
       "path": "glb-original.png",
-      "sha256": "ca6a0c9e13165b6c36910b7987872739dbd158a0976c27abe2809405697eb65d",
-      "bytes": 142822
+      "sha256": "2fa45fb9b479e2b10ad80a4a517abd18bc221ebe560e0df4d71a90e14489e08c",
+      "bytes": 143225
     },
     {
       "path": "glb-reloaded-detail.png",
@@ -79,18 +79,18 @@
     },
     {
       "path": "glb-reloaded-front.png",
-      "sha256": "9809ee54a1d9f2048aff2300686ac63756d1c2511b914898aeac3b38246c6b2d",
-      "bytes": 139575
+      "sha256": "829b31d02f11b90cfdc4dde1508cb14ecb532f15bdd97a8800072fb48d9ffb08",
+      "bytes": 139982
     },
     {
       "path": "phone-neutral-front.png",
-      "sha256": "38ff4f16109e50c11ad5d130f43ac3f3c0cf93ed9d3388030e1f3521ef86aea1",
-      "bytes": 93450
+      "sha256": "ff8dafbb9844812a682e862bcb206de2b759ef696be877480d4866d8ce7b8583",
+      "bytes": 93806
     },
     {
       "path": "results.json",
-      "sha256": "d6b89d092e5a3aff8a225042a4d095e8101e87be5db6f7f105c051bd2fd1426c",
-      "bytes": 207951
+      "sha256": "8afb48bfe0f8db38d9e5e3f652d60503149a344a8d153e4ccb76abb82117abb3",
+      "bytes": 207930
     }
   ]
 }
