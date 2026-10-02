@@ -47,7 +47,7 @@
   for(const [side,b] of bounds.entries()){
     const anatomyW=(b.x1-b.x0)/2,anatomyL=b.z1-b.z0;
     const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2;
-    const w=anatomyW+H*.0038,l=anatomyL+H*.018;
+    const w=anatomyW+H*.0038,l=anatomyL+H*.0065;
     const bottom=b.y0-H*.0015,soleH=H*.0062;
 
     const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.0008,bevelSize:H*.0012});
@@ -57,7 +57,7 @@
 
     const upperShape=outline(w*.955,l*.945);
     const opening=new T.Path();
-    opening.absellipse(0,l*.25,w*.68,l*.16,0,Math.PI*2,false,0);
+    opening.absellipse(0,l*.055,w*.68,l*.19,0,Math.PI*2,false,0);
     upperShape.holes.push(opening);
     const upperH=H*.046,upperBase=bottom+soleH*.64;
     const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0013,bevelSize:H*.0015});

@@ -4,6 +4,7 @@ import json
 import os
 from pathlib import Path
 import shutil
+import subprocess
 from PIL import Image,ImageDraw
 
 root=Path(__file__).resolve().parents[1]
@@ -11,6 +12,16 @@ source=root/'test-runtime/qa'
 result=json.loads((source/'results.json').read_text())
 assert result['execution_status']=='completed' and not result['errors'] and not result['capture_errors']
 assert result['extended']['passed'] and result['extended']['rendered_combinations']==420
+
+# Do not create a binary rebase conflict if another run advanced main while this run rendered.
+# The current run still keeps its exact review evidence in the Actions artifact.
+if os.environ.get('GITHUB_ACTIONS') == 'true' and os.environ.get('GITHUB_SHA'):
+    repo_root=root.parent
+    subprocess.run(['git','fetch','origin','main'],cwd=repo_root,check=True,stdout=subprocess.DEVNULL)
+    remote=subprocess.check_output(['git','rev-parse','origin/main'],cwd=repo_root,text=True).strip()
+    if remote != os.environ['GITHUB_SHA']:
+        print('Main advanced during rendering; skipping validation/latest persistence for',os.environ['GITHUB_SHA'])
+        raise SystemExit(0)
 out=root/'validation/latest'
 out.mkdir(parents=True,exist_ok=True)
 for name in ['results.json','evidence-manifest.json','desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-original.png','glb-reloaded-front.png','glb-reloaded-detail.png','footwear-slip-ons.png','footwear-slip-ons-side.png','footwear-barefoot.png','footwear-barefoot-side.png']:
