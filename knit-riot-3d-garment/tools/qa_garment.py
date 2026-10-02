@@ -77,6 +77,14 @@ def run_garment_closeups(page, root: Path, checks: dict) -> None:
             draw.text((x + 8, y + 7), record['pose'] + ' / ' + record['view'], fill='black')
         atlas.save(root / 'garment-closeups-rendered.png')
         (root / 'garment-closeups-manifest.json').write_text(json.dumps(records, indent=2))
+        page.set_viewport_size({'width': 844, 'height': 390})
+        page.evaluate("KR.reset();KR.view('front');KR.renderer.setPixelRatio(1);KR.renderer.setSize(844,390,false);KR.camera.aspect=844/390;KR.camera.updateProjectionMatrix();KR.reframe();KR.renderer.render(KR.scene,KR.camera)")
+        landscape = page.screenshot(animations='disabled')
+        (root / 'phone-landscape-neutral-front.png').write_bytes(landscape)
+        landscape_image = Image.open(root / 'phone-landscape-neutral-front.png').convert('RGB')
+        landscape_ok = landscape_image.size == (844, 390) and max(ImageStat.Stat(landscape_image).stddev) >= 2
+        if not landscape_ok:
+            checks['errors'].append('Invalid or uniform representative phone landscape render')
         checks['garment_closeups'] = {
             'executed_renders': len(records),
             'coverage': 'exhaustive 5 implemented pose choices x 4 defined upper-garment close-up camera directions',
@@ -86,6 +94,7 @@ def run_garment_closeups(page, root: Path, checks: dict) -> None:
             'limits': 'Not exhaustive over continuous orbit angles, measurements, grading, physical garment fit, or real-device hardware',
             'visual_approval': False,
             'physical_fit_validated': False,
+            'phone_landscape_representative': {'resolution': [844, 390], 'path': 'phone-landscape-neutral-front.png', 'nonuniform_pixels': landscape_ok, 'coverage': 'representative neutral/front software viewport only; not physical-device validation'},
         }
     finally:
         page.evaluate("""()=>{
