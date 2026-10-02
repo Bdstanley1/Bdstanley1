@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "source": {
+    "package": "MakeHuman hair02",
+    "source_page": "https://static.makehumancommunity.org/assets/assetpacks/hair02.html",
+    "archive_url": "https://files2.makehumancommunity.org/asset_packs/hair02/hair02_ccby.zip",
+    "archive_sha256": "c681e5efd37df4007a52253a8d071aedbfe3b614f199d8dae4ae76d5bd7d95c9",
+    "member": "hair/elvs_ashley_may_hair/80snormals.png",
+    "member_bytes": 1366853,
+    "member_sha256": "871a5acddb9c57a6f116d0603d80fa534a649c6b1af659ca39fb972dd5d18d60",
+    "author": "Elvaerwyn",
+    "license_header": "CC_by",
+    "material_normalmap_intensity": 0.8
+  },
+  "verified_diagnostic": {
+    "png_signature": true,
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "color_type": "RGBA 8-bit",
+    "all_IDAT_crc_valid": true,
+    "IDAT_zlib_decodes": true,
+    "decoded_scanline_bytes": 4195328,
+    "decoded_scanlines_sha256": "4f10a0c15389854d526e4e962b3c3a23f017d1374e5a8f91c023091c28df1eec",
+    "invalid_chunk": {
+      "type": "iCCP",
+      "ancillary": true,
+      "data_bytes": 389,
+      "stored_crc": 1849566042,
+      "computed_crc": 1463362530
+    },
+    "pillow_12_3_0_result": "UnidentifiedImageError on original bytes"
+  },
+  "deterministic_repair": {
+    "operation": "remove only the invalid ancillary iCCP chunk; preserve every other PNG chunk byte-for-byte, including all IDAT data",
+    "output_bytes": 1366452,
+    "output_sha256": "3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0",
+    "pillow_12_3_0_verify": true,
+    "idat_stream_preserved": true
+  },
+  "validation_limits": {
+    "runtime_integrated": false,
+    "visual_improvement_validated": false,
+    "measured_hair_optics_validated": false,
+    "customer_data_used": false
+  }
+}
