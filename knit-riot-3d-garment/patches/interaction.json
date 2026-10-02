@@ -3,5 +3,10 @@
     "name": "preserve camera presets until actual orbit rotation",
     "before": "orbit.addEventListener('start',()=>{state.view='free';updateUI()});makeUI();new ResizeObserver(resize).observe($('stage'));",
     "after": "let orbitGestureStart=null;orbit.addEventListener('start',()=>{orbitGestureStart=camera.quaternion.clone()});orbit.addEventListener('change',()=>{if(orbitGestureStart&&state.view!=='free'&&camera.quaternion.angleTo(orbitGestureStart)>.008){state.view='free';updateUI()}});orbit.addEventListener('end',()=>{orbitGestureStart=null});makeUI();new ResizeObserver(resize).observe($('stage'));"
+  },
+  {
+    "name": "tessellate analytic garment cut boundaries",
+    "before": "const shoulderField=(x,y)=>{const ax=Math.abs(x),t=Math.max(0,Math.min(1,(ax-.045)/.115)),s=t*t*(3-2*t),top=H*(.847-.023*s)-y,h=y/H,u=Math.max(0,Math.min(1,(h-.64)/.207)),side=(h<.64?.218:.218-.080*Math.pow(u,.72))-ax,k=.016,d=Math.abs(top-side),q=Math.max(0,k-d);return Math.min(top,side)-q*q/(4*k)};const fields=[(x,y,z)=>y-H*.553,(x,y,z)=>shoulderField(x,y),(x,y,z)=>{const h=y/H,ax=Math.abs(x);return H*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y}];let vg=offsetTextileRadially(clipSubset(refineTextileSurface(m),fields,0),.015);",
+    "after": "const shoulderField=(x,y)=>{const ax=Math.abs(x),t=Math.max(0,Math.min(1,(ax-.045)/.115)),s=t*t*(3-2*t),top=H*(.847-.023*s)-y,h=y/H,u=Math.max(0,Math.min(1,(h-.64)/.207)),side=(h<.64?.218:.218-.080*Math.pow(u,.72))-ax,k=.016,d=Math.abs(top-side),q=Math.max(0,k-d);return Math.min(top,side)-q*q/(4*k)};const fields=[(x,y,z)=>y-H*.553,(x,y,z)=>shoulderField(x,y),(x,y,z)=>{const h=y/H,ax=Math.abs(x);return H*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y}];let vg=offsetTextileRadially(clipSubset(subdivideTextileClipBoundary(refineTextileSurface(m),fields,2,.022),fields,0),.015);"
   }
 ]
