@@ -108,6 +108,23 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(result['status'], 'stale_source_not_published')
         self.assertEqual(git(self.remote, 'show', f'main:{publication.PROJECT}/patches/footwear.js'), 'const fixture = 3;')
 
+    def test_staging_publication_does_not_replace_ci_latest(self):
+        self.change_remote(f'{publication.PROJECT}/patches/footwear.js', 'const fixture = 4;\n')
+        result = publication.publish(self.repo, self.evidence, self.tested, destination='staging')
+        self.assertEqual(result['status'], 'published')
+        self.assertEqual(result['destination'], 'staging')
+        self.assertIn('actual rendered fixture bytes', git(self.remote, 'show', f'main:{publication.PROJECT}/validation/staging/frame.bin'))
+        self.assertEqual(git(self.remote, 'show', f'main:{publication.PROJECT}/patches/footwear.js'), 'const fixture = 4;')
+
+    def test_staging_verifier_change_blocks_stale_evidence(self):
+        self.change_remote('.github/workflows/knit-riot-staging-verification.yml', 'name: New pinned verifier\n')
+        result = publication.publish(self.repo, self.evidence, self.tested, destination='staging')
+        self.assertEqual(result['status'], 'stale_source_not_published')
+
+    def test_unapproved_publication_scope_rejected(self):
+        with self.assertRaisesRegex(ValueError, 'destinations'):
+            publication.publish(self.repo, self.evidence, self.tested, destination='../unrelated')
+
     def test_corrupt_evidence_rejected(self):
         (self.evidence / 'frame.bin').write_bytes(b'corrupt')
         with self.assertRaisesRegex(ValueError, 'checksum/size'):

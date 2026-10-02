@@ -50,38 +50,44 @@ def verify_evidence(evidence: Path, tested: str) -> None:
         raise ValueError('Evidence contains unmanifested files')
 
 
-def publish(repo: Path, evidence: Path, tested: str, attempts: int = 3) -> dict:
+def publish(repo: Path, evidence: Path, tested: str, attempts: int = 3, destination: str = "latest") -> dict:
     repo, evidence = repo.resolve(), evidence.resolve()
     if attempts < 1 or attempts > 3:
         raise ValueError('Publication attempts must be between one and three')
+    if destination not in ('latest', 'staging'):
+        raise ValueError('Only latest or staging evidence destinations are authorized')
+    inputs = INPUTS if destination == 'latest' else [
+        '.github/workflows/knit-riot-staging-verification.yml',
+        f'{PROJECT}/tools/publish_evidence.py']
+    scope = f'{PROJECT}/validation/{destination}'
     verify_evidence(evidence, tested)
     for attempt in range(1, attempts + 1):
         _git(repo, 'fetch', 'origin', 'refs/heads/main')
         parent = _git(repo, 'rev-parse', 'FETCH_HEAD').stdout.strip()
-        different = _git(repo, 'diff', '--quiet', tested, parent, '--', *INPUTS, check=False)
+        different = _git(repo, 'diff', '--quiet', tested, parent, '--', *inputs, check=False)
         if different.returncode == 1:
             return {'status': 'stale_source_not_published', 'tested_commit': tested,
                     'current_main': parent, 'attempt': attempt,
-                    'evidence': 'Retained in this workflow artifact; latest evidence unchanged'}
+                    'evidence': 'Retained in this workflow artifact; published evidence unchanged', 'destination': destination}
         if different.returncode:
             raise RuntimeError(different.stderr)
         with tempfile.TemporaryDirectory(prefix='kr-evidence-') as temporary:
             worktree = Path(temporary) / 'worktree'
             _git(repo, 'worktree', 'add', '--detach', str(worktree), parent)
             try:
-                target = worktree / PROJECT / 'validation' / 'latest'
+                target = worktree / scope
                 if target.exists():
                     shutil.rmtree(target)
                 shutil.copytree(evidence, target)
-                _git(worktree, 'add', '--', f'{PROJECT}/validation/latest')
+                _git(worktree, 'add', '--', scope)
                 diff = _git(worktree, 'diff', '--cached', '--quiet', check=False)
                 if diff.returncode == 0:
                     return {'status': 'already_current', 'tested_commit': tested, 'current_main': parent}
                 if diff.returncode != 1:
                     raise RuntimeError(diff.stderr)
                 changed = _git(worktree, 'diff', '--cached', '--name-only').stdout.splitlines()
-                if any(not p.startswith(f'{PROJECT}/validation/latest/') for p in changed):
-                    raise RuntimeError('Refusing to publish changes outside validation/latest')
+                if any(not p.startswith(scope + '/') for p in changed):
+                    raise RuntimeError('Refusing to publish changes outside ' + scope)
                 _git(worktree, '-c', 'user.name=github-actions[bot]', '-c',
                      'user.email=41898282+github-actions[bot]@users.noreply.github.com',
                      'commit', '-m', 'Preserve actual Knit Riot render evidence and validation provenance')
@@ -89,7 +95,7 @@ def publish(repo: Path, evidence: Path, tested: str, attempts: int = 3) -> dict:
                 pushed = _git(worktree, 'push', 'origin', 'HEAD:refs/heads/main', check=False)
                 if pushed.returncode == 0:
                     return {'status': 'published', 'tested_commit': tested,
-                            'evidence_commit': commit, 'parent': parent, 'attempt': attempt}
+                            'evidence_commit': commit, 'parent': parent, 'attempt': attempt, 'destination': destination}
                 _git(repo, 'fetch', 'origin', 'refs/heads/main')
                 new_parent = _git(repo, 'rev-parse', 'FETCH_HEAD').stdout.strip()
                 if new_parent == parent:

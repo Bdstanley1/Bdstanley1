@@ -6,95 +6,123 @@ on:
     paths: [.github/workflows/knit-riot-staging-verification.yml]
 permissions:
   contents: write
+concurrency:
+  group: knit-riot-staging-delivery-verification
+  cancel-in-progress: false
 jobs:
   delivery:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 14
     steps:
       - uses: actions/checkout@v4
-      - name: Verify actual HTTPS delivery from the existing staging service
+      - name: Test scoped publication and real Git concurrency cases
+        run: python knit-riot-3d-garment/tools/test_publish_evidence.py -v
+      - name: Verify exact HTTPS application, trusted fixture bytes and actual Render evidence
         shell: bash
         run: |
           python - <<'PY'
-          import datetime, hashlib, io, json, os, pathlib, time, urllib.request, zipfile
+          import datetime, hashlib, io, json, os, pathlib, stat, subprocess, time, urllib.request, zipfile
           base='https://knit-riot-studio-development.onrender.com/'
-          expected='2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218'
-          commit='ab0a34b4b0d4d35359b2c681b3c38cb3a8785562'
+          expected='ff827a8fabbcf1b88d8adecc3cbb5766796a67ab3df6f9636884cf9ba511bd72'
+          commit='eaea7196fb9108f40be3e9ced8b6ee8edb082a5f'
           out=pathlib.Path('delivery-review');out.mkdir()
+          subprocess.run(['git','fetch','--depth=1','origin',commit],check=True,timeout=60)
+          trusted=json.loads(subprocess.check_output(['git','show',commit+':knit-riot-3d-garment/fixtures/runtime/FIXTURE_MANIFEST.json']))
           def get(path,limit=32*1024*1024):
-              request=urllib.request.Request(base+path,headers={'Cache-Control':'no-cache','User-Agent':'KnitRiot-staging-verification/1.0'})
+              request=urllib.request.Request(base+path,headers={'Cache-Control':'no-cache','User-Agent':'KnitRiot-staging-verification/2.0'})
               with urllib.request.urlopen(request,timeout=30) as response:
                   data=response.read(limit+1)
               assert len(data)<=limit, 'Response exceeds bounded verification size'
               return data
           def sha(data):return hashlib.sha256(data).hexdigest()
-          deadline=time.monotonic()+150
+          deadline=time.monotonic()+600
           while True:
               try:
-                  app=get('app.js')
-                  status=json.loads(get('PROJECT_STATUS.json'))
+                  app=get('app.js');status=json.loads(get('PROJECT_STATUS.json'))
                   assert sha(app)==expected and status.get('project_commit')==commit
                   break
               except Exception as error:
                   if time.monotonic()>=deadline:raise
                   print('Waiting for exact candidate delivery:',type(error).__name__,flush=True)
                   time.sleep(10)
-          build=json.loads(get('BUILD_REPORT.json'))
-          qa=json.loads(get('qa/results.json'))
+          build=json.loads(get('BUILD_REPORT.json'));qa=json.loads(get('qa/results.json'))
           assert build['app_sha256']==expected and build['project_commit']==commit
           assert qa['app_sha256']==expected and qa['execution_status']=='completed'
           assert not qa['errors'] and not qa['capture_errors'] and qa['extended']['passed']
           assert qa['extended']['rendered_combinations']==420
           assert qa['appearance_pairwise']['case_count']==31 and qa['appearance_pairwise']['pair_count']==284
+          assert qa['footwear_closeups']['executed_renders']==40
+          assert qa['footwear_occlusion']['executed_renders']==40
+          probes=qa['footwear_occlusion']['evidence']
+          closed=[r for r in probes if r['shoe']=='slip-ons'];bare=[r for r in probes if r['shoe']=='barefoot']
+          assert len(closed)==len(bare)==20
+          assert all(r['exposed_probe_pixels']==0 for r in closed)
+          assert all(r['exposed_probe_pixels']>=20 for r in bare)
           assert qa['glb_geometry_roundtrip']['passed']
           assert status['release_status']=='HOLD' and status['visual_gate']=='NOT_APPROVED'
           records={x['path']:x for x in json.loads(get('qa/evidence-manifest.json'))}
+          names=['desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-reloaded-detail.png','footwear-closeups-rendered.png','footwear-occlusion-rendered.png']
+          names += [r['path'] for r in qa['footwear_closeups']['evidence']+probes]
           evidence=[]
-          for name in ['desktop-detail.png','phone-neutral-front.png','glb-reloaded-detail.png']:
+          for name in names:
+              path=pathlib.PurePosixPath(name)
+              assert not path.is_absolute() and '..' not in path.parts and path.suffix=='.png'
               data=get('qa/'+name)
-              assert sha(data)==records[name]['sha256']
-              (out/name).write_bytes(data)
+              assert len(data)==records[name]['bytes'] and sha(data)==records[name]['sha256']
+              assert data.startswith(b'\x89PNG\r\n\x1a\n')
+              target=out/path;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
               evidence.append({'path':'qa/'+name,'bytes':len(data),'sha256':sha(data)})
           raw=get('development-snapshot.zip',96*1024*1024)
           with zipfile.ZipFile(io.BytesIO(raw)) as archive:
-              assert sum(x.file_size for x in archive.infolist())<160*1024*1024
+              assert len(archive.infolist())<5000 and sum(x.file_size for x in archive.infolist())<160*1024*1024
+              for item in archive.infolist():
+                  p=pathlib.PurePosixPath(item.filename)
+                  assert not p.is_absolute() and '..' not in p.parts and not stat.S_ISLNK(item.external_attr>>16)
               assert sha(archive.read('app.js'))==expected
               assert json.loads(archive.read('qa/results.json'))['app_sha256']==expected
-              assert 'source-build_runtime.py.txt' in archive.namelist()
-              assert 'source-render_test.py.txt' in archive.namelist()
-              assert 'SOURCE_README.txt' in archive.namelist()
-              manifest=json.loads(archive.read('asset-manifest.json'))
+              assert all(n in archive.namelist() for n in ['source-build_runtime.py.txt','source-render_test.py.txt','SOURCE_README.txt'])
               verified=[]
-              for name in ['body.json','leye.json','reye.json','skin.png','hair.png','hair.json','studio_small_08_1k.hdr']:
-                  data=get('assets/'+name)
-                  assert sha(data)==manifest['files'][name]['sha256']
-                  assert data==archive.read('assets/'+name)
+              for record in trusted['files']:
+                  name=record['path'];data=get(name)
+                  assert len(data)==record['bytes'] and sha(data)==record['sha256'], 'Trusted fixture differs: '+name
+                  assert data==archive.read(name)
                   verified.append(name)
-          result={'delivery_verified':True,'verified_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'workflow_run_id':os.environ['GITHUB_RUN_ID'],'url':base,'project_commit':commit,'app_sha256':expected,'build_report':build,'qa_execution':qa['execution_status'],'rendered_selection_cases':420,'appearance_pairwise_cases':31,'appearance_value_pairs':284,'glb_geometry_roundtrip':qa['glb_geometry_roundtrip'],'verified_delivered_assets':verified,'source_archive_sha256':sha(raw),'source_archive_bytes':len(raw),'actual_render_images':evidence,'release_status':'HOLD','visual_realism_approved':False,'physical_fit_validated':False,'physical_hardware_tested':False}
+              for record in evidence:
+                  assert sha(archive.read(record['path']))==record['sha256']
+          result={'delivery_verified':True,'verified_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'workflow_run_id':os.environ['GITHUB_RUN_ID'],'verification_program_commit':os.environ['GITHUB_SHA'],'url':base,'project_commit':commit,'app_sha256':expected,'build_report':build,'qa_execution':qa['execution_status'],'rendered_selection_cases':420,'appearance_pairwise_cases':31,'appearance_value_pairs':284,'footwear_normal_renders':40,'footwear_diagnostic_renders':40,'closed_shoe_probe_pixels':0,'barefoot_probe_minimum_pixels':min(r['exposed_probe_pixels'] for r in bare),'glb_geometry_roundtrip':qa['glb_geometry_roundtrip'],'trusted_pinned_fixture_files_verified':verified,'source_archive_sha256':sha(raw),'source_archive_bytes':len(raw),'actual_render_images':evidence,'release_status':'HOLD','visual_realism_approved':False,'physical_fit_validated':False,'physical_hardware_tested':False}
           (out/'DELIVERY_VERIFICATION.json').write_text(json.dumps(result,indent=2))
           (out/'PROJECT_STATUS.json').write_text(json.dumps(status,indent=2))
-          print(json.dumps(result,indent=2),flush=True)
+          (out/'ACTUAL_BROWSER_RESULTS.json').write_text(json.dumps(qa,indent=2))
+          provenance={'tested_commit':os.environ['GITHUB_SHA'],'commit_role':'delivery-verification program, not deployed application','deployed_project_commit':commit,'app_sha256':expected,'files':[]}
+          for p in sorted(out.rglob('*')):
+              if p.is_file():provenance['files'].append({'path':p.relative_to(out).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p.read_bytes())})
+          (out/'PROVENANCE.json').write_text(json.dumps(provenance,indent=2))
+          print(json.dumps({k:v for k,v in result.items() if k!='actual_render_images'},indent=2),flush=True)
           PY
-      - name: Persist only verified synthetic staging evidence
+      - name: Publish verified staging evidence with bounded non-rebasing concurrency guards
         shell: bash
         run: |
-          mkdir -p knit-riot-3d-garment/validation/staging
-          cp delivery-review/*.json delivery-review/*.png knit-riot-3d-garment/validation/staging/
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- knit-riot-3d-garment/validation/staging
-          if ! git diff --cached --quiet; then
-            git commit -m 'Preserve actual delivered Render evidence and provenance'
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+          python - <<'PY'
+          import hashlib,json,os,sys,urllib.request
+          from pathlib import Path
+          sys.path.insert(0,'knit-riot-3d-garment/tools')
+          from publish_evidence import publish
+          result=json.loads(Path('delivery-review/DELIVERY_VERIFICATION.json').read_text())
+          request=urllib.request.Request(result['url']+'app.js',headers={'Cache-Control':'no-cache'})
+          with urllib.request.urlopen(request,timeout=30) as response:data=response.read(2_000_001)
+          assert len(data)<=2_000_000 and hashlib.sha256(data).hexdigest()==result['app_sha256']
+          published=publish(Path.cwd(),Path('delivery-review'),os.environ['GITHUB_SHA'],destination='staging')
+          Path('staging-publication-result.json').write_text(json.dumps(published,indent=2))
+          print(json.dumps(published))
+          PY
       - name: Preserve delivered QA images and verification record
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: knit-riot-staging-delivery-review
-          path: delivery-review/
+          path: |
+            delivery-review/
+            staging-publication-result.json
           retention-days: 1
           if-no-files-found: warn
           compression-level: 9
