@@ -1,83 +1,117 @@
-// Procedural development slip-ons derived from licensed anatomical foot bounds.
-// Artistic footwear geometry only; not a scan, product last, or fit/comfort validation.
+// Anatomical-fixture-derived, closed procedural slip-ons with a real vamp and counter.
+// Artistic development geometry only: not a scanned product, last, or fit validation.
 {
-  const bounds=[{},{}];
-  for(const b of bounds){b.x0=Infinity;b.x1=-Infinity;b.y0=Infinity;b.y1=-Infinity;b.z0=Infinity;b.z1=-Infinity;}
-  for(let i=0;i<m.positions.length;i+=3){
-    const x=m.positions[i],y=m.positions[i+1],z=m.positions[i+2];
-    if(y>H*.075)continue;
-    const b=bounds[x<0?0:1];
-    b.x0=Math.min(b.x0,x);b.x1=Math.max(b.x1,x);b.y0=Math.min(b.y0,y);b.y1=Math.max(b.y1,y);b.z0=Math.min(b.z0,z);b.z1=Math.max(b.z1,z);
-  }
-  if(bounds.some(b=>!Number.isFinite(b.x0)||b.z1-b.z0<.12))throw Error('Foot bounds unavailable for slip-on construction');
-
-  const outline=(w,l)=>{
-    const s=new T.Shape();
-    s.moveTo(0,-l*.55);
-    s.bezierCurveTo(-w*.72,-l*.54,-w*1.01,-l*.34,-w*1.02,-l*.10);
-    s.bezierCurveTo(-w*.99,l*.17,-w*.73,l*.45,-w*.58,l*.50);
-    s.quadraticCurveTo(0,l*.54,w*.58,l*.50);
-    s.bezierCurveTo(w*.73,l*.45,w*.99,l*.17,w*1.02,-l*.10);
-    s.bezierCurveTo(w*1.01,-l*.34,w*.72,-l*.54,0,-l*.55);
-    return s;
+  const hullOf=points=>{
+    const sorted=[...new Map(points.map(p=>[p.map(v=>Math.round(v*1e7)).join(','),p])).values()].sort((a,b)=>a[0]-b[0]||a[1]-b[1]);
+    if(sorted.length<3)throw Error('Insufficient anatomical footwear contour');
+    const cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
+    const lower=[],upper=[];
+    for(const p of sorted){while(lower.length>1&&cross(lower.at(-2),lower.at(-1),p)<=0)lower.pop();lower.push(p);}
+    for(const p of [...sorted].reverse()){while(upper.length>1&&cross(upper.at(-2),upper.at(-1),p)<=0)upper.pop();upper.push(p);}
+    return lower.slice(0,-1).concat(upper.slice(0,-1));
   };
-  const attachToFoot=(g,side,cx,cz)=>{
-    let best=0,bestD=Infinity;
+  const radiusAt=(hull,cx,cz,angle)=>{
+    const dx=Math.cos(angle),dz=Math.sin(angle);let radius=0;
+    for(let i=0;i<hull.length;i++){
+      const a=hull[i],b=hull[(i+1)%hull.length],ax=a[0]-cx,az=a[1]-cz,ex=b[0]-a[0],ez=b[1]-a[1];
+      const den=dx*ez-dz*ex;if(Math.abs(den)<1e-12)continue;
+      const r=(ax*ez-az*ex)/den,s=(ax*dz-az*dx)/den;
+      if(r>0&&s>=-1e-7&&s<=1+1e-7)radius=Math.max(radius,r);
+    }
+    if(!(radius>0))throw Error('Anatomical shoe contour does not surround ankle');
+    return radius;
+  };
+  boots=new T.Group();boots.name='White slip-on shoes';figure.add(boots);
+  const upperMat=new T.MeshPhysicalMaterial({color:'#f3f0e9',roughness:.62,metalness:0,clearcoat:.035,clearcoatRoughness:.65,side:T.DoubleSide});
+  const soleMat=new T.MeshPhysicalMaterial({color:'#c9c5bd',roughness:.78,metalness:0,side:T.DoubleSide});
+  const N=96,ROWS=18;
+  for(let side=0;side<2;side++){
+    const matches=x=>side?x>=0:x<0;
+    const foot=[];let bottom=Infinity;
     for(let i=0;i<m.positions.length;i+=3){
       const x=m.positions[i],y=m.positions[i+1],z=m.positions[i+2];
-      if((side===0&&x>=0)||(side===1&&x<0)||y>H*.065)continue;
-      const dx=x-cx,dy=y-H*.022,dz=z-(cz+H*.010),d=dx*dx+dy*dy+dz*dz;
-      if(d<bestD){bestD=d;best=i/3;}
+      if(matches(x)&&y<H*.080){foot.push({id:i/3,x,y,z});bottom=Math.min(bottom,y);}
     }
-    const p=g.attributes.position,si=[],sw=[];
-    for(let i=0;i<p.count;i++)for(let a=0;a<4;a++){si.push(m.skinIndex[best*4+a]);sw.push(m.skinWeight[best*4+a]);}
-    g.setAttribute('skinIndex',new T.Uint16BufferAttribute(si,4));
-    g.setAttribute('skinWeight',new T.Float32BufferAttribute(sw,4));
-  };
-  const addShoe=(name,g,material)=>{
-    const shoe=new T.SkinnedMesh(g,material);
-    shoe.name=name;shoe.castShadow=true;shoe.receiveShadow=true;shoe.frustumCulled=false;
-    boots.add(shoe);shoe.bind(skeleton,new T.Matrix4());meshRecords.push(shoe);
-  };
-
-  boots=new T.Group();boots.name='White slip-on shoes';figure.add(boots);
-  const upperMat=new T.MeshPhysicalMaterial({color:'#f3f0e9',roughness:.48,metalness:0,clearcoat:.10,clearcoatRoughness:.40,side:T.DoubleSide});
-  const soleMat=new T.MeshPhysicalMaterial({color:'#c9c5bd',roughness:.70,metalness:0,clearcoat:.025,clearcoatRoughness:.72,side:T.DoubleSide});
-
-  for(const [side,b] of bounds.entries()){
-    const anatomyW=(b.x1-b.x0)/2,anatomyL=b.z1-b.z0;
-    const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2;
-    const w=anatomyW+H*.0032,l=anatomyL+H*.014;
-    const bottom=b.y0-H*.0010,soleH=H*.0030;
-
-    const sole= new T.ExtrudeGeometry(outline(w,l),{depth:soleH,steps:1,curveSegments:16,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.00035,bevelSize:H*.00055});
-    sole.rotateX(-Math.PI/2);sole.translate(cx,bottom,cz);sole.computeVertexNormals();
-    attachToFoot(sole,side,cx,cz);
-    addShoe('White slip-on '+(side?'right':'left')+' sole',sole,soleMat);
-
-    const upperShape=outline(w*.955,l*.945);
-    const opening=new T.Path();
-    const ankle=[];for(let i=0;i<m.positions.length;i+=3){const x=m.positions[i],y=m.positions[i+1],z=m.positions[i+2];if(((side===0&&x<0)||(side===1&&x>=0))&&y>H*.050&&y<H*.095&&z>b.z0+anatomyL*.08&&z<b.z0+anatomyL*.58)ankle.push([x,z]);}const ankleZ=ankle.length?ankle.reduce((a,v)=>a+v[1],0)/ankle.length:cz-l*.15;const openingZ=Math.max(-l*.28,Math.min(l*.02,ankleZ-cz));opening.absellipse(0,openingZ,w*.31,l*.072,0,Math.PI*2,false,0);
-    upperShape.holes.push(opening);
-    const upperH=H*.048,upperBase=bottom+soleH*.70;
-    const upper=new T.ExtrudeGeometry(upperShape,{depth:upperH,steps:1,curveSegments:18,bevelEnabled:true,bevelSegments:4,bevelThickness:H*.0013,bevelSize:H*.0015});
-    upper.rotateX(-Math.PI/2);upper.translate(cx,upperBase,cz);
-    const p=upper.attributes.position;
-    for(let i=0;i<p.count;i++){
-      let x=p.getX(i),y=p.getY(i),z=p.getZ(i);
-      const t=Math.max(0,Math.min(1,(z-(cz-l*.52))/l));
-      const fy=Math.max(0,Math.min(1,(y-upperBase)/upperH));
-      const vamp=Math.exp(-Math.pow((t-.64)/.23,2));
-      const heel=Math.max(0,1-t/.42);
-      const collar=Math.exp(-Math.pow((t-.24)/.20,2));
-      const toeLift=Math.pow(Math.max(0,(t-.78)/.22),2);
-      const top=H*(.013+.033*vamp+.024*heel+.008*collar);
-      x=cx+(x-cx)*(1-.065*fy);
-      y=upperBase+fy*top+H*.0015*toeLift*fy;
-      p.setXYZ(i,x,y,z);
+    const collarY=bottom+H*.044,soleH=H*.0032,soleBottom=bottom-H*.0014,upperBase=soleBottom+soleH*.80;
+    const triangles=[],cut=[];
+    for(let i=0;i<m.indices.length;i+=3){
+      const ids=m.indices.slice(i,i+3),v=ids.map(id=>m.positions.slice(id*3,id*3+3));
+      if(!v.every(p=>matches(p[0]))||Math.min(...v.map(p=>p[1]))>collarY+H*.012)continue;
+      triangles.push(v);
+      for(let k=0;k<3;k++){
+        const a=v[k],b=v[(k+1)%3];
+        if((a[1]<=collarY&&b[1]>collarY)||(b[1]<=collarY&&a[1]>collarY)){
+          const t=(collarY-a[1])/(b[1]-a[1]);cut.push([a[0]+t*(b[0]-a[0]),a[2]+t*(b[2]-a[2])]);
+        }
+      }
     }
-    p.needsUpdate=true;upper.computeVertexNormals();
-    attachToFoot(upper,side,cx,cz);
-    addShoe('White slip-on '+(side?'right':'left')+' upper',upper,upperMat);
+    const innerHull=hullOf(cut),outerHull=hullOf(foot.filter(p=>p.y<=collarY).map(p=>[p.x,p.z]));
+    const cx=(Math.min(...cut.map(p=>p[0]))+Math.max(...cut.map(p=>p[0])))/2;
+    const cz=(Math.min(...cut.map(p=>p[1]))+Math.max(...cut.map(p=>p[1])))/2;
+    const outer=[],inner=[];
+    for(let i=0;i<N;i++){
+      const a=i*2*Math.PI/N;
+      inner.push(radiusAt(innerHull,cx,cz,a)+H*.0012);
+      outer.push(Math.max(radiusAt(outerHull,cx,cz,a)+H*.0032,inner[i]+H*.004));
+    }
+    const footSurface=(x,z)=>{
+      let top=bottom;
+      for(const v of triangles){
+        const [a,b,c]=v;
+        if(x<Math.min(a[0],b[0],c[0])-1e-8||x>Math.max(a[0],b[0],c[0])+1e-8||z<Math.min(a[2],b[2],c[2])-1e-8||z>Math.max(a[2],b[2],c[2])+1e-8)continue;
+        const den=(b[2]-c[2])*(a[0]-c[0])+(c[0]-b[0])*(a[2]-c[2]);if(Math.abs(den)<1e-12)continue;
+        const u=((b[2]-c[2])*(x-c[0])+(c[0]-b[0])*(z-c[2]))/den;
+        const v0=((c[2]-a[2])*(x-c[0])+(a[0]-c[0])*(z-c[2]))/den,w=1-u-v0;
+        if(Math.min(u,v0,w)<-1e-7)continue;
+        const y=u*a[1]+v0*b[1]+w*c[1];if(y<=collarY+H*.001)top=Math.max(top,y);
+      }
+      return top;
+    };
+    const attach=g=>{
+      const p=g.attributes.position,si=[],sw=[];
+      for(let i=0;i<p.count;i++){
+        let best=foot[0],distance=Infinity;
+        for(const v of foot){const d=(p.getX(i)-v.x)**2+(p.getY(i)-v.y)**2+(p.getZ(i)-v.z)**2;if(d<distance){distance=d;best=v;}}
+        for(let k=0;k<4;k++){si.push(m.skinIndex[best.id*4+k]);sw.push(m.skinWeight[best.id*4+k]);}
+      }
+      g.setAttribute('skinIndex',new T.Uint16BufferAttribute(si,4));g.setAttribute('skinWeight',new T.Float32BufferAttribute(sw,4));
+    };
+    const add=(part,g,material)=>{
+      attach(g);const shoe=new T.SkinnedMesh(g,material);shoe.name='White slip-on '+(side?'right':'left')+' '+part;
+      shoe.castShadow=true;shoe.receiveShadow=true;shoe.frustumCulled=false;boots.add(shoe);shoe.bind(skeleton,new T.Matrix4());meshRecords.push(shoe);
+      shoe.userData.developmentGeometry='Synthetic anatomical contour; artistic clearance, not physical product validation';
+    };
+    const outline=new T.Shape();
+    for(let i=0;i<N;i++){
+      const a=i*2*Math.PI/N,x=cx+outer[i]*Math.cos(a),z=cz+outer[i]*Math.sin(a);
+      if(i===0)outline.moveTo(x,-z);else outline.lineTo(x,-z);
+    }
+    outline.closePath();
+    const sole=new T.ExtrudeGeometry(outline,{depth:soleH,steps:1,bevelEnabled:true,bevelSegments:3,bevelThickness:H*.0005,bevelSize:H*.0007});
+    sole.rotateX(-Math.PI/2);sole.translate(0,soleBottom,0);sole.computeVertexNormals();add('sole',sole,soleMat);
+    const positions=[],uv=[],indices=[];
+    for(let row=0;row<=ROWS;row++)for(let i=0;i<N;i++){
+      const t=row/ROWS,a=i*2*Math.PI/N,front=(Math.sin(a)+1)/2;
+      const r=outer[i]*(1-t)+inner[i]*t,x=cx+r*Math.cos(a),z=cz+r*Math.sin(a);
+      const exponent=.30+.34*front;
+      let y=upperBase+(collarY-upperBase)*Math.pow(Math.sin(t*Math.PI/2),exponent);
+      if(row>0&&row<ROWS)y=Math.max(y,footSurface(x,z)+H*.0020);
+      positions.push(x,y,z);uv.push(i/N,t);
+    }
+    for(let row=0;row<ROWS;row++)for(let i=0;i<N;i++){
+      const j=(i+1)%N,a=row*N+i,b=row*N+j,c=(row+1)*N+i,d=(row+1)*N+j;
+      indices.push(a,c,b,b,c,d);
+    }
+    // A thin interior lining and closed collar avoid a single paper-thin surface.
+    const count=positions.length/3,outerIndices=indices.slice();
+    for(let i=0;i<count;i++){positions.push(positions[i*3],positions[i*3+1]-H*.0011,positions[i*3+2]);uv.push(uv[i*2],uv[i*2+1]);}
+    for(let i=0;i<outerIndices.length;i+=3)indices.push(outerIndices[i]+count,outerIndices[i+2]+count,outerIndices[i+1]+count);
+    for(const row of [0,ROWS])for(let i=0;i<N;i++){
+      const j=(i+1)%N,a=row*N+i,b=row*N+j;
+      if(row===ROWS)indices.push(a,b,a+count,b,b+count,a+count);
+      else indices.push(a,a+count,b,b,a+count,b+count);
+    }
+    const upper=new T.BufferGeometry();upper.setAttribute('position',new T.Float32BufferAttribute(positions,3));upper.setAttribute('uv',new T.Float32BufferAttribute(uv,2));upper.setIndex(indices);upper.computeVertexNormals();
+    add('upper',upper,upperMat);
   }
 }
