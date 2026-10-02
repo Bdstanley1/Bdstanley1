@@ -1,7 +1,7 @@
 [
   {
     "path": "footwear-closeups/slip-ons-neutral-front.png",
-    "sha256": "15739cae3d3b819ca577644a1b027fd75f4ac8f76bbeebd11e3670fc446cea0f",
+    "sha256": "4ff0742f16dc34e499c38b99aac04dd848080ca6948299f75c4b96b72f4dd123",
     "shoe": "slip-ons",
     "pose": "neutral",
     "view": "front",
@@ -101,7 +101,7 @@
   },
   {
     "path": "footwear-closeups/slip-ons-fashion-front.png",
-    "sha256": "fb83cf741c683085b84d74e00fa4e22df09035b75e702d786c3444f478370943",
+    "sha256": "9c41624e07ee002ed516fd2d634e61a82a7d8722e8cb367674bed78622a82f98",
     "shoe": "slip-ons",
     "pose": "fashion",
     "view": "front",
@@ -201,7 +201,7 @@
   },
   {
     "path": "footwear-closeups/slip-ons-hip-front.png",
-    "sha256": "a9861440099131fef509ec64d15ed9cbbb717e37fda0f81b2f3ae2e51d30c9c4",
+    "sha256": "6927d393b16688d6f30f4994f3777f31fb12c490a14c8a3fe28ea5ef246f94a6",
     "shoe": "slip-ons",
     "pose": "hip",
     "view": "front",
@@ -301,7 +301,7 @@
   },
   {
     "path": "footwear-closeups/slip-ons-walk-front.png",
-    "sha256": "36c907cc99b4c698e149657a366102cce14f3ae2153830471ce3769682f245b3",
+    "sha256": "c33f13e69afdedca997b698c9411fcfe5fa45a9a5300bcf2f0898354b247e5d4",
     "shoe": "slip-ons",
     "pose": "walk",
     "view": "front",
@@ -401,7 +401,7 @@
   },
   {
     "path": "footwear-closeups/slip-ons-three-quarter-front.png",
-    "sha256": "59dd1eecac846d2543dae9ea21ea184d2a7c9c567c00936fb679df7166b298e7",
+    "sha256": "bb7240285c955e30a6ffce13581238c2a2b22d643a7113e3acff890f84acbd53",
     "shoe": "slip-ons",
     "pose": "three-quarter",
     "view": "front",
@@ -501,7 +501,7 @@
   },
   {
     "path": "footwear-closeups/barefoot-neutral-front.png",
-    "sha256": "034499ee7d0046360660b85ae785938f0cdd61069632e84435e46829ed386b4a",
+    "sha256": "2c52d4e523b771677c077861439af66609dff76fd26b9f09531392a404447d56",
     "shoe": "barefoot",
     "pose": "neutral",
     "view": "front",
@@ -601,7 +601,7 @@
   },
   {
     "path": "footwear-closeups/barefoot-fashion-front.png",
-    "sha256": "a985f10a30ea5b907cbc25cab95b93bc40006688b634072ce3c6eb13057f4fef",
+    "sha256": "fd55de3ac256bc8710d9f65ddc74a845ad025c00b39b508c9be515613d68c878",
     "shoe": "barefoot",
     "pose": "fashion",
     "view": "front",
@@ -701,7 +701,7 @@
   },
   {
     "path": "footwear-closeups/barefoot-hip-front.png",
-    "sha256": "2447dc75b882de042f063769c1ecf0e45cf2b321ee4e8405cb19781a1590932e",
+    "sha256": "a125a398e89b2590574a9f9ac542bfb3e4e1a1b6b171afcb75db384683323cc0",
     "shoe": "barefoot",
     "pose": "hip",
     "view": "front",
@@ -801,7 +801,7 @@
   },
   {
     "path": "footwear-closeups/barefoot-walk-front.png",
-    "sha256": "d29f6606b18d22a0b75985cc06f3f043cd4f450b71bd84ad9cee993eeb67aa59",
+    "sha256": "5117b00323957c77edaa7f9daef81a86884a43f794e5c823020511e96b86ab25",
     "shoe": "barefoot",
     "pose": "walk",
     "view": "front",
@@ -901,7 +901,7 @@
   },
   {
     "path": "footwear-closeups/barefoot-three-quarter-front.png",
-    "sha256": "c1b34ecb1448cded1097c38ea7e52016df6e8e1e314c5b66006e7ba5f5fe78a9",
+    "sha256": "e4981c86ae0f639c409ec1a5f61e142cb4511c331b5626d8db754467cd3a4b09",
     "shoe": "barefoot",
     "pose": "three-quarter",
     "view": "front",
