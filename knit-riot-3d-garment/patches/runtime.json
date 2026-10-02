@@ -37,11 +37,16 @@
   {
     "name": "keep vest binding inside boundary triangles",
     "before": "let A=new T.Vector3().fromBufferAttribute(p,edge.a),B=new T.Vector3().fromBufferAttribute(p,edge.b),C=new T.Vector3().fromBufferAttribute(p,edge.c),n=new T.Vector3().fromBufferAttribute(normal,edge.a).add(new T.Vector3().fromBufferAttribute(normal,edge.b)).normalize(),along=B.clone().sub(A).normalize();let inward=C.clone().sub(A).addScaledVector(along,-C.clone().sub(A).dot(along)).normalize();let width=.012;A.addScaledVector(n,.0015);B.addScaledVector(n,.0015);let D=A.clone().addScaledVector(inward,width),E=B.clone().addScaledVector(inward,width);",
-    "after": "let A=new T.Vector3().fromBufferAttribute(p,edge.a),B=new T.Vector3().fromBufferAttribute(p,edge.b),C=new T.Vector3().fromBufferAttribute(p,edge.c),n=new T.Vector3().fromBufferAttribute(normal,edge.a).add(new T.Vector3().fromBufferAttribute(normal,edge.b)).normalize(),along=B.clone().sub(A).normalize();let inward=C.clone().sub(A).addScaledVector(along,-C.clone().sub(A).dot(along)),altitude=inward.length(),f=Math.min(.35,.007/Math.max(altitude,1e-6)),D=A.clone().lerp(C,f),E=B.clone().lerp(C,f);for(let v of [A,B,D,E])v.addScaledVector(n,.00045);"
+    "after": "let A=new T.Vector3().fromBufferAttribute(p,edge.a),B=new T.Vector3().fromBufferAttribute(p,edge.b),C=new T.Vector3().fromBufferAttribute(p,edge.c),n=new T.Vector3().fromBufferAttribute(normal,edge.a).add(new T.Vector3().fromBufferAttribute(normal,edge.b)).normalize(),along=B.clone().sub(A).normalize();let inward=C.clone().sub(A).addScaledVector(along,-C.clone().sub(A).dot(along)),altitude=inward.length(),f=Math.min(.35,.007/Math.max(altitude,1e-6)),D=A.clone().lerp(C,f),E=B.clone().lerp(C,f);"
   },
   {
     "name": "soften sclera contrast after iris texture setup",
     "before": "if(o.name.startsWith('Eye white ')){o.material.color.set('#e1d7c8');o.material.roughness=.30;}",
     "after": "if(o.name.startsWith('Eye white ')){o.material.color.set('#d8cfc4');o.material.roughness=.34;}"
+  },
+  {
+    "name": "depth-bias vest binding without silhouette inflation",
+    "before": "const trim=geometry({positions,normals,uv:uvs,skinIndex:joints,skinWeight:weights,indices:index});skinned('Bound neckline, armholes and hem',trim,clothMat);",
+    "after": "const trim=geometry({positions,normals,uv:uvs,skinIndex:joints,skinWeight:weights,indices:index}),trimMat=clothMat.clone();trimMat.color=clothMat.color;trimMat.polygonOffset=true;trimMat.polygonOffsetFactor=-1;trimMat.polygonOffsetUnits=-1;trimMat.roughness=.82;skinned('Bound neckline, armholes and hem',trim,trimMat);"
   }
 ]
