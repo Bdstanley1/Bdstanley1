@@ -1,7 +1,7 @@
 [
   {
     "path": "footwear-occlusion/slip-ons-neutral-front.png",
-    "sha256": "230de62c32152352669dd6a1828a5c2a24c4e4f73b999f6744d239ed0d9ee7b6",
+    "sha256": "3003ee8deb0de62f2bd9e4e03ada36f17a4cbafc6bc6f6c2ebe86233bcd59b5e",
     "shoe": "slip-ons",
     "pose": "neutral",
     "view": "front",
@@ -9,7 +9,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-neutral-side.png",
-    "sha256": "230de62c32152352669dd6a1828a5c2a24c4e4f73b999f6744d239ed0d9ee7b6",
+    "sha256": "3003ee8deb0de62f2bd9e4e03ada36f17a4cbafc6bc6f6c2ebe86233bcd59b5e",
     "shoe": "slip-ons",
     "pose": "neutral",
     "view": "side",
@@ -17,7 +17,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-neutral-back.png",
-    "sha256": "230de62c32152352669dd6a1828a5c2a24c4e4f73b999f6744d239ed0d9ee7b6",
+    "sha256": "3003ee8deb0de62f2bd9e4e03ada36f17a4cbafc6bc6f6c2ebe86233bcd59b5e",
     "shoe": "slip-ons",
     "pose": "neutral",
     "view": "back",
@@ -25,7 +25,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-neutral-above-front.png",
-    "sha256": "230de62c32152352669dd6a1828a5c2a24c4e4f73b999f6744d239ed0d9ee7b6",
+    "sha256": "3003ee8deb0de62f2bd9e4e03ada36f17a4cbafc6bc6f6c2ebe86233bcd59b5e",
     "shoe": "slip-ons",
     "pose": "neutral",
     "view": "above-front",
@@ -33,7 +33,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-fashion-front.png",
-    "sha256": "2435e9cd6622648bf5d7e42100f69a4989976c2a2377cf5888d823760c083c1c",
+    "sha256": "9fd3e88d88a1ada4d8efaeb6be6ab62e0dd10881142498b1129a442bd63d90dc",
     "shoe": "slip-ons",
     "pose": "fashion",
     "view": "front",
@@ -41,7 +41,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-fashion-side.png",
-    "sha256": "2435e9cd6622648bf5d7e42100f69a4989976c2a2377cf5888d823760c083c1c",
+    "sha256": "9fd3e88d88a1ada4d8efaeb6be6ab62e0dd10881142498b1129a442bd63d90dc",
     "shoe": "slip-ons",
     "pose": "fashion",
     "view": "side",
@@ -49,7 +49,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-fashion-back.png",
-    "sha256": "2435e9cd6622648bf5d7e42100f69a4989976c2a2377cf5888d823760c083c1c",
+    "sha256": "9fd3e88d88a1ada4d8efaeb6be6ab62e0dd10881142498b1129a442bd63d90dc",
     "shoe": "slip-ons",
     "pose": "fashion",
     "view": "back",
@@ -57,7 +57,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-fashion-above-front.png",
-    "sha256": "2435e9cd6622648bf5d7e42100f69a4989976c2a2377cf5888d823760c083c1c",
+    "sha256": "9fd3e88d88a1ada4d8efaeb6be6ab62e0dd10881142498b1129a442bd63d90dc",
     "shoe": "slip-ons",
     "pose": "fashion",
     "view": "above-front",
@@ -65,7 +65,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-hip-front.png",
-    "sha256": "aaf231c699f1cf1f28d1b6667a04a93027a8e90033a65aca523a4b7ef3ddab73",
+    "sha256": "71bc9bb4085c972d899e15f6d36c2232e9d7eb223b5be1095fed4deb72b1f02f",
     "shoe": "slip-ons",
     "pose": "hip",
     "view": "front",
@@ -73,7 +73,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-hip-side.png",
-    "sha256": "aaf231c699f1cf1f28d1b6667a04a93027a8e90033a65aca523a4b7ef3ddab73",
+    "sha256": "71bc9bb4085c972d899e15f6d36c2232e9d7eb223b5be1095fed4deb72b1f02f",
     "shoe": "slip-ons",
     "pose": "hip",
     "view": "side",
@@ -81,7 +81,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-hip-back.png",
-    "sha256": "aaf231c699f1cf1f28d1b6667a04a93027a8e90033a65aca523a4b7ef3ddab73",
+    "sha256": "71bc9bb4085c972d899e15f6d36c2232e9d7eb223b5be1095fed4deb72b1f02f",
     "shoe": "slip-ons",
     "pose": "hip",
     "view": "back",
@@ -89,7 +89,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-hip-above-front.png",
-    "sha256": "aaf231c699f1cf1f28d1b6667a04a93027a8e90033a65aca523a4b7ef3ddab73",
+    "sha256": "71bc9bb4085c972d899e15f6d36c2232e9d7eb223b5be1095fed4deb72b1f02f",
     "shoe": "slip-ons",
     "pose": "hip",
     "view": "above-front",
@@ -97,7 +97,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-walk-front.png",
-    "sha256": "1943b8a0df174456b661a04bf066c752384b82abe4828566cdf7898aa7a0ae85",
+    "sha256": "896d438d13726d572b80b24b5e36de32a35cecc6dd136f2211c9e9405514258d",
     "shoe": "slip-ons",
     "pose": "walk",
     "view": "front",
@@ -105,7 +105,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-walk-side.png",
-    "sha256": "1943b8a0df174456b661a04bf066c752384b82abe4828566cdf7898aa7a0ae85",
+    "sha256": "896d438d13726d572b80b24b5e36de32a35cecc6dd136f2211c9e9405514258d",
     "shoe": "slip-ons",
     "pose": "walk",
     "view": "side",
@@ -113,7 +113,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-walk-back.png",
-    "sha256": "1943b8a0df174456b661a04bf066c752384b82abe4828566cdf7898aa7a0ae85",
+    "sha256": "896d438d13726d572b80b24b5e36de32a35cecc6dd136f2211c9e9405514258d",
     "shoe": "slip-ons",
     "pose": "walk",
     "view": "back",
@@ -121,7 +121,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-walk-above-front.png",
-    "sha256": "1943b8a0df174456b661a04bf066c752384b82abe4828566cdf7898aa7a0ae85",
+    "sha256": "896d438d13726d572b80b24b5e36de32a35cecc6dd136f2211c9e9405514258d",
     "shoe": "slip-ons",
     "pose": "walk",
     "view": "above-front",
@@ -129,7 +129,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-three-quarter-front.png",
-    "sha256": "52ae1606a0aa83fdebe75dc80a0238f79961207982d2d061bc3d6eb16ceb88ea",
+    "sha256": "6f2cfd707f86541a34ce93f8eceb85b906cf08f91c99266c419afe1c22b93b7a",
     "shoe": "slip-ons",
     "pose": "three-quarter",
     "view": "front",
@@ -137,7 +137,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-three-quarter-side.png",
-    "sha256": "52ae1606a0aa83fdebe75dc80a0238f79961207982d2d061bc3d6eb16ceb88ea",
+    "sha256": "6f2cfd707f86541a34ce93f8eceb85b906cf08f91c99266c419afe1c22b93b7a",
     "shoe": "slip-ons",
     "pose": "three-quarter",
     "view": "side",
@@ -145,7 +145,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-three-quarter-back.png",
-    "sha256": "52ae1606a0aa83fdebe75dc80a0238f79961207982d2d061bc3d6eb16ceb88ea",
+    "sha256": "6f2cfd707f86541a34ce93f8eceb85b906cf08f91c99266c419afe1c22b93b7a",
     "shoe": "slip-ons",
     "pose": "three-quarter",
     "view": "back",
@@ -153,7 +153,7 @@
   },
   {
     "path": "footwear-occlusion/slip-ons-three-quarter-above-front.png",
-    "sha256": "52ae1606a0aa83fdebe75dc80a0238f79961207982d2d061bc3d6eb16ceb88ea",
+    "sha256": "6f2cfd707f86541a34ce93f8eceb85b906cf08f91c99266c419afe1c22b93b7a",
     "shoe": "slip-ons",
     "pose": "three-quarter",
     "view": "above-front",
@@ -161,7 +161,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-neutral-front.png",
-    "sha256": "85fa9cc62e79f8d1f22380b975f99a20a1e5908bf18d3353a86aa283adab0a74",
+    "sha256": "ef146edce337fb6e28f842523c6829207d05ef1e8512ce6070a843cccfe756a9",
     "shoe": "barefoot",
     "pose": "neutral",
     "view": "front",
@@ -169,7 +169,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-neutral-side.png",
-    "sha256": "85fa9cc62e79f8d1f22380b975f99a20a1e5908bf18d3353a86aa283adab0a74",
+    "sha256": "ef146edce337fb6e28f842523c6829207d05ef1e8512ce6070a843cccfe756a9",
     "shoe": "barefoot",
     "pose": "neutral",
     "view": "side",
@@ -177,7 +177,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-neutral-back.png",
-    "sha256": "85fa9cc62e79f8d1f22380b975f99a20a1e5908bf18d3353a86aa283adab0a74",
+    "sha256": "ef146edce337fb6e28f842523c6829207d05ef1e8512ce6070a843cccfe756a9",
     "shoe": "barefoot",
     "pose": "neutral",
     "view": "back",
@@ -185,7 +185,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-neutral-above-front.png",
-    "sha256": "85fa9cc62e79f8d1f22380b975f99a20a1e5908bf18d3353a86aa283adab0a74",
+    "sha256": "ef146edce337fb6e28f842523c6829207d05ef1e8512ce6070a843cccfe756a9",
     "shoe": "barefoot",
     "pose": "neutral",
     "view": "above-front",
@@ -193,7 +193,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-fashion-front.png",
-    "sha256": "f60950bb3dd07b91fd7eb67020c8f08e5785495b1b4d6eb0c8f31dabbc3f4d3b",
+    "sha256": "cca604f1c222d2cd46eaeb7d0a3d5f64a50e79c40f0c2b7a82ff4d1266c63d69",
     "shoe": "barefoot",
     "pose": "fashion",
     "view": "front",
@@ -201,7 +201,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-fashion-side.png",
-    "sha256": "f60950bb3dd07b91fd7eb67020c8f08e5785495b1b4d6eb0c8f31dabbc3f4d3b",
+    "sha256": "cca604f1c222d2cd46eaeb7d0a3d5f64a50e79c40f0c2b7a82ff4d1266c63d69",
     "shoe": "barefoot",
     "pose": "fashion",
     "view": "side",
@@ -209,7 +209,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-fashion-back.png",
-    "sha256": "f60950bb3dd07b91fd7eb67020c8f08e5785495b1b4d6eb0c8f31dabbc3f4d3b",
+    "sha256": "cca604f1c222d2cd46eaeb7d0a3d5f64a50e79c40f0c2b7a82ff4d1266c63d69",
     "shoe": "barefoot",
     "pose": "fashion",
     "view": "back",
@@ -217,7 +217,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-fashion-above-front.png",
-    "sha256": "f60950bb3dd07b91fd7eb67020c8f08e5785495b1b4d6eb0c8f31dabbc3f4d3b",
+    "sha256": "cca604f1c222d2cd46eaeb7d0a3d5f64a50e79c40f0c2b7a82ff4d1266c63d69",
     "shoe": "barefoot",
     "pose": "fashion",
     "view": "above-front",
@@ -225,7 +225,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-hip-front.png",
-    "sha256": "96aaf2ca08b06a670b07f0ee25d31ddb53feb17be9800401941a7522cb16571d",
+    "sha256": "78e1571d67a5534ebd1069ea5ee77111ddb5cf19af00c6aacec0947d55db9e93",
     "shoe": "barefoot",
     "pose": "hip",
     "view": "front",
@@ -233,7 +233,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-hip-side.png",
-    "sha256": "96aaf2ca08b06a670b07f0ee25d31ddb53feb17be9800401941a7522cb16571d",
+    "sha256": "78e1571d67a5534ebd1069ea5ee77111ddb5cf19af00c6aacec0947d55db9e93",
     "shoe": "barefoot",
     "pose": "hip",
     "view": "side",
@@ -241,7 +241,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-hip-back.png",
-    "sha256": "96aaf2ca08b06a670b07f0ee25d31ddb53feb17be9800401941a7522cb16571d",
+    "sha256": "78e1571d67a5534ebd1069ea5ee77111ddb5cf19af00c6aacec0947d55db9e93",
     "shoe": "barefoot",
     "pose": "hip",
     "view": "back",
@@ -249,7 +249,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-hip-above-front.png",
-    "sha256": "96aaf2ca08b06a670b07f0ee25d31ddb53feb17be9800401941a7522cb16571d",
+    "sha256": "78e1571d67a5534ebd1069ea5ee77111ddb5cf19af00c6aacec0947d55db9e93",
     "shoe": "barefoot",
     "pose": "hip",
     "view": "above-front",
@@ -257,7 +257,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-walk-front.png",
-    "sha256": "6c903224cdc4e50b75120337ef5848e1a9cf6e656a1a95cd38e4bb574a4406ff",
+    "sha256": "f830631bf069fbdaf34313e240cef99865e5835f679f862d2196176683217f54",
     "shoe": "barefoot",
     "pose": "walk",
     "view": "front",
@@ -265,7 +265,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-walk-side.png",
-    "sha256": "6c903224cdc4e50b75120337ef5848e1a9cf6e656a1a95cd38e4bb574a4406ff",
+    "sha256": "f830631bf069fbdaf34313e240cef99865e5835f679f862d2196176683217f54",
     "shoe": "barefoot",
     "pose": "walk",
     "view": "side",
@@ -273,7 +273,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-walk-back.png",
-    "sha256": "6c903224cdc4e50b75120337ef5848e1a9cf6e656a1a95cd38e4bb574a4406ff",
+    "sha256": "f830631bf069fbdaf34313e240cef99865e5835f679f862d2196176683217f54",
     "shoe": "barefoot",
     "pose": "walk",
     "view": "back",
@@ -281,7 +281,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-walk-above-front.png",
-    "sha256": "6c903224cdc4e50b75120337ef5848e1a9cf6e656a1a95cd38e4bb574a4406ff",
+    "sha256": "f830631bf069fbdaf34313e240cef99865e5835f679f862d2196176683217f54",
     "shoe": "barefoot",
     "pose": "walk",
     "view": "above-front",
@@ -289,7 +289,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-three-quarter-front.png",
-    "sha256": "ed0f764c5fb8ce8e78df1c96c2aca659e9f9f1c367af9ead37d63c73c1276c74",
+    "sha256": "4f9a89767bb39838ea49452a068ac7b3a730d6e6db7c0b0ae473bddba868aa59",
     "shoe": "barefoot",
     "pose": "three-quarter",
     "view": "front",
@@ -297,7 +297,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-three-quarter-side.png",
-    "sha256": "ed0f764c5fb8ce8e78df1c96c2aca659e9f9f1c367af9ead37d63c73c1276c74",
+    "sha256": "4f9a89767bb39838ea49452a068ac7b3a730d6e6db7c0b0ae473bddba868aa59",
     "shoe": "barefoot",
     "pose": "three-quarter",
     "view": "side",
@@ -305,7 +305,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-three-quarter-back.png",
-    "sha256": "ed0f764c5fb8ce8e78df1c96c2aca659e9f9f1c367af9ead37d63c73c1276c74",
+    "sha256": "4f9a89767bb39838ea49452a068ac7b3a730d6e6db7c0b0ae473bddba868aa59",
     "shoe": "barefoot",
     "pose": "three-quarter",
     "view": "back",
@@ -313,7 +313,7 @@
   },
   {
     "path": "footwear-occlusion/barefoot-three-quarter-above-front.png",
-    "sha256": "ed0f764c5fb8ce8e78df1c96c2aca659e9f9f1c367af9ead37d63c73c1276c74",
+    "sha256": "4f9a89767bb39838ea49452a068ac7b3a730d6e6db7c0b0ae473bddba868aa59",
     "shoe": "barefoot",
     "pose": "three-quarter",
     "view": "above-front",

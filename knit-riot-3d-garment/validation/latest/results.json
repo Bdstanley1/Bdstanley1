@@ -10,8 +10,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -59,8 +59,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -108,8 +108,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -157,8 +157,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -206,8 +206,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -255,8 +255,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -304,8 +304,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -353,8 +353,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -402,8 +402,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -451,8 +451,8 @@
       "ready": true,
       "bones": 163,
       "meshes": 22,
-      "checkedCoordinates": 227814,
-      "checkedWeights": 75938,
+      "checkedCoordinates": 227598,
+      "checkedWeights": 75866,
       "vestTriangles": 2835,
       "sharedRig": true,
       "viewport": [
@@ -496,12 +496,12 @@
       "requested_pose": "three-quarter"
     }
   ],
-  "app_sha256": "bcbe38369e24aa2393d87b20d7947f9f2a708e0b5480be6eb1f3fa8732e00c46",
+  "app_sha256": "a60b4a768b0b4265173b18cb804deb753a2f9277e3598324353c1a212a575093",
   "build_report": {
-    "project_commit": "1bc81ff17e6706592753b1e59e2474fabe4fd43c",
+    "project_commit": "b0da381e1f3bbfe39efbe45ef6cef2b0589d4c0b",
     "upstream_asset_commit": "d6fc027ced5c17b6b0775dee944096ade7a9ef80",
     "baseline_app_sha256": "f70251a7a078a6e532ea80e3ab97374fa839bda9a79c3ff781dcc7ddf79f7901",
-    "app_sha256": "bcbe38369e24aa2393d87b20d7947f9f2a708e0b5480be6eb1f3fa8732e00c46",
+    "app_sha256": "a60b4a768b0b4265173b18cb804deb753a2f9277e3598324353c1a212a575093",
     "verified_fixture_files": 17,
     "fixture_manifest_sha256": "075be2731e72f99534e10c229bffb6aa4376c80ab71bd561851f2a6ef66bb71b",
     "release_status": "HOLD",
@@ -1090,11 +1090,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/001.png",
-          "sha256": "fec10f148911bbf12eea4f195c64d61fd0ffc79629ca0f15b8a03050cc2b2ed8",
+          "sha256": "3b2d2afbd1ca6772805d403c00759029c02dc521cb1eaaa98de3ea6cadb2e233",
           "rgb_standard_deviation": [
-            29.898852169735733,
-            34.11416224683462,
-            34.784233771954355
+            29.89914714311077,
+            34.1144717857193,
+            34.78458226625568
           ]
         },
         {
@@ -1103,11 +1103,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/002.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -1116,11 +1116,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/003.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -1129,11 +1129,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/004.png",
-          "sha256": "a8f14bbb7fa2e3cfd859e3827258e401f5304fbfffc592a1c1d2fa295d679a8e",
+          "sha256": "63d3fb9c8b8edef966d6086d2785d56b792e07005bf942558ffcb8f275940cdf",
           "rgb_standard_deviation": [
-            29.64026986252532,
-            32.12400508952889,
-            31.761438429058863
+            29.63961311457346,
+            32.12328869857605,
+            31.760693996436945
           ]
         },
         {
@@ -1142,11 +1142,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/005.png",
-          "sha256": "3f6cf2f0b34bef187ceaf0ac2c5ed7b4894bfcc853456e7d09d99a9cf32e3291",
+          "sha256": "41f96207aba06becf16facb58169f240f8100874c1346f54324bad07109a3155",
           "rgb_standard_deviation": [
-            31.44901354771433,
-            35.430661422657316,
-            35.94132115551038
+            31.449437152321316,
+            35.43110194652997,
+            35.941799709485096
           ]
         },
         {
@@ -1155,11 +1155,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/006.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -1168,11 +1168,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/007.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -1194,11 +1194,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/009.png",
-          "sha256": "f33cb746b0b137681d77fc35eacfe5768d9de55834ec764821ad4350c7fc88fd",
+          "sha256": "b7395c22e3e70a25abb93c52d4df1d8c210a5cd69b9d376a37c6c79dd60c25d0",
           "rgb_standard_deviation": [
-            29.9916896128014,
-            34.26818216442427,
-            34.95667316032089
+            29.99192126177014,
+            34.26838422539298,
+            34.956866146044824
           ]
         },
         {
@@ -1207,11 +1207,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/010.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -1220,11 +1220,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/011.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -1246,11 +1246,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/013.png",
-          "sha256": "33c2f0fc952aaa5a77d059cdea5c9de6f33473cce02ca59bbf832bcc73f5318c",
+          "sha256": "4090d36384b43d641754444e051c19e404d1a055aacd4efa5b90cf3a7369d92f",
           "rgb_standard_deviation": [
-            30.501107423071485,
-            34.74712791980855,
-            35.38586531757291
+            30.501392331009754,
+            34.7474276361992,
+            35.386203061209656
           ]
         },
         {
@@ -1259,11 +1259,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/014.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -1272,11 +1272,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/015.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -1285,11 +1285,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/016.png",
-          "sha256": "e2ad5bd26447514744231f9e189d406da7d33745185fbd8ae6e7b4af0b7b8b6d",
+          "sha256": "4aa7443ee86e8014ee3af9e6103b51040071c5186cb1af49f77b203090be2901",
           "rgb_standard_deviation": [
-            29.346042048329355,
-            31.920189776280004,
-            31.653518527098946
+            29.346630216694564,
+            31.920753735412724,
+            31.65405692236782
           ]
         },
         {
@@ -1350,11 +1350,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/021.png",
-          "sha256": "9cd189bc416de57cadc9a7f743843f4ab9bc0bae5e75c888b024a742a5946186",
+          "sha256": "bf7de1124e3b7b5dfb576546c49cdad8ddf4b80fea3089af58158de41bac14b7",
           "rgb_standard_deviation": [
-            36.03270378947572,
-            38.80898032487772,
-            37.95636038996809
+            36.032510683251665,
+            38.80881913290642,
+            37.95651684787846
           ]
         },
         {
@@ -1363,11 +1363,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/022.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -1376,11 +1376,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/023.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -1389,11 +1389,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/024.png",
-          "sha256": "2fffbcb4bdc7bf9ffb515c1b9c8fecfca8dc8f960a44a152b5ae481e25780a79",
+          "sha256": "bf359f15394594178206db41ee5fb70647a81cb49e5586eb33ba951a0e8775ff",
           "rgb_standard_deviation": [
-            44.782284168419984,
-            44.116862006949816,
-            39.780518078817366
+            44.78117705249369,
+            44.11565207945727,
+            39.77947551125174
           ]
         },
         {
@@ -1402,11 +1402,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/025.png",
-          "sha256": "69107a62949df8945bc4a73dbf8f359b97ee4fb2c5edfd783d1a09e9033fa055",
+          "sha256": "20e52f5dd175f34874bc058613385bc0f33da8541634cc7172bc0ded3e5ce924",
           "rgb_standard_deviation": [
-            38.03727242605188,
+            38.037105747610724,
             40.56152167520404,
-            39.492202749749794
+            39.4924815127996
           ]
         },
         {
@@ -1415,11 +1415,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/026.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -1428,11 +1428,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/027.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -1454,11 +1454,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/029.png",
-          "sha256": "ee653f495819f135d7906a82f3180b7b159a056e1f824815a4fc08b4c20e13d4",
+          "sha256": "8fd8558cc1565e8d9eabf4e7a95b7c3f412903e863aea8ce729e3b6bc0d4d75b",
           "rgb_standard_deviation": [
-            36.1124374947534,
-            38.94580272018869,
-            38.11505268910242
+            36.11230815455536,
+            38.94568499695614,
+            38.1151640331574
           ]
         },
         {
@@ -1467,11 +1467,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/030.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -1480,11 +1480,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/031.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -1506,11 +1506,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/033.png",
-          "sha256": "963e3bfce9e1a59cfeed35773e5fd62a73eb386c4dc51573c07c0e172f498be7",
+          "sha256": "6e141b0750bf356e8749dbc418a9a337e959ab94e2e8d8c18942cbf078b8b3a9",
           "rgb_standard_deviation": [
-            36.49216534421792,
-            39.32849319450733,
-            38.48169422313063
+            36.49197679367048,
+            39.32833560895799,
+            38.48184706686658
           ]
         },
         {
@@ -1519,11 +1519,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/034.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -1532,11 +1532,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/035.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -1545,11 +1545,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/036.png",
-          "sha256": "929bd859637601a213e359a5e2c62a0c126bf627f7a72a795ca371a7d14ba534",
+          "sha256": "2f0581af4be5c58b15137ff185c0c7fc6ed6d36b36736af6210219a3abf528cc",
           "rgb_standard_deviation": [
-            43.79184746414933,
-            43.345699031288454,
-            39.29670023400367
+            43.79122620691979,
+            43.34546329598567,
+            39.296809224726445
           ]
         },
         {
@@ -1610,11 +1610,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/041.png",
-          "sha256": "983fd04e625349def60b1ffb5af2aa3436b12184127e1e2b5cd40c54bfa75edb",
+          "sha256": "e2e34c9eef6a9d5e671356b510432a548461c5c7acfee4c4eaa9096ba1d8df9f",
           "rgb_standard_deviation": [
-            26.904803958230474,
-            32.2028464072519,
-            33.76855763886112
+            26.905106517221164,
+            32.203187719627316,
+            33.76896540815061
           ]
         },
         {
@@ -1623,11 +1623,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/042.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -1636,11 +1636,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/043.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -1649,11 +1649,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/044.png",
-          "sha256": "3d0f33032561e3abf9636750e7a29c3cc911dad1d5f25b673253a67ccdd8bb7a",
+          "sha256": "05911c403ca260caeb6368c82219f640afb5fdf6fb0d2863586e209a8aab8446",
           "rgb_standard_deviation": [
-            23.42693015466941,
-            28.131834398193735,
-            29.595514505384617
+            23.426675572966225,
+            28.131445788950252,
+            29.59499535023238
           ]
         },
         {
@@ -1662,11 +1662,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/045.png",
-          "sha256": "266e07e23783069a2075e963b43312dcac9ee2e648a0363e74cbd6cabb966124",
+          "sha256": "8e98de88e920583133778d296b32f53d8c1c9bc9da9bef9127e8a0221eb80714",
           "rgb_standard_deviation": [
-            27.945263546562277,
-            33.18032302413055,
-            34.742940898378194
+            27.945644947235134,
+            33.18073602173914,
+            34.74341543078195
           ]
         },
         {
@@ -1675,11 +1675,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/046.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -1688,11 +1688,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/047.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -1714,11 +1714,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/049.png",
-          "sha256": "7e4942b9ec3444528842c4a34c8c644665f74b6cdfb7fd3d0fcd3ac1b4d50b11",
+          "sha256": "e6f67d7bb3459976f2e8c8a18406f6b2b0f0d0896f0585d19e407e85aae8f2f0",
           "rgb_standard_deviation": [
-            27.005301731282824,
-            32.36529965077373,
-            33.94593566790702
+            27.00556805043084,
+            32.365548980879964,
+            33.94619684021591
           ]
         },
         {
@@ -1727,11 +1727,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/050.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -1740,11 +1740,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/051.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -1766,11 +1766,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/053.png",
-          "sha256": "a069fbb4b98eb22d9fbacdfec73c9cdc9f5bf6825903087e894e2832a27085f9",
+          "sha256": "b6c68c79ee3e83516bd80b63747a7df73a508f4d693f2c7de8f749e2ba797514",
           "rgb_standard_deviation": [
-            27.60683306063754,
-            32.896506849771626,
-            34.399097803039645
+            27.607122306389133,
+            32.896835664029126,
+            34.39949230865295
           ]
         },
         {
@@ -1779,11 +1779,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/054.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -1792,11 +1792,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/055.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -1805,11 +1805,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/056.png",
-          "sha256": "00c2badb89fc1c27edfcfca93ed066fa5158760be9f9c539cde2c537e89303fa",
+          "sha256": "0319b1a9fd009cf984f8a1d88b4f4b05588876160a1a5df04f4e524af19f79f1",
           "rgb_standard_deviation": [
-            23.31970235160247,
-            28.09086986181879,
-            29.56616347965725
+            23.320308987631737,
+            28.091418876901695,
+            29.566698737057155
           ]
         },
         {
@@ -1870,11 +1870,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/061.png",
-          "sha256": "fec10f148911bbf12eea4f195c64d61fd0ffc79629ca0f15b8a03050cc2b2ed8",
+          "sha256": "3b2d2afbd1ca6772805d403c00759029c02dc521cb1eaaa98de3ea6cadb2e233",
           "rgb_standard_deviation": [
-            29.898852169735733,
-            34.11416224683462,
-            34.784233771954355
+            29.89914714311077,
+            34.1144717857193,
+            34.78458226625568
           ]
         },
         {
@@ -1883,11 +1883,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/062.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -1896,11 +1896,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/063.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -1909,11 +1909,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/064.png",
-          "sha256": "a8f14bbb7fa2e3cfd859e3827258e401f5304fbfffc592a1c1d2fa295d679a8e",
+          "sha256": "63d3fb9c8b8edef966d6086d2785d56b792e07005bf942558ffcb8f275940cdf",
           "rgb_standard_deviation": [
-            29.64026986252532,
-            32.12400508952889,
-            31.761438429058863
+            29.63961311457346,
+            32.12328869857605,
+            31.760693996436945
           ]
         },
         {
@@ -1922,11 +1922,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/065.png",
-          "sha256": "3f6cf2f0b34bef187ceaf0ac2c5ed7b4894bfcc853456e7d09d99a9cf32e3291",
+          "sha256": "41f96207aba06becf16facb58169f240f8100874c1346f54324bad07109a3155",
           "rgb_standard_deviation": [
-            31.44901354771433,
-            35.430661422657316,
-            35.94132115551038
+            31.449437152321316,
+            35.43110194652997,
+            35.941799709485096
           ]
         },
         {
@@ -1935,11 +1935,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/066.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -1948,11 +1948,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/067.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -1974,11 +1974,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/069.png",
-          "sha256": "f33cb746b0b137681d77fc35eacfe5768d9de55834ec764821ad4350c7fc88fd",
+          "sha256": "b7395c22e3e70a25abb93c52d4df1d8c210a5cd69b9d376a37c6c79dd60c25d0",
           "rgb_standard_deviation": [
-            29.9916896128014,
-            34.26818216442427,
-            34.95667316032089
+            29.99192126177014,
+            34.26838422539298,
+            34.956866146044824
           ]
         },
         {
@@ -1987,11 +1987,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/070.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -2000,11 +2000,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/071.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -2026,11 +2026,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/073.png",
-          "sha256": "33c2f0fc952aaa5a77d059cdea5c9de6f33473cce02ca59bbf832bcc73f5318c",
+          "sha256": "4090d36384b43d641754444e051c19e404d1a055aacd4efa5b90cf3a7369d92f",
           "rgb_standard_deviation": [
-            30.501107423071485,
-            34.74712791980855,
-            35.38586531757291
+            30.501392331009754,
+            34.7474276361992,
+            35.386203061209656
           ]
         },
         {
@@ -2039,11 +2039,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/074.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -2052,11 +2052,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/075.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -2065,11 +2065,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/076.png",
-          "sha256": "e2ad5bd26447514744231f9e189d406da7d33745185fbd8ae6e7b4af0b7b8b6d",
+          "sha256": "4aa7443ee86e8014ee3af9e6103b51040071c5186cb1af49f77b203090be2901",
           "rgb_standard_deviation": [
-            29.346042048329355,
-            31.920189776280004,
-            31.653518527098946
+            29.346630216694564,
+            31.920753735412724,
+            31.65405692236782
           ]
         },
         {
@@ -2130,11 +2130,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/081.png",
-          "sha256": "9cd189bc416de57cadc9a7f743843f4ab9bc0bae5e75c888b024a742a5946186",
+          "sha256": "bf7de1124e3b7b5dfb576546c49cdad8ddf4b80fea3089af58158de41bac14b7",
           "rgb_standard_deviation": [
-            36.03270378947572,
-            38.80898032487772,
-            37.95636038996809
+            36.032510683251665,
+            38.80881913290642,
+            37.95651684787846
           ]
         },
         {
@@ -2143,11 +2143,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/082.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -2156,11 +2156,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/083.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -2169,11 +2169,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/084.png",
-          "sha256": "2fffbcb4bdc7bf9ffb515c1b9c8fecfca8dc8f960a44a152b5ae481e25780a79",
+          "sha256": "bf359f15394594178206db41ee5fb70647a81cb49e5586eb33ba951a0e8775ff",
           "rgb_standard_deviation": [
-            44.782284168419984,
-            44.116862006949816,
-            39.780518078817366
+            44.78117705249369,
+            44.11565207945727,
+            39.77947551125174
           ]
         },
         {
@@ -2182,11 +2182,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/085.png",
-          "sha256": "69107a62949df8945bc4a73dbf8f359b97ee4fb2c5edfd783d1a09e9033fa055",
+          "sha256": "20e52f5dd175f34874bc058613385bc0f33da8541634cc7172bc0ded3e5ce924",
           "rgb_standard_deviation": [
-            38.03727242605188,
+            38.037105747610724,
             40.56152167520404,
-            39.492202749749794
+            39.4924815127996
           ]
         },
         {
@@ -2195,11 +2195,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/086.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -2208,11 +2208,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/087.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -2234,11 +2234,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/089.png",
-          "sha256": "ee653f495819f135d7906a82f3180b7b159a056e1f824815a4fc08b4c20e13d4",
+          "sha256": "8fd8558cc1565e8d9eabf4e7a95b7c3f412903e863aea8ce729e3b6bc0d4d75b",
           "rgb_standard_deviation": [
-            36.1124374947534,
-            38.94580272018869,
-            38.11505268910242
+            36.11230815455536,
+            38.94568499695614,
+            38.1151640331574
           ]
         },
         {
@@ -2247,11 +2247,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/090.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -2260,11 +2260,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/091.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -2286,11 +2286,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/093.png",
-          "sha256": "963e3bfce9e1a59cfeed35773e5fd62a73eb386c4dc51573c07c0e172f498be7",
+          "sha256": "6e141b0750bf356e8749dbc418a9a337e959ab94e2e8d8c18942cbf078b8b3a9",
           "rgb_standard_deviation": [
-            36.49216534421792,
-            39.32849319450733,
-            38.48169422313063
+            36.49197679367048,
+            39.32833560895799,
+            38.48184706686658
           ]
         },
         {
@@ -2299,11 +2299,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/094.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -2312,11 +2312,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/095.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -2325,11 +2325,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/096.png",
-          "sha256": "929bd859637601a213e359a5e2c62a0c126bf627f7a72a795ca371a7d14ba534",
+          "sha256": "2f0581af4be5c58b15137ff185c0c7fc6ed6d36b36736af6210219a3abf528cc",
           "rgb_standard_deviation": [
-            43.79184746414933,
-            43.345699031288454,
-            39.29670023400367
+            43.79122620691979,
+            43.34546329598567,
+            39.296809224726445
           ]
         },
         {
@@ -2390,11 +2390,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/101.png",
-          "sha256": "983fd04e625349def60b1ffb5af2aa3436b12184127e1e2b5cd40c54bfa75edb",
+          "sha256": "e2e34c9eef6a9d5e671356b510432a548461c5c7acfee4c4eaa9096ba1d8df9f",
           "rgb_standard_deviation": [
-            26.904803958230474,
-            32.2028464072519,
-            33.76855763886112
+            26.905106517221164,
+            32.203187719627316,
+            33.76896540815061
           ]
         },
         {
@@ -2403,11 +2403,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/102.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -2416,11 +2416,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/103.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -2429,11 +2429,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/104.png",
-          "sha256": "3d0f33032561e3abf9636750e7a29c3cc911dad1d5f25b673253a67ccdd8bb7a",
+          "sha256": "05911c403ca260caeb6368c82219f640afb5fdf6fb0d2863586e209a8aab8446",
           "rgb_standard_deviation": [
-            23.42693015466941,
-            28.131834398193735,
-            29.595514505384617
+            23.426675572966225,
+            28.131445788950252,
+            29.59499535023238
           ]
         },
         {
@@ -2442,11 +2442,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/105.png",
-          "sha256": "266e07e23783069a2075e963b43312dcac9ee2e648a0363e74cbd6cabb966124",
+          "sha256": "8e98de88e920583133778d296b32f53d8c1c9bc9da9bef9127e8a0221eb80714",
           "rgb_standard_deviation": [
-            27.945263546562277,
-            33.18032302413055,
-            34.742940898378194
+            27.945644947235134,
+            33.18073602173914,
+            34.74341543078195
           ]
         },
         {
@@ -2455,11 +2455,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/106.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -2468,11 +2468,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/107.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -2494,11 +2494,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/109.png",
-          "sha256": "7e4942b9ec3444528842c4a34c8c644665f74b6cdfb7fd3d0fcd3ac1b4d50b11",
+          "sha256": "e6f67d7bb3459976f2e8c8a18406f6b2b0f0d0896f0585d19e407e85aae8f2f0",
           "rgb_standard_deviation": [
-            27.005301731282824,
-            32.36529965077373,
-            33.94593566790702
+            27.00556805043084,
+            32.365548980879964,
+            33.94619684021591
           ]
         },
         {
@@ -2507,11 +2507,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/110.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -2520,11 +2520,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/111.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -2546,11 +2546,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/113.png",
-          "sha256": "a069fbb4b98eb22d9fbacdfec73c9cdc9f5bf6825903087e894e2832a27085f9",
+          "sha256": "b6c68c79ee3e83516bd80b63747a7df73a508f4d693f2c7de8f749e2ba797514",
           "rgb_standard_deviation": [
-            27.60683306063754,
-            32.896506849771626,
-            34.399097803039645
+            27.607122306389133,
+            32.896835664029126,
+            34.39949230865295
           ]
         },
         {
@@ -2559,11 +2559,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/114.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -2572,11 +2572,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/115.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -2585,11 +2585,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/116.png",
-          "sha256": "00c2badb89fc1c27edfcfca93ed066fa5158760be9f9c539cde2c537e89303fa",
+          "sha256": "0319b1a9fd009cf984f8a1d88b4f4b05588876160a1a5df04f4e524af19f79f1",
           "rgb_standard_deviation": [
-            23.31970235160247,
-            28.09086986181879,
-            29.56616347965725
+            23.320308987631737,
+            28.091418876901695,
+            29.566698737057155
           ]
         },
         {
@@ -2650,11 +2650,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/121.png",
-          "sha256": "fec10f148911bbf12eea4f195c64d61fd0ffc79629ca0f15b8a03050cc2b2ed8",
+          "sha256": "3b2d2afbd1ca6772805d403c00759029c02dc521cb1eaaa98de3ea6cadb2e233",
           "rgb_standard_deviation": [
-            29.898852169735733,
-            34.11416224683462,
-            34.784233771954355
+            29.89914714311077,
+            34.1144717857193,
+            34.78458226625568
           ]
         },
         {
@@ -2663,11 +2663,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/122.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -2676,11 +2676,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/123.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -2689,11 +2689,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/124.png",
-          "sha256": "a8f14bbb7fa2e3cfd859e3827258e401f5304fbfffc592a1c1d2fa295d679a8e",
+          "sha256": "63d3fb9c8b8edef966d6086d2785d56b792e07005bf942558ffcb8f275940cdf",
           "rgb_standard_deviation": [
-            29.64026986252532,
-            32.12400508952889,
-            31.761438429058863
+            29.63961311457346,
+            32.12328869857605,
+            31.760693996436945
           ]
         },
         {
@@ -2702,11 +2702,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/125.png",
-          "sha256": "3f6cf2f0b34bef187ceaf0ac2c5ed7b4894bfcc853456e7d09d99a9cf32e3291",
+          "sha256": "41f96207aba06becf16facb58169f240f8100874c1346f54324bad07109a3155",
           "rgb_standard_deviation": [
-            31.44901354771433,
-            35.430661422657316,
-            35.94132115551038
+            31.449437152321316,
+            35.43110194652997,
+            35.941799709485096
           ]
         },
         {
@@ -2715,11 +2715,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/126.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -2728,11 +2728,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/127.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -2754,11 +2754,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/129.png",
-          "sha256": "f33cb746b0b137681d77fc35eacfe5768d9de55834ec764821ad4350c7fc88fd",
+          "sha256": "b7395c22e3e70a25abb93c52d4df1d8c210a5cd69b9d376a37c6c79dd60c25d0",
           "rgb_standard_deviation": [
-            29.9916896128014,
-            34.26818216442427,
-            34.95667316032089
+            29.99192126177014,
+            34.26838422539298,
+            34.956866146044824
           ]
         },
         {
@@ -2767,11 +2767,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/130.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -2780,11 +2780,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/131.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -2806,11 +2806,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/133.png",
-          "sha256": "33c2f0fc952aaa5a77d059cdea5c9de6f33473cce02ca59bbf832bcc73f5318c",
+          "sha256": "4090d36384b43d641754444e051c19e404d1a055aacd4efa5b90cf3a7369d92f",
           "rgb_standard_deviation": [
-            30.501107423071485,
-            34.74712791980855,
-            35.38586531757291
+            30.501392331009754,
+            34.7474276361992,
+            35.386203061209656
           ]
         },
         {
@@ -2819,11 +2819,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/134.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -2832,11 +2832,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/135.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -2845,11 +2845,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/136.png",
-          "sha256": "e2ad5bd26447514744231f9e189d406da7d33745185fbd8ae6e7b4af0b7b8b6d",
+          "sha256": "4aa7443ee86e8014ee3af9e6103b51040071c5186cb1af49f77b203090be2901",
           "rgb_standard_deviation": [
-            29.346042048329355,
-            31.920189776280004,
-            31.653518527098946
+            29.346630216694564,
+            31.920753735412724,
+            31.65405692236782
           ]
         },
         {
@@ -2910,11 +2910,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/141.png",
-          "sha256": "9cd189bc416de57cadc9a7f743843f4ab9bc0bae5e75c888b024a742a5946186",
+          "sha256": "bf7de1124e3b7b5dfb576546c49cdad8ddf4b80fea3089af58158de41bac14b7",
           "rgb_standard_deviation": [
-            36.03270378947572,
-            38.80898032487772,
-            37.95636038996809
+            36.032510683251665,
+            38.80881913290642,
+            37.95651684787846
           ]
         },
         {
@@ -2923,11 +2923,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/142.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -2936,11 +2936,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/143.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -2949,11 +2949,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/144.png",
-          "sha256": "2fffbcb4bdc7bf9ffb515c1b9c8fecfca8dc8f960a44a152b5ae481e25780a79",
+          "sha256": "bf359f15394594178206db41ee5fb70647a81cb49e5586eb33ba951a0e8775ff",
           "rgb_standard_deviation": [
-            44.782284168419984,
-            44.116862006949816,
-            39.780518078817366
+            44.78117705249369,
+            44.11565207945727,
+            39.77947551125174
           ]
         },
         {
@@ -2962,11 +2962,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/145.png",
-          "sha256": "69107a62949df8945bc4a73dbf8f359b97ee4fb2c5edfd783d1a09e9033fa055",
+          "sha256": "20e52f5dd175f34874bc058613385bc0f33da8541634cc7172bc0ded3e5ce924",
           "rgb_standard_deviation": [
-            38.03727242605188,
+            38.037105747610724,
             40.56152167520404,
-            39.492202749749794
+            39.4924815127996
           ]
         },
         {
@@ -2975,11 +2975,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/146.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -2988,11 +2988,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/147.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -3014,11 +3014,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/149.png",
-          "sha256": "ee653f495819f135d7906a82f3180b7b159a056e1f824815a4fc08b4c20e13d4",
+          "sha256": "8fd8558cc1565e8d9eabf4e7a95b7c3f412903e863aea8ce729e3b6bc0d4d75b",
           "rgb_standard_deviation": [
-            36.1124374947534,
-            38.94580272018869,
-            38.11505268910242
+            36.11230815455536,
+            38.94568499695614,
+            38.1151640331574
           ]
         },
         {
@@ -3027,11 +3027,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/150.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -3040,11 +3040,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/151.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -3066,11 +3066,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/153.png",
-          "sha256": "963e3bfce9e1a59cfeed35773e5fd62a73eb386c4dc51573c07c0e172f498be7",
+          "sha256": "6e141b0750bf356e8749dbc418a9a337e959ab94e2e8d8c18942cbf078b8b3a9",
           "rgb_standard_deviation": [
-            36.49216534421792,
-            39.32849319450733,
-            38.48169422313063
+            36.49197679367048,
+            39.32833560895799,
+            38.48184706686658
           ]
         },
         {
@@ -3079,11 +3079,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/154.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -3092,11 +3092,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/155.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -3105,11 +3105,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/156.png",
-          "sha256": "929bd859637601a213e359a5e2c62a0c126bf627f7a72a795ca371a7d14ba534",
+          "sha256": "2f0581af4be5c58b15137ff185c0c7fc6ed6d36b36736af6210219a3abf528cc",
           "rgb_standard_deviation": [
-            43.79184746414933,
-            43.345699031288454,
-            39.29670023400367
+            43.79122620691979,
+            43.34546329598567,
+            39.296809224726445
           ]
         },
         {
@@ -3170,11 +3170,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/161.png",
-          "sha256": "983fd04e625349def60b1ffb5af2aa3436b12184127e1e2b5cd40c54bfa75edb",
+          "sha256": "e2e34c9eef6a9d5e671356b510432a548461c5c7acfee4c4eaa9096ba1d8df9f",
           "rgb_standard_deviation": [
-            26.904803958230474,
-            32.2028464072519,
-            33.76855763886112
+            26.905106517221164,
+            32.203187719627316,
+            33.76896540815061
           ]
         },
         {
@@ -3183,11 +3183,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/162.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -3196,11 +3196,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/163.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -3209,11 +3209,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/164.png",
-          "sha256": "3d0f33032561e3abf9636750e7a29c3cc911dad1d5f25b673253a67ccdd8bb7a",
+          "sha256": "05911c403ca260caeb6368c82219f640afb5fdf6fb0d2863586e209a8aab8446",
           "rgb_standard_deviation": [
-            23.42693015466941,
-            28.131834398193735,
-            29.595514505384617
+            23.426675572966225,
+            28.131445788950252,
+            29.59499535023238
           ]
         },
         {
@@ -3222,11 +3222,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/165.png",
-          "sha256": "266e07e23783069a2075e963b43312dcac9ee2e648a0363e74cbd6cabb966124",
+          "sha256": "8e98de88e920583133778d296b32f53d8c1c9bc9da9bef9127e8a0221eb80714",
           "rgb_standard_deviation": [
-            27.945263546562277,
-            33.18032302413055,
-            34.742940898378194
+            27.945644947235134,
+            33.18073602173914,
+            34.74341543078195
           ]
         },
         {
@@ -3235,11 +3235,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/166.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -3248,11 +3248,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/167.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -3274,11 +3274,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/169.png",
-          "sha256": "7e4942b9ec3444528842c4a34c8c644665f74b6cdfb7fd3d0fcd3ac1b4d50b11",
+          "sha256": "e6f67d7bb3459976f2e8c8a18406f6b2b0f0d0896f0585d19e407e85aae8f2f0",
           "rgb_standard_deviation": [
-            27.005301731282824,
-            32.36529965077373,
-            33.94593566790702
+            27.00556805043084,
+            32.365548980879964,
+            33.94619684021591
           ]
         },
         {
@@ -3287,11 +3287,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/170.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -3300,11 +3300,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/171.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -3326,11 +3326,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/173.png",
-          "sha256": "a069fbb4b98eb22d9fbacdfec73c9cdc9f5bf6825903087e894e2832a27085f9",
+          "sha256": "b6c68c79ee3e83516bd80b63747a7df73a508f4d693f2c7de8f749e2ba797514",
           "rgb_standard_deviation": [
-            27.60683306063754,
-            32.896506849771626,
-            34.399097803039645
+            27.607122306389133,
+            32.896835664029126,
+            34.39949230865295
           ]
         },
         {
@@ -3339,11 +3339,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/174.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -3352,11 +3352,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/175.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -3365,11 +3365,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/176.png",
-          "sha256": "00c2badb89fc1c27edfcfca93ed066fa5158760be9f9c539cde2c537e89303fa",
+          "sha256": "0319b1a9fd009cf984f8a1d88b4f4b05588876160a1a5df04f4e524af19f79f1",
           "rgb_standard_deviation": [
-            23.31970235160247,
-            28.09086986181879,
-            29.56616347965725
+            23.320308987631737,
+            28.091418876901695,
+            29.566698737057155
           ]
         },
         {
@@ -3430,11 +3430,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/181.png",
-          "sha256": "fec10f148911bbf12eea4f195c64d61fd0ffc79629ca0f15b8a03050cc2b2ed8",
+          "sha256": "3b2d2afbd1ca6772805d403c00759029c02dc521cb1eaaa98de3ea6cadb2e233",
           "rgb_standard_deviation": [
-            29.898852169735733,
-            34.11416224683462,
-            34.784233771954355
+            29.89914714311077,
+            34.1144717857193,
+            34.78458226625568
           ]
         },
         {
@@ -3443,11 +3443,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/182.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -3456,11 +3456,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/183.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -3469,11 +3469,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/184.png",
-          "sha256": "a8f14bbb7fa2e3cfd859e3827258e401f5304fbfffc592a1c1d2fa295d679a8e",
+          "sha256": "63d3fb9c8b8edef966d6086d2785d56b792e07005bf942558ffcb8f275940cdf",
           "rgb_standard_deviation": [
-            29.64026986252532,
-            32.12400508952889,
-            31.761438429058863
+            29.63961311457346,
+            32.12328869857605,
+            31.760693996436945
           ]
         },
         {
@@ -3482,11 +3482,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/185.png",
-          "sha256": "3f6cf2f0b34bef187ceaf0ac2c5ed7b4894bfcc853456e7d09d99a9cf32e3291",
+          "sha256": "41f96207aba06becf16facb58169f240f8100874c1346f54324bad07109a3155",
           "rgb_standard_deviation": [
-            31.44901354771433,
-            35.430661422657316,
-            35.94132115551038
+            31.449437152321316,
+            35.43110194652997,
+            35.941799709485096
           ]
         },
         {
@@ -3495,11 +3495,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/186.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -3508,11 +3508,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/187.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -3534,11 +3534,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/189.png",
-          "sha256": "f33cb746b0b137681d77fc35eacfe5768d9de55834ec764821ad4350c7fc88fd",
+          "sha256": "b7395c22e3e70a25abb93c52d4df1d8c210a5cd69b9d376a37c6c79dd60c25d0",
           "rgb_standard_deviation": [
-            29.9916896128014,
-            34.26818216442427,
-            34.95667316032089
+            29.99192126177014,
+            34.26838422539298,
+            34.956866146044824
           ]
         },
         {
@@ -3547,11 +3547,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/190.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -3560,11 +3560,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/191.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -3586,11 +3586,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/193.png",
-          "sha256": "33c2f0fc952aaa5a77d059cdea5c9de6f33473cce02ca59bbf832bcc73f5318c",
+          "sha256": "4090d36384b43d641754444e051c19e404d1a055aacd4efa5b90cf3a7369d92f",
           "rgb_standard_deviation": [
-            30.501107423071485,
-            34.74712791980855,
-            35.38586531757291
+            30.501392331009754,
+            34.7474276361992,
+            35.386203061209656
           ]
         },
         {
@@ -3599,11 +3599,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/194.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -3612,11 +3612,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/195.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -3625,11 +3625,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/196.png",
-          "sha256": "e2ad5bd26447514744231f9e189d406da7d33745185fbd8ae6e7b4af0b7b8b6d",
+          "sha256": "4aa7443ee86e8014ee3af9e6103b51040071c5186cb1af49f77b203090be2901",
           "rgb_standard_deviation": [
-            29.346042048329355,
-            31.920189776280004,
-            31.653518527098946
+            29.346630216694564,
+            31.920753735412724,
+            31.65405692236782
           ]
         },
         {
@@ -3690,11 +3690,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/201.png",
-          "sha256": "9cd189bc416de57cadc9a7f743843f4ab9bc0bae5e75c888b024a742a5946186",
+          "sha256": "bf7de1124e3b7b5dfb576546c49cdad8ddf4b80fea3089af58158de41bac14b7",
           "rgb_standard_deviation": [
-            36.03270378947572,
-            38.80898032487772,
-            37.95636038996809
+            36.032510683251665,
+            38.80881913290642,
+            37.95651684787846
           ]
         },
         {
@@ -3703,11 +3703,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/202.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -3716,11 +3716,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/203.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -3729,11 +3729,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/204.png",
-          "sha256": "2fffbcb4bdc7bf9ffb515c1b9c8fecfca8dc8f960a44a152b5ae481e25780a79",
+          "sha256": "bf359f15394594178206db41ee5fb70647a81cb49e5586eb33ba951a0e8775ff",
           "rgb_standard_deviation": [
-            44.782284168419984,
-            44.116862006949816,
-            39.780518078817366
+            44.78117705249369,
+            44.11565207945727,
+            39.77947551125174
           ]
         },
         {
@@ -3742,11 +3742,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/205.png",
-          "sha256": "69107a62949df8945bc4a73dbf8f359b97ee4fb2c5edfd783d1a09e9033fa055",
+          "sha256": "20e52f5dd175f34874bc058613385bc0f33da8541634cc7172bc0ded3e5ce924",
           "rgb_standard_deviation": [
-            38.03727242605188,
+            38.037105747610724,
             40.56152167520404,
-            39.492202749749794
+            39.4924815127996
           ]
         },
         {
@@ -3755,11 +3755,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/206.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -3768,11 +3768,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/207.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -3794,11 +3794,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/209.png",
-          "sha256": "ee653f495819f135d7906a82f3180b7b159a056e1f824815a4fc08b4c20e13d4",
+          "sha256": "8fd8558cc1565e8d9eabf4e7a95b7c3f412903e863aea8ce729e3b6bc0d4d75b",
           "rgb_standard_deviation": [
-            36.1124374947534,
-            38.94580272018869,
-            38.11505268910242
+            36.11230815455536,
+            38.94568499695614,
+            38.1151640331574
           ]
         },
         {
@@ -3807,11 +3807,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/210.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -3820,11 +3820,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/211.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -3846,11 +3846,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/213.png",
-          "sha256": "963e3bfce9e1a59cfeed35773e5fd62a73eb386c4dc51573c07c0e172f498be7",
+          "sha256": "6e141b0750bf356e8749dbc418a9a337e959ab94e2e8d8c18942cbf078b8b3a9",
           "rgb_standard_deviation": [
-            36.49216534421792,
-            39.32849319450733,
-            38.48169422313063
+            36.49197679367048,
+            39.32833560895799,
+            38.48184706686658
           ]
         },
         {
@@ -3859,11 +3859,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/214.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -3872,11 +3872,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/215.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -3885,11 +3885,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/216.png",
-          "sha256": "929bd859637601a213e359a5e2c62a0c126bf627f7a72a795ca371a7d14ba534",
+          "sha256": "2f0581af4be5c58b15137ff185c0c7fc6ed6d36b36736af6210219a3abf528cc",
           "rgb_standard_deviation": [
-            43.79184746414933,
-            43.345699031288454,
-            39.29670023400367
+            43.79122620691979,
+            43.34546329598567,
+            39.296809224726445
           ]
         },
         {
@@ -3950,11 +3950,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/221.png",
-          "sha256": "983fd04e625349def60b1ffb5af2aa3436b12184127e1e2b5cd40c54bfa75edb",
+          "sha256": "e2e34c9eef6a9d5e671356b510432a548461c5c7acfee4c4eaa9096ba1d8df9f",
           "rgb_standard_deviation": [
-            26.904803958230474,
-            32.2028464072519,
-            33.76855763886112
+            26.905106517221164,
+            32.203187719627316,
+            33.76896540815061
           ]
         },
         {
@@ -3963,11 +3963,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/222.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -3976,11 +3976,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/223.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -3989,11 +3989,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/224.png",
-          "sha256": "3d0f33032561e3abf9636750e7a29c3cc911dad1d5f25b673253a67ccdd8bb7a",
+          "sha256": "05911c403ca260caeb6368c82219f640afb5fdf6fb0d2863586e209a8aab8446",
           "rgb_standard_deviation": [
-            23.42693015466941,
-            28.131834398193735,
-            29.595514505384617
+            23.426675572966225,
+            28.131445788950252,
+            29.59499535023238
           ]
         },
         {
@@ -4002,11 +4002,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/225.png",
-          "sha256": "266e07e23783069a2075e963b43312dcac9ee2e648a0363e74cbd6cabb966124",
+          "sha256": "8e98de88e920583133778d296b32f53d8c1c9bc9da9bef9127e8a0221eb80714",
           "rgb_standard_deviation": [
-            27.945263546562277,
-            33.18032302413055,
-            34.742940898378194
+            27.945644947235134,
+            33.18073602173914,
+            34.74341543078195
           ]
         },
         {
@@ -4015,11 +4015,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/226.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -4028,11 +4028,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/227.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -4054,11 +4054,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/229.png",
-          "sha256": "7e4942b9ec3444528842c4a34c8c644665f74b6cdfb7fd3d0fcd3ac1b4d50b11",
+          "sha256": "e6f67d7bb3459976f2e8c8a18406f6b2b0f0d0896f0585d19e407e85aae8f2f0",
           "rgb_standard_deviation": [
-            27.005301731282824,
-            32.36529965077373,
-            33.94593566790702
+            27.00556805043084,
+            32.365548980879964,
+            33.94619684021591
           ]
         },
         {
@@ -4067,11 +4067,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/230.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -4080,11 +4080,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/231.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -4106,11 +4106,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/233.png",
-          "sha256": "a069fbb4b98eb22d9fbacdfec73c9cdc9f5bf6825903087e894e2832a27085f9",
+          "sha256": "b6c68c79ee3e83516bd80b63747a7df73a508f4d693f2c7de8f749e2ba797514",
           "rgb_standard_deviation": [
-            27.60683306063754,
-            32.896506849771626,
-            34.399097803039645
+            27.607122306389133,
+            32.896835664029126,
+            34.39949230865295
           ]
         },
         {
@@ -4119,11 +4119,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/234.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -4132,11 +4132,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/235.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -4145,11 +4145,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/236.png",
-          "sha256": "00c2badb89fc1c27edfcfca93ed066fa5158760be9f9c539cde2c537e89303fa",
+          "sha256": "0319b1a9fd009cf984f8a1d88b4f4b05588876160a1a5df04f4e524af19f79f1",
           "rgb_standard_deviation": [
-            23.31970235160247,
-            28.09086986181879,
-            29.56616347965725
+            23.320308987631737,
+            28.091418876901695,
+            29.566698737057155
           ]
         },
         {
@@ -4210,11 +4210,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/241.png",
-          "sha256": "fec10f148911bbf12eea4f195c64d61fd0ffc79629ca0f15b8a03050cc2b2ed8",
+          "sha256": "3b2d2afbd1ca6772805d403c00759029c02dc521cb1eaaa98de3ea6cadb2e233",
           "rgb_standard_deviation": [
-            29.898852169735733,
-            34.11416224683462,
-            34.784233771954355
+            29.89914714311077,
+            34.1144717857193,
+            34.78458226625568
           ]
         },
         {
@@ -4223,11 +4223,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/242.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -4236,11 +4236,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/243.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -4249,11 +4249,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/244.png",
-          "sha256": "a8f14bbb7fa2e3cfd859e3827258e401f5304fbfffc592a1c1d2fa295d679a8e",
+          "sha256": "63d3fb9c8b8edef966d6086d2785d56b792e07005bf942558ffcb8f275940cdf",
           "rgb_standard_deviation": [
-            29.64026986252532,
-            32.12400508952889,
-            31.761438429058863
+            29.63961311457346,
+            32.12328869857605,
+            31.760693996436945
           ]
         },
         {
@@ -4262,11 +4262,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/245.png",
-          "sha256": "3f6cf2f0b34bef187ceaf0ac2c5ed7b4894bfcc853456e7d09d99a9cf32e3291",
+          "sha256": "41f96207aba06becf16facb58169f240f8100874c1346f54324bad07109a3155",
           "rgb_standard_deviation": [
-            31.44901354771433,
-            35.430661422657316,
-            35.94132115551038
+            31.449437152321316,
+            35.43110194652997,
+            35.941799709485096
           ]
         },
         {
@@ -4275,11 +4275,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/246.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -4288,11 +4288,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/247.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -4314,11 +4314,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/249.png",
-          "sha256": "f33cb746b0b137681d77fc35eacfe5768d9de55834ec764821ad4350c7fc88fd",
+          "sha256": "b7395c22e3e70a25abb93c52d4df1d8c210a5cd69b9d376a37c6c79dd60c25d0",
           "rgb_standard_deviation": [
-            29.9916896128014,
-            34.26818216442427,
-            34.95667316032089
+            29.99192126177014,
+            34.26838422539298,
+            34.956866146044824
           ]
         },
         {
@@ -4327,11 +4327,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/250.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -4340,11 +4340,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/251.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -4366,11 +4366,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/253.png",
-          "sha256": "33c2f0fc952aaa5a77d059cdea5c9de6f33473cce02ca59bbf832bcc73f5318c",
+          "sha256": "4090d36384b43d641754444e051c19e404d1a055aacd4efa5b90cf3a7369d92f",
           "rgb_standard_deviation": [
-            30.501107423071485,
-            34.74712791980855,
-            35.38586531757291
+            30.501392331009754,
+            34.7474276361992,
+            35.386203061209656
           ]
         },
         {
@@ -4379,11 +4379,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/254.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -4392,11 +4392,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/255.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -4405,11 +4405,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/256.png",
-          "sha256": "e2ad5bd26447514744231f9e189d406da7d33745185fbd8ae6e7b4af0b7b8b6d",
+          "sha256": "4aa7443ee86e8014ee3af9e6103b51040071c5186cb1af49f77b203090be2901",
           "rgb_standard_deviation": [
-            29.346042048329355,
-            31.920189776280004,
-            31.653518527098946
+            29.346630216694564,
+            31.920753735412724,
+            31.65405692236782
           ]
         },
         {
@@ -4470,11 +4470,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/261.png",
-          "sha256": "9cd189bc416de57cadc9a7f743843f4ab9bc0bae5e75c888b024a742a5946186",
+          "sha256": "bf7de1124e3b7b5dfb576546c49cdad8ddf4b80fea3089af58158de41bac14b7",
           "rgb_standard_deviation": [
-            36.03270378947572,
-            38.80898032487772,
-            37.95636038996809
+            36.032510683251665,
+            38.80881913290642,
+            37.95651684787846
           ]
         },
         {
@@ -4483,11 +4483,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/262.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -4496,11 +4496,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/263.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -4509,11 +4509,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/264.png",
-          "sha256": "2fffbcb4bdc7bf9ffb515c1b9c8fecfca8dc8f960a44a152b5ae481e25780a79",
+          "sha256": "bf359f15394594178206db41ee5fb70647a81cb49e5586eb33ba951a0e8775ff",
           "rgb_standard_deviation": [
-            44.782284168419984,
-            44.116862006949816,
-            39.780518078817366
+            44.78117705249369,
+            44.11565207945727,
+            39.77947551125174
           ]
         },
         {
@@ -4522,11 +4522,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/265.png",
-          "sha256": "69107a62949df8945bc4a73dbf8f359b97ee4fb2c5edfd783d1a09e9033fa055",
+          "sha256": "20e52f5dd175f34874bc058613385bc0f33da8541634cc7172bc0ded3e5ce924",
           "rgb_standard_deviation": [
-            38.03727242605188,
+            38.037105747610724,
             40.56152167520404,
-            39.492202749749794
+            39.4924815127996
           ]
         },
         {
@@ -4535,11 +4535,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/266.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -4548,11 +4548,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/267.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -4574,11 +4574,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/269.png",
-          "sha256": "ee653f495819f135d7906a82f3180b7b159a056e1f824815a4fc08b4c20e13d4",
+          "sha256": "8fd8558cc1565e8d9eabf4e7a95b7c3f412903e863aea8ce729e3b6bc0d4d75b",
           "rgb_standard_deviation": [
-            36.1124374947534,
-            38.94580272018869,
-            38.11505268910242
+            36.11230815455536,
+            38.94568499695614,
+            38.1151640331574
           ]
         },
         {
@@ -4587,11 +4587,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/270.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -4600,11 +4600,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/271.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -4626,11 +4626,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/273.png",
-          "sha256": "963e3bfce9e1a59cfeed35773e5fd62a73eb386c4dc51573c07c0e172f498be7",
+          "sha256": "6e141b0750bf356e8749dbc418a9a337e959ab94e2e8d8c18942cbf078b8b3a9",
           "rgb_standard_deviation": [
-            36.49216534421792,
-            39.32849319450733,
-            38.48169422313063
+            36.49197679367048,
+            39.32833560895799,
+            38.48184706686658
           ]
         },
         {
@@ -4639,11 +4639,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/274.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -4652,11 +4652,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/275.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -4665,11 +4665,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/276.png",
-          "sha256": "929bd859637601a213e359a5e2c62a0c126bf627f7a72a795ca371a7d14ba534",
+          "sha256": "2f0581af4be5c58b15137ff185c0c7fc6ed6d36b36736af6210219a3abf528cc",
           "rgb_standard_deviation": [
-            43.79184746414933,
-            43.345699031288454,
-            39.29670023400367
+            43.79122620691979,
+            43.34546329598567,
+            39.296809224726445
           ]
         },
         {
@@ -4730,11 +4730,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/281.png",
-          "sha256": "983fd04e625349def60b1ffb5af2aa3436b12184127e1e2b5cd40c54bfa75edb",
+          "sha256": "e2e34c9eef6a9d5e671356b510432a548461c5c7acfee4c4eaa9096ba1d8df9f",
           "rgb_standard_deviation": [
-            26.904803958230474,
-            32.2028464072519,
-            33.76855763886112
+            26.905106517221164,
+            32.203187719627316,
+            33.76896540815061
           ]
         },
         {
@@ -4743,11 +4743,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/282.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -4756,11 +4756,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/283.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -4769,11 +4769,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/284.png",
-          "sha256": "3d0f33032561e3abf9636750e7a29c3cc911dad1d5f25b673253a67ccdd8bb7a",
+          "sha256": "05911c403ca260caeb6368c82219f640afb5fdf6fb0d2863586e209a8aab8446",
           "rgb_standard_deviation": [
-            23.42693015466941,
-            28.131834398193735,
-            29.595514505384617
+            23.426675572966225,
+            28.131445788950252,
+            29.59499535023238
           ]
         },
         {
@@ -4782,11 +4782,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/285.png",
-          "sha256": "266e07e23783069a2075e963b43312dcac9ee2e648a0363e74cbd6cabb966124",
+          "sha256": "8e98de88e920583133778d296b32f53d8c1c9bc9da9bef9127e8a0221eb80714",
           "rgb_standard_deviation": [
-            27.945263546562277,
-            33.18032302413055,
-            34.742940898378194
+            27.945644947235134,
+            33.18073602173914,
+            34.74341543078195
           ]
         },
         {
@@ -4795,11 +4795,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/286.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -4808,11 +4808,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/287.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -4834,11 +4834,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/289.png",
-          "sha256": "7e4942b9ec3444528842c4a34c8c644665f74b6cdfb7fd3d0fcd3ac1b4d50b11",
+          "sha256": "e6f67d7bb3459976f2e8c8a18406f6b2b0f0d0896f0585d19e407e85aae8f2f0",
           "rgb_standard_deviation": [
-            27.005301731282824,
-            32.36529965077373,
-            33.94593566790702
+            27.00556805043084,
+            32.365548980879964,
+            33.94619684021591
           ]
         },
         {
@@ -4847,11 +4847,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/290.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -4860,11 +4860,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/291.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -4886,11 +4886,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/293.png",
-          "sha256": "a069fbb4b98eb22d9fbacdfec73c9cdc9f5bf6825903087e894e2832a27085f9",
+          "sha256": "b6c68c79ee3e83516bd80b63747a7df73a508f4d693f2c7de8f749e2ba797514",
           "rgb_standard_deviation": [
-            27.60683306063754,
-            32.896506849771626,
-            34.399097803039645
+            27.607122306389133,
+            32.896835664029126,
+            34.39949230865295
           ]
         },
         {
@@ -4899,11 +4899,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/294.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -4912,11 +4912,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/295.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -4925,11 +4925,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/296.png",
-          "sha256": "00c2badb89fc1c27edfcfca93ed066fa5158760be9f9c539cde2c537e89303fa",
+          "sha256": "0319b1a9fd009cf984f8a1d88b4f4b05588876160a1a5df04f4e524af19f79f1",
           "rgb_standard_deviation": [
-            23.31970235160247,
-            28.09086986181879,
-            29.56616347965725
+            23.320308987631737,
+            28.091418876901695,
+            29.566698737057155
           ]
         },
         {
@@ -4990,11 +4990,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/301.png",
-          "sha256": "fec10f148911bbf12eea4f195c64d61fd0ffc79629ca0f15b8a03050cc2b2ed8",
+          "sha256": "3b2d2afbd1ca6772805d403c00759029c02dc521cb1eaaa98de3ea6cadb2e233",
           "rgb_standard_deviation": [
-            29.898852169735733,
-            34.11416224683462,
-            34.784233771954355
+            29.89914714311077,
+            34.1144717857193,
+            34.78458226625568
           ]
         },
         {
@@ -5003,11 +5003,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/302.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -5016,11 +5016,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/303.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -5029,11 +5029,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/304.png",
-          "sha256": "a8f14bbb7fa2e3cfd859e3827258e401f5304fbfffc592a1c1d2fa295d679a8e",
+          "sha256": "63d3fb9c8b8edef966d6086d2785d56b792e07005bf942558ffcb8f275940cdf",
           "rgb_standard_deviation": [
-            29.64026986252532,
-            32.12400508952889,
-            31.761438429058863
+            29.63961311457346,
+            32.12328869857605,
+            31.760693996436945
           ]
         },
         {
@@ -5042,11 +5042,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/305.png",
-          "sha256": "3f6cf2f0b34bef187ceaf0ac2c5ed7b4894bfcc853456e7d09d99a9cf32e3291",
+          "sha256": "41f96207aba06becf16facb58169f240f8100874c1346f54324bad07109a3155",
           "rgb_standard_deviation": [
-            31.44901354771433,
-            35.430661422657316,
-            35.94132115551038
+            31.449437152321316,
+            35.43110194652997,
+            35.941799709485096
           ]
         },
         {
@@ -5055,11 +5055,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/306.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -5068,11 +5068,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/307.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -5094,11 +5094,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/309.png",
-          "sha256": "f33cb746b0b137681d77fc35eacfe5768d9de55834ec764821ad4350c7fc88fd",
+          "sha256": "b7395c22e3e70a25abb93c52d4df1d8c210a5cd69b9d376a37c6c79dd60c25d0",
           "rgb_standard_deviation": [
-            29.9916896128014,
-            34.26818216442427,
-            34.95667316032089
+            29.99192126177014,
+            34.26838422539298,
+            34.956866146044824
           ]
         },
         {
@@ -5107,11 +5107,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/310.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -5120,11 +5120,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/311.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -5146,11 +5146,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/313.png",
-          "sha256": "33c2f0fc952aaa5a77d059cdea5c9de6f33473cce02ca59bbf832bcc73f5318c",
+          "sha256": "4090d36384b43d641754444e051c19e404d1a055aacd4efa5b90cf3a7369d92f",
           "rgb_standard_deviation": [
-            30.501107423071485,
-            34.74712791980855,
-            35.38586531757291
+            30.501392331009754,
+            34.7474276361992,
+            35.386203061209656
           ]
         },
         {
@@ -5159,11 +5159,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/314.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -5172,11 +5172,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/315.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -5185,11 +5185,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/316.png",
-          "sha256": "e2ad5bd26447514744231f9e189d406da7d33745185fbd8ae6e7b4af0b7b8b6d",
+          "sha256": "4aa7443ee86e8014ee3af9e6103b51040071c5186cb1af49f77b203090be2901",
           "rgb_standard_deviation": [
-            29.346042048329355,
-            31.920189776280004,
-            31.653518527098946
+            29.346630216694564,
+            31.920753735412724,
+            31.65405692236782
           ]
         },
         {
@@ -5250,11 +5250,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/321.png",
-          "sha256": "9cd189bc416de57cadc9a7f743843f4ab9bc0bae5e75c888b024a742a5946186",
+          "sha256": "bf7de1124e3b7b5dfb576546c49cdad8ddf4b80fea3089af58158de41bac14b7",
           "rgb_standard_deviation": [
-            36.03270378947572,
-            38.80898032487772,
-            37.95636038996809
+            36.032510683251665,
+            38.80881913290642,
+            37.95651684787846
           ]
         },
         {
@@ -5263,11 +5263,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/322.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -5276,11 +5276,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/323.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -5289,11 +5289,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/324.png",
-          "sha256": "2fffbcb4bdc7bf9ffb515c1b9c8fecfca8dc8f960a44a152b5ae481e25780a79",
+          "sha256": "bf359f15394594178206db41ee5fb70647a81cb49e5586eb33ba951a0e8775ff",
           "rgb_standard_deviation": [
-            44.782284168419984,
-            44.116862006949816,
-            39.780518078817366
+            44.78117705249369,
+            44.11565207945727,
+            39.77947551125174
           ]
         },
         {
@@ -5302,11 +5302,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/325.png",
-          "sha256": "69107a62949df8945bc4a73dbf8f359b97ee4fb2c5edfd783d1a09e9033fa055",
+          "sha256": "20e52f5dd175f34874bc058613385bc0f33da8541634cc7172bc0ded3e5ce924",
           "rgb_standard_deviation": [
-            38.03727242605188,
+            38.037105747610724,
             40.56152167520404,
-            39.492202749749794
+            39.4924815127996
           ]
         },
         {
@@ -5315,11 +5315,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/326.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -5328,11 +5328,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/327.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -5354,11 +5354,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/329.png",
-          "sha256": "ee653f495819f135d7906a82f3180b7b159a056e1f824815a4fc08b4c20e13d4",
+          "sha256": "8fd8558cc1565e8d9eabf4e7a95b7c3f412903e863aea8ce729e3b6bc0d4d75b",
           "rgb_standard_deviation": [
-            36.1124374947534,
-            38.94580272018869,
-            38.11505268910242
+            36.11230815455536,
+            38.94568499695614,
+            38.1151640331574
           ]
         },
         {
@@ -5367,11 +5367,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/330.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -5380,11 +5380,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/331.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -5406,11 +5406,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/333.png",
-          "sha256": "963e3bfce9e1a59cfeed35773e5fd62a73eb386c4dc51573c07c0e172f498be7",
+          "sha256": "6e141b0750bf356e8749dbc418a9a337e959ab94e2e8d8c18942cbf078b8b3a9",
           "rgb_standard_deviation": [
-            36.49216534421792,
-            39.32849319450733,
-            38.48169422313063
+            36.49197679367048,
+            39.32833560895799,
+            38.48184706686658
           ]
         },
         {
@@ -5419,11 +5419,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/334.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -5432,11 +5432,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/335.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -5445,11 +5445,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/336.png",
-          "sha256": "929bd859637601a213e359a5e2c62a0c126bf627f7a72a795ca371a7d14ba534",
+          "sha256": "2f0581af4be5c58b15137ff185c0c7fc6ed6d36b36736af6210219a3abf528cc",
           "rgb_standard_deviation": [
-            43.79184746414933,
-            43.345699031288454,
-            39.29670023400367
+            43.79122620691979,
+            43.34546329598567,
+            39.296809224726445
           ]
         },
         {
@@ -5510,11 +5510,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/341.png",
-          "sha256": "983fd04e625349def60b1ffb5af2aa3436b12184127e1e2b5cd40c54bfa75edb",
+          "sha256": "e2e34c9eef6a9d5e671356b510432a548461c5c7acfee4c4eaa9096ba1d8df9f",
           "rgb_standard_deviation": [
-            26.904803958230474,
-            32.2028464072519,
-            33.76855763886112
+            26.905106517221164,
+            32.203187719627316,
+            33.76896540815061
           ]
         },
         {
@@ -5523,11 +5523,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/342.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -5536,11 +5536,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/343.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -5549,11 +5549,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/344.png",
-          "sha256": "3d0f33032561e3abf9636750e7a29c3cc911dad1d5f25b673253a67ccdd8bb7a",
+          "sha256": "05911c403ca260caeb6368c82219f640afb5fdf6fb0d2863586e209a8aab8446",
           "rgb_standard_deviation": [
-            23.42693015466941,
-            28.131834398193735,
-            29.595514505384617
+            23.426675572966225,
+            28.131445788950252,
+            29.59499535023238
           ]
         },
         {
@@ -5562,11 +5562,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/345.png",
-          "sha256": "266e07e23783069a2075e963b43312dcac9ee2e648a0363e74cbd6cabb966124",
+          "sha256": "8e98de88e920583133778d296b32f53d8c1c9bc9da9bef9127e8a0221eb80714",
           "rgb_standard_deviation": [
-            27.945263546562277,
-            33.18032302413055,
-            34.742940898378194
+            27.945644947235134,
+            33.18073602173914,
+            34.74341543078195
           ]
         },
         {
@@ -5575,11 +5575,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/346.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -5588,11 +5588,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/347.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -5614,11 +5614,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/349.png",
-          "sha256": "7e4942b9ec3444528842c4a34c8c644665f74b6cdfb7fd3d0fcd3ac1b4d50b11",
+          "sha256": "e6f67d7bb3459976f2e8c8a18406f6b2b0f0d0896f0585d19e407e85aae8f2f0",
           "rgb_standard_deviation": [
-            27.005301731282824,
-            32.36529965077373,
-            33.94593566790702
+            27.00556805043084,
+            32.365548980879964,
+            33.94619684021591
           ]
         },
         {
@@ -5627,11 +5627,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/350.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -5640,11 +5640,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/351.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -5666,11 +5666,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/353.png",
-          "sha256": "a069fbb4b98eb22d9fbacdfec73c9cdc9f5bf6825903087e894e2832a27085f9",
+          "sha256": "b6c68c79ee3e83516bd80b63747a7df73a508f4d693f2c7de8f749e2ba797514",
           "rgb_standard_deviation": [
-            27.60683306063754,
-            32.896506849771626,
-            34.399097803039645
+            27.607122306389133,
+            32.896835664029126,
+            34.39949230865295
           ]
         },
         {
@@ -5679,11 +5679,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/354.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -5692,11 +5692,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/355.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -5705,11 +5705,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/356.png",
-          "sha256": "00c2badb89fc1c27edfcfca93ed066fa5158760be9f9c539cde2c537e89303fa",
+          "sha256": "0319b1a9fd009cf984f8a1d88b4f4b05588876160a1a5df04f4e524af19f79f1",
           "rgb_standard_deviation": [
-            23.31970235160247,
-            28.09086986181879,
-            29.56616347965725
+            23.320308987631737,
+            28.091418876901695,
+            29.566698737057155
           ]
         },
         {
@@ -5770,11 +5770,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/361.png",
-          "sha256": "fec10f148911bbf12eea4f195c64d61fd0ffc79629ca0f15b8a03050cc2b2ed8",
+          "sha256": "3b2d2afbd1ca6772805d403c00759029c02dc521cb1eaaa98de3ea6cadb2e233",
           "rgb_standard_deviation": [
-            29.898852169735733,
-            34.11416224683462,
-            34.784233771954355
+            29.89914714311077,
+            34.1144717857193,
+            34.78458226625568
           ]
         },
         {
@@ -5783,11 +5783,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/362.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -5796,11 +5796,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/363.png",
-          "sha256": "d56cc220d494874600fb8d965e98e824279c99abbc8a7d23d81e4c04b744eb41",
+          "sha256": "650bf20b79fd623094b833856b6b24d5f9c7fd8808180a8989bbe62693861cd5",
           "rgb_standard_deviation": [
-            40.1626240406719,
-            43.142414333691725,
-            43.140220420674005
+            40.16359467742543,
+            43.14342354234011,
+            43.14130683162618
           ]
         },
         {
@@ -5809,11 +5809,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/364.png",
-          "sha256": "a8f14bbb7fa2e3cfd859e3827258e401f5304fbfffc592a1c1d2fa295d679a8e",
+          "sha256": "63d3fb9c8b8edef966d6086d2785d56b792e07005bf942558ffcb8f275940cdf",
           "rgb_standard_deviation": [
-            29.64026986252532,
-            32.12400508952889,
-            31.761438429058863
+            29.63961311457346,
+            32.12328869857605,
+            31.760693996436945
           ]
         },
         {
@@ -5822,11 +5822,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/365.png",
-          "sha256": "3f6cf2f0b34bef187ceaf0ac2c5ed7b4894bfcc853456e7d09d99a9cf32e3291",
+          "sha256": "41f96207aba06becf16facb58169f240f8100874c1346f54324bad07109a3155",
           "rgb_standard_deviation": [
-            31.44901354771433,
-            35.430661422657316,
-            35.94132115551038
+            31.449437152321316,
+            35.43110194652997,
+            35.941799709485096
           ]
         },
         {
@@ -5835,11 +5835,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/366.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -5848,11 +5848,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/367.png",
-          "sha256": "6df25e2f7378d9c5c04e4ba7e78c0ea6c4c5e58be5b140a59c8e907b34c583b2",
+          "sha256": "335f348c83c76751a9f75e71f0d67c0092025945e13627cfa0d65ffbbde27f89",
           "rgb_standard_deviation": [
-            40.115196596700635,
-            43.097030252410065,
-            43.12495620713322
+            40.1160957196776,
+            43.09809744353569,
+            43.12613295962328
           ]
         },
         {
@@ -5874,11 +5874,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/369.png",
-          "sha256": "f33cb746b0b137681d77fc35eacfe5768d9de55834ec764821ad4350c7fc88fd",
+          "sha256": "b7395c22e3e70a25abb93c52d4df1d8c210a5cd69b9d376a37c6c79dd60c25d0",
           "rgb_standard_deviation": [
-            29.9916896128014,
-            34.26818216442427,
-            34.95667316032089
+            29.99192126177014,
+            34.26838422539298,
+            34.956866146044824
           ]
         },
         {
@@ -5887,11 +5887,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/370.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -5900,11 +5900,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/371.png",
-          "sha256": "0ed99a56252684e24bd90059dda77227e9850fb7faa1339a8f482774defa7784",
+          "sha256": "01b93e7f5a3f3c9e76c58974ad3090db4df0ea42bf1896a9ca67bba332edbcdb",
           "rgb_standard_deviation": [
-            40.269800827122786,
-            43.25167620317261,
-            43.249369880773514
+            40.27076814807048,
+            43.252682391347335,
+            43.2504531282633
           ]
         },
         {
@@ -5926,11 +5926,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/373.png",
-          "sha256": "33c2f0fc952aaa5a77d059cdea5c9de6f33473cce02ca59bbf832bcc73f5318c",
+          "sha256": "4090d36384b43d641754444e051c19e404d1a055aacd4efa5b90cf3a7369d92f",
           "rgb_standard_deviation": [
-            30.501107423071485,
-            34.74712791980855,
-            35.38586531757291
+            30.501392331009754,
+            34.7474276361992,
+            35.386203061209656
           ]
         },
         {
@@ -5939,11 +5939,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/374.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -5952,11 +5952,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/375.png",
-          "sha256": "3cc54f946f60dc61db870e8a841e9ec7954bcb10b1abda79333245315bf0efa2",
+          "sha256": "52f3357cdd7b076b715e79bd67d8eb13c897e8ccea5e22b1d84445271e13a577",
           "rgb_standard_deviation": [
-            40.164272478425985,
-            43.14091073188005,
-            43.14091990761508
+            40.16524316550625,
+            43.14192011906342,
+            43.14200643827775
           ]
         },
         {
@@ -5965,11 +5965,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/376.png",
-          "sha256": "e2ad5bd26447514744231f9e189d406da7d33745185fbd8ae6e7b4af0b7b8b6d",
+          "sha256": "4aa7443ee86e8014ee3af9e6103b51040071c5186cb1af49f77b203090be2901",
           "rgb_standard_deviation": [
-            29.346042048329355,
-            31.920189776280004,
-            31.653518527098946
+            29.346630216694564,
+            31.920753735412724,
+            31.65405692236782
           ]
         },
         {
@@ -6030,11 +6030,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/381.png",
-          "sha256": "9cd189bc416de57cadc9a7f743843f4ab9bc0bae5e75c888b024a742a5946186",
+          "sha256": "bf7de1124e3b7b5dfb576546c49cdad8ddf4b80fea3089af58158de41bac14b7",
           "rgb_standard_deviation": [
-            36.03270378947572,
-            38.80898032487772,
-            37.95636038996809
+            36.032510683251665,
+            38.80881913290642,
+            37.95651684787846
           ]
         },
         {
@@ -6043,11 +6043,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/382.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -6056,11 +6056,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/383.png",
-          "sha256": "15e111596c27e52ec20055ff3f9203dbee9d20ff8b160a3d1c5ee1a413a71722",
+          "sha256": "a25825cbdd94abee39a343223a473ea59ecb6a127b2c228ef8ca188256f869ad",
           "rgb_standard_deviation": [
-            52.495728899401385,
-            53.25767383023017,
-            50.422678121018166
+            52.4960268745479,
+            53.25818498628333,
+            50.42340983561382
           ]
         },
         {
@@ -6069,11 +6069,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/384.png",
-          "sha256": "2fffbcb4bdc7bf9ffb515c1b9c8fecfca8dc8f960a44a152b5ae481e25780a79",
+          "sha256": "bf359f15394594178206db41ee5fb70647a81cb49e5586eb33ba951a0e8775ff",
           "rgb_standard_deviation": [
-            44.782284168419984,
-            44.116862006949816,
-            39.780518078817366
+            44.78117705249369,
+            44.11565207945727,
+            39.77947551125174
           ]
         },
         {
@@ -6082,11 +6082,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/385.png",
-          "sha256": "69107a62949df8945bc4a73dbf8f359b97ee4fb2c5edfd783d1a09e9033fa055",
+          "sha256": "20e52f5dd175f34874bc058613385bc0f33da8541634cc7172bc0ded3e5ce924",
           "rgb_standard_deviation": [
-            38.03727242605188,
+            38.037105747610724,
             40.56152167520404,
-            39.492202749749794
+            39.4924815127996
           ]
         },
         {
@@ -6095,11 +6095,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/386.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -6108,11 +6108,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/387.png",
-          "sha256": "e38681c2c48e663a0f534b5c32e7cc7efd59aa4a71ce51420c1e66a0b01a7d43",
+          "sha256": "1a12af626f7db3722d702bc5aff56133c26d5b50c554c75daa85e8445877962e",
           "rgb_standard_deviation": [
-            52.46102631993804,
-            53.2123116792694,
-            50.396484380746024
+            52.460501851292584,
+            53.21214526735788,
+            50.39686568781972
           ]
         },
         {
@@ -6134,11 +6134,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/389.png",
-          "sha256": "ee653f495819f135d7906a82f3180b7b159a056e1f824815a4fc08b4c20e13d4",
+          "sha256": "8fd8558cc1565e8d9eabf4e7a95b7c3f412903e863aea8ce729e3b6bc0d4d75b",
           "rgb_standard_deviation": [
-            36.1124374947534,
-            38.94580272018869,
-            38.11505268910242
+            36.11230815455536,
+            38.94568499695614,
+            38.1151640331574
           ]
         },
         {
@@ -6147,11 +6147,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/390.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -6160,11 +6160,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/391.png",
-          "sha256": "a3d16ecdf87b6c1ab7d6cf9627a0f99b8527788f9981eba9fdd617abc1dd0e96",
+          "sha256": "43618c6e66040395f8c627a2c3b3eda1f3344d5ba47fe94a3717d3fc51f75b65",
           "rgb_standard_deviation": [
-            52.64167946272057,
-            53.39684962738469,
-            50.55202793634464
+            52.64197641812658,
+            53.397359204624244,
+            50.55275746988058
           ]
         },
         {
@@ -6186,11 +6186,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/393.png",
-          "sha256": "963e3bfce9e1a59cfeed35773e5fd62a73eb386c4dc51573c07c0e172f498be7",
+          "sha256": "6e141b0750bf356e8749dbc418a9a337e959ab94e2e8d8c18942cbf078b8b3a9",
           "rgb_standard_deviation": [
-            36.49216534421792,
-            39.32849319450733,
-            38.48169422313063
+            36.49197679367048,
+            39.32833560895799,
+            38.48184706686658
           ]
         },
         {
@@ -6199,11 +6199,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/394.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -6212,11 +6212,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/395.png",
-          "sha256": "1de708e0d4c8d4a04629fc8e04444c77cf1aa335c0851a1761e31216de7f9f46",
+          "sha256": "3a541d8f956207569069f47370e51271e7a0f5c4a1971b0e22dbfdc60d756108",
           "rgb_standard_deviation": [
-            52.49594333533467,
-            53.25564531850058,
-            50.42226877960556
+            52.49624132864166,
+            53.256156551250484,
+            50.423000578955914
           ]
         },
         {
@@ -6225,11 +6225,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/396.png",
-          "sha256": "929bd859637601a213e359a5e2c62a0c126bf627f7a72a795ca371a7d14ba534",
+          "sha256": "2f0581af4be5c58b15137ff185c0c7fc6ed6d36b36736af6210219a3abf528cc",
           "rgb_standard_deviation": [
-            43.79184746414933,
-            43.345699031288454,
-            39.29670023400367
+            43.79122620691979,
+            43.34546329598567,
+            39.296809224726445
           ]
         },
         {
@@ -6290,11 +6290,11 @@
           "pose": "neutral",
           "view": "side",
           "path": "sweep/401.png",
-          "sha256": "983fd04e625349def60b1ffb5af2aa3436b12184127e1e2b5cd40c54bfa75edb",
+          "sha256": "e2e34c9eef6a9d5e671356b510432a548461c5c7acfee4c4eaa9096ba1d8df9f",
           "rgb_standard_deviation": [
-            26.904803958230474,
-            32.2028464072519,
-            33.76855763886112
+            26.905106517221164,
+            32.203187719627316,
+            33.76896540815061
           ]
         },
         {
@@ -6303,11 +6303,11 @@
           "pose": "neutral",
           "view": "back",
           "path": "sweep/402.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -6316,11 +6316,11 @@
           "pose": "neutral",
           "view": "free",
           "path": "sweep/403.png",
-          "sha256": "f9a2166607d15bff4bfb4643e192b60b421ad3d429b71746097036dad4df6d20",
+          "sha256": "c696f262ed52abaf1c6eb3bb17bd0678ea50e75d455039204102dc39ee9332f2",
           "rgb_standard_deviation": [
-            32.52305391967888,
-            38.139084448998396,
-            40.45959984828348
+            32.523897052318425,
+            38.14010128970408,
+            40.46076723885803
           ]
         },
         {
@@ -6329,11 +6329,11 @@
           "pose": "fashion",
           "view": "front",
           "path": "sweep/404.png",
-          "sha256": "3d0f33032561e3abf9636750e7a29c3cc911dad1d5f25b673253a67ccdd8bb7a",
+          "sha256": "05911c403ca260caeb6368c82219f640afb5fdf6fb0d2863586e209a8aab8446",
           "rgb_standard_deviation": [
-            23.42693015466941,
-            28.131834398193735,
-            29.595514505384617
+            23.426675572966225,
+            28.131445788950252,
+            29.59499535023238
           ]
         },
         {
@@ -6342,11 +6342,11 @@
           "pose": "fashion",
           "view": "side",
           "path": "sweep/405.png",
-          "sha256": "266e07e23783069a2075e963b43312dcac9ee2e648a0363e74cbd6cabb966124",
+          "sha256": "8e98de88e920583133778d296b32f53d8c1c9bc9da9bef9127e8a0221eb80714",
           "rgb_standard_deviation": [
-            27.945263546562277,
-            33.18032302413055,
-            34.742940898378194
+            27.945644947235134,
+            33.18073602173914,
+            34.74341543078195
           ]
         },
         {
@@ -6355,11 +6355,11 @@
           "pose": "fashion",
           "view": "back",
           "path": "sweep/406.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -6368,11 +6368,11 @@
           "pose": "fashion",
           "view": "free",
           "path": "sweep/407.png",
-          "sha256": "eefb0651cbd2e7847f935fbc31b91d79946e695bb7e9e5eaf5333a9f2d4357f0",
+          "sha256": "daa17c248168dd8b0f4f0f11232c00fbf06935e184e07e7a62ab51ef311c596b",
           "rgb_standard_deviation": [
-            32.52562142843015,
-            38.12518842589909,
-            40.45719559331828
+            32.52659004899297,
+            38.126255971661315,
+            40.4584635060472
           ]
         },
         {
@@ -6394,11 +6394,11 @@
           "pose": "hip",
           "view": "side",
           "path": "sweep/409.png",
-          "sha256": "7e4942b9ec3444528842c4a34c8c644665f74b6cdfb7fd3d0fcd3ac1b4d50b11",
+          "sha256": "e6f67d7bb3459976f2e8c8a18406f6b2b0f0d0896f0585d19e407e85aae8f2f0",
           "rgb_standard_deviation": [
-            27.005301731282824,
-            32.36529965077373,
-            33.94593566790702
+            27.00556805043084,
+            32.365548980879964,
+            33.94619684021591
           ]
         },
         {
@@ -6407,11 +6407,11 @@
           "pose": "hip",
           "view": "back",
           "path": "sweep/410.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -6420,11 +6420,11 @@
           "pose": "hip",
           "view": "free",
           "path": "sweep/411.png",
-          "sha256": "f55b756e76ba777f794187c045d67eb77c24129dc6ab23acf2a0e99e31cbbbff",
+          "sha256": "aa7de014667fd73681c988209168bcc5157cf5d4cd06276662d1d73a6426a748",
           "rgb_standard_deviation": [
-            32.602557851681226,
-            38.23003607322025,
-            40.5614749394234
+            32.60339822044373,
+            38.231050069968596,
+            40.562638980931865
           ]
         },
         {
@@ -6446,11 +6446,11 @@
           "pose": "walk",
           "view": "side",
           "path": "sweep/413.png",
-          "sha256": "a069fbb4b98eb22d9fbacdfec73c9cdc9f5bf6825903087e894e2832a27085f9",
+          "sha256": "b6c68c79ee3e83516bd80b63747a7df73a508f4d693f2c7de8f749e2ba797514",
           "rgb_standard_deviation": [
-            27.60683306063754,
-            32.896506849771626,
-            34.399097803039645
+            27.607122306389133,
+            32.896835664029126,
+            34.39949230865295
           ]
         },
         {
@@ -6459,11 +6459,11 @@
           "pose": "walk",
           "view": "back",
           "path": "sweep/414.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -6472,11 +6472,11 @@
           "pose": "walk",
           "view": "free",
           "path": "sweep/415.png",
-          "sha256": "d5454bb8f4da04ea8c3f669ae211137d887bdcb5eadd3a5822882068439e2351",
+          "sha256": "ab9c4b8512a98f5fa34c2af85642b69f9710f86918da7dc679564cbf33ee0bda",
           "rgb_standard_deviation": [
-            32.5267685106938,
-            38.13729475164503,
-            40.46008409034739
+            32.52761165146101,
+            38.13831181569851,
+            40.46125162715157
           ]
         },
         {
@@ -6485,11 +6485,11 @@
           "pose": "three-quarter",
           "view": "front",
           "path": "sweep/416.png",
-          "sha256": "00c2badb89fc1c27edfcfca93ed066fa5158760be9f9c539cde2c537e89303fa",
+          "sha256": "0319b1a9fd009cf984f8a1d88b4f4b05588876160a1a5df04f4e524af19f79f1",
           "rgb_standard_deviation": [
-            23.31970235160247,
-            28.09086986181879,
-            29.56616347965725
+            23.320308987631737,
+            28.091418876901695,
+            29.566698737057155
           ]
         },
         {
@@ -6535,8 +6535,8 @@
     },
     "export": {
       "passed": true,
-      "bytes": 12001464,
-      "sha256": "514a267710404a2107db443d3f512097934a34766cb373a1a215c94d339fc287",
+      "bytes": 11997288,
+      "sha256": "a889dd6fbf8a5e7da5b307de4e7771aa7eb3215a0df7f5085b06744f7239b9b9",
       "skins": 21,
       "meshes": 21
     },
@@ -6569,7 +6569,7 @@
   "glb_geometry_roundtrip": {
     "meshes": 21,
     "expectedMeshes": 21,
-    "checkedSkinnedVertices": 61421,
+    "checkedSkinnedVertices": 61349,
     "maxWorldDeviationMetres": 1.6971415172588268e-06,
     "missing": [],
     "bad": [],
@@ -6578,10 +6578,10 @@
   },
   "footwear_visual_effect": {
     "different_render": true,
-    "slip_sha256": "ff369d9b5d1b70018f13b80b14e362e48f6fa823a57e01e90b2e6357c3928e97",
-    "barefoot_sha256": "ae8b57dd9252f190270183f37c3057a8fb20dfc684a5d90ad91dcee368bb2faa",
-    "slip_side_sha256": "a3a1d7aa6837d85d7155f4e196bbc05178a9d20116af02fe1aeb3ed523087f5c",
-    "barefoot_side_sha256": "9845b39c87d3729e67b44aeaaee3acf76ef32e3c4502d1bb37b34afca1a7a501",
+    "slip_sha256": "410f0e756942e19b35b98a8bad1dcff3048415f99b8e2b5c96cd097ee6d3cabc",
+    "barefoot_sha256": "97afbd5ff4b9b6c88c5b341993053e563fe52c79fd8ddaff8009ed0c613833a7",
+    "slip_side_sha256": "a4d8ae0b8bbbefd7a787a01b65e87d53a4a6861a099f06956f3aa53bea9daa9f",
+    "barefoot_side_sha256": "82ea7f3eb91fcdfc1200e6f90a33124a772ecb23e33891eab7aac137b46e586c",
     "coverage": "direct actual-render comparison of both footwear values in front and side views"
   },
   "appearance_pairwise": {
@@ -6670,7 +6670,7 @@
           "view": "front"
         },
         "path": "appearance-pairwise/002.png",
-        "sha256": "aa8a7e00f45c0f6608bdd7ab56a7c40d1028671fada16cbb34e00e038e53e286",
+        "sha256": "c91410f05fd4d00542decbc0dd3903781ec2355e8e103f7066051a9a44a6d02f",
         "webglError": 0
       },
       {
@@ -6684,7 +6684,7 @@
           "view": "free"
         },
         "path": "appearance-pairwise/003.png",
-        "sha256": "ac4f3482571857a39d4853c2b04404f93eacc3a516ef2ba3a05f8bbc939d328b",
+        "sha256": "801b5c80f21db1f47c10c2728d88ad711ea78dc411f1a0f99d5d66fdca1a5fd3",
         "webglError": 0
       },
       {
@@ -6740,7 +6740,7 @@
           "view": "front"
         },
         "path": "appearance-pairwise/007.png",
-        "sha256": "50e8606b6169c3ba4f63c23892c7f579294dc5c481c1234c1fd2c9e62c57a6bd",
+        "sha256": "f9dc83590dc2b3f3bca7344419b0a4add7cdde71dcc5a83ce7bff9ea6b0549ce",
         "webglError": 0
       },
       {
@@ -6754,7 +6754,7 @@
           "view": "back"
         },
         "path": "appearance-pairwise/008.png",
-        "sha256": "a33eaa3d602f07fff7e47fd4f47797f0c6c43d863cc9aa9d39c9b975481a1131",
+        "sha256": "f9c65d1d2763f93da45fc50ece3645891247860b5213d57c6d954ec15420d1dc",
         "webglError": 0
       },
       {
@@ -6768,7 +6768,7 @@
           "view": "side"
         },
         "path": "appearance-pairwise/009.png",
-        "sha256": "98ac8048ae80181e3cc0a4f702b685d8419f1334bb2967971cf5a1bcabca741f",
+        "sha256": "9e0060e27425ced439dd0900d7b8ac8c78973ed9972fd4f33ac7e07e285d522d",
         "webglError": 0
       },
       {
@@ -6796,7 +6796,7 @@
           "view": "back"
         },
         "path": "appearance-pairwise/011.png",
-        "sha256": "68d2885889cee2da7f73295ea0373e7decc0d976d4499e0a08e18bde0d30f96e",
+        "sha256": "aacd2d70fb32a6539d8c290be5cc1484083baafc5e3b010ed5baa066a20712df",
         "webglError": 0
       },
       {
@@ -6810,7 +6810,7 @@
           "view": "free"
         },
         "path": "appearance-pairwise/012.png",
-        "sha256": "b8a4f3b38d76fde088a90480486aa3a42e2b3b2a027a9c47951a28d2ee98d798",
+        "sha256": "4dad4c6af82fb064d157a997ae5e1d25a84a6d3c27341fddb1cd00447151e214",
         "webglError": 0
       },
       {
@@ -6824,7 +6824,7 @@
           "view": "side"
         },
         "path": "appearance-pairwise/013.png",
-        "sha256": "272b3bda0188ca0fc07bbebbe224afaa255bfbb24e841040c8d532a57851635b",
+        "sha256": "48cd7bb04f003c523806aecf597cce7789b93de28e00bef51147c1227ae745eb",
         "webglError": 0
       },
       {
@@ -6852,7 +6852,7 @@
           "view": "front"
         },
         "path": "appearance-pairwise/015.png",
-        "sha256": "8fdcdbb4f0d19564c05530662edc98f15ca75c459fc4ff7bce9275696170ae4b",
+        "sha256": "3a32fbc986a20854da00ea5dd45d456f1f77f794dd8ea02ccd18e56ce7ff9d3a",
         "webglError": 0
       },
       {
@@ -6908,7 +6908,7 @@
           "view": "back"
         },
         "path": "appearance-pairwise/019.png",
-        "sha256": "9a6db2431f468634263741d6bc5c8d8a7d5f49bc05477fe255ccd41fa6ac72d1",
+        "sha256": "746cfb32a068e17dc7906809c575969238b00cf36d4af1615b1f1bef3e81bf44",
         "webglError": 0
       },
       {
@@ -6922,7 +6922,7 @@
           "view": "free"
         },
         "path": "appearance-pairwise/020.png",
-        "sha256": "c979fa8a8c935c9acc127ff41cf2cc52b5ba5085433632b6fe06e95b6bb2e038",
+        "sha256": "dc38459187d6cd7a356da5a53cae19a37b4bf090bb46e8c71608faa08fd8f4ae",
         "webglError": 0
       },
       {
@@ -6950,7 +6950,7 @@
           "view": "free"
         },
         "path": "appearance-pairwise/022.png",
-        "sha256": "3ce1d8573cf176d167c06ee0368075cc122e03c0801e6ca616b1bfb0c47d4d32",
+        "sha256": "d9be229f23117bd0d840ef066fec3d1d2788fe09c7ab8f546cd9f675f48aa690",
         "webglError": 0
       },
       {
@@ -6964,7 +6964,7 @@
           "view": "back"
         },
         "path": "appearance-pairwise/023.png",
-        "sha256": "fa35864092a5351323a2fe0cf6c90c35c1197ddd4964c45b2b0c4bf8173a34ef",
+        "sha256": "f2991fd9bae265788789dcd6034b8ab027f359db74a335e48680fc91d81fa75a",
         "webglError": 0
       },
       {
@@ -6978,7 +6978,7 @@
           "view": "front"
         },
         "path": "appearance-pairwise/024.png",
-        "sha256": "4468a056d5b2342727468f56cba225483de3e3ddd31f7abcd68853d9baac5370",
+        "sha256": "8d20ee783d80cb74d1e83fda937548b1ce1e07093117ea95380a63ad2a7285f0",
         "webglError": 0
       },
       {
@@ -6992,7 +6992,7 @@
           "view": "back"
         },
         "path": "appearance-pairwise/025.png",
-        "sha256": "a5599f9b330353f7c6b5466824b48bea3b8d2b27f03456362d078ba3387be1ac",
+        "sha256": "6f082cc9c3d8c716c3abca2e27d270c87ddfc180be4afb01c4aae9e5d187434d",
         "webglError": 0
       },
       {
@@ -7020,7 +7020,7 @@
           "view": "front"
         },
         "path": "appearance-pairwise/027.png",
-        "sha256": "8b346dac4ae9160d06e5784a77ed84fb76c28cc3f0382df7418954a3a0895e9e",
+        "sha256": "d72ad977ee08b1ca74619b8a7fa9ff5d40ddb6f3902cc84a3a451f86edff8d84",
         "webglError": 0
       },
       {
@@ -7048,7 +7048,7 @@
           "view": "side"
         },
         "path": "appearance-pairwise/029.png",
-        "sha256": "3bec46e1dec9c190961b3d2e16de84272ed724bf9f53ec725b333f417122c37c",
+        "sha256": "1e22ccebbd98af3e39a326aef33581154a9abc4a537965dc1747aa300ad7f7aa",
         "webglError": 0
       },
       {
@@ -7062,7 +7062,7 @@
           "view": "front"
         },
         "path": "appearance-pairwise/030.png",
-        "sha256": "af24ee52f648cd37bd5f5369994b74ec428fcd435814d3e40c8aae2b1e1995c3",
+        "sha256": "e12bd9a12896efd8e73f3ac991b80eab958227e71eee2978bfd597efa51afe17",
         "webglError": 0
       }
     ],
@@ -7082,7 +7082,7 @@
     "drag_entered_free": true,
     "drag_changed_orientation": true,
     "collapsed_projection": {
-      "vertices": 61421,
+      "vertices": 61349,
       "minX": -0.42977502436139287,
       "maxX": 0.42977502436139287,
       "minY": -0.8597744953058615,
@@ -7115,7 +7115,7 @@
     "evidence": [
       {
         "path": "footwear-occlusion/slip-ons-neutral-front.png",
-        "sha256": "230de62c32152352669dd6a1828a5c2a24c4e4f73b999f6744d239ed0d9ee7b6",
+        "sha256": "3003ee8deb0de62f2bd9e4e03ada36f17a4cbafc6bc6f6c2ebe86233bcd59b5e",
         "shoe": "slip-ons",
         "pose": "neutral",
         "view": "front",
@@ -7123,7 +7123,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-neutral-side.png",
-        "sha256": "230de62c32152352669dd6a1828a5c2a24c4e4f73b999f6744d239ed0d9ee7b6",
+        "sha256": "3003ee8deb0de62f2bd9e4e03ada36f17a4cbafc6bc6f6c2ebe86233bcd59b5e",
         "shoe": "slip-ons",
         "pose": "neutral",
         "view": "side",
@@ -7131,7 +7131,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-neutral-back.png",
-        "sha256": "230de62c32152352669dd6a1828a5c2a24c4e4f73b999f6744d239ed0d9ee7b6",
+        "sha256": "3003ee8deb0de62f2bd9e4e03ada36f17a4cbafc6bc6f6c2ebe86233bcd59b5e",
         "shoe": "slip-ons",
         "pose": "neutral",
         "view": "back",
@@ -7139,7 +7139,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-neutral-above-front.png",
-        "sha256": "230de62c32152352669dd6a1828a5c2a24c4e4f73b999f6744d239ed0d9ee7b6",
+        "sha256": "3003ee8deb0de62f2bd9e4e03ada36f17a4cbafc6bc6f6c2ebe86233bcd59b5e",
         "shoe": "slip-ons",
         "pose": "neutral",
         "view": "above-front",
@@ -7147,7 +7147,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-fashion-front.png",
-        "sha256": "2435e9cd6622648bf5d7e42100f69a4989976c2a2377cf5888d823760c083c1c",
+        "sha256": "9fd3e88d88a1ada4d8efaeb6be6ab62e0dd10881142498b1129a442bd63d90dc",
         "shoe": "slip-ons",
         "pose": "fashion",
         "view": "front",
@@ -7155,7 +7155,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-fashion-side.png",
-        "sha256": "2435e9cd6622648bf5d7e42100f69a4989976c2a2377cf5888d823760c083c1c",
+        "sha256": "9fd3e88d88a1ada4d8efaeb6be6ab62e0dd10881142498b1129a442bd63d90dc",
         "shoe": "slip-ons",
         "pose": "fashion",
         "view": "side",
@@ -7163,7 +7163,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-fashion-back.png",
-        "sha256": "2435e9cd6622648bf5d7e42100f69a4989976c2a2377cf5888d823760c083c1c",
+        "sha256": "9fd3e88d88a1ada4d8efaeb6be6ab62e0dd10881142498b1129a442bd63d90dc",
         "shoe": "slip-ons",
         "pose": "fashion",
         "view": "back",
@@ -7171,7 +7171,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-fashion-above-front.png",
-        "sha256": "2435e9cd6622648bf5d7e42100f69a4989976c2a2377cf5888d823760c083c1c",
+        "sha256": "9fd3e88d88a1ada4d8efaeb6be6ab62e0dd10881142498b1129a442bd63d90dc",
         "shoe": "slip-ons",
         "pose": "fashion",
         "view": "above-front",
@@ -7179,7 +7179,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-hip-front.png",
-        "sha256": "aaf231c699f1cf1f28d1b6667a04a93027a8e90033a65aca523a4b7ef3ddab73",
+        "sha256": "71bc9bb4085c972d899e15f6d36c2232e9d7eb223b5be1095fed4deb72b1f02f",
         "shoe": "slip-ons",
         "pose": "hip",
         "view": "front",
@@ -7187,7 +7187,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-hip-side.png",
-        "sha256": "aaf231c699f1cf1f28d1b6667a04a93027a8e90033a65aca523a4b7ef3ddab73",
+        "sha256": "71bc9bb4085c972d899e15f6d36c2232e9d7eb223b5be1095fed4deb72b1f02f",
         "shoe": "slip-ons",
         "pose": "hip",
         "view": "side",
@@ -7195,7 +7195,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-hip-back.png",
-        "sha256": "aaf231c699f1cf1f28d1b6667a04a93027a8e90033a65aca523a4b7ef3ddab73",
+        "sha256": "71bc9bb4085c972d899e15f6d36c2232e9d7eb223b5be1095fed4deb72b1f02f",
         "shoe": "slip-ons",
         "pose": "hip",
         "view": "back",
@@ -7203,7 +7203,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-hip-above-front.png",
-        "sha256": "aaf231c699f1cf1f28d1b6667a04a93027a8e90033a65aca523a4b7ef3ddab73",
+        "sha256": "71bc9bb4085c972d899e15f6d36c2232e9d7eb223b5be1095fed4deb72b1f02f",
         "shoe": "slip-ons",
         "pose": "hip",
         "view": "above-front",
@@ -7211,7 +7211,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-walk-front.png",
-        "sha256": "1943b8a0df174456b661a04bf066c752384b82abe4828566cdf7898aa7a0ae85",
+        "sha256": "896d438d13726d572b80b24b5e36de32a35cecc6dd136f2211c9e9405514258d",
         "shoe": "slip-ons",
         "pose": "walk",
         "view": "front",
@@ -7219,7 +7219,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-walk-side.png",
-        "sha256": "1943b8a0df174456b661a04bf066c752384b82abe4828566cdf7898aa7a0ae85",
+        "sha256": "896d438d13726d572b80b24b5e36de32a35cecc6dd136f2211c9e9405514258d",
         "shoe": "slip-ons",
         "pose": "walk",
         "view": "side",
@@ -7227,7 +7227,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-walk-back.png",
-        "sha256": "1943b8a0df174456b661a04bf066c752384b82abe4828566cdf7898aa7a0ae85",
+        "sha256": "896d438d13726d572b80b24b5e36de32a35cecc6dd136f2211c9e9405514258d",
         "shoe": "slip-ons",
         "pose": "walk",
         "view": "back",
@@ -7235,7 +7235,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-walk-above-front.png",
-        "sha256": "1943b8a0df174456b661a04bf066c752384b82abe4828566cdf7898aa7a0ae85",
+        "sha256": "896d438d13726d572b80b24b5e36de32a35cecc6dd136f2211c9e9405514258d",
         "shoe": "slip-ons",
         "pose": "walk",
         "view": "above-front",
@@ -7243,7 +7243,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-three-quarter-front.png",
-        "sha256": "52ae1606a0aa83fdebe75dc80a0238f79961207982d2d061bc3d6eb16ceb88ea",
+        "sha256": "6f2cfd707f86541a34ce93f8eceb85b906cf08f91c99266c419afe1c22b93b7a",
         "shoe": "slip-ons",
         "pose": "three-quarter",
         "view": "front",
@@ -7251,7 +7251,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-three-quarter-side.png",
-        "sha256": "52ae1606a0aa83fdebe75dc80a0238f79961207982d2d061bc3d6eb16ceb88ea",
+        "sha256": "6f2cfd707f86541a34ce93f8eceb85b906cf08f91c99266c419afe1c22b93b7a",
         "shoe": "slip-ons",
         "pose": "three-quarter",
         "view": "side",
@@ -7259,7 +7259,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-three-quarter-back.png",
-        "sha256": "52ae1606a0aa83fdebe75dc80a0238f79961207982d2d061bc3d6eb16ceb88ea",
+        "sha256": "6f2cfd707f86541a34ce93f8eceb85b906cf08f91c99266c419afe1c22b93b7a",
         "shoe": "slip-ons",
         "pose": "three-quarter",
         "view": "back",
@@ -7267,7 +7267,7 @@
       },
       {
         "path": "footwear-occlusion/slip-ons-three-quarter-above-front.png",
-        "sha256": "52ae1606a0aa83fdebe75dc80a0238f79961207982d2d061bc3d6eb16ceb88ea",
+        "sha256": "6f2cfd707f86541a34ce93f8eceb85b906cf08f91c99266c419afe1c22b93b7a",
         "shoe": "slip-ons",
         "pose": "three-quarter",
         "view": "above-front",
@@ -7275,7 +7275,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-neutral-front.png",
-        "sha256": "85fa9cc62e79f8d1f22380b975f99a20a1e5908bf18d3353a86aa283adab0a74",
+        "sha256": "ef146edce337fb6e28f842523c6829207d05ef1e8512ce6070a843cccfe756a9",
         "shoe": "barefoot",
         "pose": "neutral",
         "view": "front",
@@ -7283,7 +7283,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-neutral-side.png",
-        "sha256": "85fa9cc62e79f8d1f22380b975f99a20a1e5908bf18d3353a86aa283adab0a74",
+        "sha256": "ef146edce337fb6e28f842523c6829207d05ef1e8512ce6070a843cccfe756a9",
         "shoe": "barefoot",
         "pose": "neutral",
         "view": "side",
@@ -7291,7 +7291,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-neutral-back.png",
-        "sha256": "85fa9cc62e79f8d1f22380b975f99a20a1e5908bf18d3353a86aa283adab0a74",
+        "sha256": "ef146edce337fb6e28f842523c6829207d05ef1e8512ce6070a843cccfe756a9",
         "shoe": "barefoot",
         "pose": "neutral",
         "view": "back",
@@ -7299,7 +7299,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-neutral-above-front.png",
-        "sha256": "85fa9cc62e79f8d1f22380b975f99a20a1e5908bf18d3353a86aa283adab0a74",
+        "sha256": "ef146edce337fb6e28f842523c6829207d05ef1e8512ce6070a843cccfe756a9",
         "shoe": "barefoot",
         "pose": "neutral",
         "view": "above-front",
@@ -7307,7 +7307,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-fashion-front.png",
-        "sha256": "f60950bb3dd07b91fd7eb67020c8f08e5785495b1b4d6eb0c8f31dabbc3f4d3b",
+        "sha256": "cca604f1c222d2cd46eaeb7d0a3d5f64a50e79c40f0c2b7a82ff4d1266c63d69",
         "shoe": "barefoot",
         "pose": "fashion",
         "view": "front",
@@ -7315,7 +7315,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-fashion-side.png",
-        "sha256": "f60950bb3dd07b91fd7eb67020c8f08e5785495b1b4d6eb0c8f31dabbc3f4d3b",
+        "sha256": "cca604f1c222d2cd46eaeb7d0a3d5f64a50e79c40f0c2b7a82ff4d1266c63d69",
         "shoe": "barefoot",
         "pose": "fashion",
         "view": "side",
@@ -7323,7 +7323,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-fashion-back.png",
-        "sha256": "f60950bb3dd07b91fd7eb67020c8f08e5785495b1b4d6eb0c8f31dabbc3f4d3b",
+        "sha256": "cca604f1c222d2cd46eaeb7d0a3d5f64a50e79c40f0c2b7a82ff4d1266c63d69",
         "shoe": "barefoot",
         "pose": "fashion",
         "view": "back",
@@ -7331,7 +7331,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-fashion-above-front.png",
-        "sha256": "f60950bb3dd07b91fd7eb67020c8f08e5785495b1b4d6eb0c8f31dabbc3f4d3b",
+        "sha256": "cca604f1c222d2cd46eaeb7d0a3d5f64a50e79c40f0c2b7a82ff4d1266c63d69",
         "shoe": "barefoot",
         "pose": "fashion",
         "view": "above-front",
@@ -7339,7 +7339,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-hip-front.png",
-        "sha256": "96aaf2ca08b06a670b07f0ee25d31ddb53feb17be9800401941a7522cb16571d",
+        "sha256": "78e1571d67a5534ebd1069ea5ee77111ddb5cf19af00c6aacec0947d55db9e93",
         "shoe": "barefoot",
         "pose": "hip",
         "view": "front",
@@ -7347,7 +7347,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-hip-side.png",
-        "sha256": "96aaf2ca08b06a670b07f0ee25d31ddb53feb17be9800401941a7522cb16571d",
+        "sha256": "78e1571d67a5534ebd1069ea5ee77111ddb5cf19af00c6aacec0947d55db9e93",
         "shoe": "barefoot",
         "pose": "hip",
         "view": "side",
@@ -7355,7 +7355,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-hip-back.png",
-        "sha256": "96aaf2ca08b06a670b07f0ee25d31ddb53feb17be9800401941a7522cb16571d",
+        "sha256": "78e1571d67a5534ebd1069ea5ee77111ddb5cf19af00c6aacec0947d55db9e93",
         "shoe": "barefoot",
         "pose": "hip",
         "view": "back",
@@ -7363,7 +7363,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-hip-above-front.png",
-        "sha256": "96aaf2ca08b06a670b07f0ee25d31ddb53feb17be9800401941a7522cb16571d",
+        "sha256": "78e1571d67a5534ebd1069ea5ee77111ddb5cf19af00c6aacec0947d55db9e93",
         "shoe": "barefoot",
         "pose": "hip",
         "view": "above-front",
@@ -7371,7 +7371,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-walk-front.png",
-        "sha256": "6c903224cdc4e50b75120337ef5848e1a9cf6e656a1a95cd38e4bb574a4406ff",
+        "sha256": "f830631bf069fbdaf34313e240cef99865e5835f679f862d2196176683217f54",
         "shoe": "barefoot",
         "pose": "walk",
         "view": "front",
@@ -7379,7 +7379,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-walk-side.png",
-        "sha256": "6c903224cdc4e50b75120337ef5848e1a9cf6e656a1a95cd38e4bb574a4406ff",
+        "sha256": "f830631bf069fbdaf34313e240cef99865e5835f679f862d2196176683217f54",
         "shoe": "barefoot",
         "pose": "walk",
         "view": "side",
@@ -7387,7 +7387,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-walk-back.png",
-        "sha256": "6c903224cdc4e50b75120337ef5848e1a9cf6e656a1a95cd38e4bb574a4406ff",
+        "sha256": "f830631bf069fbdaf34313e240cef99865e5835f679f862d2196176683217f54",
         "shoe": "barefoot",
         "pose": "walk",
         "view": "back",
@@ -7395,7 +7395,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-walk-above-front.png",
-        "sha256": "6c903224cdc4e50b75120337ef5848e1a9cf6e656a1a95cd38e4bb574a4406ff",
+        "sha256": "f830631bf069fbdaf34313e240cef99865e5835f679f862d2196176683217f54",
         "shoe": "barefoot",
         "pose": "walk",
         "view": "above-front",
@@ -7403,7 +7403,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-three-quarter-front.png",
-        "sha256": "ed0f764c5fb8ce8e78df1c96c2aca659e9f9f1c367af9ead37d63c73c1276c74",
+        "sha256": "4f9a89767bb39838ea49452a068ac7b3a730d6e6db7c0b0ae473bddba868aa59",
         "shoe": "barefoot",
         "pose": "three-quarter",
         "view": "front",
@@ -7411,7 +7411,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-three-quarter-side.png",
-        "sha256": "ed0f764c5fb8ce8e78df1c96c2aca659e9f9f1c367af9ead37d63c73c1276c74",
+        "sha256": "4f9a89767bb39838ea49452a068ac7b3a730d6e6db7c0b0ae473bddba868aa59",
         "shoe": "barefoot",
         "pose": "three-quarter",
         "view": "side",
@@ -7419,7 +7419,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-three-quarter-back.png",
-        "sha256": "ed0f764c5fb8ce8e78df1c96c2aca659e9f9f1c367af9ead37d63c73c1276c74",
+        "sha256": "4f9a89767bb39838ea49452a068ac7b3a730d6e6db7c0b0ae473bddba868aa59",
         "shoe": "barefoot",
         "pose": "three-quarter",
         "view": "back",
@@ -7427,7 +7427,7 @@
       },
       {
         "path": "footwear-occlusion/barefoot-three-quarter-above-front.png",
-        "sha256": "ed0f764c5fb8ce8e78df1c96c2aca659e9f9f1c367af9ead37d63c73c1276c74",
+        "sha256": "4f9a89767bb39838ea49452a068ac7b3a730d6e6db7c0b0ae473bddba868aa59",
         "shoe": "barefoot",
         "pose": "three-quarter",
         "view": "above-front",
