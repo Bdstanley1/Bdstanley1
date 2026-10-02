@@ -28,7 +28,7 @@ for(let i=0;i<data.mesh.positions.length/3;i++){
   assert(clearance>=-1e-7,'Radially offset garment front vertex projects behind intact body');
   checked++;minimum=Math.min(minimum,clearance);
  }
- const h=y/data.height,ax=Math.abs(x),t=Math.max(0,Math.min(1,(h-.64)/.207)),side=h<.64?.218:.218-.080*Math.pow(t,.72),neck=data.height*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y,top=data.height*(.847-Math.max(0,ax-.06)*.23)-y;
+ const h=y/data.height,ax=Math.abs(x),t=Math.max(0,Math.min(1,(h-.64)/.207)),side=h<.64?.218:.218-.080*Math.pow(t,.72),neck=data.height*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y,shoulderT=Math.max(0,Math.min(1,(ax-.045)/.115)),shoulderS=shoulderT*shoulderT*(3-2*shoulderT),top=data.height*(.847-.023*shoulderS)-y;
  if(y-data.height*.553>=0&&top>=0&&side-ax>=0&&neck>=0){
   const clearance=Math.hypot(ox,oz)-Math.hypot(x,z);
   assert(clearance>=.005,'Radial vest clearance fell below 5 mm at a retained source vertex');
@@ -36,4 +36,20 @@ for(let i=0;i<data.mesh.positions.length/3;i++){
  }
 }
 assert(checked>100&&radialChecked>500);
+
+// The shoulder cap must be C1-smooth at both transition points.  This guards
+// against the visible angular shoulder step that a piecewise flat/linear cap
+// produced in actual detail renders.  It is a rendering boundary invariant,
+// not a physical garment-fit claim.
+const shoulderCap=ax=>{const t=Math.max(0,Math.min(1,(Math.abs(ax)-.045)/.115)),s=t*t*(3-2*t);return .847-.023*s;};
+const capSamples=Array.from({length:117},(_,i)=>shoulderCap(.044+i*.001));
+for(let i=1;i<capSamples.length;i++)assert(capSamples[i]<=capSamples[i-1]+1e-12,'Shoulder cap must descend monotonically toward the armhole');
+assert(Math.abs(shoulderCap(.045)-.847)<1e-12);
+assert(Math.abs(shoulderCap(.160)-.824)<1e-12);
+const d=.0001,innerSlope=Math.abs((shoulderCap(.045+d)-shoulderCap(.045-d))/(2*d)),outerSlope=Math.abs((shoulderCap(.160+d)-shoulderCap(.160-d))/(2*d));
+assert(innerSlope<.002&&outerSlope<.002,'Shoulder cap transition slope is not visually smooth');
+const runtimePatches=fs.readFileSync(path.join(root,'patches/runtime.json'),'utf8');
+assert.equal((runtimePatches.match(/\.847-\.023\*s/g)||[]).length,2,'Vest clip and binding shoulder caps must stay synchronized');
+assert.equal((runtimePatches.match(/\(ax-\.045\)\/\.115/g)||[]).length,2,'Vest clip and binding shoulder transition ranges must stay synchronized');
+
 console.log('BOUNDARY_GEOMETRY_RESULTS '+JSON.stringify({upper_body_triangles_retained:upperTriangles,front_vertex_projections_checked:checked,minimum_front_vertex_z_projection_clearance_metres:minimum,radial_vest_vertices_checked:radialChecked,minimum_radial_vest_clearance_metres:radialMinimum,limitations:'Source-vertex radial clearance is not triangle collision testing, pose clearance or physical garment-fit validation',physical_fit_validated:false}));
