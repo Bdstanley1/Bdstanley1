@@ -64,6 +64,49 @@ function refineTextileSurface(m) {
   return out;
 }
 
+// Increase tessellation only around analytic garment cut fields before clipping.
+// This reduces visible polygon faceting at armholes/neckline without changing the body mesh.
+// Interpolated skin weights remain normalized; this is visual geometry, not physical-fit validation.
+function subdivideTextileClipBoundary(m, fields, passes=2, band=.022) {
+  let current=m;
+  const vertex=(mesh,id)=>({
+    p:mesh.positions.slice(id*3,id*3+3),
+    n:mesh.normals.slice(id*3,id*3+3),
+    u:mesh.uv.slice(id*2,id*2+2),
+    i:mesh.skinIndex.slice(id*4,id*4+4),
+    w:mesh.skinWeight.slice(id*4,id*4+4)
+  });
+  const mix=(a,b)=>{
+    const weights=new Map();
+    for(let k=0;k<4;k++){
+      weights.set(a.i[k],(weights.get(a.i[k])||0)+.5*a.w[k]);
+      weights.set(b.i[k],(weights.get(b.i[k])||0)+.5*b.w[k]);
+    }
+    const top=[...weights].filter(q=>q[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,4);
+    const total=top.reduce((sum,q)=>sum+q[1],0)||1;
+    while(top.length<4)top.push([0,0]);
+    const n=a.n.map((v,k)=>(v+b.n[k])*.5), nl=Math.hypot(...n)||1;
+    return {p:a.p.map((v,k)=>(v+b.p[k])*.5),n:n.map(v=>v/nl),u:a.u.map((v,k)=>(v+b.u[k])*.5),i:top.map(q=>q[0]),w:top.map(q=>q[1]/total)};
+  };
+  for(let pass=0;pass<passes;pass++){
+    const positions=[],normals=[],uv=[],skinIndex=[],skinWeight=[],indices=[];
+    const emit=v=>{const total=v.w.reduce((sum,x)=>sum+x,0)||1;positions.push(...v.p);normals.push(...v.n);uv.push(...v.u);skinIndex.push(...v.i);skinWeight.push(...v.w.map(x=>x/total));indices.push(indices.length);};
+    for(let t=0;t<current.indices.length;t+=3){
+      const tri=current.indices.slice(t,t+3).map(id=>vertex(current,id));
+      const near=fields.some(field=>{
+        const q=tri.map(v=>field(...v.p)), lo=Math.min(...q), hi=Math.max(...q);
+        return lo<=0&&hi>=0 || Math.min(...q.map(Math.abs))<band;
+      });
+      if(!near){tri.forEach(emit);continue;}
+      const [a,b,c]=tri,ab=mix(a,b),bc=mix(b,c),ca=mix(c,a);
+      for(const face of [[a,ab,ca],[ab,b,bc],[ca,bc,c],[ab,bc,ca]])face.forEach(emit);
+    }
+    current={positions,normals,uv,skinIndex,skinWeight,indices};
+    band*=.55;
+  }
+  return current;
+}
+
 // Apply uniform artistic torso clearance in the horizontal radial plane.
 // This avoids turning local triangulation-normal variation into a scalloped garment cut edge.
 // It remains a visual envelope, not a cloth-pressure or physical-fit solver.
