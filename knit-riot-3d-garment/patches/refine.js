@@ -45,7 +45,8 @@ function refineTextileSurface(m) {
     const v=pos.get(k), [x,y,z]=v, r=Math.max(0,Math.min(43.999,(y-1.02)/.008));
     const peak=blurred[Math.floor(r)]*(1-r%1)+blurred[Math.floor(r)+1]*(r%1);
     const envelope=peak*Math.sqrt(Math.max(0,1-Math.pow(Math.abs(x)/.215,4)));
-    v[2]=z+weight(x,y,z)*(envelope-z);
+    // Broad artistic clearance, not nipple-shaped point corrections or body deletion.
+    v[2]=z+weight(x,y,z)*(envelope-z+.003);
     for(const i of copies.get(k)) for(let a=0;a<3;a++) out.positions[3*i+a]=v[a];
   }
   const normals=new Map(ids.map(k=>[k,[0,0,0]])), p=out.positions;
