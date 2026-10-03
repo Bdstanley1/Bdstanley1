@@ -1,0 +1,7 @@
+[
+  {
+    "name": "omit inner shoulder join from edge binding",
+    "before": "outerTop=Math.max(axa,axb)>.095&&Math.max(yna,ynb)>.810;return !(ta&&tb)&&!((ta||tb)&&outerTop)",
+    "after": "outerTop=Math.max(axa,axb)>.095&&Math.max(yna,ynb)>.810,innerTop=Math.max(axa,axb)<.095&&Math.max(yna,ynb)>.827;return !(ta&&tb)&&!((ta||tb)&&outerTop)&&!innerTop"
+  }
+]
