@@ -72,6 +72,6 @@
   {
     "name": "coherent root-faded hair style deformation",
     "before": "if(k==='length'||k==='hairStyle'){let p=hair.geometry.attributes.position;for(let i=0;i<p.count;i++){let x=hairBase[i*3],y=hairBase[i*3+1],z=hairBase[i*3+2];let f=Math.max(0,1.66-y);if(state.hairStyle==='straight')x*=.93;if(state.hairStyle==='curly'){x+=.008*Math.sin(y*100+z*45);z+=.006*Math.cos(y*112+x*25);}p.setXYZ(i,x,y>=1.66?y:1.66-f*state.length,z);}p.needsUpdate=true;hair.geometry.computeVertexNormals();}",
-    "after": "if(k==='length'||k==='hairStyle'){let p=hair.geometry.attributes.position;for(let i=0;i<p.count;i++){let x=hairBase[i*3],y=hairBase[i*3+1],z=hairBase[i*3+2],f=Math.max(0,1.66-y),t=Math.max(0,Math.min(1,f/.30));if(state.hairStyle==='straight'){x*=1-.055*t;z*=1-.018*t;}if(state.hairStyle==='curly'){let phase=(1.66-y)*42+Math.atan2(z,x)*1.15,a=.0038*t;x=(x+a*Math.sin(phase))*(1+.04*t);z+=a*.72*Math.cos(phase);}p.setXYZ(i,x,y>=1.66?y:1.66-f*state.length,z);}p.needsUpdate=true;hair.geometry.computeVertexNormals();}"
+    "after": "if(k==='length'||k==='hairStyle'){let p=hair.geometry.attributes.position;for(let i=0;i<p.count;i++){let x=hairBase[i*3],y=hairBase[i*3+1],z=hairBase[i*3+2],f=Math.max(0,1.66-y),u=Math.max(0,Math.min(1,(f-.04)/.26)),t=u*u*(3-2*u);if(state.hairStyle==='straight'){x*=1-.12*t;z*=1-.045*t;}if(state.hairStyle==='curly'){let phase=f*58+z*22,a=.0062*t;x=(x+a*Math.sin(phase))*(1+.10*t);z+=.0048*t*Math.cos(f*62+x*15);}p.setXYZ(i,x,y>=1.66?y:1.66-f*state.length,z);}p.needsUpdate=true;hair.geometry.computeVertexNormals();}"
   }
 ]
