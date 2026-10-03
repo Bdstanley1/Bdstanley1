@@ -3,27 +3,31 @@
   "owner": "current interactive Knit Riot control session",
   "acquired_at_utc": "2026-10-03T08:25:00Z",
   "lease_until_utc": "2026-10-03T10:25:00Z",
-  "session_result": "ACTIVE: resumed after prior lease expiry; reconciling current GitHub head/evidence with verified staging before further implementation",
+  "session_result": "ACTIVE: hair-normal candidate reconciled and promoted as canonical tested source; staging still serves previous canonical pending guarded publication and independent delivery verification",
   "project_repository": "Bdstanley1/Bdstanley1",
   "project_path": "knit-riot-3d-garment",
   "coordination_protocol": "COORDINATION_LOCK.md single-writer lease; chat title alone is not authority",
   "canonical": {
-    "product_source_commit": "2a981f207c2643f993b76fec6f24ec20d87d93f8",
-    "evidence_commit": "fb1c1e261083d646163a9ac1b72c05a1abd99246",
-    "app_sha256": "a165ab2eb31dfff89ed2cedfcfe8af02b5954f165b66a1d33ace584bb5865afc",
-    "workflow_run_id": "37085768033",
+    "product_source_commit": "3cc585e40dacf1bfdd7470688fc95464e818ca18",
+    "evidence_commit": "7d0861324a4d659a3c89de277a36ccfaa8f36426",
+    "app_sha256": "46f273b770cc5102e1b78c4bb51e67f0906fd0c8a7086382cc059701bc507dbc",
+    "workflow_run_id": "37089473942",
     "workflow_conclusion": "success",
-    "rendered_review_artifact_id": 11260419549,
-    "rendered_review_artifact_sha256": "27837701d22747ac3a5c55d86dce93850d8101880b4b18afb1917cecf796a5a2",
-    "pinned_source_artifact_id": 11260910193,
-    "pinned_source_artifact_sha256": "9d429992cb13f491dcd2c78484b327f69fd8b8825e41c7454b0a5da178e43af8",
+    "rendered_review_artifact_id": 11262112796,
+    "rendered_review_artifact_sha256": "ce92b930c5176953113fefc82a3529e42c3b3a8b1810f31e0307bd86b0c0ea05",
+    "pinned_source_artifact_id": 11261938152,
+    "pinned_source_artifact_sha256": "b4136f86a61860ccd2412038922085254ec2602f76aafcf3e9826b990514049d",
     "selection_grid_rendered": 420,
     "appearance_pairwise_cases": 31,
     "appearance_value_pairs_covered": 284,
+    "hair_closeup_renders": 108,
+    "footwear_normal_renders": 40,
+    "footwear_diagnostic_renders": 40,
     "binding_closeup_renders": 15,
     "glb_meshes": 21,
     "glb_compared_deformed_vertices": 60353,
     "glb_maximum_world_deviation_metres": 0.0000016971415172588268,
+    "hair_normal_map_sha256": "3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0",
     "errors": [],
     "capture_errors": [],
     "physical_hardware_tested": false
@@ -31,7 +35,7 @@
   "reconciliation": {
     "pre_overlap_audit_reference": "9330155e1a4d274e7c110d6b4109bdf2bd3b45cc",
     "conclusion": "Git history remained linear. Later source work is cumulatively included in canonical commit 2a981f and passed the full current regression. Evidence-only commits are not treated as product source. Failed/intermediate states remain history.",
-    "actual_visual_inspection": "Downloaded artifact digest matched GitHub. Inspected binding atlas and front/side/back renders. The specific residual inner-shoulder binding tab targeted by 2a981f is not apparent in reviewed views; overall avatar/garment realism remains unapproved.",
+    "actual_visual_inspection": "Inspected complete 108-case candidate hair atlas, native representative front/side frames, and before/after desktop detail. Normal-map change is modest and localized to hair in the representative comparison with no observed face/skin/garment spillover. Hair remains visibly coarse/card/ribbon based, so overall realism remains unapproved.",
     "limits": "Green CI and serialization agreement are not physical fit, measurement accuracy, real-device validation, or overall visual approval."
   },
   "render": {
@@ -56,7 +60,10 @@
     "preserved_v09b_service": "srv-datindfavr4c73dn25g0",
     "v09b_release_approved": false,
     "env_update_triggers_deploy": true,
-    "delivery_verified": true
+    "delivery_verified": true,
+    "pending_project_commit": "3cc585e40dacf1bfdd7470688fc95464e818ca18",
+    "pending_app_sha256": "46f273b770cc5102e1b78c4bb51e67f0906fd0c8a7086382cc059701bc507dbc",
+    "delivery_verified_for_pending": false
   },
   "remaining_scope": [
     "Complete exhaustive dedicated hair close-up QA (108 renders) and visually inspect the actual results.",
@@ -78,9 +85,9 @@
   },
   "renewed_at_utc": "2026-10-03T08:25:00Z",
   "active_work": {
-    "hair_closeup_qa": "tools/qa_hair.py is now wired into render_test.py for exhaustive 6 colors x 3 styles x 3 lengths x 2 views = 108 actual closeups; latest all-changes regression is queued/running through GitHub Actions.",
-    "hair_normal_map": "source archive/member provenance and deterministic iCCP-only repair are verified; fixture recovery workflow is being hardened for concurrent main updates before runtime integration.",
-    "local_candidate": "normal-map integration candidate builds and passes JavaScript syntax/checksum assembly locally with repaired map SHA256 3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0; not yet canonical or visually approved.",
-    "interactive_resume": "Writer lease reacquired after expiry. Current repository head contains later Ashley May normal-map integration and evidence commits above the stale handoff; verify exact tested source/evidence before promoting canonical or staging."
+    "hair_closeup_qa": "Completed: 108/108 actual closeups, exhaustive 6 colors x 3 styles x 3 length boundary/default values x front/side. No JS/capture errors; visual realism not approved.",
+    "hair_normal_map": "Retained in canonical tested source after checksum/provenance verification and actual before/after inspection. Runtime repaired fixture SHA256 3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0.",
+    "visual_defect": "Dominant remaining hair defect is coarse card/ribbon/clump geometry and silhouette transitions; continue actual-render repair.",
+    "staging": "Previous canonical remains live until guarded env-pin deployment and independent HTTPS verification of 3cc585e / 46f273b."
   }
 }
