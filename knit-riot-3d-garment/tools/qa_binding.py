@@ -1,6 +1,7 @@
 """Capture durable actual-render evidence for vest bindings across every implemented pose and camera preset."""
 import base64
 import hashlib
+import json
 import pathlib
 from PIL import Image, ImageStat
 
@@ -26,15 +27,18 @@ def run_binding_closeups(page, qa_dir, checks):
             evidence.append({
                 'path':'binding-closeups/'+name,
                 'sha256':hashlib.sha256(raw).hexdigest(),
+                'pixel_size':list(image.size),
                 'rgb_standard_deviation':deviation,
                 'nonuniform':max(deviation)>=1
             })
-    checks['binding_closeups']={
+    summary={
         'coverage':'exhaustive 5 implemented poses x 3 front/side/back camera presets',
         'executed_renders':len(evidence),
         'hardware':'software-rendered Chromium only',
         'evidence':evidence
     }
+    checks['binding_closeups']=summary
+    (pathlib.Path(qa_dir)/'binding-closeups-manifest.json').write_text(json.dumps(summary,indent=2))
     if len(evidence)!=15:
         checks['errors'].append('15-frame exhaustive binding close-up coverage incomplete')
     if any(not item['nonuniform'] for item in evidence):

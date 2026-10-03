@@ -51,5 +51,11 @@ assert(innerSlope<.002&&outerSlope<.002,'Shoulder cap transition slope is not vi
 const runtimePatches=fs.readFileSync(path.join(root,'patches/runtime.json'),'utf8');
 assert.equal((runtimePatches.match(/\.847-\.023\*s/g)||[]).length,2,'Vest clip and binding shoulder caps must stay synchronized');
 assert.equal((runtimePatches.match(/\(ax-\.045\)\/\.115/g)||[]).length,2,'Vest clip and binding shoulder transition ranges must stay synchronized');
+const finishPatches=JSON.parse(fs.readFileSync(path.join(root,'patches/finish.json'),'utf8'));
+assert.equal(finishPatches.length,1,'Expected one bounded final finishing patch');
+assert.match(finishPatches[0].after,/innerTop/,'Inner shoulder join suppression must remain explicit');
+assert(runtimePatches.includes(finishPatches[0].before),'Finishing patch must target the assembled binding boundary context');
+const builder=fs.readFileSync(path.join(root,'tools/build_runtime.py'),'utf8');
+assert(builder.includes("ROOT/'patches/finish.json'"),'Final finishing patch must be registered by build_runtime.py');
 
 console.log('BOUNDARY_GEOMETRY_RESULTS '+JSON.stringify({upper_body_triangles_retained:upperTriangles,front_vertex_projections_checked:checked,minimum_front_vertex_z_projection_clearance_metres:minimum,radial_vest_vertices_checked:radialChecked,minimum_radial_vest_clearance_metres:radialMinimum,limitations:'Source-vertex radial clearance is not triangle collision testing, pose clearance or physical garment-fit validation',physical_fit_validated:false}));

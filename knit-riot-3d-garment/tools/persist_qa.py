@@ -15,18 +15,19 @@ assert result['extended']['passed'] and result['extended']['rendered_combination
 assert result['footwear_closeups']['executed_renders']==40
 assert result['footwear_occlusion']['executed_renders']==40
 assert result['footwear_occlusion']['closed_shoe_exposed_probe_pixels']==0
+assert result['binding_closeups']['executed_renders']==15
 validation=root/'validation'
 validation.mkdir(exist_ok=True)
 # Start empty; no previously published image may inherit a new candidate's provenance.
 with tempfile.TemporaryDirectory(prefix='.qa-evidence-',dir=validation) as temporary:
     out=Path(temporary)/'latest'
     out.mkdir()
-    names=['results.json','evidence-manifest.json','desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-original.png','glb-reloaded-front.png','glb-reloaded-detail.png','footwear-slip-ons.png','footwear-slip-ons-side.png','footwear-barefoot.png','footwear-barefoot-side.png','footwear-closeups-rendered.png','footwear-closeups-manifest.json','footwear-occlusion-rendered.png','footwear-occlusion-manifest.json']
+    names=['results.json','evidence-manifest.json','desktop-detail.png','desktop-neutral-front.png','desktop-neutral-side.png','desktop-neutral-back.png','desktop-hip-front.png','phone-neutral-front.png','glb-original.png','glb-reloaded-front.png','glb-reloaded-detail.png','footwear-slip-ons.png','footwear-slip-ons-side.png','footwear-barefoot.png','footwear-barefoot-side.png','footwear-closeups-rendered.png','footwear-closeups-manifest.json','footwear-occlusion-rendered.png','footwear-occlusion-manifest.json','binding-closeups-manifest.json']
     for name in names:
         shutil.copyfile(source/name,out/name)
-    for key,folder in [('footwear_closeups','footwear-closeups'),('footwear_occlusion','footwear-occlusion')]:
+    for key,folder,expected in [('footwear_closeups','footwear-closeups',40),('footwear_occlusion','footwear-occlusion',40),('binding_closeups','binding-closeups',15)]:
         records=result[key]['evidence']
-        assert len(records)==40 and len({r['path'] for r in records})==40
+        assert len(records)==expected and len({r['path'] for r in records})==expected
         for record in records:
             relative=Path(record['path'])
             assert not relative.is_absolute() and '..' not in relative.parts
@@ -53,6 +54,9 @@ with tempfile.TemporaryDirectory(prefix='.qa-evidence-',dir=validation) as tempo
 
     atlas(result['extended']['render_sweep']['rendered_frames'],'all-420-rendered-cases.png',20,160,240)
     atlas(result['appearance_pairwise']['evidence'],'appearance-pairwise-rendered.png',8,240,360)
+    binding_records=result['binding_closeups']['evidence']
+    binding_size=Image.open(source/binding_records[0]['path']).size
+    atlas(binding_records,'binding-closeups-rendered.png',5,*binding_size)
     metadata={'tested_commit':os.environ['GITHUB_SHA'],'workflow_run_id':os.environ['GITHUB_RUN_ID'],'app_sha256':result['app_sha256'],'release_status':'HOLD','visual_approval':False,'physical_fit_validated':False,'hardware_tested':False,'files':[]}
     for path in sorted(out.rglob('*')):
         if path.is_file():
