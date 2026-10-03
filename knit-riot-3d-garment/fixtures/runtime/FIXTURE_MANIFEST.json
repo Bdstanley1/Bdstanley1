@@ -44,13 +44,18 @@
     },
     {
       "path": "asset-manifest.json",
-      "bytes": 10601,
-      "sha256": "2e3ca80291b82b7514f452335a8f4f1bbf852cac40312cf3fe3fc776a4be6daf"
+      "bytes": 11198,
+      "sha256": "81364b5026d1835ed2303359e60b217f266751b6276ba9b38297c31eaebaa4a3"
     },
     {
       "path": "assets/body.json",
       "bytes": 2761454,
       "sha256": "2e46bb126a4cb9778845e02003e1aca50c5b91708815b51f0365db07a9344770"
+    },
+    {
+      "path": "assets/hair-normal.png",
+      "bytes": 1366452,
+      "sha256": "3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0"
     },
     {
       "path": "assets/hair.json",
