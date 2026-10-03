@@ -66,6 +66,8 @@ jobs:
             knit-riot-3d-garment/test-runtime/qa/publication-result.json
             knit-riot-3d-garment/test-runtime/qa/footwear-closeups-manifest.json
             knit-riot-3d-garment/test-runtime/qa/footwear-closeups/*.png
+            knit-riot-3d-garment/test-runtime/qa/hair-closeups-manifest.json
+            knit-riot-3d-garment/test-runtime/qa/hair-closeups/*.png
             knit-riot-3d-garment/test-runtime/qa/*.png
             knit-riot-3d-garment/test-runtime/app.js
             knit-riot-3d-garment/test-runtime/REFINE_JS.txt
