@@ -3,5 +3,10 @@
     "name": "omit inner shoulder join from edge binding",
     "before": "outerTop=Math.max(axa,axb)>.095&&Math.max(yna,ynb)>.810;return !(ta&&tb)&&!((ta||tb)&&outerTop)",
     "after": "outerTop=Math.max(axa,axb)>.095&&Math.max(yna,ynb)>.810,innerTop=Math.max(axa,axb)<.095&&Math.max(yna,ynb)>.827;return !(ta&&tb)&&!((ta||tb)&&outerTop)&&!innerTop"
+  },
+  {
+    "name": "round shoulder-to-neckline join on garment surface",
+    "before": "const fields=[(x,y,z)=>y-H*.553,(x,y,z)=>shoulderField(x,y),(x,y,z)=>{const h=y/H,ax=Math.abs(x);return H*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y}];let vg=offsetTextileRadially(clipSubset(refineTextileSurface(m),fields,0),.015);",
+    "after": "const necklineField=(x,y,z)=>{const ax=Math.abs(x);return H*(z>0?.742+Math.min(1,ax/.095)*.115:.820+Math.min(1,ax/.105)*.045)-y},upperField=(x,y,z)=>{const a=shoulderField(x,y),b=necklineField(x,y,z),k=.018,d=Math.abs(a-b),q=Math.max(0,k-d);return Math.min(a,b)-q*q/(4*k)},fields=[(x,y,z)=>y-H*.553,(x,y,z)=>upperField(x,y,z)];let vg=offsetTextileRadially(clipSubset(refineTextileSurface(m),fields,0),.015);"
   }
 ]

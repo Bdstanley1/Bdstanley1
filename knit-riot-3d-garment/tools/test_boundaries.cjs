@@ -52,9 +52,14 @@ const runtimePatches=fs.readFileSync(path.join(root,'patches/runtime.json'),'utf
 assert.equal((runtimePatches.match(/\.847-\.023\*s/g)||[]).length,2,'Vest clip and binding shoulder caps must stay synchronized');
 assert.equal((runtimePatches.match(/\(ax-\.045\)\/\.115/g)||[]).length,2,'Vest clip and binding shoulder transition ranges must stay synchronized');
 const finishPatches=JSON.parse(fs.readFileSync(path.join(root,'patches/finish.json'),'utf8'));
-assert.equal(finishPatches.length,1,'Expected one bounded final finishing patch');
-assert.match(finishPatches[0].after,/innerTop/,'Inner shoulder join suppression must remain explicit');
-assert(runtimePatches.includes(finishPatches[0].before),'Finishing patch must target the assembled binding boundary context');
+assert.equal(finishPatches.length,2,'Expected two bounded final finishing patches');
+const bindingJoin=finishPatches.find(p=>p.name==='omit inner shoulder join from edge binding');
+const surfaceJoin=finishPatches.find(p=>p.name==='round shoulder-to-neckline join on garment surface');
+assert(bindingJoin&&surfaceJoin,'Both shoulder finishing patches must remain explicit');
+assert.match(bindingJoin.after,/innerTop/,'Inner shoulder binding suppression must remain explicit');
+assert.match(surfaceJoin.after,/k=\.018/,'Shoulder-to-neckline surface join must retain its bounded smooth-min radius');
+assert(runtimePatches.includes(bindingJoin.before),'Binding finishing patch must target the assembled boundary context');
+assert(runtimePatches.includes(surfaceJoin.before),'Surface finishing patch must target the assembled garment field context');
 const builder=fs.readFileSync(path.join(root,'tools/build_runtime.py'),'utf8');
 assert(builder.includes("ROOT/'patches/finish.json'"),'Final finishing patch must be registered by build_runtime.py');
 
