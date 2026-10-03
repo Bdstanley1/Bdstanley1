@@ -1,0 +1,217 @@
+{
+  "coverage": "exhaustive 5 implemented poses x 3 front/side/back camera presets",
+  "executed_renders": 15,
+  "hardware": "software-rendered Chromium only",
+  "evidence": [
+    {
+      "path": "binding-closeups/neutral-front.png",
+      "sha256": "6dc3511e6ef3c43c926bbefa72b89b1274953559b809045bd1930e8d1bb7d4bf",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        50.45494868885332,
+        55.93181026233581,
+        56.38889287145442
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/neutral-side.png",
+      "sha256": "d70114d8ed491d0a93ef69f29aec9a3781bd2d4e81dc040ad05189092e4e1ef4",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        55.693661633649285,
+        63.94169083023227,
+        65.77919735602866
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/neutral-back.png",
+      "sha256": "bd65d6e5c927a973e040c787f80f370c4cbde8d26984a5c869fd52dafc7648bd",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        68.8526864019477,
+        73.72200886739313,
+        74.0312837112859
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/fashion-front.png",
+      "sha256": "b94924b78ce08024e271e51cff9a9616fb716a23649e1bcb5a23392e89aa70d6",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        50.63002555193308,
+        55.989566208272294,
+        56.43017918049938
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/fashion-side.png",
+      "sha256": "e677bb4491f27bb0d9c07366d5d4ff1305097419790034bbc5a11258b22acc26",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        56.01060890993041,
+        64.16984462089748,
+        65.93130990806608
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/fashion-back.png",
+      "sha256": "22bfc4256b5793f1f0a24d089d6efafba3f96acacf993b99a10be8457594e3fe",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        68.63435721093718,
+        73.55316380405985,
+        73.93051348603326
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/hip-front.png",
+      "sha256": "0a1fdc69542666b1a0a3c2a2f963cafadcb191eba387e523984a15b9783d8203",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        50.85239429328355,
+        56.6893953496777,
+        57.37092073042736
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/hip-side.png",
+      "sha256": "10ac18affed1364a6edb4c99531aafff77ab8ba3c668f438fe00ea16631d4ca2",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        55.91994430781289,
+        64.33494112782884,
+        66.21877020509467
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/hip-back.png",
+      "sha256": "c4123906e6fafe7b6ca913ccc4915ceaea21d755c63a2f654f580077a69fb5d0",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        68.78275353040966,
+        73.75069452223858,
+        74.1628661123951
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/walk-front.png",
+      "sha256": "067eaa5cf45cee91a9a1a39ac7dc120b8cb6931f77696362fb67506e0d3c5b6a",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        50.45492014843329,
+        55.93179326107056,
+        56.38888153327069
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/walk-side.png",
+      "sha256": "4d4bb66b0cf8ee1f33b50d34df12df9ba8575212d4b722b817110c93606d7bb3",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        55.69362666491041,
+        63.94166974281205,
+        65.77918068834555
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/walk-back.png",
+      "sha256": "2a4f20723a4426083a5de6cfb2df6fff3425b38f9b050a7dec11cf36e37cbfd1",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        68.85269749013561,
+        73.72201740149855,
+        74.03128799112308
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/three-quarter-front.png",
+      "sha256": "e0030f60a6067b988b523b4eeaf3536323d5676067274a0d3b9fc5d2439327d7",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        50.804640684607556,
+        56.57097569251813,
+        57.23150262779372
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/three-quarter-side.png",
+      "sha256": "86a74626fcd669ee4961e16b9ca5a053d4a618bf932d158023c58c4c98047c03",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        60.16660480856557,
+        67.5836417132484,
+        68.98863176381818
+      ],
+      "nonuniform": true
+    },
+    {
+      "path": "binding-closeups/three-quarter-back.png",
+      "sha256": "199d12a0cfd07ad37a3b02cea5951f1112c63f9f2dc9e58c2f6d53456e283d2b",
+      "pixel_size": [
+        780,
+        764
+      ],
+      "rgb_standard_deviation": [
+        66.60228047166281,
+        71.87752183269149,
+        72.57869571021624
+      ],
+      "nonuniform": true
+    }
+  ]
+}
