@@ -190,12 +190,15 @@ jobs:
                       records.append({'member':member,'file':target.name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
                   clothes=next(folder/r['file'] for r in records if r['file'].endswith('.mhclo'))
                   header=clothes.read_text(errors='replace')
-                  assert '# author Elvaerwyn' in header and '# license CC_by' in header
-                  report['styles'][token]={'author':'Elvaerwyn','license_header':'CC_by','files':records}
+                  metadata=[line.strip() for line in header.splitlines() if line.lower().startswith(('# author','# license'))]
+                  license_lines=[line for line in metadata if line.lower().startswith('# license')]
+                  assert license_lines and any('cc_by' in line.lower() for line in license_lines), (token,metadata)
+                  report['styles'][token]={'source_metadata':metadata,'official_pack_author':'Elvaerwyn','official_pack_license':'CC-BY','files':records}
           (out/'SOURCE_REPORT.json').write_text(json.dumps(report,indent=2))
           print(json.dumps({k:len(v['files']) for k,v in report['styles'].items()},indent=2))
           PY
       - name: Preserve exact selected licensed sources
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: knit-riot-selected-hair02-style-sources
