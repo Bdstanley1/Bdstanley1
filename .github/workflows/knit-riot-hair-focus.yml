@@ -59,7 +59,16 @@ jobs:
           finally:
               server.shutdown()
           if len({r['sha256'] for r in records if r['path'].endswith('-front.png')})!=3:errors.append('Three hair styles did not produce three distinct front renders')
-          result={'tested_commit':__import__('os').environ['GITHUB_SHA'],'app_sha256':report['app_sha256'],'executed_renders':len(records),'coverage':'3 implemented styles x front/side at default brunette/default length','errors':errors,'visual_approval':False,'physical_hardware':False,'records':records}
+          base=Image.open(out/'wavy-front.png').convert('RGB')
+          style_effect={}
+          for style in ['straight','curly']:
+              other=Image.open(out/(style+'-front.png')).convert('RGB')
+              changed=0;total=base.width*base.height
+              for a,b in zip(base.getdata(),other.getdata()):
+                  if max(abs(a[i]-b[i]) for i in range(3))>5:changed+=1
+              style_effect[style]=changed/total
+              if style_effect[style]<.05:errors.append(style+' hair is not visually distinct enough from wavy in focused front render')
+          result={'tested_commit':__import__('os').environ['GITHUB_SHA'],'app_sha256':report['app_sha256'],'executed_renders':len(records),'coverage':'3 implemented styles x front/side at default brunette/default length','style_changed_pixel_fraction_gt5':style_effect,'errors':errors,'visual_approval':False,'physical_hardware':False,'records':records}
           (out/'results.json').write_text(json.dumps(result,indent=2))
           print(json.dumps({k:v for k,v in result.items() if k!='records'},indent=2))
           if errors or len(records)!=6:raise SystemExit(1)
