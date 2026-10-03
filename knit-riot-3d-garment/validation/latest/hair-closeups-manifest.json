@@ -229,7 +229,7 @@
   },
   {
     "path": "hair-closeups/836c57-curly-0p75-front.png",
-    "sha256": "85ed1eaffd852f37e78ba95f878d672e78a6f3ce7a2e29b3c7ac4df3a76b9cf0",
+    "sha256": "e6edb6adf8bee1f82214e1a5f1896940c8a297e851c6cf49a2e295788f4d40e5",
     "hair": "#836c57",
     "style": "curly",
     "length": 0.75,
@@ -248,7 +248,7 @@
   },
   {
     "path": "hair-closeups/836c57-curly-0p75-side.png",
-    "sha256": "c4cd6872c82d1b54a938918b6f0cad0eebd9343db55a69d0a43f4ffb2aa94914",
+    "sha256": "db2c35a407c16ec80196448fa21538482ede3b5b226202ef9d394d6e296818ce",
     "hair": "#836c57",
     "style": "curly",
     "length": 0.75,
@@ -267,7 +267,7 @@
   },
   {
     "path": "hair-closeups/836c57-curly-1p0-front.png",
-    "sha256": "91bc8d9e619328311a14744b00dcf2a99b8e5061e355296d9b41a07173f90fa7",
+    "sha256": "209a9a32c70428dc34123b83b7ae805d0788ac0506f3138404eca1fecf7593ab",
     "hair": "#836c57",
     "style": "curly",
     "length": 1.0,
@@ -286,7 +286,7 @@
   },
   {
     "path": "hair-closeups/836c57-curly-1p0-side.png",
-    "sha256": "4f3598575f32b6dcfa8b9738594314fcfd3107e9934ac2a03992146b0493c72f",
+    "sha256": "46543559c9a49e321c830471f65e7c5ed428b51a9e12e365933f9378fd87d296",
     "hair": "#836c57",
     "style": "curly",
     "length": 1.0,
@@ -305,7 +305,7 @@
   },
   {
     "path": "hair-closeups/836c57-curly-1p35-front.png",
-    "sha256": "cafb1316c86d28851b85119ec1df56639b7b3916734091471f1fc8f58bf538d1",
+    "sha256": "c336cbaca908dd0c04bd418ac7b5b00cb589f57f8a6923d57b34fd4d091406c7",
     "hair": "#836c57",
     "style": "curly",
     "length": 1.35,
@@ -324,7 +324,7 @@
   },
   {
     "path": "hair-closeups/836c57-curly-1p35-side.png",
-    "sha256": "30886824700d9c763b339c964ccefe77ea72c4f1cb94755c413c7f9b4bb6468c",
+    "sha256": "fc16d55f9b44be97cb61c061642da090145514272b96a2f00fcb3baf04cc0801",
     "hair": "#836c57",
     "style": "curly",
     "length": 1.35,
@@ -571,7 +571,7 @@
   },
   {
     "path": "hair-closeups/ffffff-curly-0p75-front.png",
-    "sha256": "791be9e70354bd9333e9c62bd3fc4dd0cbe420ebb165cbc73b072ed0c318bf59",
+    "sha256": "4a8ef1292f42e667e777bc7822bba70959ababb1ae5d8a33b9223d6346b5a569",
     "hair": "#ffffff",
     "style": "curly",
     "length": 0.75,
@@ -590,7 +590,7 @@
   },
   {
     "path": "hair-closeups/ffffff-curly-0p75-side.png",
-    "sha256": "23b85476f2a10d672dc5c8d878cee67db036771f1da4b6560242a23d86c538fb",
+    "sha256": "254cc9cfede5523e03ea56b649068a7a197a0a3100082c74908074c40be43cfb",
     "hair": "#ffffff",
     "style": "curly",
     "length": 0.75,
@@ -609,7 +609,7 @@
   },
   {
     "path": "hair-closeups/ffffff-curly-1p0-front.png",
-    "sha256": "85a641153362a8e1ff70360a18b4970bdb0ccb78035d16d6a0dc39442874b74c",
+    "sha256": "4d1dbcbfc41f39a9c8a6fdd544681de343eb9355600d3f63da2e10bc4eff45ba",
     "hair": "#ffffff",
     "style": "curly",
     "length": 1.0,
@@ -628,7 +628,7 @@
   },
   {
     "path": "hair-closeups/ffffff-curly-1p0-side.png",
-    "sha256": "8c0d4a0992830ee657d6ffa937eefa654a769f9f33de2c29c673681df9abf95c",
+    "sha256": "149991af8fec4a10b9a521435c0f703a75f7613ba4ddba638131a178534addfa",
     "hair": "#ffffff",
     "style": "curly",
     "length": 1.0,
@@ -647,7 +647,7 @@
   },
   {
     "path": "hair-closeups/ffffff-curly-1p35-front.png",
-    "sha256": "578733ae001f015415f217cb51363f536e34a115dca6e04d2f6d3f89ea8ac7e5",
+    "sha256": "505120b77de28ec73055d6f066bca65319d1b27f98ddabf3ed220d430a24372f",
     "hair": "#ffffff",
     "style": "curly",
     "length": 1.35,
@@ -666,7 +666,7 @@
   },
   {
     "path": "hair-closeups/ffffff-curly-1p35-side.png",
-    "sha256": "54a2c1c9e4ff7c87ae197a6bc291dd9a4903e0622f0f89e1e0ffcbecdb14ef74",
+    "sha256": "01e27513db87f28edc405c4bf0fa32db3724bb01d44ff23268de6ce95d442d56",
     "hair": "#ffffff",
     "style": "curly",
     "length": 1.35,
@@ -913,7 +913,7 @@
   },
   {
     "path": "hair-closeups/493025-curly-0p75-front.png",
-    "sha256": "a36107eeade59dbd4594e1c84a0f708c8cd0fe4be8bb862a38208e87d99b01bd",
+    "sha256": "b3023828ff4d94e9c1ac04124604c6ac476d381545a213f0723d46c870e906e0",
     "hair": "#493025",
     "style": "curly",
     "length": 0.75,
@@ -932,7 +932,7 @@
   },
   {
     "path": "hair-closeups/493025-curly-0p75-side.png",
-    "sha256": "a2655b65796aebeda68ae75385a58996017cb5a4b9cc2ac5a326b128aadfcccb",
+    "sha256": "3f0c05e91c0322e726169ee91f2ef562d75ea6ab976a4a2bb1fe36628522ff5d",
     "hair": "#493025",
     "style": "curly",
     "length": 0.75,
@@ -951,7 +951,7 @@
   },
   {
     "path": "hair-closeups/493025-curly-1p0-front.png",
-    "sha256": "2f56e433408eb00edf555a34629cb1e64dce8fcadc1c66e291bb0496c32d49cc",
+    "sha256": "0d4bd0051fe8f8f3bacb5cf532c1d663d3a4a2e6fcf3b1a824ed79dad70983b7",
     "hair": "#493025",
     "style": "curly",
     "length": 1.0,
@@ -970,7 +970,7 @@
   },
   {
     "path": "hair-closeups/493025-curly-1p0-side.png",
-    "sha256": "7f1c47597c5c2d24ca3ed5ec7990d280c2a10fbd5595f6138f082c3b8f6c746b",
+    "sha256": "385fb305b0019ced4f20c9cc38889008013b7eb05b67e39d774cfb4e8118a92f",
     "hair": "#493025",
     "style": "curly",
     "length": 1.0,
@@ -989,7 +989,7 @@
   },
   {
     "path": "hair-closeups/493025-curly-1p35-front.png",
-    "sha256": "7d41d07d67fa0cc2f8683d5017d91d1924d3286ffbd34353349710d3a82fbfac",
+    "sha256": "208281495b13b95c55de6e0e63995c59c1357861d2d9a96c9aa6938c63e3b2a5",
     "hair": "#493025",
     "style": "curly",
     "length": 1.35,
@@ -1008,7 +1008,7 @@
   },
   {
     "path": "hair-closeups/493025-curly-1p35-side.png",
-    "sha256": "1af84fcfab184f3b13fc2c90b9d79e35ad2e6ce258974f6e6d253c40c7f058a7",
+    "sha256": "89e943b0b5ac11b6087b9cb71ce4f1bf14a87f7592ef81c2f35ed1a80f5ad349",
     "hair": "#493025",
     "style": "curly",
     "length": 1.35,
@@ -1255,7 +1255,7 @@
   },
   {
     "path": "hair-closeups/201a16-curly-0p75-front.png",
-    "sha256": "9f0e71e21b073ee6dd39a7311833d258c6f4d00d83428672e31685c338e6e330",
+    "sha256": "ce9374adfcc584b76e894e06f0af3ddb70a3e7e13c9b5818a052dbe0c1b2d153",
     "hair": "#201a16",
     "style": "curly",
     "length": 0.75,
@@ -1274,7 +1274,7 @@
   },
   {
     "path": "hair-closeups/201a16-curly-0p75-side.png",
-    "sha256": "5777293bbc6d0d29c5ab98bd8bf5c15838fbe6ac7517573e3c6dd54d91f2daa3",
+    "sha256": "bf9e4f392deaed5903bf156b69249f4da54e67575e7d8db69f1d11407eb2eb78",
     "hair": "#201a16",
     "style": "curly",
     "length": 0.75,
@@ -1293,7 +1293,7 @@
   },
   {
     "path": "hair-closeups/201a16-curly-1p0-front.png",
-    "sha256": "95a0d45622103fa92466923252fbb4dfb09e7b822c235af476829225808a4f83",
+    "sha256": "a75a9037d8fe5a030ec27669a6a28830cac8707757929e07ba4d9e7a82563ff4",
     "hair": "#201a16",
     "style": "curly",
     "length": 1.0,
@@ -1312,7 +1312,7 @@
   },
   {
     "path": "hair-closeups/201a16-curly-1p0-side.png",
-    "sha256": "9996dc10e7566ddcc5d86543615f60209cc60e997a193eebe38fba2f81f2e541",
+    "sha256": "f0d97f3f9560bb99047e31b3e9691d46afaf1d31f48414dd626ed1cdb22d4955",
     "hair": "#201a16",
     "style": "curly",
     "length": 1.0,
@@ -1331,7 +1331,7 @@
   },
   {
     "path": "hair-closeups/201a16-curly-1p35-front.png",
-    "sha256": "096b46b0d4c4bc909e5b5f2a95d55b1774baf841263ed1ef83ebf70a8c8bae93",
+    "sha256": "422b127657f4ef0549d3321f26a93b61d1d6410015de6d39c2a1eddab653270a",
     "hair": "#201a16",
     "style": "curly",
     "length": 1.35,
@@ -1350,7 +1350,7 @@
   },
   {
     "path": "hair-closeups/201a16-curly-1p35-side.png",
-    "sha256": "6f4042f8e104247e6f8155972b481b3a76a983dc3964de044c893da6617d6cf5",
+    "sha256": "3777fffce9867249536e87eb10ecae427dc0f7c66af0bee46d140ccd0c0a18d6",
     "hair": "#201a16",
     "style": "curly",
     "length": 1.35,
@@ -1597,7 +1597,7 @@
   },
   {
     "path": "hair-closeups/ac7946-curly-0p75-front.png",
-    "sha256": "33d14a35bb18515ac43d0c3951de00bc509f32ed93f28e5d5446688108f32661",
+    "sha256": "f157b249558926c6e5881a30ab201e951e23182a03487170f923db5b29b99a1a",
     "hair": "#ac7946",
     "style": "curly",
     "length": 0.75,
@@ -1616,7 +1616,7 @@
   },
   {
     "path": "hair-closeups/ac7946-curly-0p75-side.png",
-    "sha256": "2be3a9dcc5e710b49b3ed223738acac0742bccfd05f33cb2259742298f96e990",
+    "sha256": "fd92f4564e2ef08df6a924fdf757a445e2c9ffdddb6e134494dc3ece5fd12e66",
     "hair": "#ac7946",
     "style": "curly",
     "length": 0.75,
@@ -1635,7 +1635,7 @@
   },
   {
     "path": "hair-closeups/ac7946-curly-1p0-front.png",
-    "sha256": "ed2ff516ef0a4b8611ce543c9821dea6e6d64104c10769d3923a21af4367dd35",
+    "sha256": "e640690ffa870c7f890ef3e02d1bf2b5662d58cd1934a8b2926de4327a3b1b7f",
     "hair": "#ac7946",
     "style": "curly",
     "length": 1.0,
@@ -1654,7 +1654,7 @@
   },
   {
     "path": "hair-closeups/ac7946-curly-1p0-side.png",
-    "sha256": "0065457407ea7693b01a002754776bdc421a3ec99f1cc7170ca34e7ced7ce2a4",
+    "sha256": "e2eef93fa66ab1a9d89485ac3287c30aebece4bc1a0e214cf0b5982792aeee50",
     "hair": "#ac7946",
     "style": "curly",
     "length": 1.0,
@@ -1673,7 +1673,7 @@
   },
   {
     "path": "hair-closeups/ac7946-curly-1p35-front.png",
-    "sha256": "44deabd6980efb5ee6f37d45cbdc3e0b2cc16821fdad74f21238b06ad1e7ff60",
+    "sha256": "14ce9b7c9ae1e0716b3814da2e95dc9f3ecc06dfcd298ee5619dd0ed8042b2ee",
     "hair": "#ac7946",
     "style": "curly",
     "length": 1.35,
@@ -1692,7 +1692,7 @@
   },
   {
     "path": "hair-closeups/ac7946-curly-1p35-side.png",
-    "sha256": "0a4e419519ec88dded07c1e6e80a704c069879ec8fa8fc33e08255b79613bb8b",
+    "sha256": "c518ed925cfd580b5b133b16496172fa242c82e378ba4d1527a22adb699492e2",
     "hair": "#ac7946",
     "style": "curly",
     "length": 1.35,
@@ -1939,7 +1939,7 @@
   },
   {
     "path": "hair-closeups/854629-curly-0p75-front.png",
-    "sha256": "765012bb8836201f55ea409f256113fe5a54ad208813548d3003f07500ca8938",
+    "sha256": "4d09356600ef2ee25c06a5e6b7a25b84b4258e13e0c774edf765172182bba2a7",
     "hair": "#854629",
     "style": "curly",
     "length": 0.75,
@@ -1958,7 +1958,7 @@
   },
   {
     "path": "hair-closeups/854629-curly-0p75-side.png",
-    "sha256": "175800ac41569e8627225956ea05f1c2ae10d24b5c09399ba5d8fbebc9986760",
+    "sha256": "6d74005f87bc4f43c934def791b23724849d7d886bd835f31f1eeac5b3166d29",
     "hair": "#854629",
     "style": "curly",
     "length": 0.75,
@@ -1977,7 +1977,7 @@
   },
   {
     "path": "hair-closeups/854629-curly-1p0-front.png",
-    "sha256": "76dd811f917d0eeb8cec8496f113985f5f7ac3bb5dc111983404d0481b24151b",
+    "sha256": "7a7b8a29167aeb3a10603a3f4b9a3c63c4c74ededc39e2aa3cf130d4ac983fa1",
     "hair": "#854629",
     "style": "curly",
     "length": 1.0,
@@ -1996,7 +1996,7 @@
   },
   {
     "path": "hair-closeups/854629-curly-1p0-side.png",
-    "sha256": "e4f464cc39d281b529dee8950b2fde78c046197f0ed1d70bff1d8ef598721394",
+    "sha256": "6a4b3b5209ddea153e59211208702029deb928082ce4488d86ec90261dd23f8e",
     "hair": "#854629",
     "style": "curly",
     "length": 1.0,
@@ -2015,7 +2015,7 @@
   },
   {
     "path": "hair-closeups/854629-curly-1p35-front.png",
-    "sha256": "b0afacc7d1468aab9a190b7d744d1dd39c86d608c8509e8fe0e1b9f8863465c7",
+    "sha256": "fc44d4b4d5afcff86ecf3f2f272951b6b67e6345250e17e758dd87c022c715a9",
     "hair": "#854629",
     "style": "curly",
     "length": 1.35,
@@ -2034,7 +2034,7 @@
   },
   {
     "path": "hair-closeups/854629-curly-1p35-side.png",
-    "sha256": "79eef02051b9d5c9ddda6c237c7ec55c2ca3e950ecc713ed12d317c3efaac989",
+    "sha256": "1317d07c37996f986aea0b747bed842d6f2d70ecd2799abc26f12ddf3b59d7d0",
     "hair": "#854629",
     "style": "curly",
     "length": 1.35,

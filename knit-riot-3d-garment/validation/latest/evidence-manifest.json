@@ -6,8 +6,8 @@
   },
   {
     "path": "appearance-pairwise/001.png",
-    "bytes": 31309,
-    "sha256": "060ce953db57daca659847bde9319356dbd101d91e39b7375ae24af15fa0d7ff"
+    "bytes": 30752,
+    "sha256": "c5d3e5f5d7235e11f9a9d16f63c0cf0b7d00bd31a01784bfd5dabb6c03fc1ad8"
   },
   {
     "path": "appearance-pairwise/002.png",
@@ -26,13 +26,13 @@
   },
   {
     "path": "appearance-pairwise/005.png",
-    "bytes": 31219,
-    "sha256": "8d9b5f9e239a89435b3f5b16fa89ad546a66402966ee3b9e690afd351abb3aca"
+    "bytes": 30845,
+    "sha256": "6b04423bc2a9fe0ddad47ce0165f6fa46a9614ead37802898b21cee9faf9b992"
   },
   {
     "path": "appearance-pairwise/006.png",
-    "bytes": 38901,
-    "sha256": "83b5e205b04692d5786ddbfa0695ab6e61dddae1d715eef1d18546893d36c186"
+    "bytes": 38475,
+    "sha256": "4fd45598e24a057c480a1a14df79a5a6dfcff52d5e99698ebc56c5a21488b240"
   },
   {
     "path": "appearance-pairwise/007.png",
@@ -66,8 +66,8 @@
   },
   {
     "path": "appearance-pairwise/013.png",
-    "bytes": 29889,
-    "sha256": "0a328bfb4d1da0cc0a8d6af5a90dd18791801e714315fb67aad587ebca692656"
+    "bytes": 29546,
+    "sha256": "8415649e1c74a555db0f98de96a9fe5c24c158bf3a1be361bc947430b34173e0"
   },
   {
     "path": "appearance-pairwise/014.png",
@@ -76,13 +76,13 @@
   },
   {
     "path": "appearance-pairwise/015.png",
-    "bytes": 38154,
-    "sha256": "c4f638e0c99d83a5edf1ef01a9518e68e8af5f8dcde830cbc7b0c819d3ef4866"
+    "bytes": 37706,
+    "sha256": "8152e81365f34745f886173583f9d2fe793c2cb0fb761a3ca9eb8da115d600e1"
   },
   {
     "path": "appearance-pairwise/016.png",
-    "bytes": 32068,
-    "sha256": "4b39f708e8df146a2801862716b085fb60332ec98f69f63db0d46015cabe3f40"
+    "bytes": 31341,
+    "sha256": "d64412e74b36dc383ffc8f188b6da0751e4dae30a980a437fe94ed07abd93907"
   },
   {
     "path": "appearance-pairwise/017.png",
@@ -91,18 +91,18 @@
   },
   {
     "path": "appearance-pairwise/018.png",
-    "bytes": 27496,
-    "sha256": "db361c9c470c8faf2980f8a7b353c5c7ef29a07c563f4a84723fb43bd04d8d65"
+    "bytes": 27058,
+    "sha256": "6eb9f07041937eb5285424c9ca9592a6116f876f4bec99ebb2aaab05b8a72ae1"
   },
   {
     "path": "appearance-pairwise/019.png",
-    "bytes": 30830,
-    "sha256": "4445902d3db81076a6e332a7326bac5e012ed0905c21ad1c1273b0ad6606b3f2"
+    "bytes": 30556,
+    "sha256": "244c5d8b7460d834fac96fb05fdbce1f2bf523fb64ea9e763c6afb02b7b60c4f"
   },
   {
     "path": "appearance-pairwise/020.png",
-    "bytes": 29666,
-    "sha256": "5459f43726f5c0d2d488b956a8e1917ec627d61810478e7807c8089709ced534"
+    "bytes": 29455,
+    "sha256": "84f8fc2d4b5f4a6f4e1a2a09c9bfff650ea05307f4c3d0354c114cc52a8d2062"
   },
   {
     "path": "appearance-pairwise/021.png",
@@ -126,8 +126,8 @@
   },
   {
     "path": "appearance-pairwise/025.png",
-    "bytes": 31699,
-    "sha256": "ee08c66c51fc43bb6ea24c5b92be198c597b72ac8ec6a6ffa04748d8bcd16280"
+    "bytes": 31292,
+    "sha256": "c1f5022f1b462f8a90919e7bcabe1fd0c018c3999eef707e065bf128790d440e"
   },
   {
     "path": "appearance-pairwise/026.png",
@@ -141,13 +141,13 @@
   },
   {
     "path": "appearance-pairwise/028.png",
-    "bytes": 40408,
-    "sha256": "6dbf0443384e993e80c510275af5e6000813381d403dc3fb74caf209efaa521f"
+    "bytes": 39900,
+    "sha256": "27b38a1c85537781624c1fbf8c246adf8d2cff0749486d89186b2606fb5fe6ef"
   },
   {
     "path": "appearance-pairwise/029.png",
-    "bytes": 27034,
-    "sha256": "1c4a90ad0ad8f3a51cc7ccb6b86e968085af3b8114c773d0cb3749c8bc1a35e6"
+    "bytes": 26744,
+    "sha256": "86143199fd1ae79fb76d7a39290b266c7b54bde45336c5f47e134389c99458c2"
   },
   {
     "path": "appearance-pairwise/030.png",
@@ -791,33 +791,33 @@
   },
   {
     "path": "hair-closeups/201a16-curly-0p75-front.png",
-    "bytes": 367635,
-    "sha256": "9f0e71e21b073ee6dd39a7311833d258c6f4d00d83428672e31685c338e6e330"
+    "bytes": 360559,
+    "sha256": "ce9374adfcc584b76e894e06f0af3ddb70a3e7e13c9b5818a052dbe0c1b2d153"
   },
   {
     "path": "hair-closeups/201a16-curly-0p75-side.png",
-    "bytes": 233348,
-    "sha256": "5777293bbc6d0d29c5ab98bd8bf5c15838fbe6ac7517573e3c6dd54d91f2daa3"
+    "bytes": 226067,
+    "sha256": "bf9e4f392deaed5903bf156b69249f4da54e67575e7d8db69f1d11407eb2eb78"
   },
   {
     "path": "hair-closeups/201a16-curly-1p0-front.png",
-    "bytes": 371021,
-    "sha256": "95a0d45622103fa92466923252fbb4dfb09e7b822c235af476829225808a4f83"
+    "bytes": 361181,
+    "sha256": "a75a9037d8fe5a030ec27669a6a28830cac8707757929e07ba4d9e7a82563ff4"
   },
   {
     "path": "hair-closeups/201a16-curly-1p0-side.png",
-    "bytes": 237800,
-    "sha256": "9996dc10e7566ddcc5d86543615f60209cc60e997a193eebe38fba2f81f2e541"
+    "bytes": 229331,
+    "sha256": "f0d97f3f9560bb99047e31b3e9691d46afaf1d31f48414dd626ed1cdb22d4955"
   },
   {
     "path": "hair-closeups/201a16-curly-1p35-front.png",
-    "bytes": 359731,
-    "sha256": "096b46b0d4c4bc909e5b5f2a95d55b1774baf841263ed1ef83ebf70a8c8bae93"
+    "bytes": 348471,
+    "sha256": "422b127657f4ef0549d3321f26a93b61d1d6410015de6d39c2a1eddab653270a"
   },
   {
     "path": "hair-closeups/201a16-curly-1p35-side.png",
-    "bytes": 228932,
-    "sha256": "6f4042f8e104247e6f8155972b481b3a76a983dc3964de044c893da6617d6cf5"
+    "bytes": 216773,
+    "sha256": "3777fffce9867249536e87eb10ecae427dc0f7c66af0bee46d140ccd0c0a18d6"
   },
   {
     "path": "hair-closeups/201a16-straight-0p75-front.png",
@@ -881,33 +881,33 @@
   },
   {
     "path": "hair-closeups/493025-curly-0p75-front.png",
-    "bytes": 375347,
-    "sha256": "a36107eeade59dbd4594e1c84a0f708c8cd0fe4be8bb862a38208e87d99b01bd"
+    "bytes": 368552,
+    "sha256": "b3023828ff4d94e9c1ac04124604c6ac476d381545a213f0723d46c870e906e0"
   },
   {
     "path": "hair-closeups/493025-curly-0p75-side.png",
-    "bytes": 245077,
-    "sha256": "a2655b65796aebeda68ae75385a58996017cb5a4b9cc2ac5a326b128aadfcccb"
+    "bytes": 239609,
+    "sha256": "3f0c05e91c0322e726169ee91f2ef562d75ea6ab976a4a2bb1fe36628522ff5d"
   },
   {
     "path": "hair-closeups/493025-curly-1p0-front.png",
-    "bytes": 381232,
-    "sha256": "2f56e433408eb00edf555a34629cb1e64dce8fcadc1c66e291bb0496c32d49cc"
+    "bytes": 371867,
+    "sha256": "0d4bd0051fe8f8f3bacb5cf532c1d663d3a4a2e6fcf3b1a824ed79dad70983b7"
   },
   {
     "path": "hair-closeups/493025-curly-1p0-side.png",
-    "bytes": 253976,
-    "sha256": "7f1c47597c5c2d24ca3ed5ec7990d280c2a10fbd5595f6138f082c3b8f6c746b"
+    "bytes": 247360,
+    "sha256": "385fb305b0019ced4f20c9cc38889008013b7eb05b67e39d774cfb4e8118a92f"
   },
   {
     "path": "hair-closeups/493025-curly-1p35-front.png",
-    "bytes": 371271,
-    "sha256": "7d41d07d67fa0cc2f8683d5017d91d1924d3286ffbd34353349710d3a82fbfac"
+    "bytes": 360405,
+    "sha256": "208281495b13b95c55de6e0e63995c59c1357861d2d9a96c9aa6938c63e3b2a5"
   },
   {
     "path": "hair-closeups/493025-curly-1p35-side.png",
-    "bytes": 247509,
-    "sha256": "1af84fcfab184f3b13fc2c90b9d79e35ad2e6ce258974f6e6d253c40c7f058a7"
+    "bytes": 238292,
+    "sha256": "89e943b0b5ac11b6087b9cb71ce4f1bf14a87f7592ef81c2f35ed1a80f5ad349"
   },
   {
     "path": "hair-closeups/493025-straight-0p75-front.png",
@@ -971,33 +971,33 @@
   },
   {
     "path": "hair-closeups/836c57-curly-0p75-front.png",
-    "bytes": 385958,
-    "sha256": "85ed1eaffd852f37e78ba95f878d672e78a6f3ce7a2e29b3c7ac4df3a76b9cf0"
+    "bytes": 379938,
+    "sha256": "e6edb6adf8bee1f82214e1a5f1896940c8a297e851c6cf49a2e295788f4d40e5"
   },
   {
     "path": "hair-closeups/836c57-curly-0p75-side.png",
-    "bytes": 259446,
-    "sha256": "c4cd6872c82d1b54a938918b6f0cad0eebd9343db55a69d0a43f4ffb2aa94914"
+    "bytes": 255660,
+    "sha256": "db2c35a407c16ec80196448fa21538482ede3b5b226202ef9d394d6e296818ce"
   },
   {
     "path": "hair-closeups/836c57-curly-1p0-front.png",
-    "bytes": 395392,
-    "sha256": "91bc8d9e619328311a14744b00dcf2a99b8e5061e355296d9b41a07173f90fa7"
+    "bytes": 386267,
+    "sha256": "209a9a32c70428dc34123b83b7ae805d0788ac0506f3138404eca1fecf7593ab"
   },
   {
     "path": "hair-closeups/836c57-curly-1p0-side.png",
-    "bytes": 273649,
-    "sha256": "4f3598575f32b6dcfa8b9738594314fcfd3107e9934ac2a03992146b0493c72f"
+    "bytes": 268844,
+    "sha256": "46543559c9a49e321c830471f65e7c5ed428b51a9e12e365933f9378fd87d296"
   },
   {
     "path": "hair-closeups/836c57-curly-1p35-front.png",
-    "bytes": 387232,
-    "sha256": "cafb1316c86d28851b85119ec1df56639b7b3916734091471f1fc8f58bf538d1"
+    "bytes": 375876,
+    "sha256": "c336cbaca908dd0c04bd418ac7b5b00cb589f57f8a6923d57b34fd4d091406c7"
   },
   {
     "path": "hair-closeups/836c57-curly-1p35-side.png",
-    "bytes": 270328,
-    "sha256": "30886824700d9c763b339c964ccefe77ea72c4f1cb94755c413c7f9b4bb6468c"
+    "bytes": 262888,
+    "sha256": "fc16d55f9b44be97cb61c061642da090145514272b96a2f00fcb3baf04cc0801"
   },
   {
     "path": "hair-closeups/836c57-straight-0p75-front.png",
@@ -1061,33 +1061,33 @@
   },
   {
     "path": "hair-closeups/854629-curly-0p75-front.png",
-    "bytes": 383458,
-    "sha256": "765012bb8836201f55ea409f256113fe5a54ad208813548d3003f07500ca8938"
+    "bytes": 376876,
+    "sha256": "4d09356600ef2ee25c06a5e6b7a25b84b4258e13e0c774edf765172182bba2a7"
   },
   {
     "path": "hair-closeups/854629-curly-0p75-side.png",
-    "bytes": 255751,
-    "sha256": "175800ac41569e8627225956ea05f1c2ae10d24b5c09399ba5d8fbebc9986760"
+    "bytes": 251098,
+    "sha256": "6d74005f87bc4f43c934def791b23724849d7d886bd835f31f1eeac5b3166d29"
   },
   {
     "path": "hair-closeups/854629-curly-1p0-front.png",
-    "bytes": 391749,
-    "sha256": "76dd811f917d0eeb8cec8496f113985f5f7ac3bb5dc111983404d0481b24151b"
+    "bytes": 382617,
+    "sha256": "7a7b8a29167aeb3a10603a3f4b9a3c63c4c74ededc39e2aa3cf130d4ac983fa1"
   },
   {
     "path": "hair-closeups/854629-curly-1p0-side.png",
-    "bytes": 268325,
-    "sha256": "e4f464cc39d281b529dee8950b2fde78c046197f0ed1d70bff1d8ef598721394"
+    "bytes": 262347,
+    "sha256": "6a4b3b5209ddea153e59211208702029deb928082ce4488d86ec90261dd23f8e"
   },
   {
     "path": "hair-closeups/854629-curly-1p35-front.png",
-    "bytes": 383146,
-    "sha256": "b0afacc7d1468aab9a190b7d744d1dd39c86d608c8509e8fe0e1b9f8863465c7"
+    "bytes": 371996,
+    "sha256": "fc44d4b4d5afcff86ecf3f2f272951b6b67e6345250e17e758dd87c022c715a9"
   },
   {
     "path": "hair-closeups/854629-curly-1p35-side.png",
-    "bytes": 263938,
-    "sha256": "79eef02051b9d5c9ddda6c237c7ec55c2ca3e950ecc713ed12d317c3efaac989"
+    "bytes": 255274,
+    "sha256": "1317d07c37996f986aea0b747bed842d6f2d70ecd2799abc26f12ddf3b59d7d0"
   },
   {
     "path": "hair-closeups/854629-straight-0p75-front.png",
@@ -1151,33 +1151,33 @@
   },
   {
     "path": "hair-closeups/ac7946-curly-0p75-front.png",
-    "bytes": 389093,
-    "sha256": "33d14a35bb18515ac43d0c3951de00bc509f32ed93f28e5d5446688108f32661"
+    "bytes": 382654,
+    "sha256": "f157b249558926c6e5881a30ab201e951e23182a03487170f923db5b29b99a1a"
   },
   {
     "path": "hair-closeups/ac7946-curly-0p75-side.png",
-    "bytes": 263734,
-    "sha256": "2be3a9dcc5e710b49b3ed223738acac0742bccfd05f33cb2259742298f96e990"
+    "bytes": 259872,
+    "sha256": "fd92f4564e2ef08df6a924fdf757a445e2c9ffdddb6e134494dc3ece5fd12e66"
   },
   {
     "path": "hair-closeups/ac7946-curly-1p0-front.png",
-    "bytes": 399485,
-    "sha256": "ed2ff516ef0a4b8611ce543c9821dea6e6d64104c10769d3923a21af4367dd35"
+    "bytes": 390107,
+    "sha256": "e640690ffa870c7f890ef3e02d1bf2b5662d58cd1934a8b2926de4327a3b1b7f"
   },
   {
     "path": "hair-closeups/ac7946-curly-1p0-side.png",
-    "bytes": 279290,
-    "sha256": "0065457407ea7693b01a002754776bdc421a3ec99f1cc7170ca34e7ced7ce2a4"
+    "bytes": 274364,
+    "sha256": "e2eef93fa66ab1a9d89485ac3287c30aebece4bc1a0e214cf0b5982792aeee50"
   },
   {
     "path": "hair-closeups/ac7946-curly-1p35-front.png",
-    "bytes": 391439,
-    "sha256": "44deabd6980efb5ee6f37d45cbdc3e0b2cc16821fdad74f21238b06ad1e7ff60"
+    "bytes": 380029,
+    "sha256": "14ce9b7c9ae1e0716b3814da2e95dc9f3ecc06dfcd298ee5619dd0ed8042b2ee"
   },
   {
     "path": "hair-closeups/ac7946-curly-1p35-side.png",
-    "bytes": 276274,
-    "sha256": "0a4e419519ec88dded07c1e6e80a704c069879ec8fa8fc33e08255b79613bb8b"
+    "bytes": 268130,
+    "sha256": "c518ed925cfd580b5b133b16496172fa242c82e378ba4d1527a22adb699492e2"
   },
   {
     "path": "hair-closeups/ac7946-straight-0p75-front.png",
@@ -1241,33 +1241,33 @@
   },
   {
     "path": "hair-closeups/ffffff-curly-0p75-front.png",
-    "bytes": 393990,
-    "sha256": "791be9e70354bd9333e9c62bd3fc4dd0cbe420ebb165cbc73b072ed0c318bf59"
+    "bytes": 388547,
+    "sha256": "4a8ef1292f42e667e777bc7822bba70959ababb1ae5d8a33b9223d6346b5a569"
   },
   {
     "path": "hair-closeups/ffffff-curly-0p75-side.png",
-    "bytes": 274925,
-    "sha256": "23b85476f2a10d672dc5c8d878cee67db036771f1da4b6560242a23d86c538fb"
+    "bytes": 272535,
+    "sha256": "254cc9cfede5523e03ea56b649068a7a197a0a3100082c74908074c40be43cfb"
   },
   {
     "path": "hair-closeups/ffffff-curly-1p0-front.png",
-    "bytes": 405751,
-    "sha256": "85a641153362a8e1ff70360a18b4970bdb0ccb78035d16d6a0dc39442874b74c"
+    "bytes": 397276,
+    "sha256": "4d1dbcbfc41f39a9c8a6fdd544681de343eb9355600d3f63da2e10bc4eff45ba"
   },
   {
     "path": "hair-closeups/ffffff-curly-1p0-side.png",
-    "bytes": 294944,
-    "sha256": "8c0d4a0992830ee657d6ffa937eefa654a769f9f33de2c29c673681df9abf95c"
+    "bytes": 291403,
+    "sha256": "149991af8fec4a10b9a521435c0f703a75f7613ba4ddba638131a178534addfa"
   },
   {
     "path": "hair-closeups/ffffff-curly-1p35-front.png",
-    "bytes": 398902,
-    "sha256": "578733ae001f015415f217cb51363f536e34a115dca6e04d2f6d3f89ea8ac7e5"
+    "bytes": 388204,
+    "sha256": "505120b77de28ec73055d6f066bca65319d1b27f98ddabf3ed220d430a24372f"
   },
   {
     "path": "hair-closeups/ffffff-curly-1p35-side.png",
-    "bytes": 294176,
-    "sha256": "54a2c1c9e4ff7c87ae197a6bc291dd9a4903e0622f0f89e1e0ffcbecdb14ef74"
+    "bytes": 287276,
+    "sha256": "01e27513db87f28edc405c4bf0fa32db3724bb01d44ff23268de6ce95d442d56"
   },
   {
     "path": "hair-closeups/ffffff-straight-0p75-front.png",
@@ -1332,12 +1332,12 @@
   {
     "path": "hair-closeups-manifest.json",
     "bytes": 45344,
-    "sha256": "1963570b291b42ac05d7eef71281c21e9423476c71b16b4cc3205dff4cfdb410"
+    "sha256": "d4337beace855b876f9a7d4a7728840677dd9e00e8507c19bfce601db7063108"
   },
   {
     "path": "hair-closeups-rendered.png",
-    "bytes": 3889122,
-    "sha256": "53b91f5a30e3fa3c4b3960dc6a99aec7860ab01ee88f43491eee4d241317b0dd"
+    "bytes": 3829548,
+    "sha256": "4c3287aa47a83291e2196098ee4de27ff96593f27765acbf586a540d582b2c2c"
   },
   {
     "path": "layout-android_landscape.png",
@@ -1356,8 +1356,8 @@
   },
   {
     "path": "layout-iphone_portrait.png",
-    "bytes": 60597,
-    "sha256": "e7bf7a593a35625ebc97d51561737ae126f18eb7cc81cc6070c3f9181388b4df"
+    "bytes": 45030,
+    "sha256": "0fcfc25885325e39f90c3d2cbdab3f913157d336460c112fc3de90cfda3fcf45"
   },
   {
     "path": "layout-mac_size.png",
@@ -1461,33 +1461,33 @@
   },
   {
     "path": "pose-fashion.png",
-    "bytes": 140572,
-    "sha256": "79b3baa16afb045fad796048ff3ce8469b986614bad2b08f097350ad24c3e156"
+    "bytes": 139069,
+    "sha256": "bd84644a9ffa84d3982e48b583fec4d067b7532847a613f8b6bf0f68dd5a446d"
   },
   {
     "path": "pose-hip.png",
-    "bytes": 142860,
-    "sha256": "ab96562bcbc004d78eb2e3fbb7b779670ad0899898e27baf48773a4505bdd352"
+    "bytes": 141665,
+    "sha256": "282f193bec3466ee8b59b95c9f7668e43d585383326550260fc29cae8d548fc5"
   },
   {
     "path": "pose-neutral.png",
-    "bytes": 139622,
-    "sha256": "762495144dbadef2ab973cca7b75cab5d6979d16e4980db217d7906eb13b002a"
+    "bytes": 138091,
+    "sha256": "8212ffce81efb8612613e4d192120605eda2da12fdae354c486d0708a06790ab"
   },
   {
     "path": "pose-three-quarter.png",
-    "bytes": 136673,
-    "sha256": "1f87612e1f0e837807efb986cc31caa7a8eb0a9f4255b321b1b57c25c86cf47a"
+    "bytes": 135703,
+    "sha256": "24d01fa32de707e61f405ccdf0267f0fcc995a98c726f1ffbc073e77c7ea1b23"
   },
   {
     "path": "pose-walk.png",
-    "bytes": 139684,
-    "sha256": "a9d50a229f793ae985ac1ba17da2ce1d7bc46b330ad7827aaa99a266b22353e3"
+    "bytes": 138147,
+    "sha256": "d864f64e40cddee5c7b9cb588d60a2178fb5f1b048d27e0d6283e8c9ec81fb59"
   },
   {
     "path": "results.json",
     "bytes": 308294,
-    "sha256": "9102c75e6a1ab2b9ee7a81a0e5773d052670bb57c73fe1b23281695ae1052759"
+    "sha256": "eddaa6879370f0068d6d7805691948fd01e6ce0bfebb7bf5ad04e51c9cbd88d9"
   },
   {
     "path": "sweep/000.png",

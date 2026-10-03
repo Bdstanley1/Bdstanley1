@@ -1,7 +1,7 @@
 {
-  "tested_commit": "3cc585e40dacf1bfdd7470688fc95464e818ca18",
-  "workflow_run_id": "37089473942",
-  "app_sha256": "46f273b770cc5102e1b78c4bb51e67f0906fd0c8a7086382cc059701bc507dbc",
+  "tested_commit": "7e69ad3c5abcd50e9a3dbe41b7e4cf925e7a329e",
+  "workflow_run_id": "37110367836",
+  "app_sha256": "7cb22de82ceebf3380a81741684905248ba7f78c10550e4875a2000181bdbbec",
   "release_status": "HOLD",
   "visual_approval": false,
   "physical_fit_validated": false,
@@ -14,8 +14,8 @@
     },
     {
       "path": "appearance-pairwise-rendered.png",
-      "sha256": "d39f47896f7ad081dc562b678d2cfd38ac772d44e3e81a68ca5875612aa8fdb3",
-      "bytes": 590812
+      "sha256": "9f3440841db70cdd30214211fab0a9b319643b496ef04c43f2bdfe7ac3f6c289",
+      "bytes": 586822
     },
     {
       "path": "binding-closeups/fashion-back.png",
@@ -129,7 +129,7 @@
     },
     {
       "path": "evidence-manifest.json",
-      "sha256": "544fc72ea81d192ac7a0f482548b6f93f7391deec882ce12ed890b1cb1137df0",
+      "sha256": "fa0169b1fa2c409354e77e01b5b238c60da5c2bf96dbafee12cc2b560d661ddb",
       "bytes": 106978
     },
     {
@@ -599,13 +599,13 @@
     },
     {
       "path": "hair-closeups-manifest.json",
-      "sha256": "1963570b291b42ac05d7eef71281c21e9423476c71b16b4cc3205dff4cfdb410",
+      "sha256": "d4337beace855b876f9a7d4a7728840677dd9e00e8507c19bfce601db7063108",
       "bytes": 45344
     },
     {
       "path": "hair-closeups-rendered.png",
-      "sha256": "53b91f5a30e3fa3c4b3960dc6a99aec7860ab01ee88f43491eee4d241317b0dd",
-      "bytes": 3889122
+      "sha256": "4c3287aa47a83291e2196098ee4de27ff96593f27765acbf586a540d582b2c2c",
+      "bytes": 3829548
     },
     {
       "path": "phone-neutral-front.png",
@@ -614,7 +614,7 @@
     },
     {
       "path": "results.json",
-      "sha256": "9102c75e6a1ab2b9ee7a81a0e5773d052670bb57c73fe1b23281695ae1052759",
+      "sha256": "eddaa6879370f0068d6d7805691948fd01e6ce0bfebb7bf5ad04e51c9cbd88d9",
       "bytes": 308294
     }
   ]
