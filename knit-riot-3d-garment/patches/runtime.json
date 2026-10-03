@@ -7,7 +7,7 @@
   {
     "name": "attach verified hair normal map to source material",
     "before": "hair=skinned('Elvaerwyn Ashley May waves / adapted',geometry(hairData),new T.MeshStandardMaterial({map:hairMap,color:state.hair,alphaTest:.35,roughness:.8,side:T.DoubleSide}));",
-    "after": "hair=skinned('Elvaerwyn Ashley May waves / adapted',geometry(hairData),new T.MeshStandardMaterial({map:hairMap,normalMap:hairNormalMap,normalScale:new T.Vector2(.65,.65),color:state.hair,alphaTest:.35,roughness:.8,side:T.DoubleSide}));"
+    "after": "hair=skinned('Elvaerwyn Ashley May waves / adapted',geometry(hairData),new T.MeshStandardMaterial({map:hairMap,normalMap:hairNormalMap,normalScale:new T.Vector2(.38,.38),color:state.hair,alphaTest:.35,roughness:.8,side:T.DoubleSide}));"
   },
   {
     "name": "camera preset API validates and synchronizes visible controls",
@@ -27,7 +27,7 @@
   {
     "name": "balance Ashley May hair cutout edges against visible card fill",
     "before": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,color:hm.color,alphaTest:.35,side:T.DoubleSide,roughness:.63,metalness:0,anisotropy:.65,anisotropyRotation:Math.PI/2,specularIntensity:.55,envMapIntensity:.85});",
-    "after": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,normalMap:hm.normalMap,normalScale:hm.normalScale?hm.normalScale.clone():new T.Vector2(.65,.65),color:hm.color,alphaTest:.10,alphaToCoverage:true,side:T.DoubleSide,roughness:.64,metalness:0,anisotropy:.82,anisotropyRotation:Math.PI/2,specularIntensity:.30,envMapIntensity:.78});"
+    "after": "hair.material=new T.MeshPhysicalMaterial({map:hm.map,normalMap:hm.normalMap,normalScale:hm.normalScale?hm.normalScale.clone():new T.Vector2(.38,.38),color:hm.color,alphaTest:.10,alphaToCoverage:true,side:T.DoubleSide,roughness:.68,metalness:0,anisotropy:.72,anisotropyRotation:Math.PI/2,specularIntensity:.24,envMapIntensity:.78});"
   },
   {
     "name": "improve layered eye material response",
