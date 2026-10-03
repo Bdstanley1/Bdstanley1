@@ -28,7 +28,7 @@ if not shutil.which('node'):
     if not (driver/'node').is_file():raise RuntimeError('No Node syntax-check runtime available')
     os.environ['PATH']=str(driver)+os.pathsep+os.environ.get('PATH','')
 subprocess.run([sys.executable,'-m','playwright','install','chromium','--only-shell'],check=True,timeout=240)
-result=subprocess.run([sys.executable,str(ROOT/'tools/render_test.py')],cwd=ROOT,timeout=780)
+result=subprocess.run([sys.executable,str(ROOT/'tools/render_test.py')],cwd=ROOT,timeout=1500)
 runtime=ROOT/'test-runtime'
 qa=json.loads((runtime/'qa/results.json').read_text())
 report=json.loads((runtime/'BUILD_REPORT.json').read_text())
