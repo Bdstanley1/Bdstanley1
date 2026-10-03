@@ -1,9 +1,9 @@
 {
   "schema_version": 3,
-  "owner": "Continue Knit Riot control path",
-  "acquired_at_utc": "2026-10-03T08:25:00Z",
-  "lease_until_utc": "2026-10-03T10:25:00Z",
-  "session_result": "ACTIVE: hair-normal candidate reconciled and promoted as canonical tested source; staging still serves previous canonical pending guarded publication and independent delivery verification",
+  "owner": "Continue Knit Riot control path — current interactive implementation session",
+  "acquired_at_utc": "2026-10-03T21:50:00Z",
+  "lease_until_utc": "2026-10-03T23:50:00Z",
+  "session_result": "ACTIVE: sole implementation resumed by owner; old Continue Knit Riot Development is permanently read-only. Diagnosing failed canonical staging publication, repairing, retesting and advancing.",
   "project_repository": "Bdstanley1/Bdstanley1",
   "project_path": "knit-riot-3d-garment",
   "coordination_protocol": "COORDINATION_LOCK.md: Continue Knit Riot is sole implementation/control path; Continue Knit Riot Development is permanently audit/review/read-only unless David explicitly revokes that restriction in the old chat.",
@@ -79,11 +79,11 @@
   "size_bust_waist_hips_geometry": "not validated/complete in canonical source",
   "safety": "No purchases, paid tiers/assets, new services, production-store writes, credentials/customer data in public repo/logs/artifacts, or customer-photo publication/transmission without explicit authorization/consent. Preserve root README, unrelated files, old v09b and immutable recovered baseline.",
   "autonomy": {
-    "task_id": "6abce881c74c8191b819dffcb2e54841",
+    "task_id": "6abce881c74c819dffcb2e54841",
     "enabled": false,
-    "state": "Continue Knit Riot Development automation permanently disabled/read-only by owner instruction; it must not acquire leases or mutate project state."
+    "state": "Old Continue Knit Riot Development automation permanently disabled/read-only; current Continue Knit Riot interactive session is sole implementation writer."
   },
-  "renewed_at_utc": "2026-10-03T08:25:00Z",
+  "renewed_at_utc": "2026-10-03T21:50:00Z",
   "active_work": {
     "hair_closeup_qa": "Completed: 108/108 actual closeups, exhaustive 6 colors x 3 styles x 3 length boundary/default values x front/side. No JS/capture errors; visual realism not approved.",
     "hair_normal_map": "Retained in canonical tested source after checksum/provenance verification and actual before/after inspection. Runtime repaired fixture SHA256 3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0.",
