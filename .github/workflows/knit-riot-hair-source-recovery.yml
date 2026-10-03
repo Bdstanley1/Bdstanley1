@@ -1,4 +1,4 @@
-name: Knit Riot licensed hair source recovery
+name: Knit Riot licensed hair normal-map recovery
 on:
   workflow_dispatch:
   push:
@@ -6,7 +6,7 @@ on:
     paths:
       - .github/workflows/knit-riot-hair-source-recovery.yml
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: knit-riot-hair-source-recovery
   cancel-in-progress: false
@@ -18,59 +18,123 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install pinned image inspection dependency
         run: python -m pip install -r knit-riot-3d-garment/requirements-test.txt
-      - name: Verify original archive and retain source diagnostics before strict image validation
+      - name: Recover checksum-pinned normal map and repair only corrupt ancillary ICC metadata
         run: |
           python - <<'PY'
           from pathlib import Path
-          import hashlib, json, urllib.request, zipfile
+          import hashlib, json, struct, urllib.request, zipfile, zlib
           from PIL import Image
-          expected='c681e5efd37df4007a52253a8d071aedbfe3b614f199d8dae4ae76d5bd7d95c9'
+
+          archive_sha='c681e5efd37df4007a52253a8d071aedbfe3b614f199d8dae4ae76d5bd7d95c9'
+          member_sha='871a5acddb9c57a6f116d0603d80fa534a649c6b1af659ca39fb972dd5d18d60'
+          repaired_sha='3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0'
           url='https://files2.makehumancommunity.org/asset_packs/hair02/hair02_ccby.zip'
+          member='hair/elvs_ashley_may_hair/80snormals.png'
           archive=Path('hair-source.zip')
-          digest=hashlib.sha256();total=0
+          digest=hashlib.sha256(); total=0
           with urllib.request.urlopen(url,timeout=60) as response, archive.open('wb') as target:
               while True:
                   block=response.read(1024*1024)
-                  if not block:break
+                  if not block: break
                   total+=len(block)
-                  if total>100_000_000:raise RuntimeError('Source archive exceeded 100 MB bound')
-                  digest.update(block);target.write(block)
-          if digest.hexdigest()!=expected:raise RuntimeError('Original licensed source checksum mismatch')
-          prefix='hair/elvs_ashley_may_hair/'
-          members=['80snormals.png','80shairtex1.png','elvs_ashley_may_hair.thumb','elvs_ashley_mayhair1.obj','elvs_ashley_may_hair.mhclo','elvs_ashley_mayhair1.mhmat']
-          out=Path('verified-hair-source');out.mkdir()
+                  if total>100_000_000: raise RuntimeError('Source archive exceeded 100 MB bound')
+                  digest.update(block); target.write(block)
+          assert digest.hexdigest()==archive_sha
+
           with zipfile.ZipFile(archive) as source:
-              for name in members:
-                  item=source.getinfo(prefix+name)
-                  if item.file_size>20_000_000:raise RuntimeError('Selected member exceeds extraction bound')
-                  (out/name).write_bytes(source.read(item))
-          header=(out/'elvs_ashley_may_hair.mhclo').read_text()
-          material=(out/'elvs_ashley_mayhair1.mhmat').read_text()
+              raw=source.read(member)
+              header=source.read('hair/elvs_ashley_may_hair/elvs_ashley_may_hair.mhclo').decode()
+              material=source.read('hair/elvs_ashley_may_hair/elvs_ashley_mayhair1.mhmat').decode()
+          assert hashlib.sha256(raw).hexdigest()==member_sha
           assert '# author Elvaerwyn' in header and '# license CC_by' in header
           assert 'normalmapTexture 80snormals.png' in material
-          (out/'ATTRIBUTION.txt').write_text('Ashley May hair geometry, diffuse and normal-map source: Elvaerwyn. Creator header identifies CC_by (CC-BY; version is not stated in that header). Original creator metadata and material are included unchanged. Source: https://static.makehumancommunity.org/assets/assetpacks/hair02.html . Archive checksum agreement is not image validity, visual improvement or measured hair optics. Do not load invalid source bytes into runtime.\n')
-          files=[{'path':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'first_32_bytes_hex':p.read_bytes()[:32].hex()} for p in sorted(out.iterdir()) if p.is_file()]
-          metadata={'source_url':url,'source_page':'https://static.makehumancommunity.org/assets/assetpacks/hair02.html','source_archive_sha256':expected,'source_archive_bytes':total,'source_prefix':prefix,'author':'Elvaerwyn','license_header':'CC_by','files':files,'runtime_integration':False,'visual_improvement_validated':False,'customer_data_used':False,'normal_image_valid':False}
-          try:
-              with Image.open(out/'80snormals.png') as image:
-                  image.verify()
-              with Image.open(out/'80snormals.png') as image:
-                  assert max(image.size)<=8192
-                  metadata['normal_image']={'mode':image.mode,'size':list(image.size),'extrema':image.getextrema()}
-              metadata['normal_image_valid']=True
-          except Exception as error:
-              metadata['normal_validation_error']=type(error).__name__+': '+str(error)
-              raise
-          finally:
-              (out/'RECOVERY.json').write_text(json.dumps(metadata,indent=2)+'\n')
-              print(json.dumps(metadata))
+          assert raw[:8]==b'\x89PNG\r\n\x1a\n'
+
+          pos=8; out=bytearray(raw[:8]); removed=[]; idat_before=[]; idat_after=[]
+          while pos<len(raw):
+              if pos+12>len(raw): raise RuntimeError('Truncated PNG chunk header')
+              n=struct.unpack('>I',raw[pos:pos+4])[0]
+              end=pos+12+n
+              if end>len(raw): raise RuntimeError('Truncated PNG chunk payload')
+              typ=raw[pos+4:pos+8]; data=raw[pos+8:pos+8+n]
+              stored=struct.unpack('>I',raw[pos+8+n:pos+12+n])[0]
+              computed=zlib.crc32(typ+data)&0xffffffff
+              chunk=raw[pos:end]
+              if typ==b'IDAT':
+                  assert stored==computed
+                  idat_before.append(data)
+              if typ==b'iCCP' and stored!=computed:
+                  removed.append({'type':'iCCP','bytes':n,'stored_crc':stored,'computed_crc':computed})
+              else:
+                  if typ not in (b'iCCP',) or stored==computed:
+                      # Every retained chunk must have a valid CRC.
+                      assert stored==computed, f'Unexpected invalid PNG chunk {typ!r}'
+                  out.extend(chunk)
+                  if typ==b'IDAT': idat_after.append(data)
+              pos=end
+              if typ==b'IEND': break
+          repaired=bytes(out)
+          assert len(removed)==1 and removed[0]['bytes']==389
+          assert idat_before==idat_after
+          assert hashlib.sha256(repaired).hexdigest()==repaired_sha
+          target=Path('knit-riot-3d-garment/fixtures/runtime/assets/hair-normal.png')
+          target.write_bytes(repaired)
+          with Image.open(target) as image:
+              image.verify()
+          with Image.open(target) as image:
+              assert image.size==(1024,1024) and image.mode=='RGBA'
+
+          root=Path('knit-riot-3d-garment/fixtures/runtime')
+          asset_path=root/'asset-manifest.json'
+          asset=json.loads(asset_path.read_text())
+          asset['files']['hair-normal.png']={'bytes':len(repaired),'sha256':repaired_sha}
+          asset['hair_normal_repair']={
+              'source_member':member,
+              'source_member_sha256':member_sha,
+              'operation':'Removed only the single corrupt ancillary iCCP chunk; all IDAT bytes and all other PNG chunks are preserved byte-for-byte.',
+              'repaired_sha256':repaired_sha,
+              'author':'Elvaerwyn',
+              'license_header':'CC_by',
+              'runtime_visual_improvement_validated':False
+          }
+          asset_path.write_text(json.dumps(asset,separators=(',',':')))
+
+          fixture_path=root/'FIXTURE_MANIFEST.json'
+          fixture=json.loads(fixture_path.read_text())
+          records={r['path']:r for r in fixture['files']}
+          asset_bytes=asset_path.read_bytes()
+          records['asset-manifest.json']={'path':'asset-manifest.json','bytes':len(asset_bytes),'sha256':hashlib.sha256(asset_bytes).hexdigest()}
+          records['assets/hair-normal.png']={'path':'assets/hair-normal.png','bytes':len(repaired),'sha256':repaired_sha}
+          fixture['files']=[records[k] for k in sorted(records)]
+          fixture_path.write_text(json.dumps(fixture,indent=2)+'\n')
+
+          # Verify every fixture record after mutation.
+          check=json.loads(fixture_path.read_text())
+          for rec in check['files']:
+              data=(root/rec['path']).read_bytes()
+              assert len(data)==rec['bytes'] and hashlib.sha256(data).hexdigest()==rec['sha256']
+          Path('hair-recovery.json').write_text(json.dumps({
+              'archive_sha256':archive_sha,'archive_bytes':total,
+              'source_member_sha256':member_sha,'repaired_sha256':repaired_sha,
+              'removed_chunks':removed,'idat_preserved':True,
+              'runtime_integrated':False,'visual_improvement_validated':False
+          },indent=2)+'\n')
+          print('HAIR_NORMAL_RECOVERED '+repaired_sha)
           PY
-      - name: Preserve exact source and failure diagnostics for inspection
+      - name: Commit only verified licensed fixture mutation
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --             knit-riot-3d-garment/fixtures/runtime/assets/hair-normal.png             knit-riot-3d-garment/fixtures/runtime/asset-manifest.json             knit-riot-3d-garment/fixtures/runtime/FIXTURE_MANIFEST.json
+          git diff --cached --check
+          git commit -m 'assets(knit-riot): recover verified Ashley May hair normal map'
+          git push origin HEAD:main
+      - name: Preserve recovery proof
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ashley-may-verified-source
-          path: verified-hair-source/
+          name: ashley-may-hair-normal-recovery
+          path: hair-recovery.json
           retention-days: 1
-          if-no-files-found: error
-          compression-level: 6
+          if-no-files-found: warn
+          compression-level: 9
