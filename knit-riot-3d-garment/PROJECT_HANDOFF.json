@@ -73,8 +73,8 @@
   "safety": "No purchases, paid tiers/assets, new services, production-store writes, credentials/customer data in public repo/logs/artifacts, or customer-photo publication/transmission without explicit authorization/consent. Preserve root README, unrelated files, old v09b and immutable recovered baseline.",
   "autonomy": {
     "task_id": "6abce881c74c8191b819dffcb2e54841",
-    "enabled": false,
-    "state": "canonical staging reconciliation is complete; eligible to re-enable as hourly recovery/watchdog subordinate to the active interactive lease"
+    "enabled": true,
+    "state": "hourly recovery/watchdog re-enabled after exact canonical staging delivery verification; subordinate to the unexpired interactive single-writer lease and must exit silently while this lease is active"
   },
   "renewed_at_utc": "2026-10-03T02:16:00Z",
   "active_work": {
