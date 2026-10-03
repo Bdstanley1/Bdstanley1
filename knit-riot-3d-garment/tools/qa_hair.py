@@ -19,6 +19,14 @@ def run_hair_closeups(page, root: Path, checks: dict) -> None:
     folder.mkdir(exist_ok=True)
     page.evaluate("KR.reset();KR.view('front')")
     page.locator('#detail').click()
+    material = page.evaluate("""()=>{
+      const hair=KR.figure.getObjectByName('Elvaerwyn Ashley May waves / adapted'),m=hair&&hair.material,img=m&&m.normalMap&&m.normalMap.image;
+      return {has_normal_map:!!(m&&m.normalMap),width:img?(img.naturalWidth||img.width||0):0,height:img?(img.naturalHeight||img.height||0):0,normal_scale:m&&m.normalScale?m.normalScale.toArray():null,source:img?(img.currentSrc||img.src||''):''};
+    }""")
+    checks['hair_normal_map']=material
+    scale=material.get('normal_scale') or []
+    if not material.get('has_normal_map') or material.get('width')!=1024 or material.get('height')!=1024 or len(scale)!=2 or any(abs(float(v)-0.65)>1e-6 for v in scale) or not material.get('source','').endswith('/assets/hair-normal.png'):
+        checks['errors'].append('Verified Ashley May normal map is not attached with the expected runtime dimensions/scale/source')
     records = []
     digests = {}
     for color in COLORS:
