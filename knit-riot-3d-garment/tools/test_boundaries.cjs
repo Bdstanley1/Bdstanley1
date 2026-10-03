@@ -56,7 +56,7 @@ assert.equal(finishPatches.length,2,'Expected two bounded final finishing patche
 const bindingJoin=finishPatches.find(p=>p.name==='omit inner shoulder join from edge binding');
 const surfaceJoin=finishPatches.find(p=>p.name==='round shoulder-to-neckline join on garment surface');
 assert(bindingJoin&&surfaceJoin,'Both shoulder finishing patches must remain explicit');
-assert.match(bindingJoin.after,/innerTop/,'Inner shoulder binding suppression must remain explicit');
+assert.match(bindingJoin.after,/innerTop=Math\.max\(axa,axb\)<\.125&&Math\.max\(yna,ynb\)>\.805/,'Inner shoulder binding suppression must retain the reviewed transition guard');
 assert.match(surfaceJoin.after,/k=\.018/,'Shoulder-to-neckline surface join must retain its bounded smooth-min radius');
 assert(runtimePatches.includes(bindingJoin.before),'Binding finishing patch must target the assembled boundary context');
 assert(runtimePatches.includes(surfaceJoin.before),'Surface finishing patch must target the assembled garment field context');
