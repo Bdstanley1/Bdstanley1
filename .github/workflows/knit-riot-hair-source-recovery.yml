@@ -12,6 +12,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   recover:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
@@ -147,4 +148,58 @@ jobs:
           path: hair-recovery.json
           retention-days: 1
           if-no-files-found: warn
+          compression-level: 9
+
+  inspect_styles:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Hair02 and preserve selected alternate style sources
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, urllib.request, zipfile
+          expected='c681e5efd37df4007a52253a8d071aedbfe3b614f199d8dae4ae76d5bd7d95c9'
+          url='https://files2.makehumancommunity.org/asset_packs/hair02/hair02_ccby.zip'
+          archive=Path('hair02_ccby.zip');digest=hashlib.sha256();total=0
+          with urllib.request.urlopen(url,timeout=60) as response, archive.open('wb') as target:
+              while True:
+                  block=response.read(1024*1024)
+                  if not block:break
+                  total+=len(block)
+                  if total>100_000_000:raise RuntimeError('Hair02 archive exceeded 100 MB bound')
+                  digest.update(block);target.write(block)
+          assert digest.hexdigest()==expected
+          tokens=['elvs_wavy_bob','elvs_katherine_hair','elvs_inverted_curly_bob']
+          out=Path('hair-style-source');out.mkdir()
+          report={'archive_sha256':expected,'archive_bytes':total,'styles':{}}
+          with zipfile.ZipFile(archive) as source:
+              names=source.namelist()
+              for token in tokens:
+                  members=[n for n in names if token in n.lower() and not n.endswith('/')]
+                  assert members, token
+                  folder=out/token;folder.mkdir()
+                  records=[]
+                  for member in members:
+                      info=source.getinfo(member)
+                      if info.file_size>30_000_000:raise RuntimeError('Hair member too large: '+member)
+                      data=source.read(member)
+                      target=folder/Path(member).name;target.write_bytes(data)
+                      records.append({'member':member,'file':target.name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+                  clothes=next(folder/r['file'] for r in records if r['file'].endswith('.mhclo'))
+                  header=clothes.read_text(errors='replace')
+                  assert '# author Elvaerwyn' in header and '# license CC_by' in header
+                  report['styles'][token]={'author':'Elvaerwyn','license_header':'CC_by','files':records}
+          (out/'SOURCE_REPORT.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps({k:len(v['files']) for k,v in report['styles'].items()},indent=2))
+          PY
+      - name: Preserve exact selected licensed sources
+        uses: actions/upload-artifact@v4
+        with:
+          name: knit-riot-selected-hair02-style-sources
+          path: hair-style-source/
+          retention-days: 1
+          if-no-files-found: error
           compression-level: 9
