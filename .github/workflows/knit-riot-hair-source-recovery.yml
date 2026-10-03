@@ -172,7 +172,7 @@ jobs:
                   if total>100_000_000:raise RuntimeError('Hair02 archive exceeded 100 MB bound')
                   digest.update(block);target.write(block)
           assert digest.hexdigest()==expected
-          tokens=['elvs_wavy_bob','elvs_katherine_hair','elvs_inverted_curly_bob']
+          tokens=['elvs_ashley_may_hair','elvs_wavy_bob','elvs_katherine_hair','elvs_inverted_curly_bob']
           out=Path('hair-style-source');out.mkdir()
           report={'archive_sha256':expected,'archive_bytes':total,'styles':{}}
           with zipfile.ZipFile(archive) as source:
@@ -192,7 +192,7 @@ jobs:
                   header=clothes.read_text(errors='replace')
                   metadata=[line.strip() for line in header.splitlines() if line.lower().startswith(('# author','# license'))]
                   license_lines=[line for line in metadata if line.lower().startswith('# license')]
-                  assert license_lines and any('cc_by' in line.lower() for line in license_lines), (token,metadata)
+                  assert license_lines and any(('cc_by' in line.lower()) or ('cc-by' in line.lower()) for line in license_lines), (token,metadata)
                   report['styles'][token]={'source_metadata':metadata,'official_pack_author':'Elvaerwyn','official_pack_license':'CC-BY','files':records}
           (out/'SOURCE_REPORT.json').write_text(json.dumps(report,indent=2))
           print(json.dumps({k:len(v['files']) for k,v in report['styles'].items()},indent=2))
