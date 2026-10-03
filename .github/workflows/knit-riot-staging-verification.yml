@@ -12,7 +12,7 @@ concurrency:
 jobs:
   delivery:
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - name: Test scoped publication and real Git concurrency cases
@@ -23,8 +23,8 @@ jobs:
           python - <<'PY'
           import datetime, hashlib, io, json, os, pathlib, stat, subprocess, time, urllib.request, zipfile
           base='https://knit-riot-studio-development.onrender.com/'
-          expected='46f273b770cc5102e1b78c4bb51e67f0906fd0c8a7086382cc059701bc507dbc'
-          commit='3cc585e40dacf1bfdd7470688fc95464e818ca18'
+          expected='7cb22de82ceebf3380a81741684905248ba7f78c10550e4875a2000181bdbbec'
+          commit='3d36b9e2c8bf915528bce6688ce242bb5035a3ad'
           out=pathlib.Path('delivery-review');out.mkdir()
           subprocess.run(['git','fetch','--depth=1','origin',commit],check=True,timeout=60)
           trusted=json.loads(subprocess.check_output(['git','show',commit+':knit-riot-3d-garment/fixtures/runtime/FIXTURE_MANIFEST.json']))
@@ -35,7 +35,7 @@ jobs:
               assert len(data)<=limit, 'Response exceeds bounded verification size'
               return data
           def sha(data):return hashlib.sha256(data).hexdigest()
-          deadline=time.monotonic()+600
+          deadline=time.monotonic()+1800
           while True:
               try:
                   app=get('app.js');status=json.loads(get('PROJECT_STATUS.json'))
