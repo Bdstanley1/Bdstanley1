@@ -128,7 +128,17 @@ jobs:
           git add --             knit-riot-3d-garment/fixtures/runtime/assets/hair-normal.png             knit-riot-3d-garment/fixtures/runtime/asset-manifest.json             knit-riot-3d-garment/fixtures/runtime/FIXTURE_MANIFEST.json
           git diff --cached --check
           git commit -m 'assets(knit-riot): recover verified Ashley May hair normal map'
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Fixture publication raced with main on attempt $attempt" >&2
+            sleep $((attempt*2))
+          done
+          echo "Could not fast-forward verified fixture mutation after bounded retries" >&2
+          exit 1
       - name: Preserve recovery proof
         if: always()
         uses: actions/upload-artifact@v4
