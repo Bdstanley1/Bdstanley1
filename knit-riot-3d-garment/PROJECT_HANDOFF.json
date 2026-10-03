@@ -1,9 +1,9 @@
 {
   "schema_version": 3,
   "owner": "current interactive Knit Riot control session",
-  "acquired_at_utc": "2026-10-03T02:02:59Z",
-  "lease_until_utc": "2026-10-03T03:16:00Z",
-  "session_result": "ACTIVE: reconciliation completed; exact canonical source delivered and independently verified on existing staging; continuing actual-render hair realism/QA",
+  "acquired_at_utc": "2026-10-03T08:25:00Z",
+  "lease_until_utc": "2026-10-03T10:25:00Z",
+  "session_result": "ACTIVE: resumed after prior lease expiry; reconciling current GitHub head/evidence with verified staging before further implementation",
   "project_repository": "Bdstanley1/Bdstanley1",
   "project_path": "knit-riot-3d-garment",
   "coordination_protocol": "COORDINATION_LOCK.md single-writer lease; chat title alone is not authority",
@@ -76,10 +76,11 @@
     "enabled": true,
     "state": "hourly recovery/watchdog re-enabled after exact canonical staging delivery verification; subordinate to the unexpired interactive single-writer lease and must exit silently while this lease is active"
   },
-  "renewed_at_utc": "2026-10-03T02:16:00Z",
+  "renewed_at_utc": "2026-10-03T08:25:00Z",
   "active_work": {
     "hair_closeup_qa": "tools/qa_hair.py is now wired into render_test.py for exhaustive 6 colors x 3 styles x 3 lengths x 2 views = 108 actual closeups; latest all-changes regression is queued/running through GitHub Actions.",
     "hair_normal_map": "source archive/member provenance and deterministic iCCP-only repair are verified; fixture recovery workflow is being hardened for concurrent main updates before runtime integration.",
-    "local_candidate": "normal-map integration candidate builds and passes JavaScript syntax/checksum assembly locally with repaired map SHA256 3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0; not yet canonical or visually approved."
+    "local_candidate": "normal-map integration candidate builds and passes JavaScript syntax/checksum assembly locally with repaired map SHA256 3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0; not yet canonical or visually approved.",
+    "interactive_resume": "Writer lease reacquired after expiry. Current repository head contains later Ashley May normal-map integration and evidence commits above the stale handoff; verify exact tested source/evidence before promoting canonical or staging."
   }
 }
