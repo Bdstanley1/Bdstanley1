@@ -2,8 +2,8 @@
   "schema_version": 3,
   "owner": "current interactive Knit Riot control session",
   "acquired_at_utc": "2026-10-03T02:02:59Z",
-  "lease_until_utc": "2026-10-03T03:02:59Z",
-  "session_result": "ACTIVE: reconciliation complete enough to resume from latest actual-tested source; staging publication/verification next",
+  "lease_until_utc": "2026-10-03T03:16:00Z",
+  "session_result": "ACTIVE: reconciliation completed; exact canonical source delivered and independently verified on existing staging; continuing actual-render hair realism/QA",
   "project_repository": "Bdstanley1/Bdstanley1",
   "project_path": "knit-riot-3d-garment",
   "coordination_protocol": "COORDINATION_LOCK.md single-writer lease; chat title alone is not authority",
@@ -38,16 +38,29 @@
     "workspace_id": "tea-dastcbd9fdbs73f0nrpg",
     "service_id": "srv-daudsoegekts73e2u1d0",
     "url": "https://knit-riot-studio-development.onrender.com",
-    "current_live_deploy_id": "dep-db0461s9v7es739rraog",
-    "current_live_project_commit_from_logs": "3ed5ad8c1041af0e64a2a055e2fcd81fa31df2de",
-    "current_live_app_sha256_from_logs": "b548985c10f806ca66fbce1df8a0382d85032a9fec27b479bb44d26244acf54c",
-    "current_live_status": "live but behind canonical tested source; exact canonical publication and independent delivery verification pending",
+    "current_live_deploy_id": "dep-db0653ugekts738b8140",
+    "live_at_utc": "2026-10-03T02:14:49.725893Z",
+    "verified_project_commit": "2a981f207c2643f993b76fec6f24ec20d87d93f8",
+    "verified_app_sha256": "a165ab2eb31dfff89ed2cedfcfe8af02b5954f165b66a1d33ace584bb5865afc",
+    "delivery_verification_workflow_run_id": "37088981741",
+    "delivery_verification_artifact_id": 11262025459,
+    "delivery_verification_artifact_sha256": "dfd755a5aac348bc5859dd864f3e264846c3629fb71d608d19b5f83a93985cdc",
+    "delivered_source_archive_sha256": "a591445423500f1ad2cdd8d6dc7afbffabe462da6ad6f5960947466b949dbeb0",
+    "delivered_source_archive_bytes": 46359469,
+    "verified_selection_grid_renders": 420,
+    "verified_appearance_pairwise_cases": 31,
+    "verified_appearance_value_pairs": 284,
+    "verified_footwear_normal_renders": 40,
+    "verified_footwear_diagnostic_renders": 40,
+    "verified_binding_closeup_renders": 15,
     "preserved_v09b_service": "srv-datindfavr4c73dn25g0",
     "v09b_release_approved": false,
-    "env_update_triggers_deploy": true
+    "env_update_triggers_deploy": true,
+    "delivery_verified": true
   },
   "remaining_scope": [
-    "Publish exact canonical 2a981f/a165ab2 candidate to the existing staging service and independently verify delivered commit/app/assets/QA/source archive.",
+    "Complete exhaustive dedicated hair close-up QA (108 renders) and visually inspect the actual results.",
+    "Integrate the checksum-pinned repaired Ashley May normal map only after fixture recovery and actual before/after rendering; retain it only if visual inspection supports improvement without regressions.",
     "Continue actual-rendered face/eyes/skin/hair/hands/footwear realism and garment boundary/clipping repair; overall realism is not approved.",
     "Integrate and validate measurement-matched body geometry; current size/bust/waist/hips are not validated geometric controls.",
     "Implement actual garment grading/ease visualization and provenance-backed cloth/material testing, explicitly separated from actual-garment validation.",
@@ -61,6 +74,12 @@
   "autonomy": {
     "task_id": "6abce881c74c8191b819dffcb2e54841",
     "enabled": false,
-    "state": "paused during reconciliation; may be re-enabled only after canonical staging delivery is verified, as recovery/watchdog subordinate to active interactive lease"
+    "state": "canonical staging reconciliation is complete; eligible to re-enable as hourly recovery/watchdog subordinate to the active interactive lease"
+  },
+  "renewed_at_utc": "2026-10-03T02:16:00Z",
+  "active_work": {
+    "hair_closeup_qa": "tools/qa_hair.py is now wired into render_test.py for exhaustive 6 colors x 3 styles x 3 lengths x 2 views = 108 actual closeups; latest all-changes regression is queued/running through GitHub Actions.",
+    "hair_normal_map": "source archive/member provenance and deterministic iCCP-only repair are verified; fixture recovery workflow is being hardened for concurrent main updates before runtime integration.",
+    "local_candidate": "normal-map integration candidate builds and passes JavaScript syntax/checksum assembly locally with repaired map SHA256 3fbca1cc964a29eec0eb24f6b8c4612b7661bedaca61db597b8a813973786cb0; not yet canonical or visually approved."
   }
 }
