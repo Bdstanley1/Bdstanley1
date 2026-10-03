@@ -1,57 +1,76 @@
-# Knit Riot / 3D Garment — Project Checkpoint
+# Knit Riot / 3D Garment — Reconciled Project Checkpoint
 
-Updated 2026-10-01 UTC (September 30 in the owner's time zone).
+Updated 2026-10-03 UTC.
 
-## Current live implementation
+## Release state
+**PUBLIC PRODUCTION RELEASE: HOLD.** Overall human realism, physical garment fit, measurement reconstruction, actual-garment validation, privacy/customer-data gates and real-device validation are not complete.
 
-**PUBLIC PRODUCTION RELEASE: HOLD.** Overall lifelike appearance and physical garment fit have not passed. This is a validated development milestone, not project completion.
+## Canonical tested source
+The canonical product source selected by reconciliation is:
 
-The existing staging service `srv-daudsoegekts73e2u1d0` in Render workspace `tea-dastcbd9fdbs73f0nrpg` is live at https://knit-riot-studio-development.onrender.com.
+- Project source commit: `2a981f207c2643f993b76fec6f24ec20d87d93f8`
+- Assembled app SHA-256: `a165ab2eb31dfff89ed2cedfcfe8af02b5954f165b66a1d33ace584bb5865afc`
+- Actual-render workflow: `37085768033` — **success**
+- Durable evidence commit: `fb1c1e261083d646163a9ac1b72c05a1abd99246`
+- Rendered-review artifact SHA-256: `27837701d22747ac3a5c55d86dce93850d8101880b4b18afb1917cecf796a5a2`
+- Pinned-source artifact SHA-256: `9d429992cb13f491dcd2c78484b327f69fd8b8825e41c7454b0a5da178e43af8`
 
-- Live deploy: `dep-daurcmg473hc73cb9ljg`, live since `2026-10-01T01:30:02.659572Z`.
-- Tested/deployed project code: `ab0a34b4b0d4d35359b2c681b3c38cb3a8785562`.
-- Delivered app SHA-256: `2f244c54639dd84c0efe7417554d803f315ef5f0e5541ec8ec8c3e818a867218`.
-- Independent HTTPS delivery verification: workflow `36801168765`, successful retry after the initial waiting deadline expired before the candidate became live. Assertions were not weakened.
-- Delivered source archive: `/development-snapshot.zip`, 31,518,484 bytes; SHA-256 `ec8dfad72e31a13bed69a6057ca58d6972032ba144cb59bb0213104062f8ae0e`.
+The artifact digest was independently recomputed after download and matched GitHub.
 
-The previous staging deployment remains in Render history. Old v09b `srv-datindfavr4c73dn25g0` is preserved but fails the female-avatar requirement and is not an approved release. Root profile README is unchanged: blob `94740cd20916824e2058a62c8b6790d3943df143`.
+### Actual QA at the canonical source
+- 420 actual selection-grid renders: exhaustive across the existing 7 size labels × 3 colors × 5 poses × 4 views.
+- 31 appearance renders covering all 284 value pairs across the listed appearance factors: pairwise, not exhaustive Cartesian coverage.
+- 15 garment binding closeups: exhaustive across 5 implemented poses × front/side/back presets.
+- Footwear close-up and occlusion coverage remains preserved from the current suite, including barefoot negative controls.
+- GLB export/reload: 21 meshes, 60,353 deformed vertices compared, maximum numerical world-space deviation `1.6971415172588268e-06 m`.
+- JavaScript/test errors: none.
+- Capture errors: none.
+- Software-rendered Chromium only; physical iPhone/Android/Mac/PC hardware was not validated.
 
-## Durable source and reproducible build
+Actual image inspection of the canonical binding atlas and front/side/back renders found the specific residual inner-shoulder binding tab targeted by the final source repair no longer apparent in the reviewed views. This is a local visual milestone only; the avatar and garment still do **not** pass the overall realism gate.
 
-The owner authorized the public `Bdstanley1/Bdstanley1` repository under `knit-riot-3d-garment/`. Complete original application/build source is retained immutably in `recovered/2026-09-30/`. Its original snapshot SHA-256 is `141fe99b2fa7dfddd46469da2b00a50d7767be31741ad32dd9c3156c47f9b0bb`.
+## Reconciliation result
+The overlapping chats produced coordination drift, but Git history remained linear. The reconciliation audit therefore did **not** roll back merely to an older timestamp. Instead it selected the newest cumulative source commit that:
+1. includes the later repairs,
+2. passed the current full actual-render regression,
+3. has checksum-verifiable durable evidence, and
+4. was visually inspected for the repair area.
 
-The anatomical adult female fixture has 13,380 source vertices, 26,756 body triangles and 163 native bones. Body, vest, leggings, footwear proxies and buttons share weighted skinning. Licensed skin, Ashley May hair, studio environment and Three.js dependencies are committed and checksum-verified in `fixtures/runtime/`, with attribution. No real customer data was imported.
+Evidence-only bot commits above the canonical product source are not treated as product source. Failed/intermediate experiments remain historical evidence and are not canonical merely because they are newer.
 
-The upstream asset commit `d6fc027ced5c17b6b0775dee944096ade7a9ef80` is distinct from the current project code commit. Active assembly is `tools/build_runtime.py` plus exact-once `patches/`, not the old environment-variable patch chain. `deployment/render_bootstrap.py` is stored in Render BUILD_PY; it checks out a pinned KR_PROJECT_COMMIT. `tools/render_build.py` checks KR_EXPECTED_APP_SHA, reruns actual browser QA, then publishes only a passing candidate. Legacy environment source remains for rollback/provenance. An env update already triggers deployment; do not duplicate the trigger or create another service.
+The single-writer protocol is now defined in `COORDINATION_LOCK.md`. The active writer is the session holding the bounded lease in `PROJECT_HANDOFF.json`; chat titles alone are not authority.
 
-## Actual implemented repairs
+## Current staging state before canonical publication
+Existing staging service: `srv-daudsoegekts73e2u1d0` in Render workspace `tea-dastcbd9fdbs73f0nrpg`.
 
-The garment is refined independently of the body through source-vertex welding, front-surface smoothing and a continuous chest envelope. A coverage mask now matches clothing cuts and retains skin at boundaries. Inspected actual front/detail/hand-on-hip renders show the earlier triangular shoulder breakthrough and nipple-like vest peaks repaired. The maximum tested front-envelope depth adjustment is about 0.0850 m; this is artistic garment geometry, not measured cloth behavior.
+Current live deploy observed during reconciliation:
+- Deploy: `dep-db0461s9v7es739rraog`
+- Project commit from Render build/app logs: `3ed5ad8c1041af0e64a2a055e2fcd81fa31df2de`
+- Delivered app SHA-256 from logs: `b548985c10f806ca66fbce1df8a0382d85032a9fec27b479bb44d26244acf54c`
 
-Programmatic camera presets synchronize visible controls. Export errors are visible and restore the button. Exported GLBs include relevant asset credits and explicit non-validation metadata.
+That live staging build passed its own browser suite, but it is **behind the reconciled canonical source**. It must not be described as the canonical delivered build until exact `2a981f… / a165ab2…` publication and independent HTTPS delivery verification complete.
 
-## Completed actual QA, with limits
+Preserve old v09b service `srv-datindfavr4c73dn25g0`; it fails the female-avatar requirement and is not an approved release. Preserve the root profile README and unrelated files.
 
-GitHub workflow `36799792982` passed; the full suite also completed in the actual Render build without test or capture errors. Tool versions were Playwright 1.63.0, Pillow 12.3.0 and software-rendered Chromium 153.0.8010.12. Python syntax and numerical garment invariants passed; the original body, topology, skin indices and weights were preserved, and welded garment seams remained coincident.
+## Current implemented direction
+The canonical source contains the cumulative shoe reconstruction, forefoot occlusion QA, intact upper-body/armhole repairs, hair-material refinements, and the later vest shoulder/binding finishing changes. The full rendered suite remains functional.
 
-The implemented button values, minimum/maximum/default range-state checks, orbit, wheel zoom, CDP pinch, geometry reset, essential body-load failure and optional exporter-load failure recovery passed. Eleven dock/layout states across seven emulated viewports had no panel/stage overlap or overflow.
+Known limits remain explicit:
+- Overall face/eyes/skin/hair/hands/footwear realism is not approved.
+- Armhole/shoulder/binding cleanup is improved but does not establish overall garment realism or physical fit.
+- Size/bust/waist/hips are not yet completed and validated geometric reconstruction controls.
+- GLB numerical agreement is serialization agreement, not fit/measurement validation.
+- Synthetic reference images are not measured body or garment ground truth.
 
-All **420** size-label/color/pose/view selection combinations produced actual PNGs. **31** appearance renders cover all **284** value pairs across skin, hair color, hairstyle, length, footwear, pose and view. Every frame was checksum-verified and checked for nonuniform pixels. This is one exhaustive selection grid plus pairwise appearance coverage, not exhaustive overall state space or visual approval. Size labels and bust/waist/hips remain comparison inputs, not geometric fitting controls. Range-state checks must be strengthened when measurement-driven geometry is implemented.
+## Next autonomous work
+1. Publish exact canonical `2a981f…` / `a165ab2…` to the **existing** Render staging service using the guarded build path; do not create another service.
+2. Independently verify the exact delivered app, project commit, assets, QA evidence and source archive over HTTPS.
+3. Continue actual-render inspection and repair of face/eyes/skin/hair/hands/footwear and pose-specific garment boundaries/clipping.
+4. Implement and actual-test measurement-matched body geometry.
+5. Implement actual garment grading/ease visualization and provenance-backed cloth/material tests, clearly separating artistic/proxy simulation from validation against the real garment.
+6. Complete safe customer profile/photo architecture without transmitting real customer data, reusable personalized catalog model, and specifically authorized Shopify handoff.
 
-GLB export/reload retained 18 skinned meshes. Comparison of 58,961 deformed world-space vertices found maximum numerical roundtrip deviation `1.6971415172588268e-06` m. Actual reloaded front/side/back/detail images are retained. This tests serialization, not body reconstruction or garment fit.
+## Safety / autonomy
+No purchases, paid tiers/subscriptions/assets, new services, unrelated account changes, production-store writes, credentials/customer data in public repo/logs/artifacts, or customer-photo transmission/publication without explicit authorization/consent.
 
-The independent delivery check verified the exact served app/commit, seven served asset files, QA results, actual Render screenshots and portable source archive. `validation/latest/` retains CI results, provenance, full-size views and lossless atlases of every rendered test frame. The staging-verification workflow maintains `validation/staging/` with actual delivered Render images and verification provenance. Source/evidence no longer depends only on temporary artifacts. Physical iPhone/Android/Mac/PC hardware was **not tested**.
-
-## Next autonomous repairs and full remaining scope
-
-The face, eyes, hair, hands and shoe proxies still fall below the lifelike-reference requirement. Continue neckline/armhole/hem/shoulder binding and body-clipping/attachment review across every pose. Actual Render screenshots also expose a zoom-glyph font fallback that CI screenshots did not; fix the glyph rendering without losing real zoom behavior.
-
-The source hair material identifies the omitted normal map `hair/elvs_ashley_may_hair/80snormals.png` in the already identified hair02 CC-BY asset pack. This is a concrete next appearance-improvement lead, not an implemented fix. Verify source/checksums/attribution and compare actual renders.
-
-Preserve every approved appearance choice, lifelike adult brunette female target, natural poses, genuine skinned 3D garment, 360 orbit, presets, zoom, reliable reset, compact status and separate non-overlapping phone/desktop controls. No male/T-pose/mannequin/cylinder/2D substitution; reference images are not measured ground truth.
-
-Finish measurement-matched body geometry; real garment-size grading/ease; provenance-backed material/cloth testing distinguishing proxy simulation from actual-garment validation; safe customer-photo/import/profile handling; model reuse across catalog browsing; and specifically authorized Shopify handoff/integration. Do not infer pressure, comfort or physical fit from rendered appearance. Do independent engineering before escalating truly missing external evidence or authorization.
-
-No purchases, paid tiers/assets, new services, unrelated account changes, production-store writes, credentials in source/logs, or real customer-photo transmission/publication without required authorization/consent. Preserve all approved scope.
-
-The existing autonomous implementation task `6abce881c74c8191b819dffcb2e54841` is enabled hourly, next scheduled at `2026-10-01T02:32:42Z`, after the current bounded staging lease. Continue build → actual render/control tests → repair → retest → advance, with no routine approval questions. Notify only a meaningful new validated milestone, genuine external blocker or completion. AGENTS.md and PROJECT_HANDOFF.json contain the full continuation contract and exact state.
+The hourly task `6abce881c74c8191b819dffcb2e54841` remains paused until the canonical staging delivery is independently verified. When re-enabled, it is a recovery/watchdog mechanism subordinate to any active interactive lease.
