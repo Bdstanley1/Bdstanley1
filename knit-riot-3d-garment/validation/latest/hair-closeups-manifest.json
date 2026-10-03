@@ -1,0 +1,2054 @@
+[
+  {
+    "path": "hair-closeups/836c57-wavy-0p75-front.png",
+    "sha256": "3b3e50438b95c2a7c386c2b39897373cc85aa06ce45fad8a4c20b4d4d2ef61c4",
+    "hair": "#836c57",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-wavy-0p75-side.png",
+    "sha256": "4391ef01ca86f8dbe5aa7a6a531553debea065cad7deaa0b1895a83a7645b757",
+    "hair": "#836c57",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-wavy-1p0-front.png",
+    "sha256": "94f61913dd0f3bcaa2b1b1d6044a16482431a7ef076a82a233ab18976bde253c",
+    "hair": "#836c57",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-wavy-1p0-side.png",
+    "sha256": "dcdcbbd7d3bc3083450ff369f36267d03237777cac8cd573d2dde2f26d5efeb4",
+    "hair": "#836c57",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-wavy-1p35-front.png",
+    "sha256": "1a1c779971ce34bd95143ef2f2d4b44e5b1da30bd0b1bd109d92dfa0798c5a36",
+    "hair": "#836c57",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-wavy-1p35-side.png",
+    "sha256": "1d549ca294a8f32f99863d728481acba7b072b010937a1df9a227778c5d0a6dc",
+    "hair": "#836c57",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-straight-0p75-front.png",
+    "sha256": "551c0e976878a856e0d668daf863d9c1bfa9fb3d43528cb987ba06a36e7bf437",
+    "hair": "#836c57",
+    "style": "straight",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-straight-0p75-side.png",
+    "sha256": "c20c9101ca4cf84b8f42a06d62ae93368d0223ba725be1ba09e776372dcb02f9",
+    "hair": "#836c57",
+    "style": "straight",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-straight-1p0-front.png",
+    "sha256": "18dd3a29ca2a7d01bc03fd05672c54fb8022ea7a0ddefe86a9cf0014a1b0b75d",
+    "hair": "#836c57",
+    "style": "straight",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-straight-1p0-side.png",
+    "sha256": "30cd360f85a2d004b0b35e8ec8423823dc1300c4fe50c6fbbbcf4b6b15996935",
+    "hair": "#836c57",
+    "style": "straight",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-straight-1p35-front.png",
+    "sha256": "b0469f2ed56dfc95530ff3c74d283c65c480c08e3b492a3638665af53dd92002",
+    "hair": "#836c57",
+    "style": "straight",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-straight-1p35-side.png",
+    "sha256": "c92787b62ab393316080679597458d3ec360b7393ebb2f4615910c3e8075a8f0",
+    "hair": "#836c57",
+    "style": "straight",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-curly-0p75-front.png",
+    "sha256": "85ed1eaffd852f37e78ba95f878d672e78a6f3ce7a2e29b3c7ac4df3a76b9cf0",
+    "hair": "#836c57",
+    "style": "curly",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-curly-0p75-side.png",
+    "sha256": "c4cd6872c82d1b54a938918b6f0cad0eebd9343db55a69d0a43f4ffb2aa94914",
+    "hair": "#836c57",
+    "style": "curly",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-curly-1p0-front.png",
+    "sha256": "91bc8d9e619328311a14744b00dcf2a99b8e5061e355296d9b41a07173f90fa7",
+    "hair": "#836c57",
+    "style": "curly",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-curly-1p0-side.png",
+    "sha256": "4f3598575f32b6dcfa8b9738594314fcfd3107e9934ac2a03992146b0493c72f",
+    "hair": "#836c57",
+    "style": "curly",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-curly-1p35-front.png",
+    "sha256": "cafb1316c86d28851b85119ec1df56639b7b3916734091471f1fc8f58bf538d1",
+    "hair": "#836c57",
+    "style": "curly",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/836c57-curly-1p35-side.png",
+    "sha256": "30886824700d9c763b339c964ccefe77ea72c4f1cb94755c413c7f9b4bb6468c",
+    "hair": "#836c57",
+    "style": "curly",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#836c57",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-wavy-0p75-front.png",
+    "sha256": "c63787d25b8e91f51d45536b0c2cd6e9179be872979b15ea8eba06592bde2978",
+    "hair": "#ffffff",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-wavy-0p75-side.png",
+    "sha256": "c8814b6d886e21c35daa35482739959f6da056a184e26c470dcd3513503cf04b",
+    "hair": "#ffffff",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-wavy-1p0-front.png",
+    "sha256": "88ab6be57ac8a3313f536f3d3e64db95d7a6ab13e689e2dd01992e3fffc2630d",
+    "hair": "#ffffff",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-wavy-1p0-side.png",
+    "sha256": "6e3df3cd723d7b2812af73d8ba7fd4c24783dcc1b40ba166efe58fb66f904a60",
+    "hair": "#ffffff",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-wavy-1p35-front.png",
+    "sha256": "156290d2c326bb51c8e5ac24ebf98869fb9ebc96aa4037899c52789c02ee20a1",
+    "hair": "#ffffff",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-wavy-1p35-side.png",
+    "sha256": "bcce5e7fe0e9d968873f5b788970b0b6a6f0243bac77abed56f22877292b1e2e",
+    "hair": "#ffffff",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-straight-0p75-front.png",
+    "sha256": "5860ab3521407598cf5a451718fc1a594561955151d55b9183119d408503276a",
+    "hair": "#ffffff",
+    "style": "straight",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-straight-0p75-side.png",
+    "sha256": "08e45476c8a71ff7d4593e1e87b793e1f7b54d7fa34c5f10201a1b9874b83127",
+    "hair": "#ffffff",
+    "style": "straight",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-straight-1p0-front.png",
+    "sha256": "17bb2d291641f3dc3843ebad93bb4f3ee215e774f36615ba6b5c12ffe2a3b02f",
+    "hair": "#ffffff",
+    "style": "straight",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-straight-1p0-side.png",
+    "sha256": "b7d07d2d54a1e7dd1429914720802c0e980373c96bb2be988f2277ad15dda1f0",
+    "hair": "#ffffff",
+    "style": "straight",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-straight-1p35-front.png",
+    "sha256": "e2a841cc100944a03810b58c0cee3ec3879fc010ab5603c8aed2169f52536611",
+    "hair": "#ffffff",
+    "style": "straight",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-straight-1p35-side.png",
+    "sha256": "85accf521becf48f2dc12c609ffdae439fbcf39f1365e9bf1c3c56a9b9d5a5b6",
+    "hair": "#ffffff",
+    "style": "straight",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-curly-0p75-front.png",
+    "sha256": "791be9e70354bd9333e9c62bd3fc4dd0cbe420ebb165cbc73b072ed0c318bf59",
+    "hair": "#ffffff",
+    "style": "curly",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-curly-0p75-side.png",
+    "sha256": "23b85476f2a10d672dc5c8d878cee67db036771f1da4b6560242a23d86c538fb",
+    "hair": "#ffffff",
+    "style": "curly",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-curly-1p0-front.png",
+    "sha256": "85a641153362a8e1ff70360a18b4970bdb0ccb78035d16d6a0dc39442874b74c",
+    "hair": "#ffffff",
+    "style": "curly",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-curly-1p0-side.png",
+    "sha256": "8c0d4a0992830ee657d6ffa937eefa654a769f9f33de2c29c673681df9abf95c",
+    "hair": "#ffffff",
+    "style": "curly",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-curly-1p35-front.png",
+    "sha256": "578733ae001f015415f217cb51363f536e34a115dca6e04d2f6d3f89ea8ac7e5",
+    "hair": "#ffffff",
+    "style": "curly",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ffffff-curly-1p35-side.png",
+    "sha256": "54a2c1c9e4ff7c87ae197a6bc291dd9a4903e0622f0f89e1e0ffcbecdb14ef74",
+    "hair": "#ffffff",
+    "style": "curly",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ffffff",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-wavy-0p75-front.png",
+    "sha256": "2e3084834b67f282dd13cf02f0e10b0fc4925fc3648befbbb67e20c6763986bb",
+    "hair": "#493025",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-wavy-0p75-side.png",
+    "sha256": "3abdbef6d0983fed1b4194d8a0b471aa634efef2bc85776c6ec37b11419c1fed",
+    "hair": "#493025",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-wavy-1p0-front.png",
+    "sha256": "01b78f60cbf2dfb050737d4c79924313e8097818a46667d6f30a3f40ab2c3be0",
+    "hair": "#493025",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-wavy-1p0-side.png",
+    "sha256": "238018aba934161b5190173daa16e63fdf3484406c099fd8c127199f350c6334",
+    "hair": "#493025",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-wavy-1p35-front.png",
+    "sha256": "b0e60edd959c9ca04b70a1dbede7c4d55d84473f088a6624e62124de1985a3aa",
+    "hair": "#493025",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-wavy-1p35-side.png",
+    "sha256": "e622dde237ecf0d6da796358df104a91a2355dfd20901b329265ed67fa0835a6",
+    "hair": "#493025",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-straight-0p75-front.png",
+    "sha256": "8e014e663e01264edcf902e4dc5955a0517c66cd476d288d845864727399c038",
+    "hair": "#493025",
+    "style": "straight",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-straight-0p75-side.png",
+    "sha256": "917a19834e9db150d8b8aed87ccf597b431e377b6095fc8b1ff47ad8ec32c236",
+    "hair": "#493025",
+    "style": "straight",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-straight-1p0-front.png",
+    "sha256": "48a3095bab0e6a07238625916548e5511a3642561aa5a50e5c19bc4bbc2d03be",
+    "hair": "#493025",
+    "style": "straight",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-straight-1p0-side.png",
+    "sha256": "6a91d3370c2194ba86f39253a923679f875f550c21bf8d495e9bed680661d7dd",
+    "hair": "#493025",
+    "style": "straight",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-straight-1p35-front.png",
+    "sha256": "2653fef4b4e12c7d47ad06010ed3698a1158964ac0f08fc2ac5ca3793fdc9b62",
+    "hair": "#493025",
+    "style": "straight",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-straight-1p35-side.png",
+    "sha256": "fdf1b306914ee69903e8fcad90b676d84a13718fbfc6ae634178013c7d5da80f",
+    "hair": "#493025",
+    "style": "straight",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-curly-0p75-front.png",
+    "sha256": "a36107eeade59dbd4594e1c84a0f708c8cd0fe4be8bb862a38208e87d99b01bd",
+    "hair": "#493025",
+    "style": "curly",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-curly-0p75-side.png",
+    "sha256": "a2655b65796aebeda68ae75385a58996017cb5a4b9cc2ac5a326b128aadfcccb",
+    "hair": "#493025",
+    "style": "curly",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-curly-1p0-front.png",
+    "sha256": "2f56e433408eb00edf555a34629cb1e64dce8fcadc1c66e291bb0496c32d49cc",
+    "hair": "#493025",
+    "style": "curly",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-curly-1p0-side.png",
+    "sha256": "7f1c47597c5c2d24ca3ed5ec7990d280c2a10fbd5595f6138f082c3b8f6c746b",
+    "hair": "#493025",
+    "style": "curly",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-curly-1p35-front.png",
+    "sha256": "7d41d07d67fa0cc2f8683d5017d91d1924d3286ffbd34353349710d3a82fbfac",
+    "hair": "#493025",
+    "style": "curly",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/493025-curly-1p35-side.png",
+    "sha256": "1af84fcfab184f3b13fc2c90b9d79e35ad2e6ce258974f6e6d253c40c7f058a7",
+    "hair": "#493025",
+    "style": "curly",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#493025",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-wavy-0p75-front.png",
+    "sha256": "e77f1a7f1e4b4e5cb68258f73d49068d0c118851db349a16d808b14ac82d5615",
+    "hair": "#201a16",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-wavy-0p75-side.png",
+    "sha256": "5d859d508a3378b4ff442ca493b90a6c261ec34b777d0afed4d1ae8895adae6f",
+    "hair": "#201a16",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-wavy-1p0-front.png",
+    "sha256": "31ceb1a87243bda73e26dc1e125f558f43927ef9b7ca8e205079814f9e80a914",
+    "hair": "#201a16",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-wavy-1p0-side.png",
+    "sha256": "55dc234ddc4a8699217e1c11bb504c0a107b1eea15b0a436b7d3c5ca002cfe24",
+    "hair": "#201a16",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-wavy-1p35-front.png",
+    "sha256": "094e1ea68e0fbcc0c4a7c109e2b767c08d5e6b1c3a9e09e3b6dfdbd74de58585",
+    "hair": "#201a16",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-wavy-1p35-side.png",
+    "sha256": "fdd0e4cfbff7a3b3cc660eb27c15dfeb7bece7ddd58b694df22b5c18435f7868",
+    "hair": "#201a16",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-straight-0p75-front.png",
+    "sha256": "ce1dfed909059c32800a2fb7c95bcc274e242325ae7aaa5bad7a2cd9b1ab6b65",
+    "hair": "#201a16",
+    "style": "straight",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-straight-0p75-side.png",
+    "sha256": "e87a156677a46ec3473940fb6aabb6ee5623d6bfaf2ff919f47c0f696d98b9a1",
+    "hair": "#201a16",
+    "style": "straight",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-straight-1p0-front.png",
+    "sha256": "9e99fc5921b37a911054f026ea1c367af72283cd734c0b148a37c92206a286dc",
+    "hair": "#201a16",
+    "style": "straight",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-straight-1p0-side.png",
+    "sha256": "ec45a6c2addaecb0bcb9884d854d2b313e39bd810d6e9b0d8cc418577030e442",
+    "hair": "#201a16",
+    "style": "straight",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-straight-1p35-front.png",
+    "sha256": "0fbe5dc54a08616ad7ed13c964571028c59460b91237aa38a7c1b64c0cf70b9b",
+    "hair": "#201a16",
+    "style": "straight",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-straight-1p35-side.png",
+    "sha256": "c71eb23cffbcaa9163102d2fcd04b341e8be38714d39041654b4090d604fa8de",
+    "hair": "#201a16",
+    "style": "straight",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-curly-0p75-front.png",
+    "sha256": "9f0e71e21b073ee6dd39a7311833d258c6f4d00d83428672e31685c338e6e330",
+    "hair": "#201a16",
+    "style": "curly",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-curly-0p75-side.png",
+    "sha256": "5777293bbc6d0d29c5ab98bd8bf5c15838fbe6ac7517573e3c6dd54d91f2daa3",
+    "hair": "#201a16",
+    "style": "curly",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-curly-1p0-front.png",
+    "sha256": "95a0d45622103fa92466923252fbb4dfb09e7b822c235af476829225808a4f83",
+    "hair": "#201a16",
+    "style": "curly",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-curly-1p0-side.png",
+    "sha256": "9996dc10e7566ddcc5d86543615f60209cc60e997a193eebe38fba2f81f2e541",
+    "hair": "#201a16",
+    "style": "curly",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-curly-1p35-front.png",
+    "sha256": "096b46b0d4c4bc909e5b5f2a95d55b1774baf841263ed1ef83ebf70a8c8bae93",
+    "hair": "#201a16",
+    "style": "curly",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/201a16-curly-1p35-side.png",
+    "sha256": "6f4042f8e104247e6f8155972b481b3a76a983dc3964de044c893da6617d6cf5",
+    "hair": "#201a16",
+    "style": "curly",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#201a16",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-wavy-0p75-front.png",
+    "sha256": "75580f36e572025f78efc025da30268c5fa7581e25ce547e318bd14096d45433",
+    "hair": "#ac7946",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-wavy-0p75-side.png",
+    "sha256": "f8a1b3101a3a3ca7761a180790f2e335fa1fe1761c494864aa8fc62c9ca43f10",
+    "hair": "#ac7946",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-wavy-1p0-front.png",
+    "sha256": "4dcf84e057cece69f262f44e091e40c206a5dccc6de2ff5c2928cd411da7f459",
+    "hair": "#ac7946",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-wavy-1p0-side.png",
+    "sha256": "b79d44088d40b8ec98edbf0fb8978636d17dcadf4d3d8506733d625d28872432",
+    "hair": "#ac7946",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-wavy-1p35-front.png",
+    "sha256": "7bb1ab83de0b81bb31c042be11162b0ab1e340fdffca46b22a7be96a3f441324",
+    "hair": "#ac7946",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-wavy-1p35-side.png",
+    "sha256": "b7feafc77589a0c1638c2f895d3c47c33b9669d801cf781b27197d8e8357b41c",
+    "hair": "#ac7946",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-straight-0p75-front.png",
+    "sha256": "a44d2fd5679f071b227cbad48577415f5ba09563ac43128d98192581da0dcf43",
+    "hair": "#ac7946",
+    "style": "straight",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-straight-0p75-side.png",
+    "sha256": "0ebde558eddd0ed7751fe186886263cc6d4ac9169f3761f3c67bed3f6e81bfbd",
+    "hair": "#ac7946",
+    "style": "straight",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-straight-1p0-front.png",
+    "sha256": "2d677a76d1f13b9f454e8465b300420a3327ad283f6ad226efd06103965a8aa8",
+    "hair": "#ac7946",
+    "style": "straight",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-straight-1p0-side.png",
+    "sha256": "e828a216c080dae448f2e54c5fa2bd640a9d5f279404671467bd85f9d75900c7",
+    "hair": "#ac7946",
+    "style": "straight",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-straight-1p35-front.png",
+    "sha256": "aad22e8101b47b870795d01b619f189fc048fd48a40a222ccbc90a5294d8aeda",
+    "hair": "#ac7946",
+    "style": "straight",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-straight-1p35-side.png",
+    "sha256": "ec9a2188b773a3996e5cbb6839fec494c27ef540623015f40bc3d022bacbf925",
+    "hair": "#ac7946",
+    "style": "straight",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-curly-0p75-front.png",
+    "sha256": "33d14a35bb18515ac43d0c3951de00bc509f32ed93f28e5d5446688108f32661",
+    "hair": "#ac7946",
+    "style": "curly",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-curly-0p75-side.png",
+    "sha256": "2be3a9dcc5e710b49b3ed223738acac0742bccfd05f33cb2259742298f96e990",
+    "hair": "#ac7946",
+    "style": "curly",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-curly-1p0-front.png",
+    "sha256": "ed2ff516ef0a4b8611ce543c9821dea6e6d64104c10769d3923a21af4367dd35",
+    "hair": "#ac7946",
+    "style": "curly",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-curly-1p0-side.png",
+    "sha256": "0065457407ea7693b01a002754776bdc421a3ec99f1cc7170ca34e7ced7ce2a4",
+    "hair": "#ac7946",
+    "style": "curly",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-curly-1p35-front.png",
+    "sha256": "44deabd6980efb5ee6f37d45cbdc3e0b2cc16821fdad74f21238b06ad1e7ff60",
+    "hair": "#ac7946",
+    "style": "curly",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/ac7946-curly-1p35-side.png",
+    "sha256": "0a4e419519ec88dded07c1e6e80a704c069879ec8fa8fc33e08255b79613bb8b",
+    "hair": "#ac7946",
+    "style": "curly",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#ac7946",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-wavy-0p75-front.png",
+    "sha256": "15f41afa708c994d285674a19c031a9b4701446e52353cb5a4d749263c842674",
+    "hair": "#854629",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-wavy-0p75-side.png",
+    "sha256": "e7896728ffa0483e23c05cb9016bebd158ada185e387cde06e436c23c9843594",
+    "hair": "#854629",
+    "style": "wavy",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "wavy",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-wavy-1p0-front.png",
+    "sha256": "e04c4f7834eb3867f4d7f759c87c5fa716081bf36e5b667e1f8e3db7bd4bdf2b",
+    "hair": "#854629",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-wavy-1p0-side.png",
+    "sha256": "9833fa39f5d95803478cb8e501aa37444764fdf841d3f48300851895a89ec4f0",
+    "hair": "#854629",
+    "style": "wavy",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "wavy",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-wavy-1p35-front.png",
+    "sha256": "95084028738f540570bb76c361be453dacebfbc9ae5f0f735c93b7f5312fb4ae",
+    "hair": "#854629",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-wavy-1p35-side.png",
+    "sha256": "a60a686be03ce3f1a17befebfb9f178d32f078bb00931ef9b25ef7e58015fe44",
+    "hair": "#854629",
+    "style": "wavy",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "wavy",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-straight-0p75-front.png",
+    "sha256": "e7c140e22cd8b385cdfb44deba14b268b0ce2ea370ce98185ce0848ddc030de9",
+    "hair": "#854629",
+    "style": "straight",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-straight-0p75-side.png",
+    "sha256": "0acaaf137d8ad36db4ad55d80c24a13a52b2a1f92a328cfe1ea973c0f0704712",
+    "hair": "#854629",
+    "style": "straight",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "straight",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-straight-1p0-front.png",
+    "sha256": "8cb7e468c0980d28ce106517eba362ba760521a31f4de077c35b910134481d49",
+    "hair": "#854629",
+    "style": "straight",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-straight-1p0-side.png",
+    "sha256": "0439b53e73bab3b2fe79d12b7413b9a401280d3c45579a22c7f53e8d31ea6f8f",
+    "hair": "#854629",
+    "style": "straight",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "straight",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-straight-1p35-front.png",
+    "sha256": "2a7cdc1b46a0b751dc8323a764969c07e364bcc4370f71ad778570995914f2d6",
+    "hair": "#854629",
+    "style": "straight",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-straight-1p35-side.png",
+    "sha256": "257b70d85a66e0a4e345ca194b6d90ed42e36f41167e183becf66ce6c6dd91f9",
+    "hair": "#854629",
+    "style": "straight",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "straight",
+      "length": 1.35,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-curly-0p75-front.png",
+    "sha256": "765012bb8836201f55ea409f256113fe5a54ad208813548d3003f07500ca8938",
+    "hair": "#854629",
+    "style": "curly",
+    "length": 0.75,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-curly-0p75-side.png",
+    "sha256": "175800ac41569e8627225956ea05f1c2ae10d24b5c09399ba5d8fbebc9986760",
+    "hair": "#854629",
+    "style": "curly",
+    "length": 0.75,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "curly",
+      "length": 0.75,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-curly-1p0-front.png",
+    "sha256": "76dd811f917d0eeb8cec8496f113985f5f7ac3bb5dc111983404d0481b24151b",
+    "hair": "#854629",
+    "style": "curly",
+    "length": 1.0,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-curly-1p0-side.png",
+    "sha256": "e4f464cc39d281b529dee8950b2fde78c046197f0ed1d70bff1d8ef598721394",
+    "hair": "#854629",
+    "style": "curly",
+    "length": 1.0,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "curly",
+      "length": 1,
+      "view": "side"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-curly-1p35-front.png",
+    "sha256": "b0afacc7d1468aab9a190b7d744d1dd39c86d608c8509e8fe0e1b9f8863465c7",
+    "hair": "#854629",
+    "style": "curly",
+    "length": 1.35,
+    "view": "front",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "front"
+    }
+  },
+  {
+    "path": "hair-closeups/854629-curly-1p35-side.png",
+    "sha256": "79eef02051b9d5c9ddda6c237c7ec55c2ca3e950ecc713ed12d317c3efaac989",
+    "hair": "#854629",
+    "style": "curly",
+    "length": 1.35,
+    "view": "side",
+    "pixel_size": [
+      780,
+      764
+    ],
+    "webglError": 0,
+    "state": {
+      "hair": "#854629",
+      "hairStyle": "curly",
+      "length": 1.35,
+      "view": "side"
+    }
+  }
+]

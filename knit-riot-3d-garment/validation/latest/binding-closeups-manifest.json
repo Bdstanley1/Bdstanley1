@@ -5,211 +5,211 @@
   "evidence": [
     {
       "path": "binding-closeups/neutral-front.png",
-      "sha256": "bbee4be20d97e8613cec95b1d74d413ffcdd5f6b985389d35779ec4730b99ec1",
+      "sha256": "94f61913dd0f3bcaa2b1b1d6044a16482431a7ef076a82a233ab18976bde253c",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        50.464980950517514,
-        55.939323454935064,
-        56.394858029045295
+        50.464936315009275,
+        55.93530502939167,
+        56.388030467073946
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/neutral-side.png",
-      "sha256": "f3479ce29c2716f7e1e1dd49476058c062fc977fac61ee2076071ee6519c3af2",
+      "sha256": "dcdcbbd7d3bc3083450ff369f36267d03237777cac8cd573d2dde2f26d5efeb4",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        55.694256735128654,
-        63.942230883174716,
-        65.77967510008702
+        55.69782893774582,
+        63.94286984949344,
+        65.77926570228612
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/neutral-back.png",
-      "sha256": "5dcbba57363c1f204c63f29b81078437c4c0328510e9ae6a3f77cf98daaba478",
+      "sha256": "3626e9a05f03641ec50e27e2666659c9287d0f9fcfc644c9a52db5dbeb552517",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        68.85436540924412,
-        73.7234159372218,
-        74.03261589077862
+        68.8535900872101,
+        73.72208687642866,
+        74.0308685360414
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/fashion-front.png",
-      "sha256": "94fe98bfec912fd84f1ee4a0297b4e3ebef48ae376eeb2706900200f54f0cdf1",
+      "sha256": "f75971bc6944c60c421e78189e943bce71f82b76dd6bee3a710cedfe5d1276b8",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        50.63955866494693,
-        55.9966808419809,
-        56.43587968009242
+        50.644778187643105,
+        55.998448134799034,
+        56.435931010790675
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/fashion-side.png",
-      "sha256": "d6d6f658e0952a426a9143630507715c8b3ce09b93326ffe18c9a7610d74ec2f",
+      "sha256": "631169f49049b4f174872fff86a64b2fdeac242626533249842eea80c7d616d4",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        56.010638234749685,
-        64.16986819201477,
-        65.93132979139628
+        56.01511344576937,
+        64.17008083613388,
+        65.9304330903044
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/fashion-back.png",
-      "sha256": "0d63014ac92a62143ceb3973205e6cbd69e01a5a21470d6749244941c53988de",
+      "sha256": "e3cfdab8d025c2c7cfad2739755c9bcda89589037c2fcd70a3fa96269d744d96",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        68.63608811584285,
-        73.55461216429107,
-        73.9319074312344
+        68.63627589648435,
+        73.554438739923,
+        73.93075491381717
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/hip-front.png",
-      "sha256": "5cef3027043ef24c6051f0d851331330c22168062f43b3f4ee0efd607df0be9d",
+      "sha256": "d55944e260a38c0eda78d57118e96dfb8a14bbaf35115dbd5fe9cde4ea6e223a",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        50.86155125315857,
-        56.69612057813718,
-        57.376152417613866
+        50.86426432396995,
+        56.694740439156234,
+        57.37205526058448
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/hip-side.png",
-      "sha256": "1508369e4f6ec825f106bc10a5041337c77f51a21b5a36c185952d29f969580f",
+      "sha256": "49c88f8091c12d01f404e3afc5f32e2582fc4446ff5077ac74014ebfee0cb892",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        55.92041322120973,
-        64.33534394454814,
-        66.21911658954816
+        55.92341538757647,
+        64.33550841710418,
+        66.21866837902202
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/hip-back.png",
-      "sha256": "ce4b9165be445840c8f2a77921301431d657a0dc3d0a058b775812663c2554d8",
+      "sha256": "186d8997035e41e53e5d2c8549e0e5be69b668f7bb11aba9aa79583517df57fc",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        68.78441043746666,
-        73.75206828043538,
-        74.1641576829016
+        68.78360820001704,
+        73.75056303424765,
+        74.16241834300276
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/walk-front.png",
-      "sha256": "0633e1fb5d98665ce8034be326d43dc097c1cf82f725464c05b84fdb7777fb4d",
+      "sha256": "b345a6e6fb6f2a7071a2e9b0f734cf3da3665eec686dfffb317772aedcee998f",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        50.46495241826282,
-        55.93930645627882,
-        56.39484669206086
+        50.464907782531334,
+        55.935288029444365,
+        56.388019128716806
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/walk-side.png",
-      "sha256": "abc26ff60cb663e1b8709528de5278fc116d5d5d2c7665e779c1e73ee5c50d18",
+      "sha256": "5de99db7aec887089c72d9750bcdabb7706aa89368127cfae5410f3508d67c28",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        55.69422176703364,
-        63.942209796136034,
-        65.77965843272266
+        55.69779397242856,
+        63.942848762734606,
+        65.77924903479725
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/walk-back.png",
-      "sha256": "34c0253c54f8e162cd142d0eb7625743430cf70cf576abf58d1680548c010032",
+      "sha256": "dd34f67026e8c7128ebeca634f95e14d5043f28b446fd3cc95ee6eaf8ce6ff75",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        68.854376495799,
-        73.72342446988227,
-        74.03262016945673
+        68.85360117423483,
+        73.7220954097603,
+        74.03087281534987
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/three-quarter-front.png",
-      "sha256": "98b4c27ca0cdcb0f7c99b74b8b054bc5bf82bfa0473d2209f30a04b2a09a8083",
+      "sha256": "7670c2bba3efbe62dd22b4eb315b04b7786db7b8d0f201cb6a67416df6b883f8",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        50.81116592972628,
-        56.57589601549876,
-        57.23562198033923
+        50.81108037620222,
+        56.57240605574914,
+        57.23075341617523
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/three-quarter-side.png",
-      "sha256": "67ba2adf2efdef3ccdc40cdec0efa7d384ff7b38cf60257eaf1ce196067ac915",
+      "sha256": "3c283fdc1e9a977bcb26ecb32772afe0408ea3ff7d89b5ecc62858d96252ca83",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        60.16745449538359,
-        67.58435586675598,
-        68.98932370705604
+        60.169773630012756,
+        67.58420192209067,
+        68.98799614919602
       ],
       "nonuniform": true
     },
     {
       "path": "binding-closeups/three-quarter-back.png",
-      "sha256": "5ff9c1db93c35253b7b3d66d06361ca3ebf8a413b07d594674c77ca7987ada61",
+      "sha256": "383806b82a6f86170a6cc3c39fd6be1d51e1f4d1f34492cfed2911f757a1c79a",
       "pixel_size": [
         780,
         764
       ],
       "rgb_standard_deviation": [
-        66.60352443598511,
-        71.87859496371361,
-        72.57968921215684
+        66.60453182081382,
+        71.87892230174705,
+        72.57878922920355
       ],
       "nonuniform": true
     }
